@@ -1,8 +1,19 @@
+# Исходные выгрузки конфигураций 1С
+ConfigFiles/
+Configs/
+*.bsl
+*.xml
+
+# Сгенерированная документация конкретных баз
+docs/
+llms.txt
+llms-full.txt
+.bsl_cache.json
+
+# Системный мусор и виртуальное окружение
 __pycache__/
 *.py[cod]
 .venv/
 env/
-.bsl_cache.json
 .vscode/
 .idea/
-ConfigFiles/

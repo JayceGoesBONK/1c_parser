@@ -1,3 +1,0 @@
-﻿<Items Description="Troitsa" Columns="Year,Date">
-	<Item Year="2024" Date="20240623"/>
-</Items>
