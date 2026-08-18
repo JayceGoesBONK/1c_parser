@@ -1,0 +1,157 @@
+﻿
+#Область ЗаголовокНачало
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD><TITLE></TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=utf-8">
+<link href="../style.css" rel="stylesheet" type="text/css" />
+#КонецОбласти
+
+#Область Стили
+<STYLE TYPE="text/css">
+BODY {FONT-SIZE: 13px; BACKGROUND-COLOR: #ffffff}
+P {FONT-SIZE: 13px; LINE-HEIGHT: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none}
+LI {FONT-SIZE: 13px; LINE-HEIGHT: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none}
+TD {FONT-SIZE: 13px; LINE-HEIGHT: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none}
+H1 {FONT-WEIGHT: bold; FONT-SIZE: 16pt; COLOR: #003366; FONT-FAMILY: tahoma, arial, sans-serif}
+H2 {FONT-WEIGHT: bold; FONT-SIZE: 14pt; COLOR: #a3611f; FONT-FAMILY: tahoma, arial, sans-serif}
+H3 {FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #003366; FONT-FAMILY: tahoma, arial, sans-serif}
+.resume {LIST-STYLE-IMAGE: url(reslistimg.gif); MARGIN-BOTTOM: 10px}
+LI {LIST-STYLE-IMAGE: url(listimg.gif); MARGIN-BOTTOM: 1px}
+
+A {FONT-WEIGHT: bold; COLOR: #c10000; BORDER-BOTTOM: #cccccc 1px dotted; FONT-FAMILY: tahoma, arial, sans-serif; TEXT-DECORATION: none}
+A:hover {FONT-WEIGHT: bold; COLOR: #ff0000; BORDER-BOTTOM: #ff0000 1px solid; FONT-FAMILY: tahoma, arial, sans-serif; TEXT-DECORATION: none}
+A.blue {FONT-WEIGHT: bold; COLOR: #0000c1; BORDER-BOTTOM: #cccccc 1px dotted; FONT-FAMILY: tahoma, arial, sans-serif; TEXT-DECORATION: none}
+A.blue:hover {FONT-WEIGHT: bold; COLOR: #0000ff; BORDER-BOTTOM: #cccccc 1px dotted; FONT-FAMILY: tahoma, arial, sans-serif; TEXT-DECORATION: none}
+A.image {BORDER-BOTTOM: medium none}
+A.image:hover {BORDER-BOTTOM: medium none}
+.sidemenu {FONT-SIZE: 8pt; COLOR: #745400}
+.hi {FONT-WEIGHT: bold; FONT-SIZE: 8pt; CURSOR: hand; COLOR: #ec4700; LINE-HEIGHT: 120%; FONT-FAMILY: tahoma, arial, sans-serif; BACKGROUND-COLOR: #ffe302}
+.hi2 {FONT-WEIGHT: bold; FONT-SIZE: 8pt; CURSOR: hand; COLOR: #745400; LINE-HEIGHT: 150%; FONT-FAMILY: tahoma, arial, sans-serif}
+.lo {FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #745400; FONT-FAMILY: tahoma, arial, sans-serif}
+.BottomGray {BORDER-TOP: #999999 1px; BORDER-BOTTOM: #999999 1px solid}
+.TopGray {BORDER-TOP: #cccccc 1px solid}
+.BottomTopGray {BORDER-TOP: #999999 1px solid; BORDER-BOTTOM: #999999 1px solid}
+.BottomLeftGrayCopy {BORDER-TOP: #999999 1px; BORDER-LEFT: #999999 1px solid; BORDER-BOTTOM: #999999 1px solid}
+
+noborder {FONT-WEIGHT: bold; COLOR: #c10000; BORDER-TOP-STYLE: none; BORDER-BOTTOM: #990000 1px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; TEXT-DECORATION: none}
+.NoBorder {BORDER-TOP: #999999 1px; BORDER-BOTTOM: #999999 1px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none}
+
+a2 {FONT-WEIGHT: bold; BORDER-BOTTOM: #cccccc 1px dotted; TEXT-DECORATION: none}
+.LeftGray {BORDER-LEFT: #999999 1px solid}
+.BottomTopLeftGray {BORDER-TOP: #999999 1px solid; BORDER-LEFT: #999999 1px solid; BORDER-BOTTOM: #999999 1px solid}
+INPUT.clsButton {BORDER-TOP-WIDTH: 0px; FONT-WEIGHT: bold; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 11px; BACKGROUND: #ffffcc; BORDER-BOTTOM-WIDTH: 0px; CURSOR: hand; COLOR: #993300; BORDER-RIGHT-WIDTH: 0px; TEXT-DECORATION: none}
+SELECT.clsSelector {BORDER-TOP-WIDTH: 1px; FONT-WEIGHT: normal; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 11px; BACKGROUND: #ffffcc; BORDER-BOTTOM-WIDTH: 1px; CURSOR: hand; COLOR: #993300; BORDER-RIGHT-WIDTH: 1px; TEXT-DECORATION: none}
+TR.menuover {BACKGROUND-COLOR: #ffe302}
+TR.menuout {BACKGROUND-COLOR: transparent}
+TR.menucurrent {BACKGROUND-COLOR: #ffd700}
+DIV.menu {PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; PADDING-BOTTOM: 3px; WIDTH: 100%; CURSOR: hand; PADDING-TOP: 2px; FONT-FAMILY: tahoma, arial, sans-serif}
+A.menu {COLOR: #745400; BORDER-BOTTOM: medium none; TEXT-DECORATION: none}
+A.menu:hover {COLOR: #ec4700; BORDER-BOTTOM: medium none; TEXT-DECORATION: none}
+.news {FONT-SIZE: 11px}
+.news_small {FONT-SIZE: 9px}
+.newsHeader {FONT-WEIGHT: bold; FONT-SIZE: 15px; COLOR: #003399; LINE-HEIGHT: 30px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+TR.menuleftover {BACKGROUND-COLOR: #ffe302}
+TR.menuleftout {BACKGROUND-COLOR: transparent}
+TR.menuleftcurrent {BACKGROUND-COLOR: #ffd700}
+DIV.menuleft {PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; PADDING-BOTTOM: 3px; WIDTH: 100%; CURSOR: hand; PADDING-TOP: 2px; FONT-FAMILY: tahoma, arial, sans-serif}
+A.menuleft {COLOR: #745400; BORDER-BOTTOM: medium none; TEXT-DECORATION: none}
+A.menuleft:hover {COLOR: #ec4700; BORDER-BOTTOM: medium none; TEXT-DECORATION: none}
+
+tr.R0{ height: 6pt; }
+tr.R0 td.R0C1{ padding-left: 7; }
+tr.R1{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; }
+tr.R1 td.R1C1{ font-family: Arial; font-size: 12pt; font-style: normal; font-weight: bold; color: #ffffff; background-color: #aa9d84; vertical-align: top; padding-left: 7; }
+tr.R1 td.R1C2{ padding-left: 7; }
+tr.R1 td.R7C1{ background-color: #faea6a; vertical-align: top; padding-left: 7; }
+tr.R1 td.R8C1{ background-color: #faea6a; vertical-align: top; padding-left: 7; }
+td.R10C1{ font-family: Arial; font-size: 8pt; font-style: normal; font-weight: bold; color: #5c5138; background-color: #f6f18f; vertical-align: top; padding-left: 7; }
+td.R11C1{ font-family: Arial; font-size: 8pt; font-style: normal; font-weight: bold; color: #5c5138; background-color: #f6f18f; vertical-align: top; padding-left: 7; }
+td.R11C2{ background-color: #ffffd6; vertical-align: top; padding-left: 7; }
+td.R2C1{ font-family: Arial; font-size: 8pt; font-style: normal; font-weight: bold; color: #5c5138; background-color: #fdf8ea; vertical-align: top; padding-left: 7; }
+td.R2C2{ background-color: #ffffd6; padding-left: 7; }
+td.R7C1{ font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #faea6a; vertical-align: top; padding-left: 7; }
+
+tr.R3 td.R3C1{font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #faea6a; vertical-align: top; padding-left: 7; border-left: #000000 1 solid; border-top: #000000 1 solid;}
+tr.R3 td.R3C4{font-family: Arial; font-size: 10pt; font-style: normal; font-weight: bold; background-color: #faea6a; vertical-align: top; padding-left: 7; border-left: #000000 1 solid; border-top: #000000 1 solid; border-right: #000000 1 solid;}
+tr.R3 td.R4C1{ border-left: #000000 1 solid; border-top: #000000 1 solid; }
+tr.R3 td.R4C4{ border-left: #000000 1 solid; border-top: #000000 1 solid; border-right: #000000 1 solid; }
+tr.R3 td.R25C1{ vertical-align: top; border-top: #000000 1 solid; }
+
+
+tr.R6{ height: 5pt; }
+tr.R6 td.R6C1{ padding-left: 7; }
+tr.R7{ height: 5pt; }
+tr.R7 td.R7C1{ padding-left: 7; }
+tr.R8{ height: 5pt; }
+tr.R8 td.R8C1{ padding-left: 7; }
+td.R8C1{ font-family: Arial; font-size: 8pt; font-style: normal; font-weight: bold; color: #5c5138; background-color: #f6f18f; vertical-align: top; padding-left: 7; }
+td.R9C1{ font-family: Arial; font-size: 8pt; font-style: normal; font-weight: bold; color: #5c5138; background-color: #f6f18f; vertical-align: top; padding-left: 7; }
+td.R8C2{ background-color: #ffffd6; vertical-align: top; padding-left: 7; }
+.invisible { display: none; }
+
+
+.content {BORDER-LEFT-COLOR: #f2d262; BORDER-BOTTOM-COLOR: #f2d262; BORDER-TOP-STYLE: solid; BORDER-TOP-COLOR: #f2d262; BORDER-RIGHT-STYLE: solid; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #f2d262; BORDER-BOTTOM-STYLE: solid}
+TABLE.content TH {BORDER-LEFT-COLOR: #f2d262; BORDER-BOTTOM-COLOR: #f2d262; BORDER-TOP-STYLE: solid; BORDER-TOP-COLOR: #f2d262; BORDER-RIGHT-STYLE: solid; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #f2d262; BORDER-BOTTOM-STYLE: solid}
+TABLE.content TD {BORDER-LEFT-COLOR: #f2d262; BORDER-BOTTOM-COLOR: #f2d262; BORDER-TOP-STYLE: solid; BORDER-TOP-COLOR: #f2d262; BORDER-RIGHT-STYLE: solid; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #f2d262; BORDER-BOTTOM-STYLE: solid}
+TD.em {BORDER-LEFT-COLOR: #f2d262; BORDER-BOTTOM-COLOR: #f2d262; BORDER-TOP-STYLE: solid; BORDER-TOP-COLOR: #f2d262; BORDER-RIGHT-STYLE: solid; BORDER-LEFT-STYLE: solid; BORDER-RIGHT-COLOR: #f2d262; BORDER-BOTTOM-STYLE: solid}
+TABLE.content {BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 2px; BORDER-RIGHT-WIDTH: 2px}
+TH.content {BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 10pt; BORDER-BOTTOM-WIDTH: 0px; BACKGROUND-COLOR: #f6f2b9; BORDER-RIGHT-WIDTH: 0px}
+TABLE.content TH {BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 10pt; BORDER-BOTTOM-WIDTH: 0px; BACKGROUND-COLOR: #f6f2b9; BORDER-RIGHT-WIDTH: 0px}
+TD.content {BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px}
+TD.contred {text-align:center; font-weight:bold; color:#ff0000; BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px}
+TD.contleft {text-align:left; BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px}
+TD.contcent {text-align:center; BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px}
+
+TABLE.content TD {BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px}
+TABLE.content TABLE TD {BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none}
+TR.over {BACKGROUND-COLOR: #fafae8}
+TR.out {BACKGROUND-COLOR: transparent}
+</STYLE>
+#КонецОбласти
+
+#Область ЗаголовокКонец
+</HEAD>
+#КонецОбласти
+
+#Область НачалоТела
+<BODY>
+<TABLE cellSpacing=0>
+  <TBODY>
+  <TR class=R0>
+    <TD><SPAN></SPAN></TD>
+    <TD class=R0C1 colSpan=4>
+      <H2>[НаименованиеПроекта]. Версия [НомерВерсии]. Информация об ошибках, исправленных в версии</H2></TD>
+    <TD></TD></TR>
+#КонецОбласти
+
+#Область ЗаголовокОшибки
+  <TR class=R8>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD colSpan=3><SPAN></SPAN></TD>
+    <TD>&nbsp;</TD></TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD class=R7C1>Код&nbsp;ошибки:</TD>
+    <TD class=R7C1 colSpan=3>[КодОшибки] </TD>
+    <TD>&nbsp;</TD></TR>
+#КонецОбласти
+
+#Область ОписаниеОшибки
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD class=R11C1>[Раздел]:</TD>
+    <TD class=R2C2 colSpan=3>[Описание]</TD>
+    <TD>&nbsp;</TD></TR>
+#КонецОбласти
+
+#Область ОкончаниеТела
+    <TR class=R8>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD colSpan=3><SPAN></SPAN></TD>
+    <TD>&nbsp;</TD></TR></TBODY></TABLE></BODY></HTML>
+#КонецОбласти
+
+

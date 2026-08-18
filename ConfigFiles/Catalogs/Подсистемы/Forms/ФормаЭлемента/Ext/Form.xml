@@ -1,0 +1,1039 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<ButtonGroup name="ГрупповыеКоманды" id="64">
+				<Visible>false</Visible>
+				<EnableContentChange>true</EnableContentChange>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Групповые команды</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Групповые команды</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ГрупповыеКомандыExtendedTooltip" id="97"/>
+				<ChildItems>
+					<Button name="ФормаОбщаяКомандаУстановитьСтатусНеПроверено" id="195">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<Enabled>false</Enabled>
+						<CommandName>CommonCommand.УстановитьСтатусНеПроверено</CommandName>
+						<DataPath>Объект.Ref</DataPath>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаОбщаяКомандаУстановитьСтатусНеПровереноРасширеннаяПодсказка" id="196"/>
+					</Button>
+					<Button name="ФормаОбщаяКомандаУстановитьСтатусПроверено" id="197">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<Enabled>false</Enabled>
+						<CommandName>CommonCommand.УстановитьСтатусПроверено</CommandName>
+						<DataPath>Объект.Ref</DataPath>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаОбщаяКомандаУстановитьСтатусПровереноРасширеннаяПодсказка" id="198"/>
+					</Button>
+					<Button name="ФормаОбщаяКомандаУстановитьСтатусСнятоСКонтроля" id="199">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<Enabled>false</Enabled>
+						<CommandName>CommonCommand.УстановитьСтатусСнятоСКонтроля</CommandName>
+						<DataPath>Объект.Ref</DataPath>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаОбщаяКомандаУстановитьСтатусСнятоСКонтроляРасширеннаяПодсказка" id="200"/>
+					</Button>
+					<Button name="ФормаОбщаяКомандаНастройкаПараметровСравненияВерсийОбъектов" id="201">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<Enabled>false</Enabled>
+						<CommandName>CommonCommand.НастройкаПараметровСравненияВерсийОбъектов</CommandName>
+						<DataPath>Объект.Ref</DataPath>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаОбщаяКомандаНастройкаПараметровСравненияВерсийОбъектовРасширеннаяПодсказка" id="202"/>
+					</Button>
+					<Button name="ФормаОбщаяКомандаСравнитьОбъектСПровереннойВерсией" id="203">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<Enabled>false</Enabled>
+						<CommandName>CommonCommand.СравнитьОбъектСПровереннойВерсией</CommandName>
+						<DataPath>Объект.Ref</DataPath>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаОбщаяКомандаСравнитьОбъектСПровереннойВерсиейРасширеннаяПодсказка" id="204"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+			<Button name="ФормаОбщаяКомандаСправка" id="71">
+				<Type>CommandBarButton</Type>
+				<CommandName>CommonCommand.Справка</CommandName>
+				<DataPath>Объект.Ref</DataPath>
+				<ExtendedTooltip name="ФормаОбщаяКомандаСправкаExtendedTooltip" id="99"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыExtendedTooltip" id="110"/>
+			<ChildItems>
+				<Page name="СтраницаОписание" id="59">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаОписаниеExtendedTooltip" id="111"/>
+					<ChildItems>
+						<UsualGroup name="ОбщаяГруппаРеквизитов" id="79">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Общая группа реквизитов</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ОбщаяГруппаРеквизитовExtendedTooltip" id="112"/>
+							<ChildItems>
+								<UsualGroup name="ЛеваяГруппаРеквизитов" id="80">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Левая группа реквизитов</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ЛеваяГруппаРеквизитовExtendedTooltip" id="113"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаНаименованиеКод" id="82">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа наименование код</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа наименование код</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаНаименованиеКодExtendedTooltip" id="114"/>
+											<ChildItems>
+												<InputField name="Наименование" id="3">
+													<DataPath>Объект.Description</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<SkipOnInput>true</SkipOnInput>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+													<ExtendedTooltip name="НаименованиеExtendedTooltip" id="115"/>
+												</InputField>
+												<InputField name="Код" id="1">
+													<DataPath>Объект.Code</DataPath>
+													<SkipOnInput>true</SkipOnInput>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+													<ExtendedTooltip name="КодExtendedTooltip" id="116"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаПроектРодитель" id="191">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа проект родитель</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа проект родитель</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПроектРодительРасширеннаяПодсказка" id="192"/>
+											<ChildItems>
+												<InputField name="Владелец" id="27">
+													<DataPath>Объект.Owner</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>28</MaxWidth>
+													<ContextMenu name="ВладелецКонтекстноеМеню" id="28"/>
+													<ExtendedTooltip name="ВладелецExtendedTooltip" id="125"/>
+													<Events>
+														<Event name="OnChange">ВладелецПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="Родитель" id="5">
+													<DataPath>Объект.Parent</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>28</MaxWidth>
+													<ContextMenu name="РодительКонтекстноеМеню" id="6"/>
+													<ExtendedTooltip name="РодительExtendedTooltip" id="117"/>
+													<Events>
+														<Event name="OnChange">РодительПриИзменении</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаРазделыПроекта" id="147">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа разделы проекта</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаРазделыПроектаРасширеннаяПодсказка" id="148"/>
+											<ChildItems>
+												<InputField name="РазделПроекта" id="149">
+													<DataPath>Объект.РазделПроекта</DataPath>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>28</MaxWidth>
+													<ContextMenu name="РазделПроектаКонтекстноеМеню" id="150"/>
+													<ExtendedTooltip name="РазделПроектаРасширеннаяПодсказка" id="151"/>
+												</InputField>
+												<Button name="ДополнительныеРазделы" id="152">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.ДополнительныеРазделы</CommandName>
+													<ExtendedTooltip name="ДополнительныеРазделыРасширеннаяПодсказка" id="153"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="Имя" id="7">
+											<DataPath>Объект.Имя</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="ИмяКонтекстноеМеню" id="8"/>
+											<ExtendedTooltip name="ИмяExtendedTooltip" id="118"/>
+										</InputField>
+										<InputField name="Синоним" id="9">
+											<DataPath>Объект.Синоним</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="СинонимКонтекстноеМеню" id="10"/>
+											<ExtendedTooltip name="СинонимExtendedTooltip" id="119"/>
+										</InputField>
+										<InputField name="Комментарий" id="11">
+											<DataPath>Объект.Комментарий</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="КомментарийКонтекстноеМеню" id="12"/>
+											<ExtendedTooltip name="КомментарийExtendedTooltip" id="120"/>
+										</InputField>
+										<InputField name="Пояснение" id="17">
+											<DataPath>Объект.Пояснение</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<TitleLocation>Left</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="ПояснениеКонтекстноеМеню" id="18"/>
+											<ExtendedTooltip name="ПояснениеExtendedTooltip" id="121"/>
+										</InputField>
+										<UsualGroup name="ГруппаРольДляПросмотра" id="156">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа роль для просмотра</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаРольДляПросмотраРасширеннаяПодсказка" id="157"/>
+											<ChildItems>
+												<InputField name="РольДляПросмотра" id="158">
+													<DataPath>Объект.РольДляПросмотра</DataPath>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<ContextMenu name="РольДляПросмотраКонтекстноеМеню" id="159"/>
+													<ExtendedTooltip name="РольДляПросмотраРасширеннаяПодсказка" id="160"/>
+												</InputField>
+												<Button name="СоздатьРольДляПросмотра" id="161">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.СоздатьРольДляПросмотра</CommandName>
+													<ExtendedTooltip name="СоздатьРольДляПросмотраРасширеннаяПодсказка" id="162"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаОтветственный" id="83">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа ответственный</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаОтветственныйExtendedTooltip" id="122"/>
+											<ChildItems>
+												<InputField name="Ответственный" id="13">
+													<DataPath>Объект.Ответственный</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>28</MaxWidth>
+													<ContextMenu name="ОтветственныйКонтекстноеМеню" id="14"/>
+													<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="123"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<LabelField name="РодительОтветственный" id="84">
+											<DataPath>Объект.Parent.Ответственный</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Ответственный за родителя</v8:content>
+												</v8:item>
+											</Title>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Hiperlink>true</Hiperlink>
+											<ContextMenu name="РодительОтветственныйКонтекстноеМеню" id="85"/>
+											<ExtendedTooltip name="РодительОтветственныйExtendedTooltip" id="124"/>
+										</LabelField>
+										<UsualGroup name="ГруппаПравилоПоддержки" id="178">
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПравилоПоддержкиРасширеннаяПодсказка" id="179"/>
+											<ChildItems>
+												<CheckBoxField name="СтоитНаПоддержке" id="180">
+													<DataPath>СтоитНаПоддержке</DataPath>
+													<TitleLocation>Right</TitleLocation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="СтоитНаПоддержкеКонтекстноеМеню" id="181"/>
+													<ExtendedTooltip name="СтоитНаПоддержкеРасширеннаяПодсказка" id="182"/>
+													<Events>
+														<Event name="OnChange">СтоитНаПоддержкеПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+												<UsualGroup name="ГруппаНастройкиПоддержки" id="189">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа настройки поддержки</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа настройки поддержки</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Width>12</Width>
+													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<United>false</United>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаНастройкиПоддержкиРасширеннаяПодсказка" id="190"/>
+													<ChildItems>
+														<InputField name="Поставщик" id="183">
+															<DataPath>Объект.Поставщик</DataPath>
+															<TitleLocation>Left</TitleLocation>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<ContextMenu name="ПоставщикКонтекстноеМеню" id="184"/>
+															<ExtendedTooltip name="ПоставщикРасширеннаяПодсказка" id="185"/>
+															<Events>
+																<Event name="OnChange">ПоставщикПриИзменении</Event>
+															</Events>
+														</InputField>
+														<InputField name="ПравилоПоддержки" id="186">
+															<DataPath>Объект.ПравилоПоддержки</DataPath>
+															<TitleLocation>Left</TitleLocation>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<ContextMenu name="ПравилоПоддержкиКонтекстноеМеню" id="187"/>
+															<ExtendedTooltip name="ПравилоПоддержкиРасширеннаяПодсказка" id="188"/>
+														</InputField>
+														<Button name="ОбъектПоставщика" id="193">
+															<Type>Hyperlink</Type>
+															<CommandName>Form.Command.ОбъектПоставщика</CommandName>
+															<ExtendedTooltip name="ОбъектПоставщикаРасширеннаяПодсказка" id="194"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="ВеткаИсточник" id="208">
+											<DataPath>Объект.ВеткаИсточник</DataPath>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="ВеткаИсточникКонтекстноеМеню" id="209"/>
+											<ExtendedTooltip name="ВеткаИсточникРасширеннаяПодсказка" id="210"/>
+										</InputField>
+										<InputField name="СогласованиеИзменений" id="205">
+											<DataPath>Объект.СогласованиеИзменений</DataPath>
+											<Width>12</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="СогласованиеИзмененийКонтекстноеМеню" id="206"/>
+											<ExtendedTooltip name="СогласованиеИзмененийРасширеннаяПодсказка" id="207"/>
+										</InputField>
+										<InputField name="СогласующийИзменения" id="211">
+											<DataPath>Объект.СогласующийИзменения</DataPath>
+											<ContextMenu name="СогласующийИзмененияКонтекстноеМеню" id="212"/>
+											<ExtendedTooltip name="СогласующийИзмененияРасширеннаяПодсказка" id="213"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ПраваяГруппаРеквизитов" id="81">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Правая группа реквизитов</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ПраваяГруппаРеквизитовExtendedTooltip" id="127"/>
+									<ChildItems>
+										<CheckBoxField name="ВключатьВКомандныйИнтерфейс" id="172">
+											<DataPath>Объект.ВключатьВКомандныйИнтерфейс</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ВключатьВКомандныйИнтерфейсКонтекстноеМеню" id="173"/>
+											<ExtendedTooltip name="ВключатьВКомандныйИнтерфейсРасширеннаяПодсказка" id="174"/>
+										</CheckBoxField>
+										<CheckBoxField name="ПрисутствуетВОсновномХранилище" id="91">
+											<DataPath>Объект.ПрисутствуетВОсновномХранилище</DataPath>
+											<Enabled>false</Enabled>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПрисутствуетВОсновномХранилищеКонтекстноеМеню" id="92"/>
+											<ExtendedTooltip name="ПрисутствуетВОсновномХранилищеExtendedTooltip" id="131"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаСостав" id="61">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состав</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состав</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаСоставExtendedTooltip" id="132"/>
+					<ChildItems>
+						<Table name="Состав" id="31">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.Состав</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СоставКонтекстноеМеню" id="32">
+								<ChildItems>
+									<Button name="СоставКонтекстноеМенюИзменитьВыделенныеОбъектыМетаданных" id="96">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ИзменитьВыделенныеОбъектыМетаданных</CommandName>
+										<ExtendedTooltip name="СоставКонтекстноеМенюИзменитьВыделенныеОбъектыМетаданныхExtendedTooltip" id="133"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="СоставКоманднаяПанель" id="33">
+								<ChildItems>
+									<Button name="СоставИзменитьВыделенныеОбъектыМетаданных" id="95">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ИзменитьВыделенныеОбъектыМетаданных</CommandName>
+										<ExtendedTooltip name="СоставИзменитьВыделенныеОбъектыМетаданныхExtendedTooltip" id="134"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СоставExtendedTooltip" id="135"/>
+							<SearchStringAddition name="СоставСтрокаПоиска" id="163">
+								<AdditionSource>
+									<Item>Состав</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СоставСтрокаПоискаКонтекстноеМеню" id="164"/>
+								<ExtendedTooltip name="СоставСтрокаПоискаРасширеннаяПодсказка" id="165"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СоставСостояниеПросмотра" id="166">
+								<AdditionSource>
+									<Item>Состав</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СоставСостояниеПросмотраКонтекстноеМеню" id="167"/>
+								<ExtendedTooltip name="СоставСостояниеПросмотраРасширеннаяПодсказка" id="168"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СоставУправлениеПоиском" id="169">
+								<AdditionSource>
+									<Item>Состав</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СоставУправлениеПоискомКонтекстноеМеню" id="170"/>
+								<ExtendedTooltip name="СоставУправлениеПоискомРасширеннаяПодсказка" id="171"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СоставВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СоставНомерСтроки" id="34">
+									<DataPath>Объект.Состав.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="СоставНомерСтрокиКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="СоставНомерСтрокиExtendedTooltip" id="136"/>
+								</LabelField>
+								<ColumnGroup name="СоставГруппаОбъектМетаданных" id="88">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Состав группа объект метаданных</v8:content>
+										</v8:item>
+									</Title>
+									<Group>InCell</Group>
+									<ExtendedTooltip name="СоставГруппаОбъектМетаданныхExtendedTooltip" id="137"/>
+									<ChildItems>
+										<PictureField name="СоставИндексКартинки" id="86">
+											<DataPath>Объект.Состав.ИндексКартинки</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>2</Width>
+											<ValuesPicture>
+												<xr:Ref>CommonPicture.ОбъектыМетаданных</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</ValuesPicture>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="СоставИндексКартинкиКонтекстноеМеню" id="87"/>
+											<ExtendedTooltip name="СоставИндексКартинкиExtendedTooltip" id="138"/>
+										</PictureField>
+										<InputField name="СоставОбъектМетаданных" id="36">
+											<DataPath>Объект.Состав.ОбъектМетаданных</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СоставОбъектМетаданныхКонтекстноеМеню" id="37"/>
+											<ExtendedTooltip name="СоставОбъектМетаданныхExtendedTooltip" id="139"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<LabelField name="СоставОбъектМетаданныхОтветственный" id="62">
+									<DataPath>Объект.Состав.ОбъектМетаданных.Ответственный</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СоставОбъектМетаданныхОтветственныйКонтекстноеМеню" id="63"/>
+									<ExtendedTooltip name="СоставОбъектМетаданныхОтветственныйExtendedTooltip" id="140"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаДополнительныеРеквизиты" id="154">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные реквизиты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаДополнительныеРеквизитыРасширеннаяПодсказка" id="155"/>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Подсистемы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<Columns>
+				<AdditionalColumns table="Объект.Состав">
+					<Column name="ИндексКартинки" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Индекс картинки</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>3</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="СтатусКонтроля" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус контроля</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтоитНаПоддержке" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стоит на поддержке</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ДоступноИзменениеПодсистемы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доступно изменение подсистемы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ИзменитьВыделенныеОбъектыМетаданных" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить выделенные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить выделенные объекты метаданных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.АдминистраторСистемы">false</xr:Value>
+				<xr:Value name="Role.Администрирование">false</xr:Value>
+				<xr:Value name="Role.БазовыеПраваБСП">false</xr:Value>
+				<xr:Value name="Role.БазовыеПраваСППР">false</xr:Value>
+				<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+				<xr:Value name="Role.ВыгрузкаДанныхПроекта">false</xr:Value>
+				<xr:Value name="Role.ВыгрузкаПроверкаСправки">false</xr:Value>
+				<xr:Value name="ed394820-a216-4c4b-81ae-5dea33ced43b">false</xr:Value>
+				<xr:Value name="cf9d20bd-960f-4b6f-ae49-813a121244d3">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВариантовОтчетов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВерсийОбъектовИнформацииОКонтроле">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВерсийПроекта">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВидовДоступа">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
+				<xr:Value name="43278276-5b56-49eb-b3a8-defdf2b67741">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеДополнительныхОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="97793da3-d9f9-48b5-bbe0-faccdb1d2f35">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеИсточниковИдей">false</xr:Value>
+				<xr:Value name="bf6bef61-6c75-40a3-8fea-019a6374e757">false</xr:Value>
+				<xr:Value name="d59a104b-332b-47c0-b7ed-6a122f38c2df">false</xr:Value>
+				<xr:Value name="8d8b91c0-c0ab-4b9d-b854-b867063ddb5b">false</xr:Value>
+				<xr:Value name="f6169439-3a0c-4a11-b14d-c8249bb9709f">false</xr:Value>
+				<xr:Value name="2ea97024-2bb8-4edf-b8f1-581d5ccb56e4">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОшибок">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПодсистем">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПользователей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПравилПроверки">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПрофилейПользователей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПроцессов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеРазделовПроекта">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеРассылокОтчетов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеРегламентов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеСборокВерсииПроекта">false</xr:Value>
+				<xr:Value name="27738e9a-1fca-4888-a39c-c5c4447f96ea">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеСправочнойИнформации">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеСтилейФорматирования">false</xr:Value>
+				<xr:Value name="5bfd74f4-811a-45db-b33d-8f93ba9c873a">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеТехническихПроектов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеИдей">false</xr:Value>
+				<xr:Value name="4bca2875-3f94-4c2b-832e-f5c03b48abec">false</xr:Value>
+				<xr:Value name="a27753e4-79be-401f-82e2-27baec9c9186">false</xr:Value>
+				<xr:Value name="Role.ЗакрытиеОшибок">false</xr:Value>
+				<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
+				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+				<xr:Value name="Role.ЗапускТолстогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ИзменениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ИзменениеМакетовПечатныхФорм">false</xr:Value>
+				<xr:Value name="Role.ИзменениеНастроекУведомленийПользователя">false</xr:Value>
+				<xr:Value name="Role.ИзменениеПроектов">false</xr:Value>
+				<xr:Value name="49b60334-36bc-4432-a9ee-ef00593a6267">false</xr:Value>
+				<xr:Value name="Role.ИзменениеРезультатовПроверкиОбъектов">false</xr:Value>
+				<xr:Value name="c4d67026-2c97-4126-b8be-49aa6f567e2d">false</xr:Value>
+				<xr:Value name="fda2906d-f499-4016-b13a-99f7f713b898">false</xr:Value>
+				<xr:Value name="Role.ИзменениеУчастниковГруппДоступа">false</xr:Value>
+				<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЛичныхВариантовОтчетов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДополнительныхОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ИспользованиеИнтеграцииС1СДокументооборотом">false</xr:Value>
+				<xr:Value name="Role.ПросмотрСвязанныеДокументы">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеУчетныхЗаписейЭлектроннойПочты">false</xr:Value>
+				<xr:Value name="db82191f-77bd-44da-8b33-86f01018e25a">false</xr:Value>
+				<xr:Value name="Role.КонтрольАктуальностиСправки">false</xr:Value>
+				<xr:Value name="Role.ОбновлениеКонфигурацииБазыДанных">false</xr:Value>
+				<xr:Value name="f04baaf4-6082-4278-a1bc-2f80db5dce97">false</xr:Value>
+				<xr:Value name="Role.ОтчетыОрганайзер">false</xr:Value>
+				<xr:Value name="Role.ОтчетыРазработка">false</xr:Value>
+				<xr:Value name="Role.ПланированиеОтработкиОшибок">false</xr:Value>
+				<xr:Value name="Role.ПланированиеИУправлениеТехническимиПроектами">false</xr:Value>
+				<xr:Value name="40a52f83-f0e2-470d-9c17-7fdc8cc646b7">false</xr:Value>
+				<xr:Value name="Role.ПросмотрЖурналаРегистрации">false</xr:Value>
+				<xr:Value name="Role.ПросмотрОписанияИзмененийПрограммы">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПапокИФайлов">false</xr:Value>
+				<xr:Value name="Role.РазделАдминистрирование">false</xr:Value>
+				<xr:Value name="4d5c1811-35be-4224-b42e-4b34a81aa307">false</xr:Value>
+				<xr:Value name="f9089d59-82d5-41f4-98de-40f2766a0489">false</xr:Value>
+				<xr:Value name="Role.РазделОрганайзер">false</xr:Value>
+				<xr:Value name="Role.РазделРазработка">false</xr:Value>
+				<xr:Value name="d845c763-2f04-4a09-8a4a-cb9bdbf9042f">false</xr:Value>
+				<xr:Value name="Role.РазделРазработкаКонфигурации">false</xr:Value>
+				<xr:Value name="708ee7d9-322b-4eaa-b244-798a694bff82">false</xr:Value>
+				<xr:Value name="Role.РазделТехническиеПроекты">false</xr:Value>
+				<xr:Value name="Role.РедактированиеРеквизитовОбъектов">false</xr:Value>
+				<xr:Value name="Role.РежимТехническогоСпециалиста">false</xr:Value>
+				<xr:Value name="26947b4e-87f5-4a9d-8066-f1aa44e6a594">false</xr:Value>
+				<xr:Value name="Role.СохранениеДанныхПользователя">false</xr:Value>
+				<xr:Value name="Role.СравнениеВерсийОбъектов">false</xr:Value>
+				<xr:Value name="Role.УдаленныйДоступБазоваяФункциональность">false</xr:Value>
+				<xr:Value name="Role.УправлениеСтатусамиИдей">false</xr:Value>
+				<xr:Value name="1ae364d3-0bec-4089-af23-c60d2a274c85">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВерсийОбъектовИнформацииОКонтроле">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВерсийПроекта">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВидовДоступа">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВнешнихПользователей">false</xr:Value>
+				<xr:Value name="442584f0-f018-4d7c-a1ad-52c268c9cbb5">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ЧтениеИсточниковИдей">false</xr:Value>
+				<xr:Value name="3cd6fe0c-40ae-4346-ace9-be17898a344d">false</xr:Value>
+				<xr:Value name="89e25dbe-f3cd-4b4e-a9e2-1994107a74d2">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОбъектовМетаданных">false</xr:Value>
+				<xr:Value name="b749047b-d6f3-473c-ac70-17d113793f79">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОшибок">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПодсистем">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПравилПроверки">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПрофилейПользователей">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПроцессов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеРегламетнов">false</xr:Value>
+				<xr:Value name="d4985cda-58bc-474f-bdb1-d4ababaddbf3">false</xr:Value>
+				<xr:Value name="Role.ЧтениеРезультатовПроверкиОбъектов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеСборокВерсииПроекта">false</xr:Value>
+				<xr:Value name="e3190003-ae9c-4cb0-b83e-f4ddfdfdf91c">false</xr:Value>
+				<xr:Value name="Role.ЧтениеСправочнойИнформации">false</xr:Value>
+				<xr:Value name="Role.ЧтениеТехническихПроектов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеИдей">false</xr:Value>
+				<xr:Value name="a80c7f37-20e3-460f-8e67-877deb595ba6">false</xr:Value>
+			</Use>
+			<Action>ИзменитьВыделенныеОбъектыМетаданных</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДополнительныеРазделы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные разделы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные разделы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДополнительныеРазделы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СоздатьРольДляПросмотра" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать роль для просмотра подсистемы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.АдминистраторСистемы">false</xr:Value>
+				<xr:Value name="Role.Администрирование">false</xr:Value>
+				<xr:Value name="Role.БазовыеПраваБСП">false</xr:Value>
+				<xr:Value name="Role.БазовыеПраваСППР">false</xr:Value>
+				<xr:Value name="Role.ВыводНаПринтерФайлБуферОбмена">false</xr:Value>
+				<xr:Value name="Role.ВыгрузкаДанныхПроекта">false</xr:Value>
+				<xr:Value name="Role.ВыгрузкаПроверкаСправки">false</xr:Value>
+				<xr:Value name="ed394820-a216-4c4b-81ae-5dea33ced43b">false</xr:Value>
+				<xr:Value name="cf9d20bd-960f-4b6f-ae49-813a121244d3">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВариантовОтчетов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВерсийОбъектовИнформацииОКонтроле">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВерсийПроекта">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВидовДоступа">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеВнешнихПользователей">false</xr:Value>
+				<xr:Value name="43278276-5b56-49eb-b3a8-defdf2b67741">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеДополнительныхОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="97793da3-d9f9-48b5-bbe0-faccdb1d2f35">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеИсточниковИдей">false</xr:Value>
+				<xr:Value name="bf6bef61-6c75-40a3-8fea-019a6374e757">false</xr:Value>
+				<xr:Value name="d59a104b-332b-47c0-b7ed-6a122f38c2df">false</xr:Value>
+				<xr:Value name="8d8b91c0-c0ab-4b9d-b854-b867063ddb5b">false</xr:Value>
+				<xr:Value name="f6169439-3a0c-4a11-b14d-c8249bb9709f">false</xr:Value>
+				<xr:Value name="2ea97024-2bb8-4edf-b8f1-581d5ccb56e4">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеОшибок">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПодсистем">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПользователей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПравилПроверки">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПрофилейПользователей">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПроцессов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеРазделовПроекта">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеРассылокОтчетов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеРегламентов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеСборокВерсииПроекта">false</xr:Value>
+				<xr:Value name="27738e9a-1fca-4888-a39c-c5c4447f96ea">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеСправочнойИнформации">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеСтилейФорматирования">false</xr:Value>
+				<xr:Value name="5bfd74f4-811a-45db-b33d-8f93ba9c873a">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеТехническихПроектов">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеИдей">false</xr:Value>
+				<xr:Value name="4bca2875-3f94-4c2b-832e-f5c03b48abec">false</xr:Value>
+				<xr:Value name="a27753e4-79be-401f-82e2-27baec9c9186">false</xr:Value>
+				<xr:Value name="Role.ЗакрытиеОшибок">false</xr:Value>
+				<xr:Value name="Role.ЗапускAutomation">false</xr:Value>
+				<xr:Value name="Role.ЗапускВебКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускВнешнегоСоединения">false</xr:Value>
+				<xr:Value name="Role.ЗапускТолстогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ЗапускТонкогоКлиента">false</xr:Value>
+				<xr:Value name="Role.ИзменениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ИзменениеМакетовПечатныхФорм">false</xr:Value>
+				<xr:Value name="Role.ИзменениеНастроекУведомленийПользователя">false</xr:Value>
+				<xr:Value name="Role.ИзменениеПроектов">false</xr:Value>
+				<xr:Value name="49b60334-36bc-4432-a9ee-ef00593a6267">false</xr:Value>
+				<xr:Value name="Role.ИзменениеРезультатовПроверкиОбъектов">false</xr:Value>
+				<xr:Value name="c4d67026-2c97-4126-b8be-49aa6f567e2d">false</xr:Value>
+				<xr:Value name="fda2906d-f499-4016-b13a-99f7f713b898">false</xr:Value>
+				<xr:Value name="Role.ИзменениеУчастниковГруппДоступа">false</xr:Value>
+				<xr:Value name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеЛичныхВариантовОтчетов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДополнительныхОтчетовИОбработок">false</xr:Value>
+				<xr:Value name="Role.ИспользованиеИнтеграцииС1СДокументооборотом">false</xr:Value>
+				<xr:Value name="Role.ПросмотрСвязанныеДокументы">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеУчетныхЗаписейЭлектроннойПочты">false</xr:Value>
+				<xr:Value name="db82191f-77bd-44da-8b33-86f01018e25a">false</xr:Value>
+				<xr:Value name="Role.КонтрольАктуальностиСправки">false</xr:Value>
+				<xr:Value name="Role.ОбновлениеКонфигурацииБазыДанных">false</xr:Value>
+				<xr:Value name="f04baaf4-6082-4278-a1bc-2f80db5dce97">false</xr:Value>
+				<xr:Value name="Role.ОтчетыОрганайзер">false</xr:Value>
+				<xr:Value name="Role.ОтчетыРазработка">false</xr:Value>
+				<xr:Value name="Role.ПланированиеОтработкиОшибок">false</xr:Value>
+				<xr:Value name="Role.ПланированиеИУправлениеТехническимиПроектами">false</xr:Value>
+				<xr:Value name="40a52f83-f0e2-470d-9c17-7fdc8cc646b7">false</xr:Value>
+				<xr:Value name="Role.ПросмотрЖурналаРегистрации">false</xr:Value>
+				<xr:Value name="Role.ПросмотрОписанияИзмененийПрограммы">false</xr:Value>
+				<xr:Value name="Role.ДобавлениеИзменениеПапокИФайлов">false</xr:Value>
+				<xr:Value name="Role.РазделАдминистрирование">false</xr:Value>
+				<xr:Value name="4d5c1811-35be-4224-b42e-4b34a81aa307">false</xr:Value>
+				<xr:Value name="f9089d59-82d5-41f4-98de-40f2766a0489">false</xr:Value>
+				<xr:Value name="Role.РазделОрганайзер">false</xr:Value>
+				<xr:Value name="Role.РазделРазработка">false</xr:Value>
+				<xr:Value name="d845c763-2f04-4a09-8a4a-cb9bdbf9042f">false</xr:Value>
+				<xr:Value name="Role.РазделРазработкаКонфигурации">false</xr:Value>
+				<xr:Value name="708ee7d9-322b-4eaa-b244-798a694bff82">false</xr:Value>
+				<xr:Value name="Role.РазделТехническиеПроекты">false</xr:Value>
+				<xr:Value name="Role.РедактированиеРеквизитовОбъектов">false</xr:Value>
+				<xr:Value name="Role.РежимТехническогоСпециалиста">false</xr:Value>
+				<xr:Value name="26947b4e-87f5-4a9d-8066-f1aa44e6a594">false</xr:Value>
+				<xr:Value name="Role.СохранениеДанныхПользователя">false</xr:Value>
+				<xr:Value name="Role.СравнениеВерсийОбъектов">false</xr:Value>
+				<xr:Value name="Role.УдаленныйДоступБазоваяФункциональность">false</xr:Value>
+				<xr:Value name="Role.УправлениеСтатусамиИдей">false</xr:Value>
+				<xr:Value name="1ae364d3-0bec-4089-af23-c60d2a274c85">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВерсийОбъектовИнформацииОКонтроле">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВерсийПроекта">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВидовДоступа">false</xr:Value>
+				<xr:Value name="Role.ЧтениеВнешнихПользователей">false</xr:Value>
+				<xr:Value name="442584f0-f018-4d7c-a1ad-52c268c9cbb5">false</xr:Value>
+				<xr:Value name="Role.ЧтениеДополнительныхСведений">false</xr:Value>
+				<xr:Value name="Role.ЧтениеИсточниковИдей">false</xr:Value>
+				<xr:Value name="3cd6fe0c-40ae-4346-ace9-be17898a344d">false</xr:Value>
+				<xr:Value name="89e25dbe-f3cd-4b4e-a9e2-1994107a74d2">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОбъектовМетаданных">false</xr:Value>
+				<xr:Value name="b749047b-d6f3-473c-ac70-17d113793f79">false</xr:Value>
+				<xr:Value name="Role.ЧтениеОшибок">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПодсистем">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПравилПроверки">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПрофилейПользователей">false</xr:Value>
+				<xr:Value name="Role.ЧтениеПроцессов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеРегламетнов">false</xr:Value>
+				<xr:Value name="d4985cda-58bc-474f-bdb1-d4ababaddbf3">false</xr:Value>
+				<xr:Value name="Role.ЧтениеРезультатовПроверкиОбъектов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеСборокВерсииПроекта">false</xr:Value>
+				<xr:Value name="e3190003-ae9c-4cb0-b83e-f4ddfdfdf91c">false</xr:Value>
+				<xr:Value name="Role.ЧтениеСправочнойИнформации">false</xr:Value>
+				<xr:Value name="Role.ЧтениеТехническихПроектов">false</xr:Value>
+				<xr:Value name="Role.ЧтениеИдей">false</xr:Value>
+				<xr:Value name="a80c7f37-20e3-460f-8e67-877deb595ba6">false</xr:Value>
+			</Use>
+			<Action>СоздатьРольДляПросмотра</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОбъектПоставщика" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подсистема поставщика</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект поставщика</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбъектПоставщика</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>4:4689738a-8971-44e6-a151-e5c42d2d27b2</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelImportant</CommandGroup>
+			</Item>
+			<Item>
+				<Command>InformationRegister.РезультатыПроверкиОбъектов.StandardCommand.OpenByValue.ОбъектПроверки</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelImportant</CommandGroup>
+				<Index>2</Index>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ВерсииОбъектов.StandardCommand.OpenByValue.ВерсионируемыйОбъект</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelSeeAlso</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.КонтрольИзменений.StandardCommand.OpenByValue.КонтролируемыйОбъект</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelSeeAlso</CommandGroup>
+				<Index>2</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>0:928a152b-781d-4248-840e-1dc79994f21c</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>1</Index>
+			</Item>
+			<Item>
+				<Command>0:902c0f58-b19d-47f7-b16d-e328ff1b82b2</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ДатыИзмененияОбъектов.StandardCommand.OpenByValue.КонтролируемыйОбъект</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelSeeAlso</CommandGroup>
+				<Index>1</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.НастройкиПоддержки.Command.НастройкиПоддержки</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>3</Index>
+			</Item>
+			<Item>
+				<Command>4:56e886dd-e657-4151-b78e-3695da2d2a17</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelImportant</CommandGroup>
+				<Index>1</Index>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

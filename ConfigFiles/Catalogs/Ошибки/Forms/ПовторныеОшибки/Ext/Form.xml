@@ -1,0 +1,1231 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<DefaultItem>true</DefaultItem>
+			<ChangeRowSet>false</ChangeRowSet>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<ButtonGroup name="СписокКонтекстноеМенюГруппаДействияСОшибкой" id="222">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Действия с ошибкой</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Действия с ошибкой</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="СписокКонтекстноеМенюГруппаДействияСОшибкойРасширеннаяПодсказка" id="223"/>
+						<ChildItems>
+							<Button name="СписокКонтекстноеМенюЗарегистрировать" id="224">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.Зарегистрировать</CommandName>
+								<ExtendedTooltip name="СписокКонтекстноеМенюЗарегистрироватьРасширеннаяПодсказка" id="225"/>
+							</Button>
+							<Button name="СписокКонтекстноеМенюПеренаправить" id="226">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.Перенаправить</CommandName>
+								<ExtendedTooltip name="СписокКонтекстноеМенюПеренаправитьРасширеннаяПодсказка" id="227"/>
+							</Button>
+							<Button name="СписокКонтекстноеМенюВернуть" id="228">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.Вернуть</CommandName>
+								<ExtendedTooltip name="СписокКонтекстноеМенюВернутьРасширеннаяПодсказка" id="229"/>
+							</Button>
+							<Button name="СписокКонтекстноеМенюОзнакомиться" id="232">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.Ознакомиться</CommandName>
+								<ExtendedTooltip name="СписокКонтекстноеМенюОзнакомитьсяРасширеннаяПодсказка" id="233"/>
+							</Button>
+							<Button name="СписокКонтекстноеМенюНазначитьВерсиюИсправления" id="234">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.НазначитьВерсиюИсправления</CommandName>
+								<ExtendedTooltip name="СписокКонтекстноеМенюНазначитьВерсиюИсправленияРасширеннаяПодсказка" id="235"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<ButtonGroup name="СписокКонтекстноеМенюГруппаКонтроль" id="262">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстное меню группа контроль</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстное меню группа контроль</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="СписокКонтекстноеМенюГруппаКонтрольРасширеннаяПодсказка" id="263"/>
+					</ButtonGroup>
+					<Button name="СписокКонтекстноеМенюИзменитьВыделенные" id="29">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ИзменитьВыделенные</CommandName>
+						<ExtendedTooltip name="СписокКонтекстноеМенюИзменитьВыделенныеExtendedTooltip" id="134"/>
+					</Button>
+					<ButtonGroup name="СписокКонтекстноеМенюГруппаТехническиеПроекты" id="209">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Технические проекты</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Технические проекты</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="СписокКонтекстноеМенюГруппаТехническиеПроектыРасширеннаяПодсказка" id="210"/>
+						<ChildItems>
+							<Button name="СписокКонтекстноеМенюСправочникТехническиеПроектыСоздатьТехническийПроект" id="211">
+								<Type>CommandBarButton</Type>
+								<CommandName>Catalog.ТехническиеПроекты.Command.СоздатьТехническийПроект</CommandName>
+								<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+								<ExtendedTooltip name="СписокКонтекстноеМенюСправочникТехническиеПроектыСоздатьТехническийПроектРасширеннаяПодсказка" id="212"/>
+							</Button>
+							<Button name="СписокКонтекстноеМенюСправочникТехническиеПроектыДобавитьВТехническийПроект" id="217">
+								<Type>CommandBarButton</Type>
+								<CommandName>Catalog.ТехническиеПроекты.Command.ДобавитьВТехническийПроект</CommandName>
+								<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+								<ExtendedTooltip name="СписокКонтекстноеМенюСправочникТехническиеПроектыДобавитьВТехническийПроектРасширеннаяПодсказка" id="218"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+					<ButtonGroup name="СписокКонтекстноеМенюКомандыСписка" id="69">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстное меню команды списка</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстное меню команды списка</v8:content>
+							</v8:item>
+						</ToolTip>
+						<CommandSource>Item.Список</CommandSource>
+						<ExtendedTooltip name="СписокКонтекстноеМенюКомандыСпискаExtendedTooltip" id="135"/>
+					</ButtonGroup>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<ButtonGroup name="СписокКомандыФормы" id="33">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список команды формы</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список команды формы</v8:content>
+							</v8:item>
+						</ToolTip>
+						<CommandSource>Form</CommandSource>
+						<ExtendedTooltip name="СписокКомандыФормыExtendedTooltip" id="137"/>
+					</ButtonGroup>
+					<ButtonGroup name="СписокГруппаКонтроль" id="260">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список группа контроль</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список группа контроль</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="СписокГруппаКонтрольРасширеннаяПодсказка" id="261"/>
+					</ButtonGroup>
+					<Popup name="СписокГруппаТехническиеПроекты" id="203">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Технические проекты</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Технические проекты</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="СписокГруппаТехническиеПроектыРасширеннаяПодсказка" id="204"/>
+						<ChildItems>
+							<Button name="СписокСправочникТехническиеПроектыСоздатьТехническийПроект" id="207">
+								<Type>CommandBarButton</Type>
+								<CommandName>Catalog.ТехническиеПроекты.Command.СоздатьТехническийПроект</CommandName>
+								<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+								<ExtendedTooltip name="СписокСправочникТехническиеПроектыСоздатьТехническийПроектРасширеннаяПодсказка" id="208"/>
+							</Button>
+							<Button name="СписокСправочникТехническиеПроектыДобавитьВТехническийПроект" id="215">
+								<Type>CommandBarButton</Type>
+								<CommandName>Catalog.ТехническиеПроекты.Command.ДобавитьВТехническийПроект</CommandName>
+								<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+								<ExtendedTooltip name="СписокСправочникТехническиеПроектыДобавитьВТехническийПроектРасширеннаяПодсказка" id="216"/>
+							</Button>
+						</ChildItems>
+					</Popup>
+					<Button name="ФормаИзменитьВыделенные" id="28">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ИзменитьВыделенные</CommandName>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаИзменитьВыделенныеExtendedTooltip" id="144"/>
+					</Button>
+					<Button name="СписокСправка" id="34">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.StandardCommand.Help</CommandName>
+						<ExtendedTooltip name="СписокСправкаExtendedTooltip" id="145"/>
+					</Button>
+					<Button name="СписокСправочникОшибкиИнформацияДляХранилища" id="98">
+						<Type>CommandBarButton</Type>
+						<CommandName>Catalog.Ошибки.Command.ИнформацияДляХранилища</CommandName>
+						<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+						<ExtendedTooltip name="СписокСправочникОшибкиИнформацияДляХранилищаExtendedTooltip" id="146"/>
+					</Button>
+					<Button name="СписокОтчетИсходящиеИдеиИОшибкиИсходящиеИдеиИОшибки" id="251">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<CommandName>Report.ИсходящиеИдеи.Command.ИсходящиеИдеи</CommandName>
+						<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="СписокОтчетИсходящиеИдеиИОшибкиИсходящиеИдеиИОшибкиРасширеннаяПодсказка" id="252"/>
+					</Button>
+					<Button name="СписокОбщаяКомандаНастройкаПараметровСравненияВерсийОбъектов" id="256">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<Enabled>false</Enabled>
+						<CommandName>CommonCommand.НастройкаПараметровСравненияВерсийОбъектов</CommandName>
+						<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="СписокОбщаяКомандаНастройкаПараметровСравненияВерсийОбъектовРасширеннаяПодсказка" id="257"/>
+					</Button>
+					<Button name="СписокОбщаяКомандаОписаниеОбъекта" id="258">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<Enabled>false</Enabled>
+						<CommandName>CommonCommand.ОписаниеОбъекта</CommandName>
+						<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="СписокОбщаяКомандаОписаниеОбъектаРасширеннаяПодсказка" id="259"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="147"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="239">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="240"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="241"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="242">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="243"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="244"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="245">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="246"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="247"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокВыбор</Event>
+			</Events>
+			<ChildItems>
+				<PictureField name="ИндексКартинки" id="18">
+					<DataPath>Список.ИндексКартинки</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.ТолькоСкрепка</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+						<xr:TransparentPixel x="13" y="4"/>
+					</HeaderPicture>
+					<Width>1</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.ТолькоСкрепка</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+						<xr:TransparentPixel x="13" y="4"/>
+					</ValuesPicture>
+					<FileDragMode>AsFile</FileDragMode>
+					<ContextMenu name="ИндексКартинкиКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ИндексКартинкиExtendedTooltip" id="148"/>
+				</PictureField>
+				<CheckBoxField name="ОшибкаЗарегистрированаПоИнформацииОтВнешнихИсточников" id="118">
+					<DataPath>Список.ОшибкаЗарегистрированаПоИнформацииОтВнешнихИсточников</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибка зарегистрирована по информации от внешних источников</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.ИнформацияПолученаИзВнешнихИсточников</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОшибкаЗарегистрированаПоИнформацииОтВнешнихИсточниковКонтекстноеМеню" id="119"/>
+					<ExtendedTooltip name="ОшибкаЗарегистрированаПоИнформацииОтВнешнихИсточниковExtendedTooltip" id="188"/>
+				</CheckBoxField>
+				<CheckBoxField name="ЕстьИзмененияПоСравнениюСРанееПринятымиПроектнымиРешениями" id="114">
+					<DataPath>Список.ЕстьИзмененияПоСравнениюСРанееПринятымиПроектнымиРешениями</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть изменения по сравнению с ранее принятыми проектными решениями</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.ИзменениеПроектныхРешений</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЕстьИзмененияПоСравнениюСРанееПринятымиПроектнымиРешениямиКонтекстноеМеню" id="115"/>
+					<ExtendedTooltip name="ЕстьИзмененияПоСравнениюСРанееПринятымиПроектнымиРешениямиExtendedTooltip" id="165"/>
+				</CheckBoxField>
+				<LabelField name="Наименование" id="4">
+					<DataPath>Список.Наименование</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="149"/>
+				</LabelField>
+				<ColumnGroup name="ГруппаСтатусКартинка" id="81">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа статус картинка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа статус картинка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ГруппаСтатусКартинкаExtendedTooltip" id="151"/>
+					<ChildItems>
+						<PictureField name="ИндексКартинкиСтатуса" id="79">
+							<DataPath>Список.ИндексКартинкиСтатуса</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>1</Width>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.КоллекцияПиктограммОшибок</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ИндексКартинкиСтатусаКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="ИндексКартинкиСтатусаExtendedTooltip" id="152"/>
+						</PictureField>
+						<LabelField name="Статус" id="26">
+							<DataPath>Список.Статус</DataPath>
+							<ContextMenu name="СтатусКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="СтатусExtendedTooltip" id="153"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<LabelField name="Код" id="6">
+					<DataPath>Список.Код</DataPath>
+					<ContextMenu name="КодКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="КодExtendedTooltip" id="154"/>
+				</LabelField>
+				<LabelField name="Обнаружена" id="248">
+					<DataPath>Список.Обнаружена</DataPath>
+					<ContextMenu name="ОбнаруженаКонтекстноеМеню" id="249"/>
+					<ExtendedTooltip name="ОбнаруженаРасширеннаяПодсказка" id="250"/>
+				</LabelField>
+				<LabelField name="ВерсияИсправления" id="195">
+					<DataPath>Список.ВерсияИсправления</DataPath>
+					<ContextMenu name="ВерсияИсправленияКонтекстноеМеню" id="196"/>
+					<ExtendedTooltip name="ВерсияИсправленияРасширеннаяПодсказка" id="197"/>
+				</LabelField>
+				<ColumnGroup name="ГруппаСрочностьИсправления" id="198">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Срочность исправления</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Срочность исправления</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>InCell</Group>
+					<ExtendedTooltip name="ГруппаСрочностьИсправленияРасширеннаяПодсказка" id="199"/>
+					<ChildItems>
+						<PictureField name="ИндексКартинкиСрочностиИсправления" id="200">
+							<DataPath>Список.ИндексКартинкиСрочностиИсправления</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.СрочностьИсправленияОшибок</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</ValuesPicture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ИндексКартинкиСрочностиИсправленияКонтекстноеМеню" id="201"/>
+							<ExtendedTooltip name="ИндексКартинкиСрочностиИсправленияРасширеннаяПодсказка" id="202"/>
+						</PictureField>
+						<LabelField name="СрочностьИсправления" id="77">
+							<DataPath>Список.СрочностьИсправления</DataPath>
+							<ContextMenu name="СрочностьИсправленияКонтекстноеМеню" id="78"/>
+							<ExtendedTooltip name="СрочностьИсправленияExtendedTooltip" id="159"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<LabelField name="ДействияСОшибкой" id="236">
+					<DataPath>Список.ДействияСОшибкой</DataPath>
+					<CellHyperlink>true</CellHyperlink>
+					<Width>17</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ДействияСОшибкойКонтекстноеМеню" id="237"/>
+					<ExtendedTooltip name="ДействияСОшибкойРасширеннаяПодсказка" id="238"/>
+				</LabelField>
+				<LabelField name="КомуНаправлена" id="22">
+					<DataPath>Список.КомуНаправлена</DataPath>
+					<ContextMenu name="КомуНаправленаКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="КомуНаправленаExtendedTooltip" id="155"/>
+				</LabelField>
+				<LabelField name="ДатаНаправления" id="94">
+					<DataPath>Список.ДатаНаправления</DataPath>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ДатаНаправленияКонтекстноеМеню" id="95"/>
+					<ExtendedTooltip name="ДатаНаправленияExtendedTooltip" id="156"/>
+				</LabelField>
+				<LabelField name="Клиент" id="65">
+					<DataPath>Список.Клиент</DataPath>
+					<ContextMenu name="КлиентКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="КлиентExtendedTooltip" id="160"/>
+				</LabelField>
+				<LabelField name="СУБД" id="63">
+					<DataPath>Список.СУБД</DataPath>
+					<ContextMenu name="СУБДКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="СУБДExtendedTooltip" id="161"/>
+				</LabelField>
+				<LabelField name="Автор" id="39">
+					<DataPath>Список.Автор</DataPath>
+					<ContextMenu name="АвторКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="АвторExtendedTooltip" id="167"/>
+				</LabelField>
+				<LabelField name="СтатусПубликации" id="108">
+					<DataPath>Список.СтатусПубликации</DataPath>
+					<ContextMenu name="СтатусПубликацииКонтекстноеМеню" id="109"/>
+					<ExtendedTooltip name="СтатусПубликацииExtendedTooltip" id="162"/>
+				</LabelField>
+				<LabelField name="ДатаПервойПубликации" id="110">
+					<DataPath>Список.ДатаПервойПубликации</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ДатаПервойПубликацииКонтекстноеМеню" id="111"/>
+					<ExtendedTooltip name="ДатаПервойПубликацииExtendedTooltip" id="163"/>
+				</LabelField>
+				<LabelField name="ДатаИзмененияПубликации" id="112">
+					<DataPath>Список.ДатаИзмененияПубликации</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ДатаИзмененияПубликацииКонтекстноеМеню" id="113"/>
+					<ExtendedTooltip name="ДатаИзмененияПубликацииExtendedTooltip" id="164"/>
+				</LabelField>
+				<LabelField name="ДатаСоздания" id="20">
+					<DataPath>Список.ДатаСоздания</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ДатаСозданияExtendedTooltip" id="166"/>
+				</LabelField>
+				<LabelField name="ДатаРегистрации" id="41">
+					<DataPath>Список.ДатаРегистрации</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ДатаРегистрацииКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ДатаРегистрацииExtendedTooltip" id="168"/>
+				</LabelField>
+				<LabelField name="ДатаРассмотрения" id="43">
+					<DataPath>Список.ДатаРассмотрения</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ДатаРассмотренияКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ДатаРассмотренияExtendedTooltip" id="169"/>
+				</LabelField>
+				<LabelField name="ДатаИсправления" id="45">
+					<DataPath>Список.ДатаИсправления</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ДатаИсправленияКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="ДатаИсправленияExtendedTooltip" id="170"/>
+				</LabelField>
+				<LabelField name="ДатаПроверки" id="49">
+					<DataPath>Список.ДатаПроверки</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ДатаПроверкиКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ДатаПроверкиExtendedTooltip" id="171"/>
+				</LabelField>
+				<LabelField name="ДатаОтзыва" id="47">
+					<DataPath>Список.ДатаОтзыва</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ДатаОтзываКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ДатаОтзываExtendedTooltip" id="172"/>
+				</LabelField>
+				<LabelField name="ДатаЗакрытия" id="126">
+					<DataPath>Список.ДатаЗакрытия</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ДатаЗакрытияКонтекстноеМеню" id="127"/>
+					<ExtendedTooltip name="ДатаЗакрытияExtendedTooltip" id="173"/>
+				</LabelField>
+				<LabelField name="Зарегистрировал" id="51">
+					<DataPath>Список.Зарегистрировал</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ЗарегистрировалКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ЗарегистрировалExtendedTooltip" id="174"/>
+				</LabelField>
+				<LabelField name="Рассмотрел" id="61">
+					<DataPath>Список.Рассмотрел</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="РассмотрелКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="РассмотрелExtendedTooltip" id="175"/>
+				</LabelField>
+				<LabelField name="Исправил" id="53">
+					<DataPath>Список.Исправил</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ИсправилКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ИсправилExtendedTooltip" id="176"/>
+				</LabelField>
+				<LabelField name="Проверил" id="59">
+					<DataPath>Список.Проверил</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ПроверилКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ПроверилExtendedTooltip" id="177"/>
+				</LabelField>
+				<LabelField name="Отозвал" id="57">
+					<DataPath>Список.Отозвал</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ОтозвалКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="ОтозвалExtendedTooltip" id="178"/>
+				</LabelField>
+				<LabelField name="Закрыл" id="128">
+					<DataPath>Список.Закрыл</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ЗакрылКонтекстноеМеню" id="129"/>
+					<ExtendedTooltip name="ЗакрылExtendedTooltip" id="179"/>
+				</LabelField>
+				<CheckBoxField name="Зарегистрирована" id="82">
+					<DataPath>Список.Зарегистрирована</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Зарегистрирована</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.ОшибкаЗарегистрирована</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗарегистрированаКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="ЗарегистрированаExtendedTooltip" id="180"/>
+				</CheckBoxField>
+				<CheckBoxField name="Признана" id="90">
+					<DataPath>Список.Признана</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Признана</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.ОшибкаПризнана</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПризнанаКонтекстноеМеню" id="91"/>
+					<ExtendedTooltip name="ПризнанаExtendedTooltip" id="181"/>
+				</CheckBoxField>
+				<CheckBoxField name="НеПризнана" id="86">
+					<DataPath>Список.НеПризнана</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не признана</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.ОшибкаНеПризнана</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="НеПризнанаКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="НеПризнанаExtendedTooltip" id="182"/>
+				</CheckBoxField>
+				<CheckBoxField name="Исправлена" id="84">
+					<DataPath>Список.Исправлена</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исправлена</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.ОшибкаИсправлена</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИсправленаКонтекстноеМеню" id="85"/>
+					<ExtendedTooltip name="ИсправленаExtendedTooltip" id="183"/>
+				</CheckBoxField>
+				<CheckBoxField name="Проверена" id="92">
+					<DataPath>Список.Проверена</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проверена</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.ОшибкаПроверенаИсправлена</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПроверенаКонтекстноеМеню" id="93"/>
+					<ExtendedTooltip name="ПроверенаExtendedTooltip" id="184"/>
+				</CheckBoxField>
+				<CheckBoxField name="Отозвана" id="88">
+					<DataPath>Список.Отозвана</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отозвана</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.ОшибкаОтозвана</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтозванаКонтекстноеМеню" id="89"/>
+					<ExtendedTooltip name="ОтозванаExtendedTooltip" id="185"/>
+				</CheckBoxField>
+				<CheckBoxField name="Закрыта" id="130">
+					<DataPath>Список.Закрыта</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Закрыта</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.ОшибкаЗакрыта</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗакрытаКонтекстноеМеню" id="131"/>
+					<ExtendedTooltip name="ЗакрытаExtendedTooltip" id="186"/>
+				</CheckBoxField>
+				<LabelField name="ИсходнаяИнформацияОбОшибке" id="116">
+					<DataPath>Список.ИсходнаяИнформацияОбОшибке</DataPath>
+					<ContextMenu name="ИсходнаяИнформацияОбОшибкеКонтекстноеМеню" id="117"/>
+					<ExtendedTooltip name="ИсходнаяИнформацияОбОшибкеExtendedTooltip" id="187"/>
+				</LabelField>
+				<LabelField name="ПубликуемоеОписание" id="120">
+					<DataPath>Список.ПубликуемоеОписание</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ПубликуемоеОписаниеКонтекстноеМеню" id="121"/>
+					<ExtendedTooltip name="ПубликуемоеОписаниеExtendedTooltip" id="189"/>
+				</LabelField>
+				<LabelField name="ПричиныНепризнания" id="253">
+					<DataPath>Список.ПричиныНепризнания</DataPath>
+					<ContextMenu name="ПричиныНепризнанияКонтекстноеМеню" id="254"/>
+					<ExtendedTooltip name="ПричиныНепризнанияРасширеннаяПодсказка" id="255"/>
+				</LabelField>
+				<LabelField name="ПовторяемаяОшибка" id="106">
+					<DataPath>Список.ПовторяемаяОшибка</DataPath>
+					<ContextMenu name="ПовторяемаяОшибкаКонтекстноеМеню" id="107"/>
+					<ExtendedTooltip name="ПовторяемаяОшибкаExtendedTooltip" id="191"/>
+				</LabelField>
+				<LabelField name="Владелец" id="124">
+					<DataPath>Список.Владелец</DataPath>
+					<ContextMenu name="ВладелецКонтекстноеМеню" id="125"/>
+					<ExtendedTooltip name="ВладелецExtendedTooltip" id="192"/>
+				</LabelField>
+				<LabelField name="РазделПроекта" id="122">
+					<DataPath>Список.РазделПроекта</DataPath>
+					<ContextMenu name="РазделПроектаКонтекстноеМеню" id="123"/>
+					<ExtendedTooltip name="РазделПроектаExtendedTooltip" id="193"/>
+				</LabelField>
+				<LabelField name="Ссылка" id="14">
+					<DataPath>Список.Ссылка</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="СсылкаКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СсылкаExtendedTooltip" id="194"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.ВеткаИсправления</Field>
+				<Field>Список.ВеткаОбнаружения</Field>
+				<Field>Список.Владелец</Field>
+				<Field>Список.ДействияСОшибкой</Field>
+				<Field>Список.ИспользуетсяЗакрытиеОшибок</Field>
+				<Field>Список.КомуНаправлена</Field>
+				<Field>Список.ОшибкаПодлежитЗакрытию</Field>
+				<Field>Список.Ссылка</Field>
+				<Field>Список.Статус</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникОшибки.Ссылка КАК Ссылка,
+	СправочникОшибки.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникОшибки.Код КАК Код,
+	СправочникОшибки.Наименование КАК Наименование,
+	СправочникОшибки.Владелец КАК Владелец,
+	СправочникОшибки.Основание КАК Основание,
+	СправочникОшибки.Статус КАК Статус,
+	СправочникОшибки.ДатаСоздания КАК ДатаСоздания,
+	СправочникОшибки.ДатаРегистрации КАК ДатаРегистрации,
+	СправочникОшибки.Автор КАК Автор,
+	СправочникОшибки.Зарегистрировал КАК Зарегистрировал,
+	СправочникОшибки.СборкаОбнаружения КАК СборкаОбнаружения,
+	ВЫБОР
+		КОГДА СправочникОшибки.Обнаружена = ЗНАЧЕНИЕ(Перечисление.МестаОбнаруженияОшибок.ВСборке)
+			ТОГДА СправочникОшибки.СборкаОбнаружения
+		КОГДА СправочникОшибки.Обнаружена = ЗНАЧЕНИЕ(Перечисление.МестаОбнаруженияОшибок.ВВетке)
+			ТОГДА СправочникОшибки.ВеткаОбнаружения
+	КОНЕЦ КАК Обнаружена,
+	СправочникОшибки.ВеткаОбнаружения КАК ВеткаОбнаружения,
+	СправочникОшибки.ВерсияПлатформы КАК ВерсияПлатформы,
+	СправочникОшибки.ИнформационнаяБазаДляВоспроизведения КАК ИнформационнаяБазаДляВоспроизведения,
+	СправочникОшибки.Клиент КАК Клиент,
+	СправочникОшибки.СУБД КАК СУБД,
+	ВЫРАЗИТЬ(СправочникОшибки.ПорядокВоспроизведения КАК СТРОКА(1000)) КАК ПорядокВоспроизведения,
+	СправочникОшибки.КомуНаправлена КАК КомуНаправлена,
+	СправочникОшибки.ДатаНаправления КАК ДатаНаправления,
+	СправочникОшибки.ДатаРассмотрения КАК ДатаРассмотрения,
+	СправочникОшибки.Рассмотрел КАК Рассмотрел,
+	СправочникОшибки.СрочностьИсправления КАК СрочностьИсправления,
+	ВЫРАЗИТЬ(СправочникОшибки.ОписаниеИзменений КАК СТРОКА(1000)) КАК ОписаниеИзменений,
+	ВЫРАЗИТЬ(СправочникОшибки.СпособОбхода КАК СТРОКА(1000)) КАК СпособОбхода,
+	СправочникОшибки.ДатаИсправления КАК ДатаИсправления,
+	СправочникОшибки.Исправил КАК Исправил,
+	СправочникОшибки.Исправляется КАК Исправляется,
+	СправочникОшибки.ВерсияИсправления КАК ВерсияИсправления,
+	СправочникОшибки.ВеткаИсправления КАК ВеткаИсправления,
+	СправочникОшибки.ДатаПроверки КАК ДатаПроверки,
+	СправочникОшибки.Проверил КАК Проверил,
+	СправочникОшибки.ДатаОтзыва КАК ДатаОтзыва,
+	СправочникОшибки.ДатаЗакрытия КАК ДатаЗакрытия,
+	СправочникОшибки.Отозвал КАК Отозвал,
+	СправочникОшибки.Закрыл КАК Закрыл,
+	СправочникОшибки.Зарегистрирована КАК Зарегистрирована,
+	СправочникОшибки.Признана КАК Признана,
+	СправочникОшибки.НеПризнана КАК НеПризнана,
+	СправочникОшибки.Исправлена КАК Исправлена,
+	СправочникОшибки.Проверена КАК Проверена,
+	СправочникОшибки.Отозвана КАК Отозвана,
+	СправочникОшибки.Закрыта КАК Закрыта,
+	ВЫРАЗИТЬ(СправочникОшибки.ПричиныНепризнания КАК СТРОКА(1000)) КАК ПричиныНепризнания,
+	СправочникОшибки.ПовторяемаяОшибка КАК ПовторяемаяОшибка,
+	СправочникОшибки.ЕстьИзмененияПоСравнениюСРанееПринятымиПроектнымиРешениями КАК ЕстьИзмененияПоСравнениюСРанееПринятымиПроектнымиРешениями,
+	СправочникОшибки.ОшибкаЗарегистрированаПоИнформацииОтВнешнихИсточников КАК ОшибкаЗарегистрированаПоИнформацииОтВнешнихИсточников,
+	СправочникОшибки.РазделПроекта КАК РазделПроекта,
+	СправочникОшибки.Владелец.ИспользоватьЗакрытиеОшибок КАК ИспользуетсяЗакрытиеОшибок,
+	ВЫБОР
+		КОГДА СправочникОшибки.Владелец.ИспользоватьЗакрытиеОшибок
+				И (НЕ СправочникОшибки.Владелец.ИспользоватьЗакрытиеТолькоДляОшибокСПроектнымиИзменениями
+					ИЛИ СправочникОшибки.Владелец.ИспользоватьЗакрытиеТолькоДляОшибокСПроектнымиИзменениями
+						И СправочникОшибки.ЕстьИзмененияПоСравнениюСРанееПринятымиПроектнымиРешениями)
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК ОшибкаПодлежитЗакрытию,
+	СправочникОшибки.СтатусПубликации КАК СтатусПубликации,
+	СправочникОшибки.ДатаПервойПубликации КАК ДатаПервойПубликации,
+	СправочникОшибки.ДатаИзмененияПубликации КАК ДатаИзмененияПубликации,
+	ВЫРАЗИТЬ(СправочникОшибки.ПубликуемоеОписание КАК СТРОКА(1000)) КАК ПубликуемоеОписание,
+	ВЫРАЗИТЬ(СправочникОшибки.ИсходнаяИнформацияОбОшибке КАК СТРОКА(1000)) КАК ИсходнаяИнформацияОбОшибке,
+	ВЫБОР
+		КОГДА НаличиеФайлов.ЕстьФайлы
+			ТОГДА 0
+		ИНАЧЕ 1
+	КОНЕЦ КАК ИндексКартинки,
+	ВЫБОР
+		КОГДА СправочникОшибки.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыОшибок.НеЗарегистрирована)
+			ТОГДА "Зарегистрировать"
+		КОГДА СправочникОшибки.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыОшибок.Зарегистрирована)
+			ТОГДА "Признать"
+		КОГДА СправочникОшибки.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыОшибок.Признана)
+			ТОГДА "Исправить"
+		КОГДА СправочникОшибки.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыОшибок.НеПризнана)
+			ТОГДА "Отозвать"
+		КОГДА СправочникОшибки.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыОшибок.Исправлена)
+			ТОГДА "Подтвердить исправление"
+		КОГДА (СправочникОшибки.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыОшибок.ПроверенаИсправлена)
+				ИЛИ СправочникОшибки.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыОшибок.Отозвана))
+				И СправочникОшибки.Владелец.ИспользоватьЗакрытиеОшибок
+				И (НЕ СправочникОшибки.Владелец.ИспользоватьЗакрытиеТолькоДляОшибокСПроектнымиИзменениями
+					ИЛИ СправочникОшибки.Владелец.ИспользоватьЗакрытиеТолькоДляОшибокСПроектнымиИзменениями
+						И СправочникОшибки.ЕстьИзмененияПоСравнениюСРанееПринятымиПроектнымиРешениями)
+			ТОГДА "Закрыть"
+		ИНАЧЕ ""
+	КОНЕЦ КАК ДействияСОшибкой,
+	ВЫБОР
+		КОГДА СправочникОшибки.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыОшибок.НеЗарегистрирована)
+			ТОГДА 0
+		КОГДА СправочникОшибки.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыОшибок.Зарегистрирована)
+			ТОГДА 1
+		КОГДА СправочникОшибки.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыОшибок.Признана)
+			ТОГДА 2
+		КОГДА СправочникОшибки.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыОшибок.Отозвана)
+			ТОГДА 3
+		КОГДА СправочникОшибки.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыОшибок.Исправлена)
+			ТОГДА 4
+		КОГДА СправочникОшибки.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыОшибок.ПроверенаИсправлена)
+			ТОГДА 5
+		КОГДА СправочникОшибки.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыОшибок.НеПризнана)
+			ТОГДА 6
+		КОГДА СправочникОшибки.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыОшибок.Закрыта)
+			ТОГДА 8
+		КОГДА СправочникОшибки.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыОшибок.НеПланируетсяИсправлять)
+			ТОГДА 9
+		КОГДА СправочникОшибки.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыОшибок.ОжидаетИсправленияПовторяемойОшибки)
+			ТОГДА 10
+		ИНАЧЕ 1000
+	КОНЕЦ КАК ИндексКартинкиСтатуса,
+	ВЫБОР
+		КОГДА СправочникОшибки.СрочностьИсправления = ЗНАЧЕНИЕ(Перечисление.СрочностьИсправленияОшибок.ВПлановомПорядке)
+			ТОГДА 0
+		КОГДА СправочникОшибки.СрочностьИсправления = ЗНАЧЕНИЕ(Перечисление.СрочностьИсправленияОшибок.ЖелательноБыстрее)
+			ТОГДА 1
+		КОГДА СправочникОшибки.СрочностьИсправления = ЗНАЧЕНИЕ(Перечисление.СрочностьИсправленияОшибок.Немедленно)
+			ТОГДА 2
+	КОНЕЦ КАК ИндексКартинкиСрочностиИсправления
+ИЗ
+	Справочник.Ошибки КАК СправочникОшибки
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.НаличиеФайлов КАК НаличиеФайлов
+		ПО (НаличиеФайлов.ОбъектСФайлами = СправочникОшибки.Ссылка)
+ГДЕ
+	СправочникОшибки.ПовторяемаяОШибка = &amp;ПовторяемаяОшибка</QueryText>
+				<MainTable>Catalog.Ошибки</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПометкаУдаления</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ДатаСоздания</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыОшибок.Отозвана</dcsset:right>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ИспользуетсяЗакрытиеОшибок</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">style:ЦветТекстаНеактивныхСтрокСписков</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+							<dcsset:presentation xsi:type="xs:string">Выделение цветом отозванных ошибок</dcsset:presentation>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Наименование</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыОшибок.Отозвана</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Шрифт</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="false" italic="false" underline="false" strikeout="true" kind="WindowsFont"/>
+								</dcscor:item>
+							</dcsset:appearance>
+							<dcsset:presentation xsi:type="xs:string">Выделение шрифтом отозванных ошибок</dcsset:presentation>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>СрочностьИсправления</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">СрочностьИсправления</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СрочностьИсправленияОшибок.Немедленно</dcsset:right>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+									<dcsset:comparisonType>NotInList</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыОшибок.НеЗарегистрирована</dcsset:right>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыОшибок.Отозвана</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">style:ЦветТекстаВысокийПриоритет</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+							<dcsset:presentation xsi:type="xs:string">Выделение цветом срочности исправления "Немедленно"</dcsset:presentation>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыОшибок.Закрыта</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">style:ЦветТекстаНеактивныхСтрокСписков</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+							<dcsset:presentation xsi:type="xs:string">Выделение цветом закрытых ошибок</dcsset:presentation>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыОшибок.ПроверенаИсправлена</dcsset:right>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ОшибкаПодлежитЗакрытию</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">style:ЦветТекстаНеактивныхСтрокСписков</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+							<dcsset:presentation xsi:type="xs:string">Выделение цветом исправленных, проверенных  ошибок</dcsset:presentation>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ПовторяемаяОшибка" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Повторяемая ошибка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Ошибки</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ИзменитьВыделенные" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить выделенные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить выделенные объекты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеОшибок">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Use>
+			<Action>ИзменитьВыделенные</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Зарегистрировать" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зарегистрировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зарегистрировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеОшибок">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Use>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Зарегистрировать</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Вернуть" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вернуть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вернуть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеОшибок">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Use>
+			<Picture>
+				<xr:Ref>CommonPicture.ВернутьОшибку</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Вернуть</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НазначитьВерсиюИсправления" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назначить версию исправления</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назначить версию исправления</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ПланированиеОтработкиОшибок">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Use>
+			<Action>НазначитьВерсиюИсправления</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Ознакомиться" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ознакомиться</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ознакомиться</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеОшибок">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Use>
+			<Picture>
+				<xr:Ref>CommonPicture.Ознакомиться</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Ознакомиться</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Перенаправить" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенаправить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенаправить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ДобавлениеИзменениеОшибок">true</xr:Value>
+				<xr:Value name="Role.ПолныеПрава">true</xr:Value>
+			</Use>
+			<Picture>
+				<xr:Ref>CommonPicture.ПеренаправитьОшибку</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Перенаправить</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ПовторяемаяОшибка">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Ошибки</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

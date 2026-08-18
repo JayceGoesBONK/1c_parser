@@ -1,0 +1,1432 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаВыгрузитьСправку" id="20">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ВыгрузитьСправку</CommandName>
+				<ExtendedTooltip name="ФормаВыгрузитьСправкуExtendedTooltip" id="34"/>
+			</Button>
+			<Button name="ФормаПроверитьСправку" id="21">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПроверитьСправку</CommandName>
+				<ExtendedTooltip name="ФормаПроверитьСправкуExtendedTooltip" id="35"/>
+			</Button>
+			<Button name="ФормаПроверкаВыгрузкиСправки" id="219">
+				<Type>CommandBarButton</Type>
+				<CommandName>Report.ПроверкаВыгрузкиСправки.Command.ПроверкаВыгрузкиСправки</CommandName>
+				<DataPath>Проект</DataPath>
+				<ExtendedTooltip name="ФормаПроверкаВыгрузкиСправкиРасширеннаяПодсказка" id="220"/>
+			</Button>
+			<Popup name="Отметки" id="22">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отметки</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отметки</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ОтметкиExtendedTooltip" id="36"/>
+				<ChildItems>
+					<Button name="ФормаУстановитьВсеОтметки" id="30">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.УстановитьВсеОтметки</CommandName>
+						<ExtendedTooltip name="ФормаУстановитьВсеОтметкиExtendedTooltip" id="37"/>
+					</Button>
+					<Button name="ФормаСнятьВсеОтметки" id="31">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СнятьВсеОтметки</CommandName>
+						<ExtendedTooltip name="ФормаСнятьВсеОтметкиExtendedTooltip" id="38"/>
+					</Button>
+					<ButtonGroup name="ФормаГруппаОтметкиФорм" id="23">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Форма группа отметки форм</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ФормаГруппаОтметкиФормExtendedTooltip" id="39"/>
+						<ChildItems>
+							<Button name="ФормаУстановитьОтметкиДляВсехФорм" id="24">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.УстановитьОтметкиДляВсехФорм</CommandName>
+								<ExtendedTooltip name="ФормаУстановитьОтметкиДляВсехФормExtendedTooltip" id="40"/>
+							</Button>
+							<Button name="ФормаСнятьОтметкиДляВсехФорм" id="25">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СнятьОтметкиДляВсехФорм</CommandName>
+								<ExtendedTooltip name="ФормаСнятьОтметкиДляВсехФормExtendedTooltip" id="41"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+				</ChildItems>
+			</Popup>
+			<Button name="ФормаОбновитьДеревоМетаданных" id="27">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОбновитьДеревоМетаданных</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.Refresh</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаОбновитьДеревоМетаданныхExtendedTooltip" id="43"/>
+			</Button>
+			<Button name="Справка" id="192">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<ExtendedTooltip name="СправкаРасширеннаяПодсказка" id="193"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаВыбора" id="204">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выбора</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выбора</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<ChildrenAlign>None</ChildrenAlign>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВыбораРасширеннаяПодсказка" id="205"/>
+			<ChildItems>
+				<InputField name="Проект" id="14">
+					<DataPath>Проект</DataPath>
+					<TitleLocation>Left</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>28</MaxWidth>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="ПроектКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ПроектExtendedTooltip" id="44"/>
+					<Events>
+						<Event name="OnChange">ПроектПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаГоризонтальная" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа горизонтальная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа горизонтальная</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаГоризонтальнаяРасширеннаяПодсказка" id="56"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДеревоОбъектов" id="53">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа дерево объектов</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДеревоОбъектовРасширеннаяПодсказка" id="54"/>
+					<ChildItems>
+						<Table name="ДеревоМетаданныхДляСправки" id="1">
+							<Representation>Tree</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ДеревоМетаданныхДляСправки</DataPath>
+							<RowPictureDataPath>ДеревоМетаданныхДляСправки.ИндексКартинки</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Ref>CommonPicture.ОбъектыМетаданных</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</RowsPicture>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<ContextMenu name="ДеревоМетаданныхДляСправкиКонтекстноеМеню" id="2"/>
+							<AutoCommandBar name="ДеревоМетаданныхДляСправкиКоманднаяПанель" id="3"/>
+							<ExtendedTooltip name="ДеревоМетаданныхДляСправкиExtendedTooltip" id="45"/>
+							<SearchStringAddition name="ДеревоМетаданныхДляСправкиСтрокаПоиска" id="78">
+								<AdditionSource>
+									<Item>ДеревоМетаданныхДляСправки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоМетаданныхДляСправкиСтрокаПоискаКонтекстноеМеню" id="79"/>
+								<ExtendedTooltip name="ДеревоМетаданныхДляСправкиСтрокаПоискаРасширеннаяПодсказка" id="80"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДеревоМетаданныхДляСправкиСостояниеПросмотра" id="81">
+								<AdditionSource>
+									<Item>ДеревоМетаданныхДляСправки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоМетаданныхДляСправкиСостояниеПросмотраКонтекстноеМеню" id="82"/>
+								<ExtendedTooltip name="ДеревоМетаданныхДляСправкиСостояниеПросмотраРасширеннаяПодсказка" id="83"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДеревоМетаданныхДляСправкиУправлениеПоиском" id="84">
+								<AdditionSource>
+									<Item>ДеревоМетаданныхДляСправки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоМетаданныхДляСправкиУправлениеПоискомКонтекстноеМеню" id="85"/>
+								<ExtendedTooltip name="ДеревоМетаданныхДляСправкиУправлениеПоискомРасширеннаяПодсказка" id="86"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeRowChange">ДеревоМетаданныхДляСправкиПередНачаломИзменения</Event>
+							</Events>
+							<ChildItems>
+								<CheckBoxField name="ДеревоМетаданныхДляСправкиОтметка" id="28">
+									<DataPath>ДеревоМетаданныхДляСправки.Отметка</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выгружать</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderPicture>
+										<xr:Ref>CommonPicture.ЗеленаяГалка</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</HeaderPicture>
+									<ThreeState>true</ThreeState>
+									<ContextMenu name="ДеревоМетаданныхДляСправкиОтметкаКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ДеревоМетаданныхДляСправкиОтметкаExtendedTooltip" id="46"/>
+									<Events>
+										<Event name="OnChange">ДеревоМетаданныхДляСправкиОтметкаПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<PictureField name="ДеревоМетаданныхДляСправкиПравилоПоддержкиКартинка" id="216">
+									<DataPath>ДеревоМетаданныхДляСправки.ПравилоПоддержкиКартинка</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.КоллекцияПравилаПоддержки</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</ValuesPicture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="ДеревоМетаданныхДляСправкиПравилоПоддержкиКартинкаКонтекстноеМеню" id="217"/>
+									<ExtendedTooltip name="ДеревоМетаданныхДляСправкиПравилоПоддержкиКартинкаРасширеннаяПодсказка" id="218"/>
+								</PictureField>
+								<InputField name="ДеревоМетаданныхДляСправкиПредставление" id="4">
+									<DataPath>ДеревоМетаданныхДляСправки.Представление</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Объект метаданных</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<TextEdit>false</TextEdit>
+									<ContextMenu name="ДеревоМетаданныхДляСправкиПредставлениеКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="ДеревоМетаданныхДляСправкиПредставлениеExtendedTooltip" id="47"/>
+								</InputField>
+								<InputField name="ДеревоМетаданныхДляСправкиОбъектСправки" id="6">
+									<DataPath>ДеревоМетаданныхДляСправки.ОбъектСправки</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоМетаданныхДляСправкиОбъектСправкиКонтекстноеМеню" id="7"/>
+									<ExtendedTooltip name="ДеревоМетаданныхДляСправкиОбъектСправкиExtendedTooltip" id="48"/>
+								</InputField>
+								<InputField name="ДеревоМетаданныхДляСправкиНаименование" id="8">
+									<DataPath>ДеревоМетаданныхДляСправки.Наименование</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоМетаданныхДляСправкиНаименованиеКонтекстноеМеню" id="9"/>
+									<ExtendedTooltip name="ДеревоМетаданныхДляСправкиНаименованиеExtendedTooltip" id="49"/>
+								</InputField>
+								<CheckBoxField name="ДеревоМетаданныхДляСправкиЭтоГруппа" id="10">
+									<DataPath>ДеревоМетаданныхДляСправки.ЭтоГруппа</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДеревоМетаданныхДляСправкиЭтоГруппаКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="ДеревоМетаданныхДляСправкиЭтоГруппаExtendedTooltip" id="50"/>
+								</CheckBoxField>
+								<InputField name="ДеревоМетаданныхДляСправкиПредок" id="12">
+									<DataPath>ДеревоМетаданныхДляСправки.Предок</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДеревоМетаданныхДляСправкиПредокКонтекстноеМеню" id="13"/>
+									<ExtendedTooltip name="ДеревоМетаданныхДляСправкиПредокExtendedTooltip" id="51"/>
+								</InputField>
+								<CheckBoxField name="ДеревоМетаданныхДляСправкиВключатьВСправку" id="206">
+									<DataPath>ДеревоМетаданныхДляСправки.ВключатьВСправку</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Наличие справки</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Наличие справки</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderPicture>
+										<xr:Ref>StdPicture.FormHelp</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</HeaderPicture>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДеревоМетаданныхДляСправкиВключатьВСправкуКонтекстноеМеню" id="207"/>
+									<ExtendedTooltip name="ДеревоМетаданныхДляСправкиВключатьВСправкуРасширеннаяПодсказка" id="208"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПараметров" id="186">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа параметров</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа параметров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>false</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПараметровРасширеннаяПодсказка" id="187"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаОбъектов" id="188">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа объектов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа объектов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОбъектовРасширеннаяПодсказка" id="189"/>
+					<ChildItems>
+						<CheckBoxField name="ФормироватьФайлыСправкиПоОбъектамНеВключаемымВСправку" id="72">
+							<DataPath>ФормироватьФайлыСправкиПоОбъектамНеВключаемымВСправку</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ФормироватьФайлыСправкиПоОбъектамНеВключаемымВСправкуКонтекстноеМеню" id="73"/>
+							<ExtendedTooltip name="ФормироватьФайлыСправкиПоОбъектамНеВключаемымВСправкуРасширеннаяПодсказка" id="74"/>
+						</CheckBoxField>
+						<LabelDecoration name="ПояснениеКФормированиюФайловСправки" id="75">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Если объект не включается в справку, но для него в конфигурации может иметься неактуальная справка, для таких объектов могут быть сформированы  пустые файлы справки. Если флаг не установлен, файлы справки по данным объектам формироваться не будут.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПояснениеКФормированиюФайловСправкиКонтекстноеМеню" id="76"/>
+							<ExtendedTooltip name="ПояснениеКФормированиюФайловСправкиРасширеннаяПодсказка" id="77"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаВключениеИнформацииОПоискеВСписках" id="194">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа включение информации о поиске в списках</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВключениеИнформацииОПоискеВСпискахРасширеннаяПодсказка" id="195"/>
+					<ChildItems>
+						<CheckBoxField name="ВключатьСсылкиНаСправкуПоискаВСписках" id="196">
+							<DataPath>ВключатьСсылкиНаСправкуПоискаВСписках</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВключатьСсылкиНаСправкуПоискаВСпискахКонтекстноеМеню" id="197"/>
+							<ExtendedTooltip name="ВключатьСсылкиНаСправкуПоискаВСпискахРасширеннаяПодсказка" id="198"/>
+						</CheckBoxField>
+						<LabelDecoration name="ПояснениеКВключениюСсылокНаСправкуПоискаВСписках" id="199">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При установленном флаге в тексты справки для форм списков будет включена ссылка на справку по поиску данных в списках</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПояснениеКВключениюСсылокНаСправкуПоискаВСпискахКонтекстноеМеню" id="200"/>
+							<ExtendedTooltip name="ПояснениеКВключениюСсылокНаСправкуПоискаВСпискахРасширеннаяПодсказка" id="201"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаФорматов" id="190">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа форматов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа форматов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаФорматовРасширеннаяПодсказка" id="191"/>
+			<ChildItems>
+				<InputField name="ФорматВыгрузки" id="221">
+					<DataPath>ФорматВыгрузки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгружать справку в формате</v8:content>
+						</v8:item>
+					</Title>
+					<Width>12</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<TextEdit>false</TextEdit>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>EDT</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">1</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Конфигуратора</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:decimal">2</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ФорматВыгрузкиКонтекстноеМеню" id="222"/>
+					<ExtendedTooltip name="ФорматВыгрузкиРасширеннаяПодсказка" id="223"/>
+				</InputField>
+				<CheckBoxField name="ФормироватьСправкуВФорматеHTML" id="170">
+					<DataPath>ФормироватьСправкуВФорматеHTML</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ФормироватьСправкуВФорматеHTMLКонтекстноеМеню" id="171"/>
+					<ExtendedTooltip name="ФормироватьСправкуВФорматеHTMLРасширеннаяПодсказка" id="172"/>
+					<Events>
+						<Event name="OnChange">ФормироватьСправкуВФорматеHTMLПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<LabelDecoration name="ПояснениеКФормированиюФайловСправкиВФорматеHTML" id="183">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<TextColor>style:ПоясняющийТекст</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Будут сформированы файлы для загрузки командой конфигуратора "Загрузить файлы конфигурации".</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalAlign>Top</VerticalAlign>
+					<ContextMenu name="ПояснениеКФормированиюФайловСправкиВФорматеHTMLКонтекстноеМеню" id="184"/>
+					<ExtendedTooltip name="ПояснениеКФормированиюФайловСправкиВФорматеHTMLРасширеннаяПодсказка" id="185"/>
+				</LabelDecoration>
+				<UsualGroup name="ГруппаКаталоги" id="202">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа каталоги</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа каталоги</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКаталогиРасширеннаяПодсказка" id="203"/>
+					<ChildItems>
+						<InputField name="Каталог" id="16">
+							<DataPath>Каталог</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Каталог выгрузки файлов справки</v8:content>
+								</v8:item>
+							</Title>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ChoiceButton>true</ChoiceButton>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ContextMenu name="КаталогКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="КаталогExtendedTooltip" id="52"/>
+							<Events>
+								<Event name="OnChange">КаталогПриИзменении</Event>
+								<Event name="StartChoice">КаталогНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="КаталогИсполняемогоФайла" id="96">
+							<DataPath>КаталогИсполняемогоФайла</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Каталог исполняемого файла (1cv8.exe)</v8:content>
+								</v8:item>
+							</Title>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<VerticalStretch>false</VerticalStretch>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="КаталогИсполняемогоФайлаКонтекстноеМеню" id="97"/>
+							<ExtendedTooltip name="КаталогИсполняемогоФайлаРасширеннаяПодсказка" id="98"/>
+							<Events>
+								<Event name="OnChange">КаталогИсполняемогоФайлаПриИзменении</Event>
+								<Event name="StartChoice">КаталогИсполняемогоФайлаНачалоВыбора</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПрогресс" id="175">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа прогресс</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа прогресс</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПрогрессРасширеннаяПодсказка" id="176"/>
+			<ChildItems>
+				<LabelField name="ТекущаяОперация" id="177">
+					<DataPath>ТекущаяОперация</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Height>1</Height>
+					<TextColor>style:ПоясняющийТекст</TextColor>
+					<ContextMenu name="ТекущаяОперацияКонтекстноеМеню" id="178"/>
+					<ExtendedTooltip name="ТекущаяОперацияРасширеннаяПодсказка" id="179"/>
+				</LabelField>
+				<ProgressBarField name="Прогресс" id="180">
+					<DataPath>Прогресс</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Width>1</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="ПрогрессКонтекстноеМеню" id="181"/>
+					<ExtendedTooltip name="ПрогрессРасширеннаяПодсказка" id="182"/>
+				</ProgressBarField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РаботаСоСправкой</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ДеревоМетаданныхДляСправки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево метаданных для справки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Представление" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОбъектСправки" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект справки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Подсистемы</v8:Type>
+						<v8:Type>cfg:CatalogRef.ФормыОбъектовМетаданных</v8:Type>
+						<v8:Type>cfg:CatalogRef.ОбъектыМетаданных</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Наименование" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтоГруппа" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это группа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Предок" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Подсистемы</v8:Type>
+						<v8:Type>cfg:CatalogRef.ФормыОбъектовМетаданных</v8:Type>
+						<v8:Type>cfg:CatalogRef.ОбъектыМетаданных</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Имя" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИндексКартинки" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индекс картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Отметка" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отметка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтароеЗначениеОтметки" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Старое значение отметки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяФайла" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя файла</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВключатьВСправку" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Включать в справку</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ОбъектПоставщика" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект поставщика</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Подсистемы</v8:Type>
+						<v8:Type>cfg:CatalogRef.ФормыОбъектовМетаданных</v8:Type>
+						<v8:Type>cfg:CatalogRef.ОбъектыМетаданных</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Поставщик" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поставщик</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИмяОбъектаЗахвата" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя объекта захвата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПравилоПоддержки" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правило поддержки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ПравилаПоддержки</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПравилоПоддержкиКартинка" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правило поддержки картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СправкаБерется" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справка берется</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИмяФайлаEDT" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя файла</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВеткаИсточник" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ветка источник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Ветки</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Проект" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+			<FunctionalOptions>
+				<Item>9350da80-5778-4406-90b5-489d941572eb</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="Каталог" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>Каталог</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ФормироватьФайлыСправкиПоОбъектамНеВключаемымВСправку" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формировать файлы справки по объектам, не включаемым в справку</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ФормироватьФайлыСправкиПоОбъектамНеВключаемымВСправку</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="КаталогИсполняемогоФайла" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог исполняемого файла (1cv8.exe) версии не ниже 8.3.4</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>КаталогИсполняемогоФайла</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ФормироватьСправкуВФорматеHTML" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формировать справку в формате HTML</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ФормироватьСправкуВФорматеHTML</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИмяФайлаЛогов" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя файла логов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КаталогБазыРазработки" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог базы разработки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>КаталогБазыРазработки</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="КаталогВыгрузкиФайловКонфигурации" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог выгрузки файлов конфигурации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>КаталогВыгрузкиФайловКонфигурации</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="КаталогИБДляЗагрузкиМетаданных" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог ИБДля загрузки метаданных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>КаталогИБДляЗагрузкиМетаданных</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="КаталогСправкиИзСППР" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог справки из СППР</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>КаталогСправкиИзСППР</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="КаталогХранилищаДляЗагрузкиМетаданных" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог хранилища для загрузки метаданных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>КаталогХранилищаДляЗагрузкиМетаданных</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПарольПользователяБазыРазработки" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль пользователя базы разработки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПарольПользователяИБДляЗагрузкиМетаданных" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль пользователя ИБДля загрузки метаданных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ПарольПользователяИБДляЗагрузкиМетаданных</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПарольПользователяХранилищаДляЗагрузкиМетаданных" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль пользователя хранилища для загрузки метаданных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ПарольПользователяХранилищаДляЗагрузкиМетаданных</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИмяПользователяБазыРазработки" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя пользователя базы разработки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяПользователяИБДляЗагрузкиМетаданных" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя пользователя ИБДля загрузки метаданных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ИмяПользователяИБДляЗагрузкиМетаданных</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИмяПользователяХранилищаДляЗагрузкиМетаданных" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя пользователя хранилища для загрузки метаданных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ИмяПользователяХранилищаДляЗагрузкиМетаданных</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИмяФайлаРезультатов" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя файла результатов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ФайлПоставкиКонфигурации" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файл поставки конфигурации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Прогресс" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прогресс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущаяОперация" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая операция</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВключатьСсылкиНаСправкуПоискаВСписках" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включать ссылки на справку поиска в списках</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ВключатьСсылкиНаСправкуПоискаВСписках</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИдентификаторЗадания" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыгружатьСправкуПриЗагрузкеМетаданных" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгружать справку при загрузке метаданных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КаталогСправкиБезОтбора" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог справки </v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>КаталогСправкиБезОтбора</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ФорматВыгрузки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формат выгрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоМетаданныхДляСправкиПредставление</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоМетаданныхДляСправки.Представление</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="dcscor:Field">ДеревоМетаданныхДляСправки.Наименование</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ВыгрузитьСправку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить справку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить справку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьСправку</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПроверитьСправку" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить справку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить справку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьСправку</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УстановитьОтметкиДляВсехФорм" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить отметки для всех форм</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить отметки для всех форм</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьОтметкиДляВсехФорм</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СнятьОтметкиДляВсехФорм" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять отметки для всех форм</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять отметки для всех форм</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СнятьОтметкиДляВсехФорм</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОбновитьДеревоМетаданных" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить дерево метаданных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить дерево метаданных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьДеревоМетаданных</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УстановитьВсеОтметки" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить все отметки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить все отметки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьВсеОтметки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СнятьВсеОтметки" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все отметки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять все отметки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СнятьВсеОтметки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

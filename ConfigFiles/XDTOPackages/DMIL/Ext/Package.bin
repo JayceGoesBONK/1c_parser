@@ -1,0 +1,106 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.1c.ru/dmil">
+	<valueType name="id" base="xs:string" length="36" minLength="36" maxLength="36"/>
+	<valueType name="DMILExpressionOnBuiltInLanguageType" base="xs:string">
+		<enumeration xsi:type="xs:string">Attribute</enumeration>
+		<enumeration xsi:type="xs:string">TabularSection</enumeration>
+		<enumeration xsi:type="xs:string">TabularSectionAttribute</enumeration>
+	</valueType>
+	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILCheckExpressionOnBuiltInLanguageRequest" base="d2p1:DMILRequest">
+		<property name="objectType" type="xs:string"/>
+		<property name="tabularSectionName" type="xs:string" lowerBound="0"/>
+		<property name="expressionOnBuiltInLanguage" type="xs:string"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILCreateRelatedIntegrationRuleExistenceRequest" base="d2p1:DMILRequest">
+		<property name="relatedDataLoadingRule" type="d2p1:id"/>
+		<property name="documentTypeDM" type="xs:string" lowerBound="0"/>
+		<property name="documentTypeDMID" type="d2p1:id" lowerBound="0"/>
+		<property name="objectTypeDM" type="xs:string"/>
+		<property name="objectNameDM" type="xs:string"/>
+		<property name="objectTypeIS" type="xs:string"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILError" base="d2p1:DMILResponse">
+		<property name="description" type="xs:string"/>
+		<property name="subject" type="xs:string"/>
+	</objectType>
+	<objectType name="DMILExpressionRow">
+		<property xmlns:d3p1="http://www.1c.ru/dmil" name="id" type="d3p1:id"/>
+		<property xmlns:d3p1="http://www.1c.ru/dmil" name="type" type="d3p1:DMILExpressionOnBuiltInLanguageType"/>
+		<property name="tabularSectionName" type="xs:string" lowerBound="0"/>
+		<property name="expressionOnBuiltInLanguage" type="xs:string"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILGetExpressionListRequest" base="d2p1:DMILRequest">
+		<property name="objects" type="d2p1:DMILObjectID" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILGetExpressionListResponse" base="d2p1:DMILResponse">
+		<property name="objectsExpressionRows" type="d2p1:DMILObjectExpressionRow" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILGetMetadataRequest" base="d2p1:DMILRequest">
+		<property name="columnSet" type="xs:string" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILGetMetadataResponse" base="d2p1:DMILResponse">
+		<property name="dataBaseName" type="xs:string" lowerBound="0"/>
+		<property name="dataBaseID" type="d2p1:id" lowerBound="0"/>
+		<property name="dmilVersionNumber" type="xs:string"/>
+		<property name="metadataObjects" type="d2p1:DMILMetadataObject" upperBound="-1"/>
+		<property name="metadataSynonyms" type="d2p1:DMILMetadataSynonym" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILGetPrintedFormsRequest" base="d2p1:DMILRequest">
+		<property name="objects" type="d2p1:DMILMetadataObject" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILGetPrintedFormsResponse" base="d2p1:DMILResponse">
+		<property name="objects" type="d2p1:DMILMetadataObject" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMILMetadataAttribute">
+		<property name="name" type="xs:string"/>
+		<property name="synonym" type="xs:string"/>
+		<property name="typesList" type="xs:string" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMILMetadataObject">
+		<property name="name" type="xs:string"/>
+		<property xmlns:d3p1="http://www.1c.ru/dmil" name="attributes" type="d3p1:DMILMetadataAttribute" lowerBound="0" upperBound="-1"/>
+		<property xmlns:d3p1="http://www.1c.ru/dmil" name="tabularSections" type="d3p1:DMILMetadataTabularSection" lowerBound="0" upperBound="-1"/>
+		<property xmlns:d3p1="http://www.1c.ru/dmil" name="printedForms" type="d3p1:DMILPrintedForm" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMILMetadataSynonym">
+		<property name="name" type="xs:string"/>
+		<property name="synonym" type="xs:string"/>
+	</objectType>
+	<objectType name="DMILMetadataTabularSection">
+		<property name="name" type="xs:string"/>
+		<property name="synonym" type="xs:string"/>
+		<property xmlns:d3p1="http://www.1c.ru/dmil" name="attributes" type="d3p1:DMILMetadataAttribute" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMILObjectID">
+		<property xmlns:d3p1="http://www.1c.ru/dmil" name="id" type="d3p1:id"/>
+		<property name="type" type="xs:string"/>
+		<property name="presentation" type="xs:string" lowerBound="0"/>
+		<property name="navigationRef" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="DMILObjectExpressionRow">
+		<property xmlns:d3p1="http://www.1c.ru/dmil" name="object" type="d3p1:DMILObjectID"/>
+		<property xmlns:d3p1="http://www.1c.ru/dmil" name="error" type="d3p1:DMILError" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1c.ru/dmil" name="expressionRows" type="d3p1:DMILExpressionRow" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILOK" base="d2p1:DMILResponse"/>
+	<objectType name="DMILPrintedForm">
+		<property name="additionalParameters" type="xs:string" lowerBound="0"/>
+		<property name="commandName" type="xs:string"/>
+		<property name="commandPresentation" type="xs:string" lowerBound="0"/>
+		<property name="printManager" type="xs:string"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILRelatedIntegrationRulesExistenceRequest" base="d2p1:DMILRequest">
+		<property name="relatedDataLoadingRule" type="d2p1:id"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILRelatedIntegrationRulesExistenceResponse" base="d2p1:DMILResponse">
+		<property name="exist" type="xs:boolean"/>
+	</objectType>
+	<objectType name="DMILRequest" abstract="true">
+		<property name="versionNumber" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="DMILResponse" abstract="true"/>
+	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILPutChangesRequest" base="d2p1:DMILRequest">
+		<property name="messageData" type="xs:base64Binary"/>
+		<property name="DMXMLSchema" type="xs:string"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/dmil" name="DMILPutChangesResponse" base="d2p1:DMILResponse"/>
+</package>

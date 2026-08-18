@@ -1,0 +1,72 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.1c.ru/SPPR/FunctionModel">
+	<import namespace="http://v8.1c.ru/8.1/data/core"/>
+	<valueType name="TypeOfSchemeElement" base="xs:string">
+		<enumeration xsi:type="xs:string">Function</enumeration>
+		<enumeration xsi:type="xs:string">Input</enumeration>
+		<enumeration xsi:type="xs:string">Output</enumeration>
+		<enumeration xsi:type="xs:string">Control</enumeration>
+		<enumeration xsi:type="xs:string">Performer</enumeration>
+		<enumeration xsi:type="xs:string">Link</enumeration>
+	</valueType>
+	<objectType name="FunctionDescription">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ID_Parent" type="d3p1:UUID" lowerBound="0"/>
+		<property name="Name" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="Description" type="d3p1:ValueStorage" lowerBound="0"/>
+	</objectType>
+	<objectType name="Function">
+		<property xmlns:d3p1="http://www.1c.ru/SPPR/FunctionModel" name="Description" type="d3p1:FunctionDescription" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="Scheme" type="d3p1:ValueStorage" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1c.ru/SPPR/FunctionModel" name="SchemeElements" type="d3p1:SchemeElement" lowerBound="0" upperBound="-1"/>
+		<property name="IsWorkplace" type="xs:boolean"/>
+		<property xmlns:d3p1="http://www.1c.ru/SPPR/FunctionModel" name="ListOfWorkplace" type="d3p1:Workplace" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="SchemeElement">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ID" type="d3p1:UUID"/>
+		<property name="Code" type="xs:string" nillable="true"/>
+		<property name="Name" type="xs:string" nillable="true"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="Description" type="d3p1:ValueStorage"/>
+		<property xmlns:d3p1="http://www.1c.ru/SPPR/FunctionModel" name="Type" type="d3p1:TypeOfSchemeElement"/>
+	</objectType>
+	<objectType name="Project">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ID" type="d3p1:UUID"/>
+		<property name="Name" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="ObjectDescription">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ID_Parent" type="d3p1:UUID" lowerBound="0"/>
+		<property name="Name" type="xs:string" nillable="true"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="Description" type="d3p1:ValueStorage" lowerBound="0"/>
+		<property name="IsFolder" type="xs:boolean"/>
+		<property name="IsGroup" type="xs:boolean"/>
+	</objectType>
+	<objectType name="PerformerDescription">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ID" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ID_Parent" type="d3p1:UUID" lowerBound="0"/>
+		<property name="Name" type="xs:string" nillable="true"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="Description" type="d3p1:ValueStorage" lowerBound="0"/>
+		<property name="IsFolder" type="xs:boolean"/>
+	</objectType>
+	<objectType name="Workplace">
+		<property name="Metadata" type="xs:string"/>
+		<property name="FormName" type="xs:string"/>
+		<property name="FormType" type="xs:string"/>
+	</objectType>
+	<objectType name="ListOfProjects">
+		<property xmlns:d3p1="http://www.1c.ru/SPPR/FunctionModel" name="Project" type="d3p1:Project" upperBound="-1"/>
+	</objectType>
+	<objectType name="ListOfFunctions">
+		<property xmlns:d3p1="http://www.1c.ru/SPPR/FunctionModel" name="FunctionDescription" type="d3p1:FunctionDescription" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ListOfObjects">
+		<property xmlns:d3p1="http://www.1c.ru/SPPR/FunctionModel" name="ObjectDescription" type="d3p1:ObjectDescription" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ListOfPerformers">
+		<property xmlns:d3p1="http://www.1c.ru/SPPR/FunctionModel" name="PerformerDescription" type="d3p1:PerformerDescription" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="FormDescription">
+		<property name="Description" type="xs:string" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="FunctionID" type="d3p1:UUID" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ObjectID" type="d3p1:UUID" lowerBound="0"/>
+	</objectType>
+</package>

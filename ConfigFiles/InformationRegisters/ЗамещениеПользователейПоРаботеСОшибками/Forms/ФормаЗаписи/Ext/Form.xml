@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Пользователь" id="1">
+			<DataPath>Запись.Пользователь</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>28</MaxWidth>
+			<ContextMenu name="ПользовательКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Проект" id="16">
+			<DataPath>Запись.Проект</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Если проект не указан, настройка замещения распространяется на все проекты. Если при этом имеется настройка для конкретного проекта- для этого проекта действует именно она.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>28</MaxWidth>
+			<ContextMenu name="ПроектКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="ЗамещающийПользователь" id="4">
+			<DataPath>Запись.ЗамещающийПользователь</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Если замещающий пользователь не указан, то любой пользователь при работе с ошибкой может выступать в роли замещающего- текущему пользователю будет направляться ошибка при направлении ее замещаемому.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>28</MaxWidth>
+			<ContextMenu name="ЗамещающийПользовательКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ЗамещающийПользовательРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ДатаНачалаЗамещения" id="7">
+			<DataPath>Запись.ДатаНачалаЗамещения</DataPath>
+			<ContextMenu name="ДатаНачалаЗамещенияКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ДатаНачалаЗамещенияРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ДатаОкончанияЗамещения" id="10">
+			<DataPath>Запись.ДатаОкончанияЗамещения</DataPath>
+			<ContextMenu name="ДатаОкончанияЗамещенияКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ДатаОкончанияЗамещенияРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Комментарий" id="13">
+			<DataPath>Запись.Комментарий</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="15"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ЗамещениеПользователейПоРаботеСОшибками</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>1/0:d87df964-185d-43e9-ac65-42e5a4aefc8a</Field>
+				<Field>1/0:e5b8c418-5105-4b0f-9280-8ff7d476273b</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

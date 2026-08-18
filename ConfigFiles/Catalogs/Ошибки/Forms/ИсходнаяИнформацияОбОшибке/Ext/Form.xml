@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаОК" id="19">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ОК</CommandName>
+				<ExtendedTooltip name="ФормаОКРасширеннаяПодсказка" id="20"/>
+			</Button>
+			<Button name="ФормаЗакрыть" id="3">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьExtendedTooltip" id="4"/>
+			</Button>
+			<Button name="ФормаСправка" id="17">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="18"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<CommandBar name="КоманднаяПанельФорматированногоДокумента" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель форматированного документа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель форматированного документа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<CommandSource>Item.ИсходнаяИнформацияОбОшибке</CommandSource>
+			<ExtendedTooltip name="КоманднаяПанельФорматированногоДокументаРасширеннаяПодсказка" id="22"/>
+			<ChildItems>
+				<Button name="ИсходнаяИнформацияОбОшибкеПредварительныйПросмотр" id="27">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Item.ИсходнаяИнформацияОбОшибке.StandardCommand.Preview</CommandName>
+					<ExtendedTooltip name="ИсходнаяИнформацияОбОшибкеПредварительныйПросмотрРасширеннаяПодсказка" id="28"/>
+				</Button>
+				<Button name="ИсходнаяИнформацияОбОшибкеПечать" id="25">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Item.ИсходнаяИнформацияОбОшибке.StandardCommand.Print</CommandName>
+					<ExtendedTooltip name="ИсходнаяИнформацияОбОшибкеПечатьРасширеннаяПодсказка" id="26"/>
+				</Button>
+				<Button name="ФормаИзменитьФорму" id="23">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+					<ExtendedTooltip name="ФормаИзменитьФормуРасширеннаяПодсказка" id="24"/>
+				</Button>
+				<Button name="ИсходнаяИнформацияОбОшибкеОчиститьФормат" id="40">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ОчиститьФормат</CommandName>
+					<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+					<ExtendedTooltip name="ИсходнаяИнформацияОбОшибкеОчиститьФорматРасширеннаяПодсказка" id="41"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+		<FormattedDocumentField name="ИсходнаяИнформацияОбОшибке" id="1">
+			<DataPath>ИсходнаяИнформацияОбОшибке</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<Width>1</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<ContextMenu name="ИсходнаяИнформацияОбОшибкеКонтекстноеМеню" id="2">
+				<ChildItems>
+					<Button name="ИсходнаяИнформацияОбОшибкеКонтекстноеМенюПерейтиПоСсылке" id="29">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПерейтиПоСсылке</CommandName>
+						<ExtendedTooltip name="ИсходнаяИнформацияОбОшибкеКонтекстноеМенюПерейтиПоСсылкеРасширеннаяПодсказка" id="30"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<ExtendedTooltip name="ИсходнаяИнформацияОбОшибкеРасширеннаяПодсказка" id="5"/>
+			<Events>
+				<Event name="OnChange">ИсходнаяИнформацияОбОшибкеПриИзменении</Event>
+			</Events>
+		</FormattedDocumentField>
+		<UsualGroup name="ГруппаКлиентСУБД" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа клиент СУБД</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа клиент СУБД</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКлиентСУБДРасширеннаяПодсказка" id="7"/>
+			<ChildItems>
+				<InputField name="Клиент" id="8">
+					<DataPath>Клиент</DataPath>
+					<Width>10</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="КлиентКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="КлиентРасширеннаяПодсказка" id="10"/>
+				</InputField>
+				<InputField name="СУБД" id="11">
+					<DataPath>СУБД</DataPath>
+					<Width>10</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="СУБДКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="СУБДРасширеннаяПодсказка" id="13"/>
+				</InputField>
+				<InputField name="ВерсияПлатформы" id="14">
+					<DataPath>ВерсияПлатформы</DataPath>
+					<Width>10</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ВерсияПлатформыКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ВерсияПлатформыРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="КлиентТипПлатформы" id="34">
+					<DataPath>КлиентТипПлатформы</DataPath>
+					<ContextMenu name="КлиентТипПлатформыКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="КлиентТипПлатформыРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<InputField name="СерверТипПлатформы" id="37">
+					<DataPath>СерверТипПлатформы</DataPath>
+					<ContextMenu name="СерверТипПлатформыКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="СерверТипПлатформыРасширеннаяПодсказка" id="39"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="КодОбращения" id="31">
+			<DataPath>КодОбращения</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Можно указать произвольный код. Например, идентификатор обращения в системе поддержки.</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="КодОбращенияКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="КодОбращенияРасширеннаяПодсказка" id="33"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ИсходнаяИнформацияОбОшибке" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исходная информация об ошибке</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:fd="http://v8.1c.ru/8.2/data/formatted-document">fd:FormattedDocument</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Клиент" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ВидыКлиентов1СПредприятия</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СУБД" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СУБД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СУБД</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ВерсияПлатформы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия платформы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>15</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КодОбращения" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код обращения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПризнакиИдентификаторовОбращенийПоОшибкам" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Признаки идентификаторов обращений по ошибкам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КлиентТипПлатформы" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип платформы (клиент)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ТипПлатформы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СерверТипПлатформы" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип платформы (сервер)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ТипПлатформы</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОК</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПерейтиПоСсылке" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти по ссылке</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти по ссылке</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПерейтиПоСсылке</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОчиститьФормат" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить формат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить формат, оставить только текст</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьФормат</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ДоступноРедактирование">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

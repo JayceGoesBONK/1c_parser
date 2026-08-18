@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Width>60</Width>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаПостроитьОчередь" id="23">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПостроитьОчередь</CommandName>
+				<ExtendedTooltip name="ФормаПостроитьОчередьРасширеннаяПодсказка" id="24"/>
+			</Button>
+			<Button name="ФормаПроверитьОчередь" id="25">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПроверитьОчередь</CommandName>
+				<ExtendedTooltip name="ФормаПроверитьОчередьРасширеннаяПодсказка" id="26"/>
+			</Button>
+			<Button name="ФормаСгенерироватьКод" id="31">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СгенерироватьКод</CommandName>
+				<ExtendedTooltip name="ФормаСгенерироватьКодРасширеннаяПодсказка" id="32"/>
+			</Button>
+			<Button name="ФормаМожноСтроитьОчередь" id="33">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.МожноСтроитьОчередь</CommandName>
+				<ExtendedTooltip name="ФормаМожноСтроитьОчередьРасширеннаяПодсказка" id="34"/>
+			</Button>
+			<Button name="ФормаЗаполнитьПроцедуруПроверки" id="35">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗаполнитьПроцедуруПроверки</CommandName>
+				<ExtendedTooltip name="ФормаЗаполнитьПроцедуруПроверкиРасширеннаяПодсказка" id="36"/>
+			</Button>
+			<Button name="ФормаПостроитьОчередьИСгенерироватьКод" id="40">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПостроитьОчередьИСгенерироватьКод</CommandName>
+				<ExtendedTooltip name="ФормаПостроитьОчередьИСгенерироватьКодРасширеннаяПодсказка" id="41"/>
+			</Button>
+			<Button name="Отмена" id="27">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Отмена</CommandName>
+				<ExtendedTooltip name="ОтменаРасширеннаяПодсказка" id="28"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Проект" id="1">
+			<DataPath>Проект</DataPath>
+			<ContextMenu name="ПроектКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Версия" id="37">
+			<DataPath>Версия</DataPath>
+			<ChoiceParameterLinks>
+				<xr:Link>
+					<xr:Name>Отбор.Владелец</xr:Name>
+					<xr:DataPath xsi:type="xs:string">Проект</xr:DataPath>
+					<xr:ValueChange>Clear</xr:ValueChange>
+				</xr:Link>
+			</ChoiceParameterLinks>
+			<ContextMenu name="ВерсияКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ВерсияРасширеннаяПодсказка" id="39"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Проект" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="Библиотеки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Библиотеки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Save>
+				<Field>Библиотеки</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Settings>
+		</Attribute>
+		<Attribute name="Версия" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВерсииПроекта</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПроверитьОчередь" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить очередь</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить очередь</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьОчередь</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПостроитьОчередь" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Построить очередь</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Построить очередь</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПостроитьОчередь</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Отмена" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отмена</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СгенерироватьКод" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать код</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать код</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СгенерироватьКод</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="МожноСтроитьОчередь" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Можно строить очередь</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Можно строить очередь</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>МожноСтроитьОчередь</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаполнитьПроцедуруПроверки" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить процедуру проверки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить процедуру проверки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПроцедуруПроверки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПостроитьОчередьИСгенерироватьКод" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Построить очередь и сгенерировать код</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Построить очередь и сгенерировать код</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПостроитьОчередьИСгенерироватьКод</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Проект">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="Режим">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="Версия">
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВерсииПроекта</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

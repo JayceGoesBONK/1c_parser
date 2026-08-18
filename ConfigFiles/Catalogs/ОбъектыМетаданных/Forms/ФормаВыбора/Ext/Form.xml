@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<ButtonGroup name="ГрупповыеКоманды" id="36">
+				<Visible>false</Visible>
+				<Enabled>false</Enabled>
+				<EnableContentChange>true</EnableContentChange>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Групповые команды</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Групповые команды</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ГрупповыеКомандыExtendedTooltip" id="50"/>
+				<ChildItems>
+					<Button name="ФормаОбщаяКомандаРегламенты" id="29">
+						<Type>CommandBarButton</Type>
+						<CommandName>CommonCommand.Регламенты</CommandName>
+						<DataPath>Items.Список.CurrentData.Ref</DataPath>
+						<ExtendedTooltip name="ФормаОбщаяКомандаРегламентыExtendedTooltip" id="51"/>
+					</Button>
+					<Button name="ФормаОтчетСравнениеРеквизитовОбъектовМетаданныхСравнениеРеквизитовОбъектовМетаданных" id="35">
+						<Type>CommandBarButton</Type>
+						<CommandName>Report.СравнениеРеквизитовОбъектовМетаданных.Command.СравнениеРеквизитовОбъектовМетаданных</CommandName>
+						<DataPath>Items.Список.CurrentData.Ref</DataPath>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаОтчетСравнениеРеквизитовОбъектовМетаданныхСравнениеРеквизитовОбъектовМетаданныхExtendedTooltip" id="52"/>
+					</Button>
+					<Button name="ФормаОбщаяКомандаERДиаграмма" id="37">
+						<Type>CommandBarButton</Type>
+						<CommandName>CommonCommand.ERДиаграмма</CommandName>
+						<DataPath>Items.Список.CurrentData.Ref</DataPath>
+						<ExtendedTooltip name="ФормаОбщаяКомандаERДиаграммаExtendedTooltip" id="53"/>
+					</Button>
+					<Button name="ФормаОбщаяКомандаСправка" id="40">
+						<Type>CommandBarButton</Type>
+						<CommandName>CommonCommand.Справка</CommandName>
+						<DataPath>Items.Список.CurrentData.Ref</DataPath>
+						<ExtendedTooltip name="ФормаОбщаяКомандаСправкаExtendedTooltip" id="56"/>
+					</Button>
+					<Button name="ФормаОбщаяКомандаУстановитьСтатусНеПроверено" id="104">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<Enabled>false</Enabled>
+						<CommandName>CommonCommand.УстановитьСтатусНеПроверено</CommandName>
+						<DataPath>Items.Список.CurrentData.Ref</DataPath>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаОбщаяКомандаУстановитьСтатусНеПровереноРасширеннаяПодсказка" id="105"/>
+					</Button>
+					<Button name="ФормаОбщаяКомандаУстановитьСтатусПроверено" id="106">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<Enabled>false</Enabled>
+						<CommandName>CommonCommand.УстановитьСтатусПроверено</CommandName>
+						<DataPath>Items.Список.CurrentData.Ref</DataPath>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаОбщаяКомандаУстановитьСтатусПровереноРасширеннаяПодсказка" id="107"/>
+					</Button>
+					<Button name="ФормаОбщаяКомандаУстановитьСтатусСнятоСКонтроля" id="108">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<Enabled>false</Enabled>
+						<CommandName>CommonCommand.УстановитьСтатусСнятоСКонтроля</CommandName>
+						<DataPath>Items.Список.CurrentData.Ref</DataPath>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаОбщаяКомандаУстановитьСтатусСнятоСКонтроляРасширеннаяПодсказка" id="109"/>
+					</Button>
+					<Button name="ФормаОбщаяКомандаСравнитьОбъектСПровереннойВерсией" id="110">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<Enabled>false</Enabled>
+						<CommandName>CommonCommand.СравнитьОбъектСПровереннойВерсией</CommandName>
+						<DataPath>Items.Список.CurrentData.Ref</DataPath>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаОбщаяКомандаСравнитьОбъектСПровереннойВерсиейРасширеннаяПодсказка" id="111"/>
+					</Button>
+					<Button name="ФормаОбщаяКомандаНастройкаПараметровСравненияВерсийОбъектов" id="112">
+						<Type>CommandBarButton</Type>
+						<Visible>false</Visible>
+						<Enabled>false</Enabled>
+						<CommandName>CommonCommand.НастройкаПараметровСравненияВерсийОбъектов</CommandName>
+						<DataPath>Items.Список.CurrentData.Ref</DataPath>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаОбщаяКомандаНастройкаПараметровСравненияВерсийОбъектовРасширеннаяПодсказка" id="113"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ОтборыПоВидамМетаданных" id="93">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отборы по видам метаданных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отборы по видам метаданных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОтборыПоВидамМетаданныхРасширеннаяПодсказка" id="94"/>
+			<ChildItems>
+				<CheckBoxField name="ОтбиратьИсходящиеМетаданныеФункции" id="95">
+					<DataPath>ОтбиратьИсходящиеМетаданныеФункции</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтбиратьИсходящиеМетаданныеФункцииКонтекстноеМеню" id="96"/>
+					<ExtendedTooltip name="ОтбиратьИсходящиеМетаданныеФункцииРасширеннаяПодсказка" id="97"/>
+					<Events>
+						<Event name="OnChange">ОтбиратьИсходящиеМетаданныеФункцииПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ОтбиратьМетаданныеУчетныхМеханизмов" id="98">
+					<DataPath>ОтбиратьМетаданныеУчетныхМеханизмов</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтбиратьМетаданныеУчетныхМеханизмовКонтекстноеМеню" id="99"/>
+					<ExtendedTooltip name="ОтбиратьМетаданныеУчетныхМеханизмовРасширеннаяПодсказка" id="100"/>
+					<Events>
+						<Event name="OnChange">ОтбиратьМетаданныеУчетныхМеханизмовПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ОтбиратьОтчетыИСервисныеОбъекты" id="101">
+					<DataPath>ОтбиратьОтчетыИСервисныеОбъекты</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтбиратьОтчетыИСервисныеОбъектыКонтекстноеМеню" id="102"/>
+					<ExtendedTooltip name="ОтбиратьОтчетыИСервисныеОбъектыРасширеннаяПодсказка" id="103"/>
+					<Events>
+						<Event name="OnChange">ОтбиратьОтчетыИСервисныеОбъектыПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Список" id="1">
+			<Representation>Tree</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChoiceMode>true</ChoiceMode>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.ИндексКартинки</RowPictureDataPath>
+			<RowsPicture>
+				<xr:Ref>CommonPicture.ОбъектыМетаданных</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</RowsPicture>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="64"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="84">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="85"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="86"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="87">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="88"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="89"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="90">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="91"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="92"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Код" id="6">
+					<DataPath>Список.Code</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="КодКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="КодExtendedTooltip" id="65"/>
+				</LabelField>
+				<LabelField name="Наименование" id="4">
+					<DataPath>Список.Description</DataPath>
+					<Visible>false</Visible>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="69"/>
+				</LabelField>
+				<LabelField name="Имя" id="18">
+					<DataPath>Список.Имя</DataPath>
+					<ContextMenu name="ИмяКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ИмяExtendedTooltip" id="70"/>
+				</LabelField>
+				<LabelField name="Ответственный" id="24">
+					<DataPath>Список.Ответственный</DataPath>
+					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="72"/>
+				</LabelField>
+				<LabelField name="Владелец" id="48">
+					<DataPath>Список.Owner</DataPath>
+					<ContextMenu name="ВладелецКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ВладелецExtendedTooltip" id="73"/>
+				</LabelField>
+				<LabelField name="РазделПроекта" id="81">
+					<DataPath>Список.РазделПроекта</DataPath>
+					<ContextMenu name="РазделПроектаКонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="РазделПроектаРасширеннаяПодсказка" id="83"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>~Список.ЕстьИзменения</Field>
+				<Field>Список.Description</Field>
+				<Field>Список.IsFolder</Field>
+				<Field>Список.Owner</Field>
+				<Field>Список.Имя</Field>
+				<Field>Список.ИндексКартинки</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникОбъектыМетаданных.Ссылка,
+	СправочникОбъектыМетаданных.ВерсияДанных,
+	СправочникОбъектыМетаданных.ПометкаУдаления,
+	СправочникОбъектыМетаданных.Родитель,
+	СправочникОбъектыМетаданных.ЭтоГруппа,
+	СправочникОбъектыМетаданных.Код,
+	СправочникОбъектыМетаданных.Наименование,
+	СправочникОбъектыМетаданных.ВключатьСправкуВСодержание,
+	СправочникОбъектыМетаданных.Имя,
+	СправочникОбъектыМетаданных.Ответственный,
+	СправочникОбъектыМетаданных.Владелец,
+	СправочникОбъектыМетаданных.РазделПроекта,
+	&amp;ИндексКартикиПереопределяемый КАК ИндексКартинки
+ИЗ
+	Справочник.ОбъектыМетаданных КАК СправочникОбъектыМетаданных</QueryText>
+				<MainTable>Catalog.ОбъектыМетаданных</MainTable>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ПометкаУдаления</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Код</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Имя</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ЭтоГруппа</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Текст</dcscor:parameter>
+									<dcscor:value xsi:type="dcscor:Field">Наименование</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТекущийПользователь" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий пользователь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтбиратьИсходящиеМетаданныеФункции" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображать только ссылочные прикладные объекты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтбиратьМетаданныеУчетныхМеханизмов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображать только объекты учетных механизмов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтбиратьОтчетыИСервисныеОбъекты" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображать только отчеты и сервисные объекты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Проект" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Parameters>
+		<Parameter name="ОтбиратьИсходящиеМетаданныеФункции">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ОтбиратьМетаданныеУчетныхМеханизмов">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ОтбиратьОтчетыИСервисныеОбъекты">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

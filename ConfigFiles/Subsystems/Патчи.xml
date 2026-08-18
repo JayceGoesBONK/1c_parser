@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="87752ada-d4d5-44f8-843d-831e8be9ab8d">
+		<Properties>
+			<Name>Патчи</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Патчи</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПатчиСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ШаблонПатча</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыПатчей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВерсииПатчей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПрименимостьПатчей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.СозданиеПатчей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ПубликацияПатчей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОбновлениеПрименимостиИПубликацияПатчей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.Patch</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.АдресСервисаПубликацииИсправлений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗакрытыеКлючиБазовыхВерсий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьПубликациюПатчейВСервисе</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Патчи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеПатчей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ИзменениеПометкиУдаленияПатчей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеПатчей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОпубликованныеПатчиПоСборкамКонфигураций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СтатистикаПатчейПоСборкам</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

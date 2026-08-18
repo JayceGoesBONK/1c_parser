@@ -1,0 +1,1061 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetUnion">
+		<name>Объединение</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Код</dataPath>
+			<field>Код</field>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>16</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Наименование</dataPath>
+			<field>Наименование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВерсияИсправления</dataPath>
+			<field>ВерсияИсправления</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проект</dataPath>
+			<field>Проект</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СпособОбхода</dataPath>
+			<field>СпособОбхода</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Статус</dataPath>
+			<field>Статус</field>
+			<attributeUseRestriction>
+				<field>true</field>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПервойПубликации</dataPath>
+			<field>ДатаПервойПубликации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПубликуемоеОписаниеОшибки</dataPath>
+			<field>ПубликуемоеОписаниеОшибки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СпособИсправления</dataPath>
+			<field>СпособИсправления</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ошибка</dataPath>
+			<field>Ошибка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проверена</dataPath>
+			<field>Проверена</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПоследнегоИзменения</dataPath>
+			<field>ДатаПоследнегоИзменения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИспользоватьЗакрытиеОшибок</dataPath>
+			<field>ИспользоватьЗакрытиеОшибок</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Закрыта</dataPath>
+			<field>Закрыта</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СборкаИсправления</dataPath>
+			<field>СборкаИсправления</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаИсправления</dataPath>
+			<field>ДатаИсправления</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодСборкиИсправления</dataPath>
+			<field>КодСборкиИсправления</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код сборки исправления</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодВерсииИсправления</dataPath>
+			<field>КодВерсииИсправления</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код версии исправления</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<item xsi:type="DataSetQuery">
+			<name>ЗапросПоОшибкамПроекта</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Ошибка</dataPath>
+				<field>Ошибка</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВерсияИсправления</dataPath>
+				<field>ВерсияИсправления</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаИсправления</dataPath>
+				<field>ДатаИсправления</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаПервойПубликации</dataPath>
+				<field>ДатаПервойПубликации</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаПоследнегоИзменения</dataPath>
+				<field>ДатаПоследнегоИзменения</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Закрыта</dataPath>
+				<field>Закрыта</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ИспользоватьЗакрытиеОшибок</dataPath>
+				<field>ИспользоватьЗакрытиеОшибок</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Код</dataPath>
+				<field>Код</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Наименование</dataPath>
+				<field>Наименование</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Проверена</dataPath>
+				<field>Проверена</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Проект</dataPath>
+				<field>Проект</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПубликуемоеОписаниеОшибки</dataPath>
+				<field>ПубликуемоеОписаниеОшибки</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СборкаИсправления</dataPath>
+				<field>СборкаИсправления</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СпособИсправления</dataPath>
+				<field>СпособИсправления</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СпособОбхода</dataPath>
+				<field>СпособОбхода</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Статус</dataPath>
+				<field>Статус</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КодСборкиИсправления</dataPath>
+				<field>КодСборкиИсправления</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Код сборки исправления</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СборкиВерсии.Ссылка КАК Сборка,
+	СборкиВерсии.Владелец КАК Версия,
+	СборкиВерсии.Владелец.Ветка КАК Ветка,
+	СборкиВерсии.ДатаСборки КАК ДатаСборки
+ПОМЕСТИТЬ ВТСборки
+ИЗ
+	Справочник.СборкиВерсии КАК СборкиВерсии
+ГДЕ
+	СборкиВерсии.Ссылка = &amp;Сборка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СборкиВерсии.Ссылка КАК Сборка,
+	СборкиВерсии.Владелец КАК Версия,
+	СборкиВерсии.Владелец.Ветка КАК Ветка,
+	СборкиВерсии.ДатаСборки КАК ДатаСборки
+ПОМЕСТИТЬ ВТПредыдущиеСборки
+ИЗ
+	Справочник.СборкиВерсии КАК СборкиВерсии
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТСборки КАК ВТСборки
+		ПО (СборкиВерсии.Владелец = &amp;Проект)
+			И СборкиВерсии.Владелец.Ветка = ВТСборки.Ветка
+			И (СборкиВерсии.ДатаСборки &lt; ВТСборки.ДатаСборки
+					И СборкиВерсии.ДатаСборки &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+				ИЛИ СборкиВерсии.Ссылка = &amp;Сборка)
+ГДЕ
+	НЕ СборкиВерсии.ПометкаУдаления
+	И СборкиВерсии.ДатаСборки &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СборкиВерсии.Ссылка КАК Сборка,
+	СборкиВерсии.Владелец КАК Версия,
+	СборкиВерсии.Владелец.Ветка КАК Ветка,
+	СборкиВерсии.ДатаСборки КАК ДатаСборки,
+	ВЫБОР
+		КОГДА СборкиВерсии.ПубликуемыйНомерСборки ПОДОБНО ""
+			ТОГДА СборкиВерсии.Код
+		ИНАЧЕ СборкиВерсии.ПубликуемыйНомерСборки
+	КОНЕЦ КАК КодСборки,
+	ВЫБОР
+		КОГДА СборкиВерсии.Владелец.ПубликуемыйНомерВерсии ПОДОБНО ""
+			ТОГДА СборкиВерсии.Владелец.Код
+		ИНАЧЕ СборкиВерсии.Владелец.ПубликуемыйНомерВерсии
+	КОНЕЦ КАК НомерВерсии
+ПОМЕСТИТЬ ВТПоследующиеСборки
+ИЗ
+	Справочник.СборкиВерсии КАК СборкиВерсии
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТСборки КАК ВТСборки
+		ПО (СборкиВерсии.Владелец = &amp;Проект)
+			И СборкиВерсии.Владелец.Ветка = ВТСборки.Ветка
+			И СборкиВерсии.ДатаСборки &gt; ВТСборки.ДатаСборки
+ГДЕ
+	НЕ СборкиВерсии.ПометкаУдаления
+	И СборкиВерсии.ДатаСборки &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+	И (СборкиВерсии.Опубликована
+			ИЛИ НЕ &amp;ВключатьТолькоПубликуемые)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Ошибки.Ссылка КАК Ошибка,
+	Ошибки.ДатаИсправления КАК ДатаИсправления
+ПОМЕСТИТЬ ВТОшибки
+ИЗ
+	Справочник.Ошибки КАК Ошибки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТПредыдущиеСборки КАК ВТПредудущиеСборки
+		ПО (Ошибки.Обнаружена = ЗНАЧЕНИЕ(Перечисление.МестаОбнаруженияОшибок.ВСборке))
+			И Ошибки.СборкаОбнаружения = ВТПредудущиеСборки.Сборка
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТСборки КАК ВТСборки
+		ПО (Ошибки.ДатаИсправления &gt; ВТСборки.ДатаСборки
+				ИЛИ НЕ Ошибки.Исправлена)
+ГДЕ
+	Ошибки.Обнаружена = ЗНАЧЕНИЕ(Перечисление.МестаОбнаруженияОшибок.ВСборке)
+	И (Ошибки.Исправляется = ЗНАЧЕНИЕ(Перечисление.ВариантыИсправленияОшибок.ТолькоВВеткеОбнаружения)
+			ИЛИ Ошибки.Исправляется = ЗНАЧЕНИЕ(Перечисление.ВариантыИсправленияОшибок.ТолькоВОсновнойВеткеПроекта))
+	И НЕ Ошибки.ПометкаУдаления
+	И (Ошибки.СтатусПубликации = ЗНАЧЕНИЕ(Перечисление.СтатусыПубликацииОшибок.Публикуется)
+			ИЛИ НЕ &amp;ВключатьТолькоПубликуемые)
+	И Ошибки.Владелец = &amp;Проект
+	И НЕ Ошибки.Отозвана
+{ГДЕ
+	(Ошибки.ДатаПервойПубликации &gt;= НАЧАЛОПЕРИОДА(&amp;ДатаПубликации, ДЕНЬ)
+			ИЛИ Ошибки.ДатаИзмененияПубликации &gt;= НАЧАЛОПЕРИОДА(&amp;ДатаПубликации, ДЕНЬ))}
+
+ОБЪЕДИНИТЬ
+
+ВЫБРАТЬ
+	Ошибки.Ссылка,
+	Ошибки.ДатаИсправления
+ИЗ
+	Справочник.Ошибки КАК Ошибки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТСборки КАК ВТСборки
+		ПО (Ошибки.Обнаружена = ЗНАЧЕНИЕ(Перечисление.МестаОбнаруженияОшибок.ВВетке)
+					И Ошибки.ВеткаОбнаружения = ВТСборки.Ветка
+					И Ошибки.ДатаОбнаружения &lt;= ВТСборки.ДатаСборки
+					И Ошибки.ДатаИсправления &gt; ВТСборки.ДатаСборки
+				ИЛИ НЕ Ошибки.Исправлена)
+ГДЕ
+	Ошибки.Обнаружена = ЗНАЧЕНИЕ(Перечисление.МестаОбнаруженияОшибок.ВВетке)
+	И Ошибки.Исправляется = ЗНАЧЕНИЕ(Перечисление.ВариантыИсправленияОшибок.ТолькоВВеткеОбнаружения)
+	И НЕ Ошибки.ПометкаУдаления
+	И (Ошибки.СтатусПубликации = ЗНАЧЕНИЕ(Перечисление.СтатусыПубликацииОшибок.Публикуется)
+			ИЛИ НЕ &amp;ВключатьТолькоПубликуемые)
+	И Ошибки.Владелец = &amp;Проект
+	И НЕ Ошибки.Отозвана
+{ГДЕ
+	(Ошибки.ДатаПервойПубликации &gt;= НАЧАЛОПЕРИОДА(&amp;ДатаПубликации, ДЕНЬ)
+			ИЛИ Ошибки.ДатаИзмененияПубликации &gt;= НАЧАЛОПЕРИОДА(&amp;ДатаПубликации, ДЕНЬ))}
+
+ОБЪЕДИНИТЬ
+
+ВЫБРАТЬ
+	ОшибкиИсправлениеВВетках.Ссылка,
+	МИНИМУМ(ВЫБОР
+			КОГДА ОшибкиИсправлениеВВетках.Ветка = ОшибкиИсправлениеВВетках.ВеткаИсправления
+					И ОшибкиИсправлениеВВетках.СостояниеИсправления = ЗНАЧЕНИЕ(Перечисление.СостоянияИсправленияОшибок.Исправлена)
+				ТОГДА ОшибкиИсправлениеВВетках.ДатаИсправления
+			КОГДА ОшибкиИсправлениеВВетках.Ветка &lt;&gt; ОшибкиИсправлениеВВетках.ВеткаИсправления
+					И ОшибкиИсправлениеВВетках.ВеткаИсправления.ДатаПомещения &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+					И ОшибкиИсправлениеВВетках.ВеткаИсправления.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыВеток.Помещена)
+					И ОшибкиИсправлениеВВетках.СостояниеИсправления = ЗНАЧЕНИЕ(Перечисление.СостоянияИсправленияОшибок.Исправлена)
+				ТОГДА ОшибкиИсправлениеВВетках.ВеткаИсправления.ДатаПомещения
+			ИНАЧЕ ДАТАВРЕМЯ(1, 1, 1)
+		КОНЕЦ)
+ИЗ
+	Справочник.Ошибки.ИсправлениеВВетках КАК ОшибкиИсправлениеВВетках
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТСборки КАК ВТСборки
+		ПО ОшибкиИсправлениеВВетках.Ветка = ВТСборки.Ветка
+			И (ОшибкиИсправлениеВВетках.Ветка = ОшибкиИсправлениеВВетках.ВеткаИсправления
+					И (ОшибкиИсправлениеВВетках.ДатаИсправления &gt; ВТСборки.ДатаСборки
+						ИЛИ ОшибкиИсправлениеВВетках.СостояниеИсправления &lt;&gt; ЗНАЧЕНИЕ(Перечисление.СостоянияИсправленияОшибок.Исправлена))
+				ИЛИ ОшибкиИсправлениеВВетках.Ветка &lt;&gt; ОшибкиИсправлениеВВетках.ВеткаИсправления
+					И (ОшибкиИсправлениеВВетках.ВеткаИсправления.ДатаПомещения &gt; ВТСборки.ДатаСборки
+						ИЛИ ОшибкиИсправлениеВВетках.ВеткаИсправления.Статус &lt;&gt; ЗНАЧЕНИЕ(Перечисление.СтатусыВеток.Помещена)
+						ИЛИ ОшибкиИсправлениеВВетках.СостояниеИсправления &lt;&gt; ЗНАЧЕНИЕ(Перечисление.СостоянияИсправленияОшибок.Исправлена)))
+ГДЕ
+	ОшибкиИсправлениеВВетках.Ссылка.Исправляется = ЗНАЧЕНИЕ(Перечисление.ВариантыИсправленияОшибок.ВРазныхВетках)
+	И НЕ ОшибкиИсправлениеВВетках.Ссылка.ПометкаУдаления
+	И (ОшибкиИсправлениеВВетках.Ссылка.СтатусПубликации = ЗНАЧЕНИЕ(Перечисление.СтатусыПубликацииОшибок.Публикуется)
+			ИЛИ НЕ &amp;ВключатьТолькоПубликуемые)
+	И ОшибкиИсправлениеВВетках.Ссылка.Владелец = &amp;Проект
+	И НЕ ОшибкиИсправлениеВВетках.Ссылка.Отозвана
+{ГДЕ
+	(ОшибкиИсправлениеВВетках.Ссылка.ДатаПервойПубликации &gt;= НАЧАЛОПЕРИОДА(&amp;ДатаПубликации, ДЕНЬ)
+			ИЛИ ОшибкиИсправлениеВВетках.Ссылка.ДатаИзмененияПубликации &gt;= НАЧАЛОПЕРИОДА(&amp;ДатаПубликации, ДЕНЬ))}
+
+СГРУППИРОВАТЬ ПО
+	ОшибкиИсправлениеВВетках.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Ошибки.Ошибка КАК Ошибка,
+	МИНИМУМ(ПоследующиеСборки.ДатаСборки) КАК ДатаСборки
+ПОМЕСТИТЬ ВТОшибкиИДатыСборокИсправления
+ИЗ
+	ВТОшибки КАК Ошибки
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТПоследующиеСборки КАК ПоследующиеСборки
+		ПО (ПоследующиеСборки.ДатаСборки &gt; Ошибки.ДатаИсправления)
+			И (Ошибки.ДатаИсправления &lt;&gt; ДАТАВРЕМЯ(1, 1, 1))
+
+СГРУППИРОВАТЬ ПО
+	Ошибки.Ошибка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ОшибкиИДатыСборокИсправления.Ошибка КАК Ошибка,
+	МИНИМУМ(ПоследующиеСборки.Сборка) КАК Сборка
+ПОМЕСТИТЬ ВТОшибкиИСборкиИсправления
+ИЗ
+	ВТОшибкиИДатыСборокИсправления КАК ОшибкиИДатыСборокИсправления
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТПоследующиеСборки КАК ПоследующиеСборки
+		ПО ОшибкиИДатыСборокИсправления.ДатаСборки = ПоследующиеСборки.ДатаСборки
+
+СГРУППИРОВАТЬ ПО
+	ОшибкиИДатыСборокИсправления.Ошибка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ОшибкиИСборкиИсправления.Ошибка КАК Ошибка,
+	ПоследующиеСборки.Сборка КАК СборкаИсправления,
+	ПоследующиеСборки.Версия КАК ВерсияИсправления,
+	ПоследующиеСборки.КодСборки КАК КодСборкиИсправления,
+	ПоследующиеСборки.НомерВерсии КАК КодВерсииИсправления
+ПОМЕСТИТЬ ВТОшибкиИДанныеСборокИсправления
+ИЗ
+	ВТОшибкиИСборкиИсправления КАК ОшибкиИСборкиИсправления
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТПоследующиеСборки КАК ПоследующиеСборки
+		ПО ОшибкиИСборкиИсправления.Сборка = ПоследующиеСборки.Сборка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Ошибки.Ошибка КАК Ошибка,
+	&amp;Префикс + СправочникОшибки.Код КАК Код,
+	СправочникОшибки.Наименование КАК Наименование,
+	СправочникОшибки.Владелец КАК Проект,
+	СправочникОшибки.Статус КАК Статус,
+	СправочникОшибки.СпособОбхода КАК СпособОбхода,
+	СправочникОшибки.СпособИсправления КАК СпособИсправления,
+	СправочникОшибки.ДатаПервойПубликации КАК ДатаПервойПубликации,
+	СправочникОшибки.ДатаИзмененияПубликации КАК ДатаПоследнегоИзменения,
+	СправочникОшибки.ПубликуемоеОписание КАК ПубликуемоеОписаниеОшибки,
+	СправочникОшибки.Проверена КАК Проверена,
+	СправочникОшибки.Закрыта КАК Закрыта,
+	СправочникОшибки.Владелец.ИспользоватьЗакрытиеОшибок КАК ИспользоватьЗакрытиеОшибок,
+	СправочникОшибки.ДатаИсправления КАК ДатаИсправления,
+	ОшибкиИДанныеСборокИсправления.ВерсияИсправления КАК ВерсияИсправления,
+	ОшибкиИДанныеСборокИсправления.СборкаИсправления КАК СборкаИсправления,
+	ОшибкиИДанныеСборокИсправления.КодСборкиИсправления КАК КодСборкиИсправления
+ИЗ
+	ВТОшибки КАК Ошибки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Ошибки КАК СправочникОшибки
+		ПО Ошибки.Ошибка = СправочникОшибки.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТОшибкиИДанныеСборокИсправления КАК ОшибкиИДанныеСборокИсправления
+		ПО Ошибки.Ошибка = ОшибкиИДанныеСборокИсправления.Ошибка</query>
+		</item>
+		<item xsi:type="DataSetQuery">
+			<name>ЗапросПоОшибкамВключаемыхПроектов</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Проект</dataPath>
+				<field>Проект</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Наименование</dataPath>
+				<field>Наименование</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВерсияИсправления</dataPath>
+				<field>ВерсияИсправления</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаПервойПубликации</dataPath>
+				<field>ДатаПервойПубликации</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Ошибка</dataPath>
+				<field>Ошибка</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Проверена</dataPath>
+				<field>Проверена</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СпособИсправления</dataPath>
+				<field>СпособИсправления</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СпособОбхода</dataPath>
+				<field>СпособОбхода</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Статус</dataPath>
+				<field>Статус</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Код</dataPath>
+				<field>Код</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаПоследнегоИзменения</dataPath>
+				<field>ДатаПоследнегоИзменения</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПубликуемоеОписаниеОшибки</dataPath>
+				<field>ПубликуемоеОписаниеОшибки</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ИспользоватьЗакрытиеОшибок</dataPath>
+				<field>ИспользоватьЗакрытиеОшибок</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Закрыта</dataPath>
+				<field>Закрыта</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СборкаИсправления</dataPath>
+				<field>СборкаИсправления</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаИсправления</dataPath>
+				<field>ДатаИсправления</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КодСборкиИсправления</dataPath>
+				<field>КодСборкиИсправления</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Код сборки исправления</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КодВерсииИсправления</dataPath>
+				<field>КодВерсииИсправления</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Код версии исправления</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	СборкиВключаемыхПроектов.Сборка КАК СборкаВключаемогоПроекта,
+	СборкиВключаемыхПроектов.Сборка.Владелец.Владелец КАК ВключаемыйПроект
+ПОМЕСТИТЬ ВТВключаемыеСборки
+ИЗ
+	Справочник.СборкиВерсии.СборкиВключаемыхПроектов КАК СборкиВключаемыхПроектов
+ГДЕ
+	СборкиВключаемыхПроектов.Ссылка = &amp;Сборка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ПроектыИспользуемыеРазделыВключаемыхПроектов.РазделПроекта КАК Раздел,
+	ПроектыИспользуемыеРазделыВключаемыхПроектов.РазделПроекта.Владелец КАК Проект
+ПОМЕСТИТЬ ВТИспользуемыеРазделы
+ИЗ
+	Справочник.Проекты.ИспользуемыеРазделыВключаемыхПроектов КАК ПроектыИспользуемыеРазделыВключаемыхПроектов
+ГДЕ
+	ПроектыИспользуемыеРазделыВключаемыхПроектов.Ссылка = &amp;Проект
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	КОЛИЧЕСТВО(ИспользуемыеРазделы.Раздел) КАК КоличествоРазделов,
+	ИспользуемыеРазделы.Проект КАК Проект
+ПОМЕСТИТЬ ВТИспользованиеРазделов
+ИЗ
+	ВТИспользуемыеРазделы КАК ИспользуемыеРазделы
+
+СГРУППИРОВАТЬ ПО
+	ИспользуемыеРазделы.Проект
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВключаемыеПроекты.Проект КАК Проект,
+	ЕСТЬNULL(ИспользованиеРазделов.КоличествоРазделов, 0) КАК КоличествоРазделов
+ПОМЕСТИТЬ ВТКоличествоРазделовПроектов
+ИЗ
+	Справочник.Проекты.ВключаемыеПроекты КАК ВключаемыеПроекты
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТИспользованиеРазделов КАК ИспользованиеРазделов
+		ПО ВключаемыеПроекты.Проект = ИспользованиеРазделов.Проект
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Ошибки.Ссылка КАК Ошибка,
+	&amp;Префикс + Ошибки.Код КАК Код,
+	Ошибки.Наименование КАК Наименование,
+	Ошибки.Владелец КАК Проект,
+	Ошибки.Статус КАК Статус,
+	Ошибки.ВерсияИсправления КАК ВерсияИсправления,
+	Ошибки.ДатаПервойПубликации КАК ДатаПервойПубликации,
+	Ошибки.ДатаИзмененияПубликации КАК ДатаПоследнегоИзменения,
+	Ошибки.Проверена КАК Проверена,
+	Ошибки.Закрыта КАК Закрыта,
+	Ошибки.Владелец.ИспользоватьЗакрытиеОшибок КАК ИспользоватьЗакрытиеОшибок,
+	Ошибки.ДатаИсправления КАК ДатаИсправления
+ПОМЕСТИТЬ ВТОшибки
+ИЗ
+	Справочник.Ошибки КАК Ошибки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТВключаемыеСборки КАК ВключаемыеСборки
+		ПО Ошибки.Владелец = ВключаемыеСборки.ВключаемыйПроект
+			И Ошибки.СборкаОбнаружения.ДатаСборки &lt;= ВключаемыеСборки.СборкаВключаемогоПроекта.ДатаСборки
+			И ((ВключаемыеСборки.СборкаВключаемогоПроекта.ДатаСборки &lt; Ошибки.ДатаИсправления 
+				ИЛИ ВключаемыеСборки.СборкаВключаемогоПроекта.Владелец.ПорядковыйНомер &lt; Ошибки.ВерсияИсправления.ПорядковыйНомер)
+				ИЛИ Ошибки.ДатаИсправления = ДАТАВРЕМЯ(1, 1, 1)
+				ИЛИ Ошибки.ВерсияИсправления = ЗНАЧЕНИЕ(Справочник.ВерсииПроекта.ПустаяСсылка))
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТИспользуемыеРазделы КАК ИспользуемыеРазделы
+		ПО Ошибки.РазделПроекта = ИспользуемыеРазделы.Раздел
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТКоличествоРазделовПроектов КАК КоличествоРазделовПроектов
+		ПО Ошибки.Владелец = КоличествоРазделовПроектов.Проект
+			И (КоличествоРазделовПроектов.КоличествоРазделов &gt; 0)
+ГДЕ
+	НЕ Ошибки.ПометкаУдаления
+	И &amp;ВключатьОшибкиПроектовБиблиотек
+	И (Ошибки.СтатусПубликации = ЗНАЧЕНИЕ(Перечисление.СтатусыПубликацииОшибок.Публикуется)
+		ИЛИ НЕ &amp;ВключатьТолькоПубликуемые)
+	И НЕ Ошибки.Отозвана
+{ГДЕ
+	(Ошибки.ДатаПервойПубликации &gt;= НАЧАЛОПЕРИОДА(&amp;ДатаПубликации, ДЕНЬ)
+			ИЛИ Ошибки.ДатаИзмененияПубликации &gt;= НАЧАЛОПЕРИОДА(&amp;ДатаПубликации, ДЕНЬ))}
+
+ОБЪЕДИНИТЬ
+
+ВЫБРАТЬ
+	Ошибки.Ссылка,
+	&amp;Префикс + Ошибки.Код,
+	Ошибки.Наименование,
+	Ошибки.Владелец,
+	Ошибки.Статус,
+	Ошибки.ВерсияИсправления,
+	Ошибки.ДатаПервойПубликации,
+	Ошибки.ДатаИзмененияПубликации,
+	Ошибки.Проверена,
+	Ошибки.Закрыта,
+	Ошибки.Владелец.ИспользоватьЗакрытиеОшибок,
+	Ошибки.ДатаИсправления
+ИЗ
+	Справочник.Ошибки КАК Ошибки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТВключаемыеСборки КАК ВключаемыеСборки
+		ПО Ошибки.Владелец = ВключаемыеСборки.ВключаемыйПроект
+			И Ошибки.СборкаОбнаружения.ДатаСборки &lt;= ВключаемыеСборки.СборкаВключаемогоПроекта.ДатаСборки
+			И ((ВключаемыеСборки.СборкаВключаемогоПроекта.ДатаСборки &lt; Ошибки.ДатаИсправления 
+				ИЛИ ВключаемыеСборки.СборкаВключаемогоПроекта.Владелец.ПорядковыйНомер &lt; Ошибки.ВерсияИсправления.ПорядковыйНомер)
+				ИЛИ Ошибки.ДатаИсправления = ДАТАВРЕМЯ(1, 1, 1)
+				ИЛИ Ошибки.ВерсияИсправления = ЗНАЧЕНИЕ(Справочник.ВерсииПроекта.ПустаяСсылка))
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТКоличествоРазделовПроектов КАК КоличествоРазделовПроектов
+		ПО Ошибки.Владелец = КоличествоРазделовПроектов.Проект
+			И (КоличествоРазделовПроектов.КоличествоРазделов = 0)
+ГДЕ
+	НЕ Ошибки.ПометкаУдаления
+	И &amp;ВключатьОшибкиПроектовБиблиотек
+	И (Ошибки.СтатусПубликации = ЗНАЧЕНИЕ(Перечисление.СтатусыПубликацииОшибок.Публикуется)
+		ИЛИ НЕ &amp;ВключатьТолькоПубликуемые)
+	И НЕ Ошибки.Отозвана
+{ГДЕ
+	(Ошибки.ДатаПервойПубликации &gt;= НАЧАЛОПЕРИОДА(&amp;ДатаПубликации, ДЕНЬ)
+			ИЛИ Ошибки.ДатаИзмененияПубликации &gt;= НАЧАЛОПЕРИОДА(&amp;ДатаПубликации, ДЕНЬ))}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ЗапросПоДатамСборок.Ошибка КАК Ошибка,
+	МИНИМУМ(СборкиВерсии.Ссылка) КАК СборкаИсправления
+ПОМЕСТИТЬ ВТОшибкиИСборки
+ИЗ
+	(ВЫБРАТЬ
+		Ошибки.Ошибка КАК Ошибка,
+		СборкиВключаемыхПроектов.Ссылка.Владелец КАК Версия,
+		МИНИМУМ(СборкиВключаемыхПроектов.Ссылка.ДатаСборки) КАК ДатаСборки
+	ИЗ
+		ВТОшибки КАК Ошибки
+			ЛЕВОЕ СОЕДИНЕНИЕ Справочник.СборкиВерсии.СборкиВключаемыхПроектов КАК СборкиВключаемыхПроектов
+			ПО Ошибки.ВерсияИсправления = СборкиВключаемыхПроектов.Сборка.Владелец
+				И Ошибки.ДатаИсправления &lt; СборкиВключаемыхПроектов.Сборка.ДатаСборки
+				И Ошибки.ДатаИсправления &lt; СборкиВключаемыхПроектов.Ссылка.ДатаСборки
+	ГДЕ
+		Ошибки.ДатаИсправления &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+		И (СборкиВключаемыхПроектов.Ссылка.Опубликована ИЛИ НЕ &amp;ВключатьТолькоПубликуемые)
+		И СборкиВключаемыхПроектов.Ссылка.Владелец.Владелец = &amp;Проект
+	
+	СГРУППИРОВАТЬ ПО
+		Ошибки.Ошибка,
+		СборкиВключаемыхПроектов.Ссылка.Владелец) КАК ЗапросПоДатамСборок
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.СборкиВерсии КАК СборкиВерсии
+		ПО ЗапросПоДатамСборок.Версия = СборкиВерсии.Владелец
+			И ЗапросПоДатамСборок.ДатаСборки = СборкиВерсии.ДатаСборки
+			И (СборкиВерсии.Опубликована ИЛИ НЕ &amp;ВключатьТолькоПубликуемые)
+
+СГРУППИРОВАТЬ ПО
+	ЗапросПоДатамСборок.Ошибка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Ошибки.Ошибка КАК Ошибка,
+	Ошибки.Код КАК Код,
+	Ошибки.Наименование КАК Наименование,
+	Ошибки.Проект КАК Проект,
+	Ошибки.Статус КАК Статус,
+	ЗНАЧЕНИЕ(Справочник.ВерсииПроекта.ПустаяСсылка) КАК ВерсияИсправления,
+	ОшибкиИСборки.СборкаИсправления КАК СборкаИсправления,
+	"" КАК КодВерсииИсправления,
+	ВЫБОР
+		КОГДА ОшибкиИСборки.СборкаИсправления.ПубликуемыйНомерСборки ПОДОБНО ""
+		ТОГДА ОшибкиИСборки.СборкаИсправления.Код
+		ИНАЧЕ ОшибкиИСборки.СборкаИсправления.ПубликуемыйНомерСборки
+	КОНЕЦ КАК КодСборкиИсправления,
+	Ошибки.Ошибка.СпособОбхода КАК СпособОбхода,
+	Ошибки.Ошибка.СпособИсправления КАК СпособИсправления,
+	Ошибки.ДатаПервойПубликации КАК ДатаПервойПубликации,
+	Ошибки.ДатаПоследнегоИзменения КАК ДатаПоследнегоИзменения,
+	Ошибки.Ошибка.ПубликуемоеОписание КАК ПубликуемоеОписаниеОшибки,
+	Ошибки.Проверена КАК Проверена,
+	Ошибки.Закрыта КАК Закрыта,
+	Ошибки.ИспользоватьЗакрытиеОшибок КАК ИспользоватьЗакрытиеОшибок,
+	Ошибки.ДатаИсправления КАК ДатаИсправления
+ИЗ
+	ВТОшибки КАК Ошибки
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТОшибкиИСборки КАК ОшибкиИСборки
+		ПО Ошибки.Ошибка = ОшибкиИСборки.Ошибка		</query>
+		</item>
+	</dataSet>
+	<parameter>
+		<name>ПрефиксКодовОшибок</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Префикс кодов ошибок</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>5</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</valueType>
+		<value xsi:type="xs:string"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ВключатьОшибкиПроектовБиблиотек</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Включать ошибки проектов библиотек</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>false</useRestriction>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>ВключатьТолькоПубликуемые</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Включать только публикуемые</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">true</value>
+		<useRestriction>false</useRestriction>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>Проект</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Проект</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Проекты</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>Версия</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Версия</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ВерсииПроекта</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<inputParameters>
+			<dcscor:item>
+				<dcscor:parameter>СвязиПараметровВыбора</dcscor:parameter>
+				<dcscor:value xsi:type="dcscor:ChoiceParameterLinks">
+					<dcscor:item>
+						<dcscor:choiceParameter>Отбор.Владелец</dcscor:choiceParameter>
+						<dcscor:value>ПараметрыДанных.Проект</dcscor:value>
+						<dcscor:mode xmlns:d7p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d7p1:LinkedValueChangeMode">Clear</dcscor:mode>
+					</dcscor:item>
+				</dcscor:value>
+			</dcscor:item>
+		</inputParameters>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>Сборка</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сборка</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.СборкиВерсии</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<inputParameters>
+			<dcscor:item>
+				<dcscor:parameter>СвязиПараметровВыбора</dcscor:parameter>
+				<dcscor:value xsi:type="dcscor:ChoiceParameterLinks">
+					<dcscor:item>
+						<dcscor:choiceParameter>Отбор.Владелец</dcscor:choiceParameter>
+						<dcscor:value>ПараметрыДанных.Версия</dcscor:value>
+						<dcscor:mode xmlns:d7p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d7p1:LinkedValueChangeMode">Clear</dcscor:mode>
+					</dcscor:item>
+				</dcscor:value>
+			</dcscor:item>
+		</inputParameters>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>Префикс</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Префикс</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>8</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</valueType>
+		<value xsi:type="xs:string"/>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПрефиксКодовОшибок</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ДатаПубликации</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата публикации</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ОшибкиПрисутствующиеВВерсии</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ошибки, присутствующие в версии</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Ошибка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Код</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПубликуемоеОписаниеОшибки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СпособОбхода</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВерсияИсправления</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СборкаИсправления</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СпособИсправления</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаПервойПубликации</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаПоследнегоИзменения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Проверена</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Закрыта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ИспользоватьЗакрытиеОшибок</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КодВерсииИсправления</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КодСборкиИсправления</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ПрефиксКодовОшибок</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string"/>
+					<dcsset:userSettingID>22eb6289-b81c-4d9f-b558-18027ffee19a</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать префикс кодов ошибок</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВключатьОшибкиПроектовБиблиотек</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>fe98ae2e-cd66-4170-9ee6-e38562dfbcce</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВключатьТолькоПубликуемые</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					<dcsset:userSettingID>258f38bb-9770-45e4-a468-7ec876a99733</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Проект</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>2bcc33fd-1f01-49a4-96ee-9cc63dffd13c</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Версия</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>d4a28eba-1d10-4842-a90f-3c7f0e5484c2</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Сборка</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>7bc4187e-bcd9-48b5-bdb7-2f468094565f</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ДатаПубликации</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>cc83a105-186a-4af7-ae6f-55c17b043186</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Включать только ошибки, опубликованные, или измененные, начиная с даты</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Код</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+	<settingsVariant>
+		<dcsset:name>ОшибкиПрисутствующиеВВерсииКонтекстный</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ошибки присутствующие в версии</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Ошибка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Код</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПубликуемоеОписаниеОшибки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СпособОбхода</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВерсияИсправления</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СборкаИсправления</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СпособИсправления</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаПервойПубликации</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаПоследнегоИзменения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Проверена</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Закрыта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ИспользоватьЗакрытиеОшибок</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КодВерсииИсправления</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КодСборкиИсправления</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ПрефиксКодовОшибок</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string"/>
+					<dcsset:userSettingID>22eb6289-b81c-4d9f-b558-18027ffee19a</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать префикс кодов ошибок</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВключатьОшибкиПроектовБиблиотек</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>fe98ae2e-cd66-4170-9ee6-e38562dfbcce</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВключатьТолькоПубликуемые</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					<dcsset:userSettingID>258f38bb-9770-45e4-a468-7ec876a99733</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ДатаПубликации</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>cc83a105-186a-4af7-ae6f-55c17b043186</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Включать только ошибки, опубликованные, или измененные, начиная с даты</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Код</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

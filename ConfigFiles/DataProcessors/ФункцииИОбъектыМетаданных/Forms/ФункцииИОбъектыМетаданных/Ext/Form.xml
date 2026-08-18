@@ -1,0 +1,1793 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Функции и объекты метаданных</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаСписков" id="61">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Списки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа списков</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСписковРасширеннаяПодсказка" id="62"/>
+			<ChildItems>
+				<UsualGroup name="ФункцииИсходящиеОбъектыМетаданных" id="59">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Функции исходящие объекты метаданных</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Функции исходящие объекты метаданных</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ФункцииИсходящиеОбъектыМетаданныхРасширеннаяПодсказка" id="60"/>
+					<ChildItems>
+						<Table name="Функции" id="1">
+							<Representation>Tree</Representation>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<InitialTreeView>ExpandTopLevel</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Функции</DataPath>
+							<RowPictureDataPath>Функции.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ФункцииКонтекстноеМеню" id="2"/>
+							<AutoCommandBar name="ФункцииКоманднаяПанель" id="3"/>
+							<ExtendedTooltip name="ФункцииРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="ФункцииСтрокаПоиска" id="5">
+								<AdditionSource>
+									<Item>Функции</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ФункцииСтрокаПоискаКонтекстноеМеню" id="6"/>
+								<ExtendedTooltip name="ФункцииСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ФункцииСостояниеПросмотра" id="8">
+								<AdditionSource>
+									<Item>Функции</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ФункцииСостояниеПросмотраКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="ФункцииСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ФункцииУправлениеПоиском" id="11">
+								<AdditionSource>
+									<Item>Функции</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ФункцииУправлениеПоискомКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ФункцииУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="DragCheck">ФункцииПроверкаПеретаскивания</Event>
+								<Event name="OnActivateRow">ФункцииПриАктивизацииСтроки</Event>
+								<Event name="Drag">ФункцииПеретаскивание</Event>
+							</Events>
+							<ChildItems>
+								<CheckBoxField name="ОтображаетсяВИнтерфейсе" id="29">
+									<DataPath>Функции.ОтображаетсяВИнтерфейсе</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Функция отображается в интерфейсе</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HeaderPicture>
+										<xr:Ref>CommonPicture.ВключатьВИнтерфейс</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</HeaderPicture>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОтображаетсяВИнтерфейсеКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="ОтображаетсяВИнтерфейсеРасширеннаяПодсказка" id="31"/>
+								</CheckBoxField>
+								<PictureField name="ИндексКартинкиТипа" id="492">
+									<DataPath>Функции.ИндексКартинкиТипа</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тип функции</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HeaderPicture>
+										<xr:Ref>CommonPicture.ТипФункции</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</HeaderPicture>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.КоллекцияТипыФункций</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="ИндексКартинкиТипаКонтекстноеМеню" id="493"/>
+									<ExtendedTooltip name="ИндексКартинкиТипаРасширеннаяПодсказка" id="494"/>
+								</PictureField>
+								<LabelField name="Наименование" id="20">
+									<DataPath>Функции.Наименование</DataPath>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<ContextMenu name="НаименованиеКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="22"/>
+								</LabelField>
+								<LabelField name="ПолныйКод" id="35">
+									<DataPath>Функции.ПолныйКод</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>10</MaxWidth>
+									<ContextMenu name="ПолныйКодКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="ПолныйКодРасширеннаяПодсказка" id="37"/>
+								</LabelField>
+								<LabelField name="ТипФункции" id="50">
+									<DataPath>Функции.ТипФункции</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<ContextMenu name="ТипФункцииКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="ТипФункцииРасширеннаяПодсказка" id="52"/>
+								</LabelField>
+								<LabelField name="НаименованиеВИнтерфейсе" id="23">
+									<DataPath>Функции.НаименованиеВИнтерфейсе</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<ContextMenu name="НаименованиеВИнтерфейсеКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="НаименованиеВИнтерфейсеРасширеннаяПодсказка" id="25"/>
+								</LabelField>
+								<LabelField name="Подсистема" id="32">
+									<DataPath>Функции.Подсистема</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<ContextMenu name="ПодсистемаКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="ПодсистемаРасширеннаяПодсказка" id="34"/>
+								</LabelField>
+								<LabelField name="Результат" id="41">
+									<DataPath>Функции.Результат</DataPath>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<ContextMenu name="РезультатКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="РезультатРасширеннаяПодсказка" id="43"/>
+								</LabelField>
+								<LabelField name="Ответственный" id="26">
+									<DataPath>Функции.Ответственный</DataPath>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<ContextMenu name="ОтветственныйКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="28"/>
+								</LabelField>
+								<LabelField name="Ссылка" id="47">
+									<DataPath>Функции.Ссылка</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<ContextMenu name="СсылкаКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="49"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+						<Pages name="ИсходящиеОбъектыМетаданныхСервисныеОбъекты" id="499">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Исходящие объекты метаданных сервисные объекты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Исходящие объекты метаданных сервисные объекты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>TabsOnTop</PagesRepresentation>
+							<ExtendedTooltip name="ИсходящиеОбъектыМетаданныхСервисныеОбъектыРасширеннаяПодсказка" id="500"/>
+							<ChildItems>
+								<Page name="ГруппаИсходящиеОбъектыМетаданных" id="501">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Исходящие объекты метаданных</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Исходящие объекты метаданных</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаИсходящиеОбъектыМетаданныхРасширеннаяПодсказка" id="502"/>
+									<ChildItems>
+										<Table name="ИсходящиеОбъектыМетаданных" id="274">
+											<ChangeRowSet>false</ChangeRowSet>
+											<UseAlternationRowColor>true</UseAlternationRowColor>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>ИсходящиеОбъектыМетаданных</DataPath>
+											<RowPictureDataPath>ИсходящиеОбъектыМетаданных.ИндексКартинки</RowPictureDataPath>
+											<RowsPicture>
+												<xr:Ref>CommonPicture.ОбъектыМетаданных</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</RowsPicture>
+											<AutoRefresh>false</AutoRefresh>
+											<AutoRefreshPeriod>60</AutoRefreshPeriod>
+											<Period>
+												<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+												<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+												<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+											</Period>
+											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+											<RestoreCurrentRow>false</RestoreCurrentRow>
+											<TopLevelParent xsi:nil="true"/>
+											<ShowRoot>true</ShowRoot>
+											<AllowRootChoice>false</AllowRootChoice>
+											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+											<ContextMenu name="ИсходящиеОбъектыМетаданныхКонтекстноеМеню" id="275"/>
+											<AutoCommandBar name="ИсходящиеОбъектыМетаданныхКоманднаяПанель" id="276">
+												<Autofill>false</Autofill>
+											</AutoCommandBar>
+											<ExtendedTooltip name="ИсходящиеОбъектыМетаданныхРасширеннаяПодсказка" id="277"/>
+											<SearchStringAddition name="ИсходящиеОбъектыМетаданныхСтрокаПоиска" id="278">
+												<AdditionSource>
+													<Item>ИсходящиеОбъектыМетаданных</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ИсходящиеОбъектыМетаданныхСтрокаПоискаКонтекстноеМеню" id="279"/>
+												<ExtendedTooltip name="ИсходящиеОбъектыМетаданныхСтрокаПоискаРасширеннаяПодсказка" id="280"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ИсходящиеОбъектыМетаданныхСостояниеПросмотра" id="281">
+												<AdditionSource>
+													<Item>ИсходящиеОбъектыМетаданных</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ИсходящиеОбъектыМетаданныхСостояниеПросмотраКонтекстноеМеню" id="282"/>
+												<ExtendedTooltip name="ИсходящиеОбъектыМетаданныхСостояниеПросмотраРасширеннаяПодсказка" id="283"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ИсходящиеОбъектыМетаданныхУправлениеПоиском" id="284">
+												<AdditionSource>
+													<Item>ИсходящиеОбъектыМетаданных</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ИсходящиеОбъектыМетаданныхУправлениеПоискомКонтекстноеМеню" id="285"/>
+												<ExtendedTooltip name="ИсходящиеОбъектыМетаданныхУправлениеПоискомРасширеннаяПодсказка" id="286"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="DragCheck">ИсходящиеОбъектыМетаданныхПроверкаПеретаскивания</Event>
+												<Event name="Drag">ИсходящиеОбъектыМетаданныхПеретаскивание</Event>
+											</Events>
+											<ChildItems>
+												<LabelField name="ИсходящиеОбъектыМетаданныхНаименование" id="293">
+													<DataPath>ИсходящиеОбъектыМетаданных.Наименование</DataPath>
+													<ContextMenu name="ИсходящиеОбъектыМетаданныхНаименованиеКонтекстноеМеню" id="294"/>
+													<ExtendedTooltip name="ИсходящиеОбъектыМетаданныхНаименованиеРасширеннаяПодсказка" id="295"/>
+												</LabelField>
+												<LabelField name="ИсходящиеОбъектыМетаданныхКод" id="290">
+													<DataPath>ИсходящиеОбъектыМетаданных.Код</DataPath>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
+													<ContextMenu name="ИсходящиеОбъектыМетаданныхКодКонтекстноеМеню" id="291"/>
+													<ExtendedTooltip name="ИсходящиеОбъектыМетаданныхКодРасширеннаяПодсказка" id="292"/>
+												</LabelField>
+												<LabelField name="ИсходящиеОбъектыМетаданныхОтветственный" id="296">
+													<DataPath>ИсходящиеОбъектыМетаданных.Ответственный</DataPath>
+													<ContextMenu name="ИсходящиеОбъектыМетаданныхОтветственныйКонтекстноеМеню" id="297"/>
+													<ExtendedTooltip name="ИсходящиеОбъектыМетаданныхОтветственныйРасширеннаяПодсказка" id="298"/>
+												</LabelField>
+												<LabelField name="ИсходящиеОбъектыМетаданныхРазделПроекта" id="302">
+													<DataPath>ИсходящиеОбъектыМетаданных.РазделПроекта</DataPath>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
+													<ContextMenu name="ИсходящиеОбъектыМетаданныхРазделПроектаКонтекстноеМеню" id="303"/>
+													<ExtendedTooltip name="ИсходящиеОбъектыМетаданныхРазделПроектаРасширеннаяПодсказка" id="304"/>
+												</LabelField>
+												<LabelField name="ИсходящиеОбъектыМетаданныхСсылка" id="323">
+													<DataPath>ИсходящиеОбъектыМетаданных.Ссылка</DataPath>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
+													<ContextMenu name="ИсходящиеОбъектыМетаданныхСсылкаКонтекстноеМеню" id="324"/>
+													<ExtendedTooltip name="ИсходящиеОбъектыМетаданныхСсылкаРасширеннаяПодсказка" id="325"/>
+												</LabelField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="ГруппаОтчетыСервисныеОбъекты" id="503">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отчеты, сервисные объекты</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отчеты, сервисные объекты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаОтчетыСервисныеОбъектыРасширеннаяПодсказка" id="504"/>
+									<ChildItems>
+										<Table name="ОтчетыСервисныеОбъекты" id="505">
+											<ChangeRowSet>false</ChangeRowSet>
+											<UseAlternationRowColor>true</UseAlternationRowColor>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>ОтчетыСервисныеОбъекты</DataPath>
+											<RowPictureDataPath>ОтчетыСервисныеОбъекты.ИндексКартинки</RowPictureDataPath>
+											<RowsPicture>
+												<xr:Ref>CommonPicture.ОбъектыМетаданных</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</RowsPicture>
+											<AutoRefresh>false</AutoRefresh>
+											<AutoRefreshPeriod>60</AutoRefreshPeriod>
+											<Period>
+												<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+												<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+												<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+											</Period>
+											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+											<RestoreCurrentRow>false</RestoreCurrentRow>
+											<TopLevelParent xsi:nil="true"/>
+											<ShowRoot>true</ShowRoot>
+											<AllowRootChoice>false</AllowRootChoice>
+											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+											<ContextMenu name="ОтчетыСервисныеОбъектыКонтекстноеМеню" id="506"/>
+											<AutoCommandBar name="ОтчетыСервисныеОбъектыКоманднаяПанель" id="507">
+												<Autofill>false</Autofill>
+											</AutoCommandBar>
+											<ExtendedTooltip name="ОтчетыСервисныеОбъектыРасширеннаяПодсказка" id="508"/>
+											<SearchStringAddition name="ОтчетыСервисныеОбъектыСтрокаПоиска" id="509">
+												<AdditionSource>
+													<Item>ОтчетыСервисныеОбъекты</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ОтчетыСервисныеОбъектыСтрокаПоискаКонтекстноеМеню" id="510"/>
+												<ExtendedTooltip name="ОтчетыСервисныеОбъектыСтрокаПоискаРасширеннаяПодсказка" id="511"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ОтчетыСервисныеОбъектыСостояниеПросмотра" id="512">
+												<AdditionSource>
+													<Item>ОтчетыСервисныеОбъекты</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ОтчетыСервисныеОбъектыСостояниеПросмотраКонтекстноеМеню" id="513"/>
+												<ExtendedTooltip name="ОтчетыСервисныеОбъектыСостояниеПросмотраРасширеннаяПодсказка" id="514"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ОтчетыСервисныеОбъектыУправлениеПоиском" id="515">
+												<AdditionSource>
+													<Item>ОтчетыСервисныеОбъекты</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ОтчетыСервисныеОбъектыУправлениеПоискомКонтекстноеМеню" id="516"/>
+												<ExtendedTooltip name="ОтчетыСервисныеОбъектыУправлениеПоискомРасширеннаяПодсказка" id="517"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="DragCheck">ОтчетыСервисныеОбъектыПроверкаПеретаскивания</Event>
+												<Event name="Drag">ОтчетыСервисныеОбъектыПеретаскивание</Event>
+											</Events>
+											<ChildItems>
+												<LabelField name="ОтчетыСервисныеОбъектыНаименование" id="527">
+													<DataPath>ОтчетыСервисныеОбъекты.Наименование</DataPath>
+													<ContextMenu name="ОтчетыСервисныеОбъектыНаименованиеКонтекстноеМеню" id="528"/>
+													<ExtendedTooltip name="ОтчетыСервисныеОбъектыНаименованиеРасширеннаяПодсказка" id="529"/>
+												</LabelField>
+												<LabelField name="ОтчетыСервисныеОбъектыКод" id="524">
+													<DataPath>ОтчетыСервисныеОбъекты.Код</DataPath>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
+													<ContextMenu name="ОтчетыСервисныеОбъектыКодКонтекстноеМеню" id="525"/>
+													<ExtendedTooltip name="ОтчетыСервисныеОбъектыКодРасширеннаяПодсказка" id="526"/>
+												</LabelField>
+												<LabelField name="ОтчетыСервисныеОбъектыОтветственный" id="530">
+													<DataPath>ОтчетыСервисныеОбъекты.Ответственный</DataPath>
+													<ContextMenu name="ОтчетыСервисныеОбъектыОтветственныйКонтекстноеМеню" id="531"/>
+													<ExtendedTooltip name="ОтчетыСервисныеОбъектыОтветственныйРасширеннаяПодсказка" id="532"/>
+												</LabelField>
+												<LabelField name="ОтчетыСервисныеОбъектыРазделПроекта" id="536">
+													<DataPath>ОтчетыСервисныеОбъекты.РазделПроекта</DataPath>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
+													<ContextMenu name="ОтчетыСервисныеОбъектыРазделПроектаКонтекстноеМеню" id="537"/>
+													<ExtendedTooltip name="ОтчетыСервисныеОбъектыРазделПроектаРасширеннаяПодсказка" id="538"/>
+												</LabelField>
+												<LabelField name="ОтчетыСервисныеОбъектыСсылка" id="542">
+													<DataPath>ОтчетыСервисныеОбъекты.Ссылка</DataPath>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
+													<ContextMenu name="ОтчетыСервисныеОбъектыСсылкаКонтекстноеМеню" id="543"/>
+													<ExtendedTooltip name="ОтчетыСервисныеОбъектыСсылкаРасширеннаяПодсказка" id="544"/>
+												</LabelField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОбъектыМетаданных" id="330">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объекты метаданных</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа объекты метаданных</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОбъектыМетаданныхРасширеннаяПодсказка" id="331"/>
+					<ChildItems>
+						<RadioButtonField name="ИспользованиеОМВФункциях" id="332">
+							<DataPath>ИспользованиеОМВФункциях</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<TitleLocation>Left</TitleLocation>
+							<RadioButtonType>Tumbler</RadioButtonType>
+							<ColumnsCount>3</ColumnsCount>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Все</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Используются</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Не используются</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">2</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ИспользованиеОМВФункцияхКонтекстноеМеню" id="333"/>
+							<ExtendedTooltip name="ИспользованиеОМВФункцияхРасширеннаяПодсказка" id="334"/>
+							<Events>
+								<Event name="OnChange">ИспользованиеОМВФункцияхПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<RadioButtonField name="ОтображениеОбъектовМетаданных" id="342">
+							<DataPath>ОтображениеОбъектовМетаданных</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<RadioButtonType>Tumbler</RadioButtonType>
+							<ColumnsCount>2</ColumnsCount>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>По иерархии</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>По разделам проекта</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ОтображениеОбъектовМетаданныхКонтекстноеМеню" id="343"/>
+							<ExtendedTooltip name="ОтображениеОбъектовМетаданныхРасширеннаяПодсказка" id="344"/>
+							<Events>
+								<Event name="OnChange">ОтображениеОбъектовМетаданныхПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<Pages name="СтраницыОбъектыМетаданных" id="345">
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="СтраницыОбъектыМетаданныхРасширеннаяПодсказка" id="346"/>
+							<ChildItems>
+								<Page name="СтраницаОбъектыМетаданныхПоИерархии" id="347">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница объекты метаданных по иерархии</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница объекты метаданных по иерархии</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтраницаОбъектыМетаданныхПоИерархииРасширеннаяПодсказка" id="348"/>
+									<ChildItems>
+										<Table name="ОбъектыМетаданных" id="63">
+											<Representation>Tree</Representation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<UseAlternationRowColor>true</UseAlternationRowColor>
+											<InitialTreeView>ExpandTopLevel</InitialTreeView>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>ОбъектыМетаданных</DataPath>
+											<RowPictureDataPath>ОбъектыМетаданных.ИндексКартинки</RowPictureDataPath>
+											<RowsPicture>
+												<xr:Ref>CommonPicture.ОбъектыМетаданных</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</RowsPicture>
+											<AutoRefresh>false</AutoRefresh>
+											<AutoRefreshPeriod>60</AutoRefreshPeriod>
+											<Period>
+												<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+												<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+												<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+											</Period>
+											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+											<RestoreCurrentRow>false</RestoreCurrentRow>
+											<TopLevelParent xsi:nil="true"/>
+											<ShowRoot>true</ShowRoot>
+											<AllowRootChoice>false</AllowRootChoice>
+											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+											<ContextMenu name="ОбъектыМетаданныхКонтекстноеМеню" id="64">
+												<Autofill>false</Autofill>
+												<ChildItems>
+													<Button name="ОбъектыМетаданныхКонтекстноеМенюСоздатьФункцию" id="338">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.СоздатьФункцию</CommandName>
+														<ExtendedTooltip name="ОбъектыМетаданныхКонтекстноеМенюСоздатьФункциюРасширеннаяПодсказка" id="339"/>
+													</Button>
+													<Button name="ОбъектыМетаданныхКонтекстноеМенюФункцииИспользующиеОбъектМетаданных" id="545">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ФункцииИспользующиеОбъектМетаданных</CommandName>
+														<ExtendedTooltip name="ОбъектыМетаданныхКонтекстноеМенюФункцииИспользующиеОбъектМетаданныхРасширеннаяПодсказка" id="546"/>
+													</Button>
+													<ButtonGroup name="КомандыСписка" id="340">
+														<ToolTip>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Команды списка</v8:content>
+															</v8:item>
+														</ToolTip>
+														<CommandSource>Item.ОбъектыМетаданных</CommandSource>
+														<ExtendedTooltip name="КомандыСпискаРасширеннаяПодсказка" id="341"/>
+													</ButtonGroup>
+												</ChildItems>
+											</ContextMenu>
+											<AutoCommandBar name="ОбъектыМетаданныхКоманднаяПанель" id="65">
+												<Autofill>false</Autofill>
+												<ChildItems>
+													<Popup name="ПодменюИспользованиеВФункциях" id="460">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Использование в функциях</v8:content>
+															</v8:item>
+														</Title>
+														<ToolTip>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Использование в функциях</v8:content>
+															</v8:item>
+														</ToolTip>
+														<ExtendedTooltip name="ПодменюИспользованиеВФункцияхРасширеннаяПодсказка" id="461"/>
+														<ChildItems>
+															<Button name="ОбъектыМетаданныхИспользованиеВФункцияхВсе" id="462">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ИспользованиеВФункцияхВсе</CommandName>
+																<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+																<ExtendedTooltip name="ОбъектыМетаданныхИспользованиеВФункцияхВсеРасширеннаяПодсказка" id="463"/>
+															</Button>
+															<Button name="ОбъектыМетаданныхИспользованиеВФункцияхИспользуются" id="464">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ИспользованиеВФункцияхИспользуются</CommandName>
+																<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+																<ExtendedTooltip name="ОбъектыМетаданныхИспользованиеВФункцияхИспользуютсяРасширеннаяПодсказка" id="465"/>
+															</Button>
+															<Button name="ОбъектыМетаданныхИспользованиеВФункцияхНеИспользуются" id="466">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ИспользованиеВФункцияхНеИспользуются</CommandName>
+																<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+																<ExtendedTooltip name="ОбъектыМетаданныхИспользованиеВФункцияхНеИспользуютсяРасширеннаяПодсказка" id="467"/>
+															</Button>
+														</ChildItems>
+													</Popup>
+													<Popup name="ПодменюОтображениеОбъектовМетаданных" id="468">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Отображение объектов метаданных</v8:content>
+															</v8:item>
+														</Title>
+														<ToolTip>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Отображение объектов метаданных</v8:content>
+															</v8:item>
+														</ToolTip>
+														<ExtendedTooltip name="ПодменюОтображениеОбъектовМетаданныхРасширеннаяПодсказка" id="469"/>
+														<ChildItems>
+															<Button name="ОбъектыМетаданныхОтображениеМетаданныхПоИерархии" id="470">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ОтображениеМетаданныхПоИерархии</CommandName>
+																<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+																<ExtendedTooltip name="ОбъектыМетаданныхОтображениеМетаданныхПоИерархииРасширеннаяПодсказка" id="471"/>
+															</Button>
+															<Button name="ОбъектыМетаданныхОтображениеМетаданныхПоРазделамПроекта" id="472">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ОтображениеМетаданныхПоРазделамПроекта</CommandName>
+																<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+																<ExtendedTooltip name="ОбъектыМетаданныхОтображениеМетаданныхПоРазделамПроектаРасширеннаяПодсказка" id="473"/>
+															</Button>
+														</ChildItems>
+													</Popup>
+													<ButtonGroup name="ОбъектыМетаданныхГруппаКомандыСписка" id="474">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Объекты метаданных группа команды списка</v8:content>
+															</v8:item>
+														</Title>
+														<ToolTip>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Объекты метаданных группа команды списка</v8:content>
+															</v8:item>
+														</ToolTip>
+														<CommandSource>Item.ОбъектыМетаданных</CommandSource>
+														<ExtendedTooltip name="ОбъектыМетаданныхГруппаКомандыСпискаРасширеннаяПодсказка" id="475"/>
+													</ButtonGroup>
+													<Button name="ОбъектыМетаданныхИзменитьФорму" id="328">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+														<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+														<ExtendedTooltip name="ОбъектыМетаданныхИзменитьФормуРасширеннаяПодсказка" id="329"/>
+													</Button>
+													<Button name="ОбъектыМетаданныхСправка" id="495">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.StandardCommand.Help</CommandName>
+														<ExtendedTooltip name="ОбъектыМетаданныхСправкаРасширеннаяПодсказка" id="496"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="ОбъектыМетаданныхРасширеннаяПодсказка" id="66"/>
+											<SearchStringAddition name="ОбъектыМетаданныхСтрокаПоиска" id="67">
+												<AdditionSource>
+													<Item>ОбъектыМетаданных</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ОбъектыМетаданныхСтрокаПоискаКонтекстноеМеню" id="68"/>
+												<ExtendedTooltip name="ОбъектыМетаданныхСтрокаПоискаРасширеннаяПодсказка" id="69"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ОбъектыМетаданныхСостояниеПросмотра" id="70">
+												<AdditionSource>
+													<Item>ОбъектыМетаданных</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ОбъектыМетаданныхСостояниеПросмотраКонтекстноеМеню" id="71"/>
+												<ExtendedTooltip name="ОбъектыМетаданныхСостояниеПросмотраРасширеннаяПодсказка" id="72"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ОбъектыМетаданныхУправлениеПоиском" id="73">
+												<AdditionSource>
+													<Item>ОбъектыМетаданных</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ОбъектыМетаданныхУправлениеПоискомКонтекстноеМеню" id="74"/>
+												<ExtendedTooltip name="ОбъектыМетаданныхУправлениеПоискомРасширеннаяПодсказка" id="75"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="DragStart">ОбъектыМетаданныхНачалоПеретаскивания</Event>
+											</Events>
+											<ChildItems>
+												<CheckBoxField name="ОбъектыМетаданныхИспользуетсяВФункции" id="335">
+													<DataPath>ОбъектыМетаданных.ИспользуетсяВФункции</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Используется в функции</v8:content>
+														</v8:item>
+													</ToolTip>
+													<HeaderPicture>
+														<xr:Ref>CommonPicture.ЗеленаяГалка</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</HeaderPicture>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ОбъектыМетаданныхИспользуетсяВФункцииКонтекстноеМеню" id="336"/>
+													<ExtendedTooltip name="ОбъектыМетаданныхИспользуетсяВФункцииРасширеннаяПодсказка" id="337"/>
+												</CheckBoxField>
+												<LabelField name="ОбъектыМетаданныхНаименование" id="76">
+													<DataPath>ОбъектыМетаданных.Наименование</DataPath>
+													<ContextMenu name="ОбъектыМетаданныхНаименованиеКонтекстноеМеню" id="77"/>
+													<ExtendedTooltip name="ОбъектыМетаданныхНаименованиеРасширеннаяПодсказка" id="78"/>
+												</LabelField>
+												<LabelField name="ОбъектыМетаданныхКод" id="79">
+													<DataPath>ОбъектыМетаданных.Код</DataPath>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
+													<ContextMenu name="ОбъектыМетаданныхКодКонтекстноеМеню" id="80"/>
+													<ExtendedTooltip name="ОбъектыМетаданныхКодРасширеннаяПодсказка" id="81"/>
+												</LabelField>
+												<LabelField name="ОбъектыМетаданныхОтветственный" id="196">
+													<DataPath>ОбъектыМетаданных.Ответственный</DataPath>
+													<ContextMenu name="ОбъектыМетаданныхОтветственныйКонтекстноеМеню" id="197"/>
+													<ExtendedTooltip name="ОбъектыМетаданныхОтветственныйРасширеннаяПодсказка" id="198"/>
+												</LabelField>
+												<LabelField name="ОбъектыМетаданныхПоставщик" id="199">
+													<DataPath>ОбъектыМетаданных.Поставщик</DataPath>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
+													<ContextMenu name="ОбъектыМетаданныхПоставщикКонтекстноеМеню" id="200"/>
+													<ExtendedTooltip name="ОбъектыМетаданныхПоставщикРасширеннаяПодсказка" id="201"/>
+												</LabelField>
+												<CheckBoxField name="ОбъектыМетаданныхПрисутствуетВОсновномХранилище" id="223">
+													<DataPath>ОбъектыМетаданных.ПрисутствуетВОсновномХранилище</DataPath>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ОбъектыМетаданныхПрисутствуетВОсновномХранилищеКонтекстноеМеню" id="224"/>
+													<ExtendedTooltip name="ОбъектыМетаданныхПрисутствуетВОсновномХранилищеРасширеннаяПодсказка" id="225"/>
+												</CheckBoxField>
+												<LabelField name="ОбъектыМетаданныхРазделПроекта" id="226">
+													<DataPath>ОбъектыМетаданных.РазделПроекта</DataPath>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
+													<ContextMenu name="ОбъектыМетаданныхРазделПроектаКонтекстноеМеню" id="227"/>
+													<ExtendedTooltip name="ОбъектыМетаданныхРазделПроектаРасширеннаяПодсказка" id="228"/>
+												</LabelField>
+												<LabelField name="ОбъектыМетаданныхСсылка" id="320">
+													<DataPath>ОбъектыМетаданных.Ссылка</DataPath>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
+													<ContextMenu name="ОбъектыМетаданныхСсылкаКонтекстноеМеню" id="321"/>
+													<ExtendedTooltip name="ОбъектыМетаданныхСсылкаРасширеннаяПодсказка" id="322"/>
+												</LabelField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаОбъектыМетаданныхПоРазделамПроекта" id="349">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница объекты метаданных по разделам проекта</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница объекты метаданных по разделам проекта</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтраницаОбъектыМетаданныхПоРазделамПроектаРасширеннаяПодсказка" id="350"/>
+									<ChildItems>
+										<Table name="РазделыПроекта" id="421">
+											<Representation>Tree</Representation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<UseAlternationRowColor>true</UseAlternationRowColor>
+											<InitialTreeView>ExpandTopLevel</InitialTreeView>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>РазделыПроекта</DataPath>
+											<RowPictureDataPath>РазделыПроекта.DefaultPicture</RowPictureDataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Разделы проекта</v8:content>
+												</v8:item>
+											</Title>
+											<AutoRefresh>false</AutoRefresh>
+											<AutoRefreshPeriod>60</AutoRefreshPeriod>
+											<Period>
+												<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+												<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+												<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+											</Period>
+											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+											<RestoreCurrentRow>false</RestoreCurrentRow>
+											<TopLevelParent xsi:nil="true"/>
+											<ShowRoot>true</ShowRoot>
+											<AllowRootChoice>false</AllowRootChoice>
+											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+											<ContextMenu name="РазделыПроектаКонтекстноеМеню" id="422"/>
+											<AutoCommandBar name="РазделыПроектаКоманднаяПанель" id="423">
+												<Autofill>false</Autofill>
+												<ChildItems>
+													<Popup name="РазделыПроектаПодменюИспользованиеВФункциях" id="478">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Использование в функциях</v8:content>
+															</v8:item>
+														</Title>
+														<ToolTip>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Использование в функциях</v8:content>
+															</v8:item>
+														</ToolTip>
+														<ExtendedTooltip name="РазделыПроектаПодменюИспользованиеВФункцияхРасширеннаяПодсказка" id="479"/>
+														<ChildItems>
+															<Button name="РазделыПроектаИспользованиеВФункцияхВсе" id="482">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ИспользованиеВФункцияхВсе</CommandName>
+																<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+																<ExtendedTooltip name="РазделыПроектаИспользованиеВФункцияхВсеРасширеннаяПодсказка" id="483"/>
+															</Button>
+															<Button name="РазделыПроектаИспользованиеВФункцияхИспользуются" id="484">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ИспользованиеВФункцияхИспользуются</CommandName>
+																<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+																<ExtendedTooltip name="РазделыПроектаИспользованиеВФункцияхИспользуютсяРасширеннаяПодсказка" id="485"/>
+															</Button>
+															<Button name="РазделыПроектаИспользованиеВФункцияхНеИспользуются" id="486">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ИспользованиеВФункцияхНеИспользуются</CommandName>
+																<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+																<ExtendedTooltip name="РазделыПроектаИспользованиеВФункцияхНеИспользуютсяРасширеннаяПодсказка" id="487"/>
+															</Button>
+														</ChildItems>
+													</Popup>
+													<Popup name="РазделыПроектаПодменюОтображениеМетаданных" id="480">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Отображение метаданных</v8:content>
+															</v8:item>
+														</Title>
+														<ToolTip>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>тображение метаданных</v8:content>
+															</v8:item>
+														</ToolTip>
+														<ExtendedTooltip name="РазделыПроектаПодменюОтображениеМетаданныхРасширеннаяПодсказка" id="481"/>
+														<ChildItems>
+															<Button name="РазделыПроектаОтображениеМетаданныхПоИерархии" id="488">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ОтображениеМетаданныхПоИерархии</CommandName>
+																<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+																<ExtendedTooltip name="РазделыПроектаОтображениеМетаданныхПоИерархииРасширеннаяПодсказка" id="489"/>
+															</Button>
+															<Button name="РазделыПроектаОтображениеМетаданныхПоРазделамПроекта" id="490">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ОтображениеМетаданныхПоРазделамПроекта</CommandName>
+																<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+																<ExtendedTooltip name="РазделыПроектаОтображениеМетаданныхПоРазделамПроектаРасширеннаяПодсказка" id="491"/>
+															</Button>
+														</ChildItems>
+													</Popup>
+													<ButtonGroup name="РазделыПроектаГруппаКомандыСписка" id="476">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Разделы проекта группа команды списка</v8:content>
+															</v8:item>
+														</Title>
+														<ToolTip>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Разделы проекта группа команды списка</v8:content>
+															</v8:item>
+														</ToolTip>
+														<CommandSource>Item.РазделыПроекта</CommandSource>
+														<ExtendedTooltip name="РазделыПроектаГруппаКомандыСпискаРасширеннаяПодсказка" id="477"/>
+													</ButtonGroup>
+													<Button name="РазделыПроектаИзменитьФорму" id="455">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+														<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+														<ExtendedTooltip name="РазделыПроектаИзменитьФормуРасширеннаяПодсказка" id="456"/>
+													</Button>
+													<Button name="РазделыПроектаСправка" id="497">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.StandardCommand.Help</CommandName>
+														<ExtendedTooltip name="РазделыПроектаСправкаРасширеннаяПодсказка" id="498"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="РазделыПроектаРасширеннаяПодсказка" id="424"/>
+											<SearchStringAddition name="РазделыПроектаСтрокаПоиска" id="425">
+												<AdditionSource>
+													<Item>РазделыПроекта</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="РазделыПроектаСтрокаПоискаКонтекстноеМеню" id="426"/>
+												<ExtendedTooltip name="РазделыПроектаСтрокаПоискаРасширеннаяПодсказка" id="427"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="РазделыПроектаСостояниеПросмотра" id="428">
+												<AdditionSource>
+													<Item>РазделыПроекта</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="РазделыПроектаСостояниеПросмотраКонтекстноеМеню" id="429"/>
+												<ExtendedTooltip name="РазделыПроектаСостояниеПросмотраРасширеннаяПодсказка" id="430"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="РазделыПроектаУправлениеПоиском" id="431">
+												<AdditionSource>
+													<Item>РазделыПроекта</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="РазделыПроектаУправлениеПоискомКонтекстноеМеню" id="432"/>
+												<ExtendedTooltip name="РазделыПроектаУправлениеПоискомРасширеннаяПодсказка" id="433"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="OnActivateRow">РазделыПроектаПриАктивизацииСтроки</Event>
+											</Events>
+											<ChildItems>
+												<CheckBoxField name="РазделыПроектаИспользуетсяВФункции" id="457">
+													<DataPath>РазделыПроекта.ИспользуетсяВФункции</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Используется в функции</v8:content>
+														</v8:item>
+													</ToolTip>
+													<HeaderPicture>
+														<xr:Ref>CommonPicture.ЗеленаяГалка</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</HeaderPicture>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="РазделыПроектаИспользуетсяВФункцииКонтекстноеМеню" id="458"/>
+													<ExtendedTooltip name="РазделыПроектаИспользуетсяВФункцииРасширеннаяПодсказка" id="459"/>
+												</CheckBoxField>
+												<LabelField name="РазделыПроектаНаименование" id="440">
+													<DataPath>РазделыПроекта.Наименование</DataPath>
+													<ContextMenu name="РазделыПроектаНаименованиеКонтекстноеМеню" id="441"/>
+													<ExtendedTooltip name="РазделыПроектаНаименованиеРасширеннаяПодсказка" id="442"/>
+												</LabelField>
+												<LabelField name="РазделыПроектаКод" id="437">
+													<DataPath>РазделыПроекта.Код</DataPath>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
+													<ContextMenu name="РазделыПроектаКодКонтекстноеМеню" id="438"/>
+													<ExtendedTooltip name="РазделыПроектаКодРасширеннаяПодсказка" id="439"/>
+												</LabelField>
+												<LabelField name="РазделыПроектаПолныйКод" id="446">
+													<DataPath>РазделыПроекта.ПолныйКод</DataPath>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
+													<ContextMenu name="РазделыПроектаПолныйКодКонтекстноеМеню" id="447"/>
+													<ExtendedTooltip name="РазделыПроектаПолныйКодРасширеннаяПодсказка" id="448"/>
+												</LabelField>
+												<LabelField name="РазделыПроектаОтветственный" id="443">
+													<DataPath>РазделыПроекта.Ответственный</DataPath>
+													<ContextMenu name="РазделыПроектаОтветственныйКонтекстноеМеню" id="444"/>
+													<ExtendedTooltip name="РазделыПроектаОтветственныйРасширеннаяПодсказка" id="445"/>
+												</LabelField>
+												<LabelField name="РазделыПроектаСсылка" id="452">
+													<DataPath>РазделыПроекта.Ссылка</DataPath>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
+													<ContextMenu name="РазделыПроектаСсылкаКонтекстноеМеню" id="453"/>
+													<ExtendedTooltip name="РазделыПроектаСсылкаРасширеннаяПодсказка" id="454"/>
+												</LabelField>
+											</ChildItems>
+										</Table>
+										<Table name="ОбъектыМетаданныхПоРазделамПроекта" id="351">
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<UseAlternationRowColor>true</UseAlternationRowColor>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>ОбъектыМетаданных</DataPath>
+											<RowPictureDataPath>ОбъектыМетаданных.ИндексКартинки</RowPictureDataPath>
+											<RowsPicture>
+												<xr:Ref>CommonPicture.ОбъектыМетаданных</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</RowsPicture>
+											<AutoRefresh>false</AutoRefresh>
+											<AutoRefreshPeriod>60</AutoRefreshPeriod>
+											<Period>
+												<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+												<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+												<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+											</Period>
+											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+											<RestoreCurrentRow>false</RestoreCurrentRow>
+											<TopLevelParent xsi:nil="true"/>
+											<ShowRoot>true</ShowRoot>
+											<AllowRootChoice>false</AllowRootChoice>
+											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+											<ContextMenu name="ОбъектыМетаданныхПоРазделамПроектаКонтекстноеМеню" id="352">
+												<Autofill>false</Autofill>
+												<ChildItems>
+													<Button name="ОбъектыМетаданныхПоРазделамПроектаКонтекстноеМенюСоздатьФункцию" id="415">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.СоздатьФункцию</CommandName>
+														<ExtendedTooltip name="ОбъектыМетаданныхПоРазделамПроектаКонтекстноеМенюСоздатьФункциюРасширеннаяПодсказка" id="416"/>
+													</Button>
+													<Button name="ОбъектыМетаданныхПоРазделамПроектаКонтекстноеМенюФункцииИспользующиеОбъектМетаданных" id="547">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ФункцииИспользующиеОбъектМетаданных</CommandName>
+														<ExtendedTooltip name="ОбъектыМетаданныхПоРазделамПроектаКонтекстноеМенюФункцииИспользующиеОбъектМетаданныхРасширеннаяПодсказка" id="548"/>
+													</Button>
+													<ButtonGroup name="ОбъектыМетаданныхПоРазделамПроектаКонтекстноеМенюКомандыСписка" id="417">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Объекты метаданных по разделам проекта контекстное меню команды списка</v8:content>
+															</v8:item>
+														</Title>
+														<ToolTip>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Объекты метаданных по разделам проекта контекстное меню команды списка</v8:content>
+															</v8:item>
+														</ToolTip>
+														<CommandSource>Item.ОбъектыМетаданныхПоРазделамПроекта</CommandSource>
+														<ExtendedTooltip name="ОбъектыМетаданныхПоРазделамПроектаКонтекстноеМенюКомандыСпискаРасширеннаяПодсказка" id="418"/>
+													</ButtonGroup>
+												</ChildItems>
+											</ContextMenu>
+											<AutoCommandBar name="ОбъектыМетаданныхПоРазделамПроектаКоманднаяПанель" id="353">
+												<Autofill>false</Autofill>
+												<ChildItems>
+													<Button name="ОбъектыМетаданныхПоРазделамПроектаИзменитьФорму" id="419">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+														<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+														<ExtendedTooltip name="ОбъектыМетаданныхПоРазделамПроектаИзменитьФормуРасширеннаяПодсказка" id="420"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="ОбъектыМетаданныхПоРазделамПроектаРасширеннаяПодсказка" id="354"/>
+											<SearchStringAddition name="ОбъектыМетаданныхПоРазделамПроектаСтрокаПоиска" id="355">
+												<AdditionSource>
+													<Item>ОбъектыМетаданныхПоРазделамПроекта</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ОбъектыМетаданныхПоРазделамПроектаСтрокаПоискаКонтекстноеМеню" id="356"/>
+												<ExtendedTooltip name="ОбъектыМетаданныхПоРазделамПроектаСтрокаПоискаРасширеннаяПодсказка" id="357"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ОбъектыМетаданныхПоРазделамПроектаСостояниеПросмотра" id="358">
+												<AdditionSource>
+													<Item>ОбъектыМетаданныхПоРазделамПроекта</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ОбъектыМетаданныхПоРазделамПроектаСостояниеПросмотраКонтекстноеМеню" id="359"/>
+												<ExtendedTooltip name="ОбъектыМетаданныхПоРазделамПроектаСостояниеПросмотраРасширеннаяПодсказка" id="360"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ОбъектыМетаданныхПоРазделамПроектаУправлениеПоиском" id="361">
+												<AdditionSource>
+													<Item>ОбъектыМетаданныхПоРазделамПроекта</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ОбъектыМетаданныхПоРазделамПроектаУправлениеПоискомКонтекстноеМеню" id="362"/>
+												<ExtendedTooltip name="ОбъектыМетаданныхПоРазделамПроектаУправлениеПоискомРасширеннаяПодсказка" id="363"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="DragStart">ОбъектыМетаданныхПоРазделамПроектаНачалоПеретаскивания</Event>
+											</Events>
+											<ChildItems>
+												<CheckBoxField name="ОбъектыМетаданныхПоРазделамПроектаИспользуетсяВФункции" id="373">
+													<DataPath>ОбъектыМетаданных.ИспользуетсяВФункции</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Используется в функции</v8:content>
+														</v8:item>
+													</ToolTip>
+													<HeaderPicture>
+														<xr:Ref>CommonPicture.ЗеленаяГалка</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</HeaderPicture>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ОбъектыМетаданныхПоРазделамПроектаИспользуетсяВФункцииКонтекстноеМеню" id="374"/>
+													<ExtendedTooltip name="ОбъектыМетаданныхПоРазделамПроектаИспользуетсяВФункцииРасширеннаяПодсказка" id="375"/>
+												</CheckBoxField>
+												<LabelField name="ОбъектыМетаданныхПоРазделамПроектаНаименование" id="379">
+													<DataPath>ОбъектыМетаданных.Наименование</DataPath>
+													<ContextMenu name="ОбъектыМетаданныхПоРазделамПроектаНаименованиеКонтекстноеМеню" id="380"/>
+													<ExtendedTooltip name="ОбъектыМетаданныхПоРазделамПроектаНаименованиеРасширеннаяПодсказка" id="381"/>
+												</LabelField>
+												<LabelField name="ОбъектыМетаданныхПоРазделамПроектаКод" id="376">
+													<DataPath>ОбъектыМетаданных.Код</DataPath>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
+													<ContextMenu name="ОбъектыМетаданныхПоРазделамПроектаКодКонтекстноеМеню" id="377"/>
+													<ExtendedTooltip name="ОбъектыМетаданныхПоРазделамПроектаКодРасширеннаяПодсказка" id="378"/>
+												</LabelField>
+												<LabelField name="ОбъектыМетаданныхПоРазделамПроектаОтветственный" id="382">
+													<DataPath>ОбъектыМетаданных.Ответственный</DataPath>
+													<ContextMenu name="ОбъектыМетаданныхПоРазделамПроектаОтветственныйКонтекстноеМеню" id="383"/>
+													<ExtendedTooltip name="ОбъектыМетаданныхПоРазделамПроектаОтветственныйРасширеннаяПодсказка" id="384"/>
+												</LabelField>
+												<LabelField name="ОбъектыМетаданныхПоРазделамПроектаПоставщик" id="388">
+													<DataPath>ОбъектыМетаданных.Поставщик</DataPath>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
+													<ContextMenu name="ОбъектыМетаданныхПоРазделамПроектаПоставщикКонтекстноеМеню" id="389"/>
+													<ExtendedTooltip name="ОбъектыМетаданныхПоРазделамПроектаПоставщикРасширеннаяПодсказка" id="390"/>
+												</LabelField>
+												<CheckBoxField name="ОбъектыМетаданныхПоРазделамПроектаПрисутствуетВОсновномХранилище" id="394">
+													<DataPath>ОбъектыМетаданных.ПрисутствуетВОсновномХранилище</DataPath>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ОбъектыМетаданныхПоРазделамПроектаПрисутствуетВОсновномХранилищеКонтекстноеМеню" id="395"/>
+													<ExtendedTooltip name="ОбъектыМетаданныхПоРазделамПроектаПрисутствуетВОсновномХранилищеРасширеннаяПодсказка" id="396"/>
+												</CheckBoxField>
+												<LabelField name="ОбъектыМетаданныхПоРазделамПроектаРазделПроекта" id="397">
+													<DataPath>ОбъектыМетаданных.РазделПроекта</DataPath>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
+													<ContextMenu name="ОбъектыМетаданныхПоРазделамПроектаРазделПроектаКонтекстноеМеню" id="398"/>
+													<ExtendedTooltip name="ОбъектыМетаданныхПоРазделамПроектаРазделПроектаРасширеннаяПодсказка" id="399"/>
+												</LabelField>
+												<LabelField name="ОбъектыМетаданныхПоРазделамПроектаСсылка" id="403">
+													<DataPath>ОбъектыМетаданных.Ссылка</DataPath>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
+													<ContextMenu name="ОбъектыМетаданныхПоРазделамПроектаСсылкаКонтекстноеМеню" id="404"/>
+													<ExtendedTooltip name="ОбъектыМетаданныхПоРазделамПроектаСсылкаРасширеннаяПодсказка" id="405"/>
+												</LabelField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ФункцииИОбъектыМетаданных</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Функции" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Функции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Функции.Владелец</Field>
+				<Field>Функции.ПолныйКод</Field>
+				<Field>Функции.Ссылка</Field>
+				<Field>Функции.ЭтоГруппа</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ФункцииСистемы.Ссылка КАК Ссылка,
+	ФункцииСистемы.ПометкаУдаления КАК ПометкаУдаления,
+	ФункцииСистемы.Владелец КАК Владелец,
+	ФункцииСистемы.Родитель КАК Родитель,
+	ФункцииСистемы.ЭтоГруппа КАК ЭтоГруппа,
+	ФункцииСистемы.Код КАК Код,
+	ФункцииСистемы.Наименование КАК Наименование,
+	ФункцииСистемы.ПолныйКод КАК ПолныйКод,
+	ФункцииСистемы.ОтображаетсяВИнтерфейсе КАК ОтображаетсяВИнтерфейсе,
+	ФункцииСистемы.Результат КАК Результат,
+	ФункцииСистемы.Ответственный КАК Ответственный,
+	ФункцииСистемы.ТипФункции КАК ТипФункции,
+	ФункцииСистемы.НаименованиеВИнтерфейсе КАК НаименованиеВИнтерфейсе,
+	ФункцииСистемы.Подсистема КАК Подсистема,
+	ВЫБОР
+		КОГДА ФункцииСистемы.ТипФункции = ЗНАЧЕНИЕ(Перечисление.ТипыФункций.Функция)
+			ТОГДА 0
+		КОГДА ФункцииСистемы.ТипФункции = ЗНАЧЕНИЕ(Перечисление.ТипыФункций.УчетныйМеханизм)
+			ТОГДА 1
+		КОГДА ФункцииСистемы.ТипФункции = ЗНАЧЕНИЕ(Перечисление.ТипыФункций.Отчет)
+			ТОГДА 2
+		ИНАЧЕ 99
+	КОНЕЦ КАК ИндексКартинкиТипа
+ИЗ
+	Справочник.ФункцииСистемы КАК ФункцииСистемы</QueryText>
+				<MainTable>Catalog.ФункцииСистемы</MainTable>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ПолныйКод</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ОбъектыМетаданных" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объекты метаданных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ОбъектыМетаданных.Владелец</Field>
+				<Field>ОбъектыМетаданных.ИндексКартинки</Field>
+				<Field>ОбъектыМетаданных.ИспользуетсяВФункции</Field>
+				<Field>ОбъектыМетаданных.Ссылка</Field>
+				<Field>ОбъектыМетаданных.ЭтоГруппа</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникОбъектыМетаданных.Ссылка КАК Класс,
+	СправочникОбъектыМетаданных.Владелец КАК Владелец
+ПОМЕСТИТЬ ВТКлассы
+ИЗ
+	Справочник.ОбъектыМетаданных КАК СправочникОбъектыМетаданных
+ГДЕ
+	СправочникОбъектыМетаданных.ЭтоГруппа
+	И СправочникОбъектыМетаданных.Имя В(&amp;ИменаКлассовДляФункций)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	СправочникОбъектыМетаданных.Ссылка КАК Ссылка,
+	СправочникОбъектыМетаданных.Владелец КАК Владелец
+ПОМЕСТИТЬ ВТОбъектыМетаданныхИФункции
+ИЗ
+	Справочник.ОбъектыМетаданных КАК СправочникОбъектыМетаданных
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТКлассы КАК ВТКлассы
+		ПО СправочникОбъектыМетаданных.Родитель = ВТКлассы.Класс
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ФункцииСистемы.ИсходящиеОбъектыМетаданных КАК ФункцииСистемыИсходящиеОбъектыМетаданных
+		ПО СправочникОбъектыМетаданных.Ссылка = ФункцииСистемыИсходящиеОбъектыМетаданных.ОбъектМетаданных
+			И (НЕ ФункцииСистемыИсходящиеОбъектыМетаданных.Ссылка.ПометкаУдаления)
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ФункцииСистемы.ОтчетыСервисныеОбъекты КАК ФункцииСистемыОтчетыСервисныеОбъекты
+		ПО СправочникОбъектыМетаданных.Ссылка = ФункцииСистемыОтчетыСервисныеОбъекты.ОбъектМетаданных
+			И (НЕ ФункцииСистемыОтчетыСервисныеОбъекты.Ссылка.ПометкаУдаления)
+ГДЕ
+	(НЕ ФункцииСистемыИсходящиеОбъектыМетаданных.Ссылка ЕСТЬ NULL
+			ИЛИ НЕ ФункцииСистемыОтчетыСервисныеОбъекты.Ссылка ЕСТЬ NULL)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СправочникОбъектыМетаданных.Ссылка КАК Ссылка,
+	СправочникОбъектыМетаданных.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникОбъектыМетаданных.Владелец КАК Владелец,
+	СправочникОбъектыМетаданных.Родитель КАК Родитель,
+	СправочникОбъектыМетаданных.ЭтоГруппа КАК ЭтоГруппа,
+	СправочникОбъектыМетаданных.Код КАК Код,
+	СправочникОбъектыМетаданных.Наименование КАК Наименование,
+	СправочникОбъектыМетаданных.uuid КАК uuid,
+	СправочникОбъектыМетаданных.Имя КАК Имя,
+	СправочникОбъектыМетаданных.Ответственный КАК Ответственный,
+	СправочникОбъектыМетаданных.Поставщик КАК Поставщик,
+	СправочникОбъектыМетаданных.ПравилоПоддержки КАК ПравилоПоддержки,
+	СправочникОбъектыМетаданных.ПрисутствуетВОсновномХранилище КАК ПрисутствуетВОсновномХранилище,
+	СправочникОбъектыМетаданных.РазделПроекта КАК РазделПроекта,
+	СправочникОбъектыМетаданных.ВеткаИсточник КАК ВеткаИсточник,
+	ВЫБОР
+		КОГДА ВТОбъектыМетаданныхИФункции.Ссылка ЕСТЬ NULL
+			ТОГДА ЛОЖЬ
+		ИНАЧЕ ИСТИНА
+	КОНЕЦ КАК ИспользуетсяВФункции,
+	&amp;ИндексКартикиПереопределяемый КАК ИндексКартинки
+ИЗ
+	Справочник.ОбъектыМетаданных КАК СправочникОбъектыМетаданных
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТКлассы КАК ВТКлассы
+		ПО (СправочникОбъектыМетаданных.Родитель = ВТКлассы.Класс
+				ИЛИ СправочникОбъектыМетаданных.Ссылка = ВТКлассы.Класс)
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТОбъектыМетаданныхИФункции КАК ВТОбъектыМетаданныхИФункции
+		ПО СправочникОбъектыМетаданных.Ссылка = ВТОбъектыМетаданныхИФункции.Ссылка</QueryText>
+				<MainTable>Catalog.ОбъектыМетаданных</MainTable>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПометкаУдаления</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+							<dcsset:viewMode>Normal</dcsset:viewMode>
+							<dcsset:userSettingID>1b5daed4-27a0-4c96-a8d6-7713412fe638</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Код</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ИсходящиеОбъектыМетаданных" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исходящие объекты метаданных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ИсходящиеОбъектыМетаданных.ИндексКартинки</Field>
+				<Field>ИсходящиеОбъектыМетаданных.ПометкаУдаления</Field>
+				<Field>ИсходящиеОбъектыМетаданных.Ссылка</Field>
+				<Field>ИсходящиеОбъектыМетаданных.Функция</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СправочникОбъектыМетаданных.Ссылка КАК Ссылка,
+	СправочникОбъектыМетаданных.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникОбъектыМетаданных.Владелец КАК Владелец,
+	СправочникОбъектыМетаданных.Родитель КАК Родитель,
+	СправочникОбъектыМетаданных.ЭтоГруппа КАК ЭтоГруппа,
+	СправочникОбъектыМетаданных.Код КАК Код,
+	СправочникОбъектыМетаданных.Наименование КАК Наименование,
+	СправочникОбъектыМетаданных.Ответственный КАК Ответственный,
+	СправочникОбъектыМетаданных.РазделПроекта КАК РазделПроекта,
+	ФункцииСистемыИсходящиеОбъектыМетаданных.Ссылка КАК Функция,
+	&amp;ИндексКартикиПереопределяемый КАК ИндексКартинки
+ИЗ
+	Справочник.ФункцииСистемы.ИсходящиеОбъектыМетаданных КАК ФункцииСистемыИсходящиеОбъектыМетаданных
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.ОбъектыМетаданных КАК СправочникОбъектыМетаданных
+		ПО ФункцииСистемыИсходящиеОбъектыМетаданных.ОбъектМетаданных = СправочникОбъектыМетаданных.Ссылка
+ГДЕ ФункцииСистемыИсходящиеОбъектыМетаданных.Ссылка = &amp;Функция</QueryText>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ИспользованиеОМВФункциях" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использование в функциях</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>ИспользованиеОМВФункциях</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОтображениеОбъектовМетаданных" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображение метаданных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>ОтображениеОбъектовМетаданных</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="РазделыПроекта" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разделы проекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>РазделыПроекта.Владелец</Field>
+				<Field>РазделыПроекта.ИспользуетсяВФункции</Field>
+				<Field>РазделыПроекта.ПолныйКод</Field>
+				<Field>РазделыПроекта.ПометкаУдаления</Field>
+				<Field>РазделыПроекта.Ссылка</Field>
+				<Field>РазделыПроекта.ЭтоГруппа</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникОбъектыМетаданных.Ссылка КАК Класс,
+	СправочникОбъектыМетаданных.Владелец КАК Владелец
+ПОМЕСТИТЬ ВТКлассы
+ИЗ
+	Справочник.ОбъектыМетаданных КАК СправочникОбъектыМетаданных
+ГДЕ
+	СправочникОбъектыМетаданных.ЭтоГруппа
+	И СправочникОбъектыМетаданных.Имя В(&amp;ИменаКлассовДляФункций)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	СправочникОбъектыМетаданных.РазделПроекта КАК РазделПроекта
+ПОМЕСТИТЬ ВТРазделыОбъектовМетаданныхИФункции
+ИЗ
+	Справочник.ОбъектыМетаданных КАК СправочникОбъектыМетаданных
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТКлассы КАК ВТКлассы
+		ПО СправочникОбъектыМетаданных.Родитель = ВТКлассы.Класс
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ФункцииСистемы.ИсходящиеОбъектыМетаданных КАК ФункцииСистемыИсходящиеОбъектыМетаданных
+		ПО СправочникОбъектыМетаданных.Ссылка = ФункцииСистемыИсходящиеОбъектыМетаданных.ОбъектМетаданных
+			И (НЕ ФункцииСистемыИсходящиеОбъектыМетаданных.Ссылка.ПометкаУдаления)
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ФункцииСистемы.ОтчетыСервисныеОбъекты КАК ФункцииСистемыОтчетыСервисныеОбъекты
+		ПО СправочникОбъектыМетаданных.Ссылка = ФункцииСистемыОтчетыСервисныеОбъекты.ОбъектМетаданных
+			И (НЕ ФункцииСистемыОтчетыСервисныеОбъекты.Ссылка.ПометкаУдаления)
+ГДЕ
+	(НЕ ФункцииСистемыИсходящиеОбъектыМетаданных.Ссылка ЕСТЬ NULL
+			ИЛИ НЕ ФункцииСистемыОтчетыСервисныеОбъекты.Ссылка ЕСТЬ NULL)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СправочникРазделыПроекта.Ссылка КАК Ссылка,
+	СправочникРазделыПроекта.Владелец КАК Владелец,
+	СправочникРазделыПроекта.ЭтоГруппа КАК ЭтоГруппа,
+	СправочникРазделыПроекта.Код КАК Код,
+	СправочникРазделыПроекта.Наименование КАК Наименование,
+	СправочникРазделыПроекта.Ответственный КАК Ответственный,
+	СправочникРазделыПроекта.ПолныйКод КАК ПолныйКод,
+	СправочникРазделыПроекта.ПометкаУдаления КАК ПометкаУдаления,
+	ВЫБОР
+		КОГДА ВТРазделыОбъектовМетаданныхИФункции.РазделПроекта ЕСТЬ NULL
+			ТОГДА ЛОЖЬ
+		ИНАЧЕ ИСТИНА
+	КОНЕЦ КАК ИспользуетсяВФункции
+ИЗ
+	Справочник.РазделыПроекта КАК СправочникРазделыПроекта
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТРазделыОбъектовМетаданныхИФункции КАК ВТРазделыОбъектовМетаданныхИФункции
+		ПО СправочникРазделыПроекта.Ссылка = ВТРазделыОбъектовМетаданныхИФункции.РазделПроекта</QueryText>
+				<MainTable>Catalog.РазделыПроекта</MainTable>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПометкаУдаления</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+							<dcsset:viewMode>Normal</dcsset:viewMode>
+							<dcsset:userSettingID>d26d098b-766d-44b4-a393-4ffccf60f7d4</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ПолныйКод</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Проект" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтчетыСервисныеОбъекты" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчеты сервисные объекты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ОтчетыСервисныеОбъекты.ИндексКартинки</Field>
+				<Field>ОтчетыСервисныеОбъекты.ПометкаУдаления</Field>
+				<Field>ОтчетыСервисныеОбъекты.Ссылка</Field>
+				<Field>ОтчетыСервисныеОбъекты.Функция</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СправочникОбъектыМетаданных.Ссылка КАК Ссылка,
+	СправочникОбъектыМетаданных.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникОбъектыМетаданных.Владелец КАК Владелец,
+	СправочникОбъектыМетаданных.Родитель КАК Родитель,
+	СправочникОбъектыМетаданных.ЭтоГруппа КАК ЭтоГруппа,
+	СправочникОбъектыМетаданных.Код КАК Код,
+	СправочникОбъектыМетаданных.Наименование КАК Наименование,
+	СправочникОбъектыМетаданных.Ответственный КАК Ответственный,
+	СправочникОбъектыМетаданных.РазделПроекта КАК РазделПроекта,
+	ФункцииСистемыОтчетыСервисныеОбъекты.Ссылка КАК Функция,
+	&amp;ИндексКартикиПереопределяемый КАК ИндексКартинки
+ИЗ
+	Справочник.ФункцииСистемы.ОтчетыСервисныеОбъекты КАК ФункцииСистемыОтчетыСервисныеОбъекты
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.ОбъектыМетаданных КАК СправочникОбъектыМетаданных
+		ПО ФункцииСистемыОтчетыСервисныеОбъекты.ОбъектМетаданных = СправочникОбъектыМетаданных.Ссылка
+ГДЕ
+	ФункцииСистемыОтчетыСервисныеОбъекты.Ссылка = &amp;Функция</QueryText>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьФункцию" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать функцию, включить в нее объекты метаданных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать функцию и включить в нее объекты метаданных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьФункцию</Action>
+		</Command>
+		<Command name="ИспользованиеВФункцияхВсе" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ИспользованиеВФункцияхВсе</Action>
+		</Command>
+		<Command name="ИспользованиеВФункцияхИспользуются" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Используются</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Используются</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИспользованиеВФункцияхИспользуются</Action>
+		</Command>
+		<Command name="ИспользованиеВФункцияхНеИспользуются" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не используются</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не используются</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИспользованиеВФункцияхНеИспользуются</Action>
+		</Command>
+		<Command name="ОтображениеМетаданныхПоИерархии" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По иерархии</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По иерархии</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтображениеМетаданныхПоИерархии</Action>
+		</Command>
+		<Command name="ОтображениеМетаданныхПоРазделамПроекта" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По разделам проекта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По разделам проекта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтображениеМетаданныхПоРазделамПроекта</Action>
+		</Command>
+		<Command name="ФункцииИспользующиеОбъектМетаданных" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Функции, использующие объект метаданных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Функции, использующие объект метаданных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ФункцииИспользующиеОбъектМетаданных</Action>
+		</Command>
+	</Commands>
+</Form>

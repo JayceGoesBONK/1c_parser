@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<DataProcessor uuid="8324356e-7314-41a3-898e-550a147383c7">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ЗагрузкаСпискаИзмененийИзОтчетаОСравнении" category="Object">
+				<xr:TypeId>865299c7-f6a1-48cf-82e5-9f9ce07dca87</xr:TypeId>
+				<xr:ValueId>e69dd00c-b8d3-485b-988a-6b46d05bd3d9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ЗагрузкаСпискаИзмененийИзОтчетаОСравнении" category="Manager">
+				<xr:TypeId>a88298e4-9ac6-4e1e-8381-e1df2a715e2e</xr:TypeId>
+				<xr:ValueId>847603ff-92b4-4495-8944-fdf2e6bca1b1</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ЗагрузкаСпискаИзмененийИзОтчетаОСравнении</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузка списка изменений из отчета о сравнении</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.ЗагрузкаСпискаИзмененийИзОтчетаОСравнении.Form.ЗагрузкаИзменений</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>ЗагрузкаИзменений</Form>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

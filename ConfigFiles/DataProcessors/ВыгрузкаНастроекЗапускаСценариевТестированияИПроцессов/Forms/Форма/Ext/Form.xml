@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаВыгрузить" id="4">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Выгрузить</CommandName>
+				<ExtendedTooltip name="ФормаВыгрузитьРасширеннаяПодсказка" id="5"/>
+			</Button>
+			<Button name="Справка" id="9">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<ExtendedTooltip name="СправкаРасширеннаяПодсказка" id="10"/>
+			</Button>
+			<Button name="ОбновитьКеш" id="17">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОбновитьКеш</CommandName>
+				<ExtendedTooltip name="ОбновитьКешРасширеннаяПодсказка" id="18"/>
+			</Button>
+			<Button name="ФормаОбновитьСлужебныеДанныеСценариев" id="19">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОбновитьСлужебныеДанныеСценариев</CommandName>
+				<ExtendedTooltip name="ФормаОбновитьСлужебныеДанныеСценариевРасширеннаяПодсказка" id="20"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="КаталогВыгрузки" id="1">
+			<DataPath>КаталогВыгрузкиСценариев</DataPath>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="КаталогВыгрузкиКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КаталогВыгрузкиРасширеннаяПодсказка" id="3">
+				<Title formatted="false">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Необходимо указать каталог проекта.</v8:content>
+					</v8:item>
+				</Title>
+			</ExtendedTooltip>
+			<Events>
+				<Event name="OnChange">КаталогВыгрузкиПриИзменении</Event>
+				<Event name="StartChoice">КаталогВыгрузкиНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="КаталогВыгрузкиПроцессов" id="11">
+			<DataPath>КаталогВыгрузкиПроцессов</DataPath>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="КаталогВыгрузкиПроцессовКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="КаталогВыгрузкиПроцессовРасширеннаяПодсказка" id="13"/>
+			<Events>
+				<Event name="OnChange">КаталогВыгрузкиПроцессовПриИзменении</Event>
+				<Event name="StartChoice">КаталогВыгрузкиПроцессовНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="КаталогДанныхЭталонныхБД" id="6">
+			<DataPath>КаталогДанныхЭталонныхБД</DataPath>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="КаталогДанныхЭталонныхБДКонтекстноеМеню" id="7"/>
+			<ExtendedTooltip name="КаталогДанныхЭталонныхБДРасширеннаяПодсказка" id="8"/>
+			<Events>
+				<Event name="OnChange">КаталогДанныхЭталонныхБДПриИзменении</Event>
+				<Event name="StartChoice">КаталогДанныхЭталонныхБДНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<CheckBoxField name="ЗакрыватьФормуПослеВыгрузки" id="14">
+			<DataPath>ЗакрыватьФормуПослеВыгрузки</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗакрыватьФормуПослеВыгрузкиКонтекстноеМеню" id="15"/>
+			<ExtendedTooltip name="ЗакрыватьФормуПослеВыгрузкиРасширеннаяПодсказка" id="16"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ВыгрузкаНастроекЗапускаСценариевТестированияИПроцессов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="КаталогВыгрузкиСценариев" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог выгрузки сценариев</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПереданныйСписокТестов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переданный список тестов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СтандартноеЗначениеОтступа" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стандартное значение отступа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КаталогДанныхЭталонныхБД" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог данных эталонных БД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КаталогВыгрузкиПроцессов" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог выгрузки процессов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПереданныйТипВыгрузки" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переданный тип выгрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗакрыватьФормуПослеВыгрузки" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрывать форму после выгрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ЗакрыватьФормуПослеВыгрузки</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Выгрузить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Выгрузить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОбновитьКеш" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить кеш</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить кеш</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьКеш</Action>
+		</Command>
+		<Command name="ОбновитьСлужебныеДанныеСценариев" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить служебные данные сценариев</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить служебные данные сценариев</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьСлужебныеДанныеСценариев</Action>
+		</Command>
+	</Commands>
+</Form>

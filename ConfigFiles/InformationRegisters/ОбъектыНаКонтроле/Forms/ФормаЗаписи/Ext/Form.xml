@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelField name="СписокКонтроля" id="1">
+			<DataPath>Запись.СписокКонтроля</DataPath>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="СписокКонтроляКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="СписокКонтроляРасширеннаяПодсказка" id="3"/>
+		</LabelField>
+		<LabelField name="ОбъектКонтроля" id="4">
+			<DataPath>Запись.ОбъектКонтроля</DataPath>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="ОбъектКонтроляКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ОбъектКонтроляРасширеннаяПодсказка" id="6"/>
+		</LabelField>
+		<CheckBoxField name="ИсторическаяЗапись" id="22">
+			<DataPath>Запись.ИсторическаяЗапись</DataPath>
+			<Visible>false</Visible>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИсторическаяЗаписьКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ИсторическаяЗаписьРасширеннаяПодсказка" id="24"/>
+		</CheckBoxField>
+		<UsualGroup name="ГруппаОжиданияСостояниеДел" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа ожидания состояние дел</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа ожидания состояние дел</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОжиданияСостояниеДелРасширеннаяПодсказка" id="30"/>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПроконтролировано" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Решение:</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="style:NormalTextFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа проконтролировано</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаПроконтролированоРасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаРешениеДаты" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа решение даты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа решение даты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРешениеДатыРасширеннаяПодсказка" id="32"/>
+					<ChildItems>
+						<LabelField name="ДатаКонтроля" id="7">
+							<DataPath>Запись.ДатаКонтроля</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>От</v8:content>
+								</v8:item>
+							</Title>
+							<TextColor>style:ГиперссылкаЦвет</TextColor>
+							<ContextMenu name="ДатаКонтроляКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ДатаКонтроляРасширеннаяПодсказка" id="9"/>
+						</LabelField>
+						<LabelField name="ОжидаемаяДатаВыполнения" id="19">
+							<DataPath>Запись.ОжидаемаяДатаВыполнения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Закончить к</v8:content>
+								</v8:item>
+							</Title>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>style:ГиперссылкаЦвет</TextColor>
+							<ContextMenu name="ОжидаемаяДатаВыполненияКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ОжидаемаяДатаВыполненияРасширеннаяПодсказка" id="21"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="Решение" id="10">
+					<DataPath>Запись.Решение</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleLocation>None</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="РешениеКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="РешениеРасширеннаяПодсказка" id="12"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСостояниеДел" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="style:NormalTextFont" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа состояние дел</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаСостояниеДелРасширеннаяПодсказка" id="28"/>
+			<ChildItems>
+				<LabelField name="ДатаУказанияСостоянияДел" id="13">
+					<DataPath>Запись.ДатаУказанияРезультата</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>На дату</v8:content>
+						</v8:item>
+					</Title>
+					<TextColor>style:ГиперссылкаЦвет</TextColor>
+					<ContextMenu name="ДатаУказанияСостоянияДелКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ДатаУказанияСостоянияДелРасширеннаяПодсказка" id="15"/>
+				</LabelField>
+				<InputField name="Результат" id="16">
+					<DataPath>Запись.Результат</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleLocation>None</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="РезультатКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="РезультатРасширеннаяПодсказка" id="18"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ОбъектыНаКонтроле</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

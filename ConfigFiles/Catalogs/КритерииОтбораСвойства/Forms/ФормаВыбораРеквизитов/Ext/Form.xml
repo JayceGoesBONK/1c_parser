@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Выбор метаданных</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаВыбрать" id="167">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Выбрать</CommandName>
+				<ExtendedTooltip name="ФормаВыбратьExtendedTooltip" id="172"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаСписков" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа списков</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа списков</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСписковExtendedTooltip" id="178"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаМетаданные" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа метаданные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа метаданные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаМетаданныеExtendedTooltip" id="179"/>
+					<ChildItems>
+						<Table name="СписокМетаданных" id="7">
+							<Representation>Tree</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<ChoiceMode>true</ChoiceMode>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<InitialTreeView>ExpandTopLevel</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>СписокМетаданных</DataPath>
+							<RowPictureDataPath>СписокМетаданных.ИндексКартинки</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Ref>CommonPicture.ОбъектыМетаданных</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</RowsPicture>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="СписокМетаданныхКонтекстноеМеню" id="8"/>
+							<AutoCommandBar name="СписокМетаданныхКоманднаяПанель" id="9"/>
+							<ExtendedTooltip name="СписокМетаданныхExtendedTooltip" id="180"/>
+							<SearchStringAddition name="СписокМетаданныхSearchString" id="188">
+								<AdditionSource>
+									<Item>СписокМетаданных</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокМетаданныхSearchStringContextMenu" id="189"/>
+								<ExtendedTooltip name="СписокМетаданныхSearchStringExtendedTooltip" id="190"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокМетаданныхViewStatus" id="191">
+								<AdditionSource>
+									<Item>СписокМетаданных</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокМетаданныхViewStatusContextMenu" id="192"/>
+								<ExtendedTooltip name="СписокМетаданныхViewStatusExtendedTooltip" id="193"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокМетаданныхSearchControl" id="194">
+								<AdditionSource>
+									<Item>СписокМетаданных</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокМетаданныхSearchControlContextMenu" id="195"/>
+								<ExtendedTooltip name="СписокМетаданныхSearchControlExtendedTooltip" id="196"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокМетаданныхВыбор</Event>
+								<Event name="OnActivateRow">СписокМетаданныхПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СписокМетаданныхНаименование" id="10">
+									<DataPath>СписокМетаданных.Наименование</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Объект метаданных</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокМетаданныхНаименованиеКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="СписокМетаданныхНаименованиеExtendedTooltip" id="181"/>
+								</LabelField>
+								<LabelField name="СписокМетаданныхОтветственный" id="76">
+									<DataPath>СписокМетаданных.Ответственный</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ответственный</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокМетаданныхОтветственныйКонтекстноеМеню" id="77"/>
+									<ExtendedTooltip name="СписокМетаданныхОтветственныйExtendedTooltip" id="182"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаФормы" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа формы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа формы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаФормыExtendedTooltip" id="183"/>
+					<ChildItems>
+						<Table name="СписокРеквизитов" id="157">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<ChoiceMode>true</ChoiceMode>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<InitialTreeView>ExpandAllLevels</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>СписокРеквизитов</DataPath>
+							<RowPictureDataPath>СписокРеквизитов.ИндексКаринки</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Ref>CommonPicture.ОбъектыМетаданных</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</RowsPicture>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>false</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="СписокРеквизитовКонтекстноеМеню" id="158"/>
+							<AutoCommandBar name="СписокРеквизитовКоманднаяПанель" id="159"/>
+							<ExtendedTooltip name="СписокРеквизитовРасширеннаяПодсказка" id="186"/>
+							<SearchStringAddition name="СписокРеквизитовSearchString" id="197">
+								<AdditionSource>
+									<Item>СписокРеквизитов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокРеквизитовSearchStringContextMenu" id="198"/>
+								<ExtendedTooltip name="СписокРеквизитовSearchStringExtendedTooltip" id="199"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокРеквизитовViewStatus" id="200">
+								<AdditionSource>
+									<Item>СписокРеквизитов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокРеквизитовViewStatusContextMenu" id="201"/>
+								<ExtendedTooltip name="СписокРеквизитовViewStatusExtendedTooltip" id="202"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокРеквизитовSearchControl" id="203">
+								<AdditionSource>
+									<Item>СписокРеквизитов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокРеквизитовSearchControlContextMenu" id="204"/>
+								<ExtendedTooltip name="СписокРеквизитовSearchControlExtendedTooltip" id="205"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокРеквизитовВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СписокРеквизитовНаименование" id="160">
+									<DataPath>СписокРеквизитов.Имя</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Реквизит объекта метаданных</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокРеквизитовНаименованиеКонтекстноеМеню" id="161"/>
+									<ExtendedTooltip name="СписокРеквизитовНаименованиеРасширеннаяПодсказка" id="187"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СписокМетаданных" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список метаданных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>~СписокМетаданных.Code</Field>
+				<Field>~СписокМетаданных.DeletionMark</Field>
+				<Field>~СписокМетаданных.Description</Field>
+				<Field>~СписокМетаданных.IsFolder</Field>
+				<Field>~СписокМетаданных.Parent</Field>
+				<Field>~СписокМетаданных.ParentCode</Field>
+				<Field>~СписокМетаданных.Ref</Field>
+				<Field>~СписокМетаданных.КодРодителя</Field>
+				<Field>СписокМетаданных.Owner</Field>
+				<Field>СписокМетаданных.Имя</Field>
+				<Field>СписокМетаданных.ИндексКартинки</Field>
+				<Field>СписокМетаданных.Код</Field>
+				<Field>СписокМетаданных.Наименование</Field>
+				<Field>СписокМетаданных.Ответственный</Field>
+				<Field>СписокМетаданных.ПометкаУдаления</Field>
+				<Field>СписокМетаданных.Родитель</Field>
+				<Field>СписокМетаданных.Ссылка</Field>
+				<Field>СписокМетаданных.ЭтоГруппа</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникОбъектыМетаданных.Ссылка КАК Ссылка,
+	СправочникОбъектыМетаданных.Родитель КАК Родитель,
+	СправочникОбъектыМетаданных.Наименование КАК Наименование,
+	СправочникОбъектыМетаданных.Ответственный КАК Ответственный,
+	СправочникОбъектыМетаданных.Код КАК Код,
+	СправочникОбъектыМетаданных.ЭтоГруппа КАК ЭтоГруппа,
+	СправочникОбъектыМетаданных.ПометкаУдаления КАК ПометкаУдаления,
+	ВЫБОР
+		КОГДА СправочникОбъектыМетаданных.ПометкаУдаления
+			ТОГДА 0
+		КОГДА СправочникОбъектыМетаданных.ЭтоГруппа
+				И СправочникОбъектыМетаданных.Имя = "ОбщиеОбъекты"
+			ТОГДА 2
+		КОГДА СправочникОбъектыМетаданных.Родитель.Имя = "Константы"
+			ТОГДА 31
+		КОГДА СправочникОбъектыМетаданных.Родитель.Имя = "Справочники"
+			ТОГДА 32
+		КОГДА СправочникОбъектыМетаданных.Родитель.Имя = "Документы"
+			ТОГДА 33
+		КОГДА СправочникОбъектыМетаданных.Родитель.Имя = "ЖурналыДокументов"
+			ТОГДА 34
+		КОГДА СправочникОбъектыМетаданных.Родитель.Имя = "Перечисления"
+			ТОГДА 35
+		КОГДА СправочникОбъектыМетаданных.Родитель.Имя = "Отчеты"
+			ТОГДА 36
+		КОГДА СправочникОбъектыМетаданных.Родитель.Имя = "Обработки"
+			ТОГДА 37
+		КОГДА СправочникОбъектыМетаданных.Родитель.Имя = "ПланыВидовХарактеристик"
+			ТОГДА 38
+		КОГДА СправочникОбъектыМетаданных.Родитель.Имя = "ПланыСчетов"
+			ТОГДА 39
+		КОГДА СправочникОбъектыМетаданных.Родитель.Имя = "ПланыВидовРасчета"
+			ТОГДА 40
+		КОГДА СправочникОбъектыМетаданных.Родитель.Имя = "РегистрыСведений"
+			ТОГДА 75
+		КОГДА СправочникОбъектыМетаданных.Родитель.Имя = "РегистрыНакопления"
+			ТОГДА 76
+		КОГДА СправочникОбъектыМетаданных.Родитель.Имя = "РегистрыБухгалтерии"
+			ТОГДА 77
+		КОГДА СправочникОбъектыМетаданных.Родитель.Имя = "РегистрыРасчета"
+			ТОГДА 78
+		КОГДА СправочникОбъектыМетаданных.Родитель.Имя = "БизнесПроцессы"
+			ТОГДА 79
+		КОГДА СправочникОбъектыМетаданных.Родитель.Имя = "Задачи"
+			ТОГДА 80
+		КОГДА СправочникОбъектыМетаданных.Родитель.Имя = "ПланыОбмена"
+			ТОГДА 45
+		КОГДА СправочникОбъектыМетаданных.ЭтоГруппа
+				И СправочникОбъектыМетаданных.Имя = "Константы"
+			ТОГДА 3
+		КОГДА СправочникОбъектыМетаданных.ЭтоГруппа
+				И СправочникОбъектыМетаданных.Имя = "Справочники"
+			ТОГДА 4
+		КОГДА СправочникОбъектыМетаданных.ЭтоГруппа
+				И СправочникОбъектыМетаданных.Имя = "Документы"
+			ТОГДА 5
+		КОГДА СправочникОбъектыМетаданных.ЭтоГруппа
+				И СправочникОбъектыМетаданных.Имя = "ЖурналыДокументов"
+			ТОГДА 6
+		КОГДА СправочникОбъектыМетаданных.ЭтоГруппа
+				И СправочникОбъектыМетаданных.Имя = "Перечисления"
+			ТОГДА 7
+		КОГДА СправочникОбъектыМетаданных.ЭтоГруппа
+				И СправочникОбъектыМетаданных.Имя = "Отчеты"
+			ТОГДА 8
+		КОГДА СправочникОбъектыМетаданных.ЭтоГруппа
+				И СправочникОбъектыМетаданных.Имя = "Обработки"
+			ТОГДА 9
+		КОГДА СправочникОбъектыМетаданных.ЭтоГруппа
+				И СправочникОбъектыМетаданных.Имя = "ПланыВидовХарактеристик"
+			ТОГДА 10
+		КОГДА СправочникОбъектыМетаданных.ЭтоГруппа
+				И СправочникОбъектыМетаданных.Имя = "ПланыСчетов"
+			ТОГДА 11
+		КОГДА СправочникОбъектыМетаданных.ЭтоГруппа
+				И СправочникОбъектыМетаданных.Имя = "ПланыВидовРасчета"
+			ТОГДА 12
+		КОГДА СправочникОбъектыМетаданных.ЭтоГруппа
+				И СправочникОбъектыМетаданных.Имя = "РегистрыСведений"
+			ТОГДА 13
+		КОГДА СправочникОбъектыМетаданных.ЭтоГруппа
+				И СправочникОбъектыМетаданных.Имя = "РегистрыНакопления"
+			ТОГДА 14
+		КОГДА СправочникОбъектыМетаданных.ЭтоГруппа
+				И СправочникОбъектыМетаданных.Имя = "РегистрыБухгалтерии"
+			ТОГДА 15
+		КОГДА СправочникОбъектыМетаданных.ЭтоГруппа
+				И СправочникОбъектыМетаданных.Имя = "РегистрыРасчета"
+			ТОГДА 16
+		КОГДА СправочникОбъектыМетаданных.ЭтоГруппа
+				И СправочникОбъектыМетаданных.Имя = "БизнесПроцессы"
+			ТОГДА 17
+		КОГДА СправочникОбъектыМетаданных.ЭтоГруппа
+				И СправочникОбъектыМетаданных.Имя = "Задачи"
+			ТОГДА 18
+		КОГДА СправочникОбъектыМетаданных.ЭтоГруппа
+				И СправочникОбъектыМетаданных.Имя = "ПланыОбмена"
+			ТОГДА 23
+		КОГДА СправочникОбъектыМетаданных.Имя = "Роли"
+				ИЛИ СправочникОбъектыМетаданных.Родитель.Имя = "Роли"
+			ТОГДА 22
+		КОГДА СправочникОбъектыМетаданных.Имя = "ОбщиеМодули"
+				ИЛИ СправочникОбъектыМетаданных.Родитель.Имя = "ОбщиеМодули"
+			ТОГДА 81
+		КОГДА СправочникОбъектыМетаданных.Имя = "ПодпискиНаСобытия"
+				ИЛИ СправочникОбъектыМетаданных.Родитель.Имя = "ПодпискиНаСобытия"
+			ТОГДА 82
+		КОГДА СправочникОбъектыМетаданных.Имя = "РегламентныеЗадания"
+				ИЛИ СправочникОбъектыМетаданных.Родитель.Имя = "РегламентныеЗадания"
+			ТОГДА 83
+		КОГДА СправочникОбъектыМетаданных.Имя = "ФункциональныеОпции"
+				ИЛИ СправочникОбъектыМетаданных.Родитель.Имя = "ФункциональныеОпции"
+			ТОГДА 84
+		КОГДА СправочникОбъектыМетаданных.Имя = "ПакетыXDTO"
+				ИЛИ СправочникОбъектыМетаданных.Родитель.Имя = "ПакетыXDTO"
+			ТОГДА 85
+		КОГДА СправочникОбъектыМетаданных.Имя = "КритерииОтбора"
+				ИЛИ СправочникОбъектыМетаданных.Родитель.Имя = "КритерииОтбора"
+			ТОГДА 86
+		КОГДА СправочникОбъектыМетаданных.Имя = "ХранилищаНастроек"
+				ИЛИ СправочникОбъектыМетаданных.Родитель.Имя = "ХранилищаНастроек"
+			ТОГДА 87
+		КОГДА СправочникОбъектыМетаданных.Имя = "ОбщиеКоманды"
+				ИЛИ СправочникОбъектыМетаданных.Родитель.Имя = "ОбщиеКоманды"
+			ТОГДА 88
+		КОГДА СправочникОбъектыМетаданных.Имя = "WebСервисы"
+				ИЛИ СправочникОбъектыМетаданных.Родитель.Имя = "WebСервисы"
+			ТОГДА 89
+		КОГДА СправочникОбъектыМетаданных.Имя = "WSСсылки"
+				ИЛИ СправочникОбъектыМетаданных.Родитель.Имя = "WSСсылки"
+			ТОГДА 92
+		КОГДА СправочникОбъектыМетаданных.Имя = "ГруппыКоманд"
+				ИЛИ СправочникОбъектыМетаданных.Родитель.Имя = "ГруппыКоманд"
+			ТОГДА 90
+		КОГДА СправочникОбъектыМетаданных.Имя = "ОбщиеФормы"
+				ИЛИ СправочникОбъектыМетаданных.Родитель.Имя = "ОбщиеФормы"
+			ТОГДА 47
+		КОГДА СправочникОбъектыМетаданных.Имя = "ОбщиеОбъекты"
+				ИЛИ СправочникОбъектыМетаданных.Родитель.Имя = "ОбщиеОбъекты"
+			ТОГДА 2
+		ИНАЧЕ 91
+	КОНЕЦ КАК ИндексКартинки,
+	СправочникОбъектыМетаданных.Имя
+ИЗ
+	Справочник.ОбъектыМетаданных КАК СправочникОбъектыМетаданных</QueryText>
+				<MainTable>Catalog.ОбъектыМетаданных</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ПометкаУдаления</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Код</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Имя</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ЭтоГруппа</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Текст</dcscor:parameter>
+									<dcscor:value xsi:type="xs:string"/>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокРеквизитов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список реквизитов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>~СписокРеквизитов.Code</Field>
+				<Field>~СписокРеквизитов.IsFolder</Field>
+				<Field>~СписокРеквизитов.Ref</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникРеквизитыОбъектовМетаданных.Ссылка КАК Ссылка,
+	СправочникРеквизитыОбъектовМетаданных.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникРеквизитыОбъектовМетаданных.Владелец КАК Владелец,
+	СправочникРеквизитыОбъектовМетаданных.Родитель КАК Родитель,
+	СправочникРеквизитыОбъектовМетаданных.ЭтоГруппа КАК ЭтоГруппа,
+	СправочникРеквизитыОбъектовМетаданных.Код КАК Код,
+	СправочникРеквизитыОбъектовМетаданных.Наименование КАК Наименование,
+	СправочникРеквизитыОбъектовМетаданных.ВидРеквизита КАК ВидРеквизита,
+	СправочникРеквизитыОбъектовМетаданных.Имя КАК Имя,
+	СправочникРеквизитыОбъектовМетаданных.Синоним КАК Синоним,
+	СправочникРеквизитыОбъектовМетаданных.Комментарий КАК Комментарий,
+	СправочникРеквизитыОбъектовМетаданных.Подсказка КАК Подсказка,
+	СправочникРеквизитыОбъектовМетаданных.ПроверкаЗаполнения КАК ПроверкаЗаполнения,
+	СправочникРеквизитыОбъектовМетаданных.ОписаниеТиповЗначения КАК ОписаниеТиповЗначения,
+	СправочникРеквизитыОбъектовМетаданных.ИгнорироватьСсылкиИзРеквизита КАК ИгнорироватьСсылкиИзРеквизита,
+	СправочникРеквизитыОбъектовМетаданных.ПрисутствуетВОсновномХранилище КАК ПрисутствуетВОсновномХранилище,
+	СправочникРеквизитыОбъектовМетаданных.ВеткаИсточник КАК ВеткаИсточник,
+	ВЫБОР
+		КОГДА СправочникРеквизитыОбъектовМетаданных.ПометкаУдаления
+			ТОГДА NULL
+		КОГДА СправочникРеквизитыОбъектовМетаданных.ВидРеквизита = ЗНАЧЕНИЕ(Перечисление.ВидыРеквизитов.СтандартныйРеквизит)
+			ТОГДА 1
+		КОГДА СправочникРеквизитыОбъектовМетаданных.ВидРеквизита = ЗНАЧЕНИЕ(Перечисление.ВидыРеквизитов.Реквизит)
+			ТОГДА 53
+		КОГДА СправочникРеквизитыОбъектовМетаданных.ВидРеквизита = ЗНАЧЕНИЕ(Перечисление.ВидыРеквизитов.РеквизитАдресации)
+			ТОГДА 72
+		КОГДА СправочникРеквизитыОбъектовМетаданных.ВидРеквизита = ЗНАЧЕНИЕ(Перечисление.ВидыРеквизитов.Измерение)
+			ТОГДА 66
+		КОГДА СправочникРеквизитыОбъектовМетаданных.ВидРеквизита = ЗНАЧЕНИЕ(Перечисление.ВидыРеквизитов.Ресурс)
+			ТОГДА 68
+		КОГДА СправочникРеквизитыОбъектовМетаданных.ВидРеквизита = ЗНАЧЕНИЕ(Перечисление.ВидыРеквизитов.ТабличнаяЧасть)
+			ТОГДА 55
+		КОГДА СправочникРеквизитыОбъектовМетаданных.ВидРеквизита = ЗНАЧЕНИЕ(Перечисление.ВидыРеквизитов.СтандартныеРеквизиты)
+			ТОГДА 49
+		КОГДА СправочникРеквизитыОбъектовМетаданных.ВидРеквизита = ЗНАЧЕНИЕ(Перечисление.ВидыРеквизитов.Реквизиты)
+			ТОГДА 52
+		КОГДА СправочникРеквизитыОбъектовМетаданных.ВидРеквизита = ЗНАЧЕНИЕ(Перечисление.ВидыРеквизитов.РеквизитыАдресации)
+			ТОГДА 71
+		КОГДА СправочникРеквизитыОбъектовМетаданных.ВидРеквизита = ЗНАЧЕНИЕ(Перечисление.ВидыРеквизитов.Измерения)
+			ТОГДА 65
+		КОГДА СправочникРеквизитыОбъектовМетаданных.ВидРеквизита = ЗНАЧЕНИЕ(Перечисление.ВидыРеквизитов.Ресурсы)
+			ТОГДА 67
+		КОГДА СправочникРеквизитыОбъектовМетаданных.ВидРеквизита = ЗНАЧЕНИЕ(Перечисление.ВидыРеквизитов.ПризнакиУчета)
+			ТОГДА 63
+		КОГДА СправочникРеквизитыОбъектовМетаданных.ВидРеквизита = ЗНАЧЕНИЕ(Перечисление.ВидыРеквизитов.ПризнакУчета)
+			ТОГДА 64
+		КОГДА СправочникРеквизитыОбъектовМетаданных.ВидРеквизита = ЗНАЧЕНИЕ(Перечисление.ВидыРеквизитов.Графы)
+			ТОГДА 56
+		КОГДА СправочникРеквизитыОбъектовМетаданных.ВидРеквизита = ЗНАЧЕНИЕ(Перечисление.ВидыРеквизитов.Графа)
+			ТОГДА 57
+	КОНЕЦ КАК ИндексКаринки
+ИЗ
+	Справочник.РеквизитыОбъектовМетаданных КАК СправочникРеквизитыОбъектовМетаданных
+ГДЕ
+	СправочникРеквизитыОбъектовМетаданных.ВидРеквизита = ЗНАЧЕНИЕ(Перечисление.ВидыРеквизитов.Реквизит)
+	И СправочникРеквизитыОбъектовМетаданных.ЭтоГруппа = ЛОЖЬ</QueryText>
+				<MainTable>Catalog.РеквизитыОбъектовМетаданных</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТекущийПользователь" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий пользователь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КритерийОтбора" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Критерий отбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ОбъектыМетаданных</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СписокМетаданныхОтветственный</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СписокМетаданных.Ответственный</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:Field">ТекущийПользователь</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СписокРеквизитовНаименование</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СписокРеквизитов.Код</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Объект метаданных</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Выбрать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ChooseValue</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Выбрать</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ОбъектМетаданных">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Подсистемы</v8:Type>
+				<v8:Type>cfg:CatalogRef.ОбъектыМетаданных</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ТипФормы">
+			<Type>
+				<v8:Type>cfg:EnumRef.ТипыФорм</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ФормаОбъектаМетаданных">
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФормыОбъектовМетаданных</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<EventSubscription uuid="f8b1e638-7321-4c6e-aeff-04b73db05e23">
+		<Properties>
+			<Name>ПриоритетыПриЗаписиОбъекта</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приоритеты при записи объекта</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Source>
+				<v8:Type>cfg:CatalogObject.РазделыПроекта</v8:Type>
+				<v8:Type>cfg:CatalogObject.ФункцииСистемы</v8:Type>
+				<v8:Type>cfg:CatalogObject.ОбъектыМетаданных</v8:Type>
+				<v8:Type>cfg:CatalogObject.ВерсииПроекта</v8:Type>
+				<v8:Type>cfg:CatalogObject.Проекты</v8:Type>
+				<v8:Type>cfg:CatalogObject.ТехническиеПроекты</v8:Type>
+				<v8:Type>cfg:CatalogObject.Ошибки</v8:Type>
+				<v8:Type>cfg:CatalogObject.ПрофилиПользователей</v8:Type>
+				<v8:Type>cfg:CatalogObject.ФункцииМеханизмов</v8:Type>
+				<v8:Type>cfg:CatalogObject.ОбработчикиОбновленияИнформационнойБазы</v8:Type>
+				<v8:Type>cfg:CatalogObject.Процессы</v8:Type>
+				<v8:Type>cfg:CatalogObject.Ветки</v8:Type>
+				<v8:Type>cfg:CatalogObject.СборкиВерсии</v8:Type>
+			</Source>
+			<Event>OnWrite</Event>
+			<Handler>CommonModule.ПриоритетыОчередиРабот.ПриоритетыПриЗаписиОбъектаПриЗаписи</Handler>
+		</Properties>
+	</EventSubscription>
+</MetaDataObject>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<FilterCriterion uuid="8784c6a4-c735-41f9-8f6e-b80c31d4b83e">
+		<InternalInfo>
+			<xr:GeneratedType name="FilterCriterionManager.ПредшествующийПроцесс" category="Manager">
+				<xr:TypeId>020243d7-f307-408a-ae66-13fdeb2cc976</xr:TypeId>
+				<xr:ValueId>97952573-215a-4376-99cc-e0c267b3c485</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="FilterCriterionList.ПредшествующийПроцесс" category="List">
+				<xr:TypeId>e0b1fbc7-89b3-4997-bc38-c09c681e75fc</xr:TypeId>
+				<xr:ValueId>5dc9fedc-5c95-4716-a01e-c1cb68122ff8</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПредшествующийПроцесс</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предшествующий процесс</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Предшествующий процесс</Comment>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Процессы</v8:Type>
+			</Type>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Процессы.TabularSection.ПредшествующиеПроцессы.Attribute.Процесс</xr:Item>
+			</Content>
+			<DefaultForm/>
+			<AuxiliaryForm>FilterCriterion.ПредшествующийПроцесс.Form.СписокПоследующихПроцессов</AuxiliaryForm>
+			<ListPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список последующих процессов</v8:content>
+				</v8:item>
+			</ListPresentation>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>СписокПоследующихПроцессов</Form>
+			<Command uuid="55f3a831-c4ce-4853-b0b3-115ae0c5078c">
+				<Properties>
+					<Name>СписокПоследующихПроцессов</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список последующих процессов</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>FormNavigationPanelSeeAlso</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:CatalogRef.Процессы</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+		</ChildObjects>
+	</FilterCriterion>
+</MetaDataObject>

@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ТекстСообщенияПользователю" id="57">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Неправильно указана повторяемая ошибка. Есть ошибки, у которых в поле "Повторяемая ошибка", указана текущая ошибка. 
+Заменить в следующих ошибках значение поля "Повторяемая ошибка" на повторяемую ошибку, указанную в текущей ошибке?</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ТекстСообщенияПользователюКонтекстноеМеню" id="58"/>
+			<ExtendedTooltip name="ТекстСообщенияПользователюРасширеннаяПодсказка" id="59"/>
+		</LabelDecoration>
+		<Table name="ПовторяемыеОшибки" id="36">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ПовторяемыеОшибки</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПовторяемыеОшибкиКонтекстноеМеню" id="37"/>
+			<AutoCommandBar name="ПовторяемыеОшибкиКоманднаяПанель" id="38">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ПовторяемыеОшибкиРасширеннаяПодсказка" id="39"/>
+			<SearchStringAddition name="ПовторяемыеОшибкиСтрокаПоиска" id="40">
+				<AdditionSource>
+					<Item>ПовторяемыеОшибки</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПовторяемыеОшибкиСтрокаПоискаКонтекстноеМеню" id="41"/>
+				<ExtendedTooltip name="ПовторяемыеОшибкиСтрокаПоискаРасширеннаяПодсказка" id="42"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПовторяемыеОшибкиСостояниеПросмотра" id="43">
+				<AdditionSource>
+					<Item>ПовторяемыеОшибки</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПовторяемыеОшибкиСостояниеПросмотраКонтекстноеМеню" id="44"/>
+				<ExtendedTooltip name="ПовторяемыеОшибкиСостояниеПросмотраРасширеннаяПодсказка" id="45"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПовторяемыеОшибкиУправлениеПоиском" id="46">
+				<AdditionSource>
+					<Item>ПовторяемыеОшибки</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПовторяемыеОшибкиУправлениеПоискомКонтекстноеМеню" id="47"/>
+				<ExtendedTooltip name="ПовторяемыеОшибкиУправлениеПоискомРасширеннаяПодсказка" id="48"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ПовторяемыеОшибкиОшибка" id="49">
+					<DataPath>ПовторяемыеОшибки.Ошибка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПовторяемыеОшибкиОшибкаКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ПовторяемыеОшибкиОшибкаРасширеннаяПодсказка" id="51"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<CommandBar name="ГруппаКнопок" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalLocation>Right</HorizontalLocation>
+			<ExtendedTooltip name="ГруппаКнопокРасширеннаяПодсказка" id="56"/>
+			<ChildItems>
+				<Button name="ФормаОК" id="13">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.ОК</CommandName>
+					<ExtendedTooltip name="ФормаОКExtendedTooltip" id="16"/>
+				</Button>
+				<Button name="ФормаОтмена" id="12">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.StandardCommand.Cancel</CommandName>
+					<ExtendedTooltip name="ФормаОтменаExtendedTooltip" id="17"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ПовторяемыеОшибки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Повторяемые ошибки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ошибка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Ошибки</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОК</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

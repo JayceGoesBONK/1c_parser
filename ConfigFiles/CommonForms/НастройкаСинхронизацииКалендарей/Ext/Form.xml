@@ -1,0 +1,1486 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="СтраницыФормы" id="164">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTipRepresentation>None</ToolTipRepresentation>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыФормыРасширеннаяПодсказка" id="165"/>
+			<ChildItems>
+				<Page name="СтраницаВыборТипаУчетнойЗаписи" id="166">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница выбор типа учетной записи</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаВыборТипаУчетнойЗаписиРасширеннаяПодсказка" id="167"/>
+					<ChildItems>
+						<RadioButtonField name="ТипУчетнойЗаписи" id="3">
+							<DataPath>ТипУчетнойЗаписи</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<RadioButtonType>Tumbler</RadioButtonType>
+							<ContextMenu name="ТипУчетнойЗаписиКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="ТипУчетнойЗаписиРасширеннаяПодсказка" id="5"/>
+							<Events>
+								<Event name="OnChange">ТипУчетнойЗаписиПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<UsualGroup name="ГруппаУчетныеЗаписи" id="144">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа учетные записи</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаУчетныеЗаписиРасширеннаяПодсказка" id="145"/>
+							<ChildItems>
+								<PictureDecoration name="КартинкаЛоготип" id="146">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Картинка логотип</v8:content>
+										</v8:item>
+									</Title>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="КартинкаЛоготипКонтекстноеМеню" id="147"/>
+									<ExtendedTooltip name="КартинкаЛоготипРасширеннаяПодсказка" id="148"/>
+								</PictureDecoration>
+								<Pages name="СтраницыУчетныеЗаписи" id="134">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы учетные записи</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="СтраницыУчетныеЗаписиРасширеннаяПодсказка" id="135"/>
+									<ChildItems>
+										<Page name="СтраницаGoogle" id="136">
+											<EnableContentChange>true</EnableContentChange>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Google</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="СтраницаGoogleРасширеннаяПодсказка" id="137"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаИнструкцияGoogle" id="113">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа инструкция google</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаИнструкцияGoogleРасширеннаяПодсказка" id="114"/>
+													<ChildItems>
+														<LabelDecoration name="НадписьВведениеGoogle" id="202">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>60</MaxWidth>
+															<Title formatted="true">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>При ведении календаря появляются события. Если настроить синхронизацию с вашим личным календарем Google, то эти события будут автоматически в него выгружаться.
+
+После подключения будет предложено указать календарь для выгрузки и список календарей, из которых нужно загружать ваши события, с возможностью загрузки только факта события, без описания.
+
+Некоторые другие пользователи конфигурации могут видеть записи в вашем календаре.</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="НадписьВведениеGoogleКонтекстноеМеню" id="203"/>
+															<ExtendedTooltip name="НадписьВведениеGoogleРасширеннаяПодсказка" id="204"/>
+														</LabelDecoration>
+														<LabelDecoration name="НадписьШапкаGoogle" id="118">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Для включения синхронизации с Google:</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="НадписьШапкаGoogleКонтекстноеМеню" id="119"/>
+															<ExtendedTooltip name="НадписьШапкаGoogleРасширеннаяПодсказка" id="120"/>
+														</LabelDecoration>
+														<UsualGroup name="ГруппаПолучитьКод" id="124">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа получить код</v8:content>
+																</v8:item>
+															</Title>
+															<GroupVerticalAlign>Center</GroupVerticalAlign>
+															<VerticalAlign>Center</VerticalAlign>
+															<Behavior>Usual</Behavior>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаПолучитьКодРасширеннаяПодсказка" id="125"/>
+															<ChildItems>
+																<LabelDecoration name="НадписьПолучениеКода" id="121">
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>1. Получите код разрешения на сайте Google</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="НадписьПолучениеКодаКонтекстноеМеню" id="122"/>
+																	<ExtendedTooltip name="НадписьПолучениеКодаРасширеннаяПодсказка" id="123"/>
+																</LabelDecoration>
+																<Button name="ПолучитьКодРазрешенияGoogle" id="380">
+																	<Type>Hyperlink</Type>
+																	<Representation>Picture</Representation>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<CommandName>Form.Command.ПолучитьКодРазрешенияGoogle</CommandName>
+																	<TextColor>style:FormTextColor</TextColor>
+																	<Picture>
+																		<xr:Ref>CommonPicture.SignInGoogle</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ExtendedTooltip name="ПолучитьКодРазрешенияGoogleРасширеннаяПодсказка" id="381"/>
+																</Button>
+															</ChildItems>
+														</UsualGroup>
+														<LabelDecoration name="НадписьВставкаКода" id="128">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>2. Вставьте код разрешения с сайта</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="НадписьВставкаКодаКонтекстноеМеню" id="129"/>
+															<ExtendedTooltip name="НадписьВставкаКодаРасширеннаяПодсказка" id="130"/>
+														</LabelDecoration>
+														<InputField name="КодРазрешенияGoogle" id="131">
+															<DataPath>КодРазрешенияGoogle</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<InputHint>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Код разрешения с сайта Google</v8:content>
+																</v8:item>
+															</InputHint>
+															<ContextMenu name="КодРазрешенияGoogleКонтекстноеМеню" id="132"/>
+															<ExtendedTooltip name="КодРазрешенияGoogleРасширеннаяПодсказка" id="133"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<Button name="ПодключитьGoogle" id="149">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.Подключить</CommandName>
+													<ExtendedTooltip name="ПодключитьGoogleРасширеннаяПодсказка" id="150"/>
+												</Button>
+												<UsualGroup name="ГруппаПодключениеGoogle" id="176">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа подключение google</v8:content>
+														</v8:item>
+													</Title>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаПодключениеGoogleРасширеннаяПодсказка" id="177"/>
+													<ChildItems>
+														<PictureDecoration name="СостояниеПодключенияGoogle" id="170">
+															<GroupVerticalAlign>Center</GroupVerticalAlign>
+															<FileDragMode>AsFile</FileDragMode>
+															<ContextMenu name="СостояниеПодключенияGoogleКонтекстноеМеню" id="171"/>
+															<ExtendedTooltip name="СостояниеПодключенияGoogleРасширеннаяПодсказка" id="172"/>
+														</PictureDecoration>
+														<LabelDecoration name="РезультатПодключенияGoogle" id="173">
+															<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Выполняется подключение...</v8:content>
+																</v8:item>
+															</Title>
+															<GroupVerticalAlign>Center</GroupVerticalAlign>
+															<ContextMenu name="РезультатПодключенияGoogleКонтекстноеМеню" id="174"/>
+															<ExtendedTooltip name="РезультатПодключенияGoogleРасширеннаяПодсказка" id="175"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаiCloud" id="138">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>iCloud</v8:content>
+												</v8:item>
+											</Title>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="СтраницаiCloudРасширеннаяПодсказка" id="139"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаИнструкцияiCloud" id="81">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа инструкцияi cloud</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаИнструкцияiCloudРасширеннаяПодсказка" id="82"/>
+													<ChildItems>
+														<LabelDecoration name="НадписьВведениеiCloud" id="205">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>60</MaxWidth>
+															<Title formatted="true">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>При ведении календаря появляются события. Если настроить синхронизацию с вашим личным календарем iCloud, то эти события будут автоматически в него выгружаться.
+
+После подключения будет предложено указать календарь для выгрузки и список календарей, из которых нужно загружать ваши события, с возможностью загрузки только факта события, без описания.
+
+Некоторые другие пользователи конфигурации могут видеть записи в вашем календаре.
+</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="НадписьВведениеiCloudКонтекстноеМеню" id="206"/>
+															<ExtendedTooltip name="НадписьВведениеiCloudРасширеннаяПодсказка" id="207"/>
+														</LabelDecoration>
+														<LabelDecoration name="НадписьШапкаiCloud" id="78">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Для включения синхронизации c iCloud:</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="НадписьШапкаiCloudКонтекстноеМеню" id="79"/>
+															<ExtendedTooltip name="НадписьШапкаiCloudРасширеннаяПодсказка" id="80"/>
+														</LabelDecoration>
+														<LabelDecoration name="НадписьИнструкцияПарольПриложения" id="85">
+															<Width>46</Width>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<HorizontalStretch>false</HorizontalStretch>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>1. Создайте пароль приложения в настройка учетной записи Apple ID.</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="НадписьИнструкцияПарольПриложенияКонтекстноеМеню" id="86"/>
+															<ExtendedTooltip name="НадписьИнструкцияПарольПриложенияРасширеннаяПодсказка" id="87"/>
+														</LabelDecoration>
+														<LabelDecoration name="НадписьСсылкаПарольПриложения" id="115">
+															<Title formatted="true">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>&lt;link https://support.apple.com/ru-ru/HT204397&gt;Что такое пароль приложения?&lt;/&gt;</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="НадписьСсылкаПарольПриложенияКонтекстноеМеню" id="116"/>
+															<ExtendedTooltip name="НадписьСсылкаПарольПриложенияРасширеннаяПодсказка" id="117"/>
+														</LabelDecoration>
+														<LabelDecoration name="НадписьУчетныеДанныеiCloud" id="91">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>2. Введите данные вашей учетной записи:</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="НадписьУчетныеДанныеiCloudКонтекстноеМеню" id="92"/>
+															<ExtendedTooltip name="НадписьУчетныеДанныеiCloudРасширеннаяПодсказка" id="93"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаНастройкаiCloud" id="1">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа настройка iCloud</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalStretch>false</HorizontalStretch>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаНастройкаiCloudРасширеннаяПодсказка" id="2"/>
+													<ChildItems>
+														<InputField name="ЛогинiCloud" id="8">
+															<DataPath>ЛогинiCloud</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Apple ID</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>None</TitleLocation>
+															<InputHint>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Apple ID</v8:content>
+																</v8:item>
+															</InputHint>
+															<ContextMenu name="ЛогинiCloudКонтекстноеМеню" id="9"/>
+															<ExtendedTooltip name="ЛогинiCloudРасширеннаяПодсказка" id="10"/>
+														</InputField>
+														<InputField name="ПарольiCloud" id="11">
+															<DataPath>ПарольiCloud</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пароль приложения</v8:content>
+																</v8:item>
+															</Title>
+															<TitleLocation>None</TitleLocation>
+															<PasswordMode>true</PasswordMode>
+															<InputHint>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пароль приложения</v8:content>
+																</v8:item>
+															</InputHint>
+															<ContextMenu name="ПарольiCloudКонтекстноеМеню" id="12"/>
+															<ExtendedTooltip name="ПарольiCloudРасширеннаяПодсказка" id="13"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<Button name="ПодключитьiCloud" id="157">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.Подключить</CommandName>
+													<ExtendedTooltip name="ПодключитьiCloudРасширеннаяПодсказка" id="158"/>
+												</Button>
+												<UsualGroup name="ГруппаПодключениеiCloud" id="178">
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа подключение google</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаПодключениеiCloudРасширеннаяПодсказка" id="179"/>
+													<ChildItems>
+														<PictureDecoration name="СостояниеПодключенияiCloud" id="182">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Состояние подключенияi cloud</v8:content>
+																</v8:item>
+															</Title>
+															<GroupVerticalAlign>Center</GroupVerticalAlign>
+															<FileDragMode>AsFile</FileDragMode>
+															<ContextMenu name="СостояниеПодключенияiCloudКонтекстноеМеню" id="183"/>
+															<ExtendedTooltip name="СостояниеПодключенияiCloudРасширеннаяПодсказка" id="184"/>
+														</PictureDecoration>
+														<LabelDecoration name="РезультатПодключенияiCloud" id="185">
+															<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Выполняется подключение...</v8:content>
+																</v8:item>
+															</Title>
+															<GroupVerticalAlign>Center</GroupVerticalAlign>
+															<ContextMenu name="РезультатПодключенияiCloudКонтекстноеМеню" id="186"/>
+															<ExtendedTooltip name="РезультатПодключенияiCloudРасширеннаяПодсказка" id="187"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаПодключение" id="247">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница подключение</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalSpacing>Double</VerticalSpacing>
+					<ExtendedTooltip name="СтраницаПодключениеРасширеннаяПодсказка" id="248"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаСостояниеПодключения" id="249">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа состояние подключения</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalSpacing>Single</VerticalSpacing>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСостояниеПодключенияРасширеннаяПодсказка" id="250"/>
+							<ChildItems>
+								<PictureDecoration name="КартинкаЗеленыйШар" id="251">
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<Picture>
+										<xr:Ref>CommonPicture.ЗеленыйШар</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="КартинкаЗеленыйШарКонтекстноеМеню" id="252"/>
+									<ExtendedTooltip name="КартинкаЗеленыйШарРасширеннаяПодсказка" id="253"/>
+								</PictureDecoration>
+								<LabelDecoration name="НадписьСоединениеУстановлено" id="254">
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Соединение установлено</v8:content>
+										</v8:item>
+									</Title>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<ContextMenu name="НадписьСоединениеУстановленоКонтекстноеМеню" id="255"/>
+									<ExtendedTooltip name="НадписьСоединениеУстановленоРасширеннаяПодсказка" id="256"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаЭкспортПодключение" id="240">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа экспорт подключение</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<VerticalSpacing>Single</VerticalSpacing>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЭкспортПодключениеРасширеннаяПодсказка" id="241"/>
+							<ChildItems>
+								<LabelDecoration name="ИнструкцияКалендарьДляЗаписиПодключение" id="188">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Для завершения настройки:
+1. Выберите календарь, в который будут записываться события, созданные в Системе проектирования прикладных решений</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ИнструкцияКалендарьДляЗаписиПодключениеКонтекстноеМеню" id="189"/>
+									<ExtendedTooltip name="ИнструкцияКалендарьДляЗаписиПодключениеРасширеннаяПодсказка" id="190"/>
+								</LabelDecoration>
+								<InputField name="КалендарьДляЗаписиПодключение" id="159">
+									<DataPath>КалендарьДляЗаписи</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В этот календарь будут выгружаться ваши события.</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ContextMenu name="КалендарьДляЗаписиПодключениеКонтекстноеМеню" id="160"/>
+									<ExtendedTooltip name="КалендарьДляЗаписиПодключениеРасширеннаяПодсказка" id="161"/>
+									<Events>
+										<Event name="OnChange">КалендарьДляЗаписиПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаИмпортПодключение" id="242">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа импорт подключение</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<VerticalSpacing>Single</VerticalSpacing>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИмпортПодключениеРасширеннаяПодсказка" id="243"/>
+							<ChildItems>
+								<LabelDecoration name="НадписьИнструкцияКалендариПодключение" id="94">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>2. Выберите календари, из которых необходимо загружать события.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НадписьИнструкцияКалендариПодключениеКонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="НадписьИнструкцияКалендариПодключениеРасширеннаяПодсказка" id="96"/>
+								</LabelDecoration>
+								<Table name="КалендариПодключение" id="16">
+									<Representation>List</Representation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<Height>5</Height>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>Календари</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Календари</v8:content>
+										</v8:item>
+									</Title>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="КалендариПодключениеКонтекстноеМеню" id="17"/>
+									<AutoCommandBar name="КалендариПодключениеКоманднаяПанель" id="18">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="КалендариПодключениеРасширеннаяПодсказка" id="19"/>
+									<SearchStringAddition name="КалендариПодключениеСтрокаПоиска" id="20">
+										<AdditionSource>
+											<Item>КалендариПодключение</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КалендариПодключениеСтрокаПоискаКонтекстноеМеню" id="21"/>
+										<ExtendedTooltip name="КалендариПодключениеСтрокаПоискаРасширеннаяПодсказка" id="22"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="КалендариПодключениеСостояниеПросмотра" id="23">
+										<AdditionSource>
+											<Item>КалендариПодключение</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КалендариПодключениеСостояниеПросмотраКонтекстноеМеню" id="24"/>
+										<ExtendedTooltip name="КалендариПодключениеСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="КалендариПодключениеУправлениеПоиском" id="26">
+										<AdditionSource>
+											<Item>КалендариПодключение</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="КалендариПодключениеУправлениеПоискомКонтекстноеМеню" id="27"/>
+										<ExtendedTooltip name="КалендариПодключениеУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<CheckBoxField name="КалендариПодключениеЧтение" id="208">
+											<DataPath>Календари.Чтение</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="КалендариПодключениеЧтениеКонтекстноеМеню" id="209"/>
+											<ExtendedTooltip name="КалендариПодключениеЧтениеРасширеннаяПодсказка" id="210"/>
+										</CheckBoxField>
+										<InputField name="КалендариПодключениеВидЗагрузки" id="197">
+											<DataPath>Календари.ВидЗагрузки</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Загружать</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ContextMenu name="КалендариПодключениеВидЗагрузкиКонтекстноеМеню" id="198"/>
+											<ExtendedTooltip name="КалендариПодключениеВидЗагрузкиРасширеннаяПодсказка" id="199"/>
+											<Events>
+												<Event name="OnChange">КалендариПодключениеВидЗагрузкиПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="КалендариПодключениеНаименование" id="29">
+											<DataPath>Календари.Наименование</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="КалендариПодключениеНаименованиеКонтекстноеМеню" id="30"/>
+											<ExtendedTooltip name="КалендариПодключениеНаименованиеРасширеннаяПодсказка" id="31"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДатаСинхронизации" id="367">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа дата синхронизации</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalSpacing>Single</VerticalSpacing>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДатаСинхронизацииРасширеннаяПодсказка" id="368"/>
+							<ChildItems>
+								<InputField name="ДатаСинхронизации" id="369">
+									<DataPath>ДатаСинхронизации</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Не загружать события, запланированные раньше</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Начиная с этой даты будет выполнена первоначальная синхронизация событий</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ContextMenu name="ДатаСинхронизацииКонтекстноеМеню" id="370"/>
+									<ExtendedTooltip name="ДатаСинхронизацииРасширеннаяПодсказка" id="371"/>
+									<Events>
+										<Event name="OnChange">ДатаСинхронизацииПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="СохранитьПодключение" id="53">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Сохранить</CommandName>
+							<ExtendedTooltip name="СохранитьПодключениеРасширеннаяПодсказка" id="54"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаНастройка" id="276">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница настройка</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalSpacing>Double</VerticalSpacing>
+					<ExtendedTooltip name="СтраницаНастройкаРасширеннаяПодсказка" id="277"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаСостояниеСинхронизации" id="280">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа состояние синхронизации</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalSpacing>Single</VerticalSpacing>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСостояниеСинхронизацииРасширеннаяПодсказка" id="281"/>
+							<ChildItems>
+								<PictureDecoration name="КартинкаСостояниеСинхронизации" id="282">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Картинка состояние синхронизации</v8:content>
+										</v8:item>
+									</Title>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<Picture>
+										<xr:Ref>CommonPicture.ЗеленаяГалка</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="КартинкаСостояниеСинхронизацииКонтекстноеМеню" id="283"/>
+									<ExtendedTooltip name="КартинкаСостояниеСинхронизацииРасширеннаяПодсказка" id="284"/>
+								</PictureDecoration>
+								<LabelDecoration name="НадписьСостояниеСинхронизации" id="285">
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Синхронизация подключена</v8:content>
+										</v8:item>
+									</Title>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<ContextMenu name="НадписьСостояниеСинхронизацииКонтекстноеМеню" id="286"/>
+									<ExtendedTooltip name="НадписьСостояниеСинхронизацииРасширеннаяПодсказка" id="287"/>
+								</LabelDecoration>
+								<Button name="Подключить" id="288">
+									<Type>UsualButton</Type>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<CommandName>Form.Command.Подключить</CommandName>
+									<ExtendedTooltip name="ПодключитьРасширеннаяПодсказка" id="289"/>
+								</Button>
+								<Button name="Отключить" id="290">
+									<Type>UsualButton</Type>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<CommandName>Form.Command.Отключить</CommandName>
+									<ExtendedTooltip name="ОтключитьРасширеннаяПодсказка" id="291"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСостояниеПоследнейСинхронизации" id="292">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа состояние последней синхронизации</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<VerticalSpacing>Single</VerticalSpacing>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСостояниеПоследнейСинхронизацииРасширеннаяПодсказка" id="293"/>
+							<ChildItems>
+								<LabelDecoration name="ДанныеПоследнейСинхронизации" id="294">
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Последняя синхронизация:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДанныеПоследнейСинхронизацииКонтекстноеМеню" id="295"/>
+									<ExtendedTooltip name="ДанныеПоследнейСинхронизацииРасширеннаяПодсказка" id="296"/>
+								</LabelDecoration>
+								<Button name="СинхронизироватьСейчас" id="365">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.СинхронизироватьКалендарь</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Синхронизировать сейчас</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="СинхронизироватьСейчасРасширеннаяПодсказка" id="366"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаЭкспортНастройка" id="297">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа экспорт</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<HorizontalSpacing>Single</HorizontalSpacing>
+							<VerticalSpacing>Single</VerticalSpacing>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЭкспортНастройкаРасширеннаяПодсказка" id="298"/>
+							<ChildItems>
+								<LabelDecoration name="ИнструкцияКалендарьДляЗаписиНастройка" id="302">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Календарь, в который будут записываться события, созданные в Системе проектирования прикладных решений</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ИнструкцияКалендарьДляЗаписиНастройкаКонтекстноеМеню" id="303"/>
+									<ExtendedTooltip name="ИнструкцияКалендарьДляЗаписиНастройкаРасширеннаяПодсказка" id="304"/>
+								</LabelDecoration>
+								<InputField name="КалендарьДляЗаписиНастройка" id="305">
+									<DataPath>КалендарьДляЗаписи</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В этот календарь будут выгружаться ваши события.</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ContextMenu name="КалендарьДляЗаписиНастройкаКонтекстноеМеню" id="306"/>
+									<ExtendedTooltip name="КалендарьДляЗаписиНастройкаРасширеннаяПодсказка" id="307"/>
+									<Events>
+										<Event name="OnChange">КалендарьДляЗаписиПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаИмпортНастройка" id="316">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа импорт</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<VerticalSpacing>Single</VerticalSpacing>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИмпортНастройкаРасширеннаяПодсказка" id="317"/>
+							<ChildItems>
+								<LabelDecoration name="ИнструкцияКалендариНастройка" id="321">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Календари, из которых необходимо загружать события:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ИнструкцияКалендариНастройкаКонтекстноеМеню" id="322"/>
+									<ExtendedTooltip name="ИнструкцияКалендариНастройкаРасширеннаяПодсказка" id="323"/>
+								</LabelDecoration>
+								<Table name="КалендариНастройка" id="324">
+									<Representation>List</Representation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<Height>5</Height>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>Календари</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Календари</v8:content>
+										</v8:item>
+									</Title>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="КалендариНастройкаКонтекстноеМеню" id="325"/>
+									<AutoCommandBar name="КалендариНастройкаКоманднаяПанель" id="326">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="КалендариНастройкаРасширеннаяПодсказка" id="327"/>
+									<SearchStringAddition name="КалендариНастройкаСтрокаПоиска" id="328">
+										<AdditionSource>
+											<Item>КалендариНастройка</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КалендариНастройкаСтрокаПоискаКонтекстноеМеню" id="329"/>
+										<ExtendedTooltip name="КалендариНастройкаСтрокаПоискаРасширеннаяПодсказка" id="330"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="КалендариНастройкаСостояниеПросмотра" id="331">
+										<AdditionSource>
+											<Item>КалендариНастройка</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КалендариНастройкаСостояниеПросмотраКонтекстноеМеню" id="332"/>
+										<ExtendedTooltip name="КалендариНастройкаСостояниеПросмотраРасширеннаяПодсказка" id="333"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="КалендариНастройкаУправлениеПоиском" id="334">
+										<AdditionSource>
+											<Item>КалендариНастройка</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="КалендариНастройкаУправлениеПоискомКонтекстноеМеню" id="335"/>
+										<ExtendedTooltip name="КалендариНастройкаУправлениеПоискомРасширеннаяПодсказка" id="336"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<CheckBoxField name="КалендариНастройкаЧтение" id="337">
+											<DataPath>Календари.Чтение</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="КалендариНастройкаЧтениеКонтекстноеМеню" id="338"/>
+											<ExtendedTooltip name="КалендариНастройкаЧтениеРасширеннаяПодсказка" id="339"/>
+										</CheckBoxField>
+										<InputField name="КалендариНастройкаВидЗагрузки" id="340">
+											<DataPath>Календари.ВидЗагрузки</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Загружать</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ContextMenu name="КалендариНастройкаВидЗагрузкиКонтекстноеМеню" id="341"/>
+											<ExtendedTooltip name="КалендариНастройкаВидЗагрузкиРасширеннаяПодсказка" id="342"/>
+											<Events>
+												<Event name="OnChange">КалендариНастройкаВидЗагрузкиПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="КалендариНастройкаНаименование" id="343">
+											<DataPath>Календари.Наименование</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="КалендариНастройкаНаименованиеКонтекстноеМеню" id="344"/>
+											<ExtendedTooltip name="КалендариНастройкаНаименованиеРасширеннаяПодсказка" id="345"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДатаСинхронизацииНастройка" id="372">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа дата синхронизации</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа дата синхронизации настройка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<VerticalSpacing>Single</VerticalSpacing>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДатаСинхронизацииНастройкаРасширеннаяПодсказка" id="373"/>
+							<ChildItems>
+								<InputField name="ДатаСинхронизацииНастройка" id="374">
+									<DataPath>ДатаСинхронизации</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Не загружать события, запланированные раньше</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Начиная с этой даты будет выполнена первоначальная синхронизация событий</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ContextMenu name="ДатаСинхронизацииНастройкаКонтекстноеМеню" id="375"/>
+									<ExtendedTooltip name="ДатаСинхронизацииНастройкаРасширеннаяПодсказка" id="376"/>
+									<Events>
+										<Event name="OnChange">ДатаСинхронизацииПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаКнопкиУправленияСинхронизацией" id="357">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопки управления синхронизацией</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>=</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКнопкиУправленияСинхронизациейРасширеннаяПодсказка" id="358"/>
+							<ChildItems>
+								<Button name="СохранитьНастройка" id="359">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.Сохранить</CommandName>
+									<ExtendedTooltip name="СохранитьНастройкаРасширеннаяПодсказка" id="360"/>
+								</Button>
+								<Button name="Удалить" id="361">
+									<Type>UsualButton</Type>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<CommandName>Form.Command.Удалить</CommandName>
+									<ExtendedTooltip name="УдалитьРасширеннаяПодсказка" id="362"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаПолученияКода" id="382">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получение кода</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаПолученияКодаРасширеннаяПодсказка" id="383"/>
+					<ChildItems>
+						<HTMLDocumentField name="ТекстHTML" id="384">
+							<DataPath>ТекстHTML</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ТекстHTMLКонтекстноеМеню" id="385"/>
+							<ExtendedTooltip name="ТекстHTMLРасширеннаяПодсказка" id="386"/>
+							<Events>
+								<Event name="DocumentComplete">ТекстHTMLДокументСформирован</Event>
+							</Events>
+						</HTMLDocumentField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ТипУчетнойЗаписи" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип учетной записи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ЛогинiCloud" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логин iCloud</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПарольiCloud" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль iCloud</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Календари" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Календари</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Columns>
+				<Column name="Наименование" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Идентификатор" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Изменение" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="БезОписания" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Без описания</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Чтение" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Чтение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВидЗагрузки" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид загрузки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДатаСинхронизации" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата первоначальной синхронизации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="Узел" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Узел</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ExchangePlanRef.СинхронизацияКалендарей</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СерверiCloud" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервер iCloud</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Включен" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КодРазрешенияGoogle" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код разрешения google</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ТокенДоступаGoogle" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Токен доступа google</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипТокенаДоступаGoogle" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип токена доступа google</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТокенОбновленияGoogle" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Токен обновления google</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КалендарьДляЗаписи" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Календарь для записи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КаталогКалендарейiCloud" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог календарейi cloud</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПолучатьУведомленияИмпорт" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получать уведомления импорт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПолучатьУведомленияЭкспорт" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получать уведомления экспорт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СтатусСинхронизации" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус синхронизации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущееОписаниеОшибки" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущее описание ошибки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстHTML" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст HTML</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="OAuth_redirection_uri" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>O auth redirection uri</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Подключить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Подключить</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="Сохранить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сохранить</Action>
+		</Command>
+		<Command name="Отключить" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отключить</Action>
+		</Command>
+		<Command name="Удалить" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить все пользовательские данные о подключении из базы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Удалить</Action>
+		</Command>
+		<Command name="ПолучитьКодРазрешенияGoogle" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить код разрешения Google</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить код разрешения Google</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьКодРазрешенияGoogle</Action>
+		</Command>
+		<Command name="СинхронизироватьКалендарь" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>синхронизировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Синхронизировать календарь</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СинхронизироватьКалендарь</Action>
+		</Command>
+	</Commands>
+</Form>

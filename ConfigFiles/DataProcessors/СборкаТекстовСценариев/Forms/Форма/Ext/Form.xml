@@ -1,0 +1,1136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="СборкаСценариев" id="12">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.СборкаСценариев</CommandName>
+				<ExtendedTooltip name="СборкаСценариевРасширеннаяПодсказка" id="13"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="СтраницыНастроек" id="77">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы настроек</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы настроек</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыНастроекРасширеннаяПодсказка" id="78"/>
+			<ChildItems>
+				<Page name="НастройкиСборкиСценариев" id="79">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки сборки сценариев</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки сборки сценариев</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="НастройкиСборкиСценариевРасширеннаяПодсказка" id="80"/>
+					<ChildItems>
+						<InputField name="КаталогТестов" id="222">
+							<DataPath>КаталогТестов</DataPath>
+							<ContextMenu name="КаталогТестовКонтекстноеМеню" id="223"/>
+							<ExtendedTooltip name="КаталогТестовРасширеннаяПодсказка" id="224"/>
+						</InputField>
+						<InputField name="КаталогСценариев" id="321">
+							<DataPath>Объект.КаталогСценариев</DataPath>
+							<ContextMenu name="КаталогСценариевКонтекстноеМеню" id="322"/>
+							<ExtendedTooltip name="КаталогСценариевРасширеннаяПодсказка" id="323"/>
+						</InputField>
+						<InputField name="КаталогПроцессов" id="318">
+							<DataPath>Объект.КаталогПроцессов</DataPath>
+							<ContextMenu name="КаталогПроцессовКонтекстноеМеню" id="319"/>
+							<ExtendedTooltip name="КаталогПроцессовРасширеннаяПодсказка" id="320"/>
+						</InputField>
+						<InputField name="ИмяФайлаЭталонныхБД" id="14">
+							<DataPath>Объект.ИмяФайлаЭталонныхБД</DataPath>
+							<ContextMenu name="ИмяФайлаЭталонныхБДКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ИмяФайлаЭталонныхБДРасширеннаяПодсказка" id="16"/>
+						</InputField>
+						<InputField name="КаталогДляЛинейныхСценариев" id="17">
+							<DataPath>Объект.КаталогДляЛинейныхСценариев</DataPath>
+							<ContextMenu name="КаталогДляЛинейныхСценариевКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="КаталогДляЛинейныхСценариевРасширеннаяПодсказка" id="19"/>
+						</InputField>
+						<InputField name="ИдБазыСборки" id="56">
+							<DataPath>ИдБазыСборки</DataPath>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ContextMenu name="ИдБазыСборкиКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="ИдБазыСборкиРасширеннаяПодсказка" id="58">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Можно указать несколько идентификаторов через точку с запятой.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</InputField>
+						<UsualGroup name="Опции" id="228">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Опции</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Опции</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ОпцииРасширеннаяПодсказка" id="229"/>
+							<ChildItems>
+								<CheckBoxField name="РаботаВРежимеВнешнейОбработки" id="7">
+									<DataPath>Объект.РаботаВРежимеВнешнейОбработки</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="РаботаВРежимеВнешнейОбработкиКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="РаботаВРежимеВнешнейОбработкиРасширеннаяПодсказка" id="9"/>
+								</CheckBoxField>
+								<CheckBoxField name="СоздаватьJsonФайл" id="225">
+									<DataPath>СоздаватьJsonФайл</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СоздаватьJsonФайлКонтекстноеМеню" id="226"/>
+									<ExtendedTooltip name="СоздаватьJsonФайлРасширеннаяПодсказка" id="227"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<RadioButtonField name="ПереключательПоТипамКомпиляции" id="159">
+							<DataPath>ПереключательПоТипамКомпиляции</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Собирать</v8:content>
+								</v8:item>
+							</Title>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xs:string">Все</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xs:string">Только процессы</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xs:string">Только сценарии</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ПереключательПоТипамКомпиляцииКонтекстноеМеню" id="160"/>
+							<ExtendedTooltip name="ПереключательПоТипамКомпиляцииРасширеннаяПодсказка" id="161"/>
+							<Events>
+								<Event name="OnChange">ПереключательПоТипамКомпиляцииПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<UsualGroup name="Потоки" id="307">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Потоки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Потоки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ПотокиРасширеннаяПодсказка" id="308"/>
+							<ChildItems>
+								<InputField name="НомерПотока" id="312">
+									<DataPath>Объект.НомерПотока</DataPath>
+									<ContextMenu name="НомерПотокаКонтекстноеМеню" id="313"/>
+									<ExtendedTooltip name="НомерПотокаРасширеннаяПодсказка" id="314"/>
+								</InputField>
+								<InputField name="КоличествоПотоков" id="309">
+									<DataPath>Объект.КоличествоПотоков</DataPath>
+									<ContextMenu name="КоличествоПотоковКонтекстноеМеню" id="310"/>
+									<ExtendedTooltip name="КоличествоПотоковРасширеннаяПодсказка" id="311"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Отборы" id="162">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отборы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отборы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ОтборыРасширеннаяПодсказка" id="163"/>
+							<ChildItems>
+								<UsualGroup name="ОтборСценариев" id="164">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отбор по сценариям</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отбор сценариев</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="ОтборСценариевРасширеннаяПодсказка" id="165"/>
+									<ChildItems>
+										<InputField name="ОтборПоНастройкамСценариев" id="103">
+											<DataPath>ОтборПоНастройкамСценариев</DataPath>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<ContextMenu name="ОтборПоНастройкамСценариевКонтекстноеМеню" id="104"/>
+											<ExtendedTooltip name="ОтборПоНастройкамСценариевРасширеннаяПодсказка" id="105">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Можно указать несколько настроек через точку с запятой.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</InputField>
+										<InputField name="ОтборПоСценариям" id="106">
+											<DataPath>ОтборПоСценариям</DataPath>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<ContextMenu name="ОтборПоСценариямКонтекстноеМеню" id="107"/>
+											<ExtendedTooltip name="ОтборПоСценариямРасширеннаяПодсказка" id="108">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Можно указать несколько сценариев через точку с запятой.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ОтборПроцессов" id="166">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отбор по процессам</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отбор процессов</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="ОтборПроцессовРасширеннаяПодсказка" id="167"/>
+									<ChildItems>
+										<InputField name="ОтборПоНастройкамПроцессов" id="153">
+											<DataPath>ОтборПоНастройкамПроцессов</DataPath>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<ContextMenu name="ОтборПоНастройкамПроцессовКонтекстноеМеню" id="154"/>
+											<ExtendedTooltip name="ОтборПоНастройкамПроцессовРасширеннаяПодсказка" id="155">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Можно указать несколько настроек через точку с запятой.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</InputField>
+										<InputField name="ОтборПоПроцессам" id="156">
+											<DataPath>ОтборПоПроцессам</DataPath>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<ContextMenu name="ОтборПоПроцессамКонтекстноеМеню" id="157"/>
+											<ExtendedTooltip name="ОтборПоПроцессамРасширеннаяПодсказка" id="158">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Можно указать несколько процессов через точку с запятой.</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ОтборПоТегамСценариевИлиНастроек" id="315">
+							<DataPath>Объект.ОтборПоТегамСценариевИлиНастроек</DataPath>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ContextMenu name="ОтборПоТегамСценариевИлиНастроекКонтекстноеМеню" id="316"/>
+							<ExtendedTooltip name="ОтборПоТегамСценариевИлиНастроекРасширеннаяПодсказка" id="317">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Теги передаются через точку с запятой</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</InputField>
+						<InputField name="ИсключениеПоТегамСценариевИлиНастроек" id="324">
+							<DataPath>Объект.ИсключениеПоТегамСценариевИлиНастроек</DataPath>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ContextMenu name="ИсключениеПоТегамСценариевИлиНастроекКонтекстноеМеню" id="325"/>
+							<ExtendedTooltip name="ИсключениеПоТегамСценариевИлиНастроекРасширеннаяПодсказка" id="326">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Теги передаются через точку с запятой</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</InputField>
+						<CheckBoxField name="НесколькоСценариевВОдномФайле" id="327">
+							<DataPath>Объект.НесколькоСценариевВОдномФайле</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НесколькоСценариевВОдномФайлеКонтекстноеМеню" id="328"/>
+							<ExtendedTooltip name="НесколькоСценариевВОдномФайлеРасширеннаяПодсказка" id="329"/>
+						</CheckBoxField>
+						<CheckBoxField name="ОтборСценариевИмеетПриоритет" id="330">
+							<DataPath>Объект.ОтборСценариевИмеетПриоритет</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ОтборСценариевИмеетПриоритетКонтекстноеМеню" id="331"/>
+							<ExtendedTooltip name="ОтборСценариевИмеетПриоритетРасширеннаяПодсказка" id="332"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+				<Page name="НастройкиЗапускаСценариев" id="101">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки запуска сценариев</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки запуска сценариев</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="НастройкиЗапускаСценариевРасширеннаяПодсказка" id="102"/>
+					<ChildItems>
+						<InputField name="ПаузаПриОткрытииОкна" id="71">
+							<DataPath>Объект.ПаузаПриОткрытииОкна</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="ПаузаПриОткрытииОкнаКонтекстноеМеню" id="72"/>
+							<ExtendedTooltip name="ПаузаПриОткрытииОкнаРасширеннаяПодсказка" id="73"/>
+						</InputField>
+						<InputField name="ПортЗапускаТестКлиента" id="65">
+							<DataPath>Объект.ПортЗапускаТестКлиента</DataPath>
+							<ContextMenu name="ПортЗапускаТестКлиентаКонтекстноеМеню" id="66"/>
+							<ExtendedTooltip name="ПортЗапускаТестКлиентаРасширеннаяПодсказка" id="67"/>
+						</InputField>
+						<InputField name="ТипКлиента" id="62">
+							<DataPath>Объект.ТипКлиента</DataPath>
+							<ContextMenu name="ТипКлиентаКонтекстноеМеню" id="63"/>
+							<ExtendedTooltip name="ТипКлиентаРасширеннаяПодсказка" id="64"/>
+						</InputField>
+						<InputField name="ПутьКИнфобазе" id="59">
+							<DataPath>Объект.ПутьКИнфобазе</DataPath>
+							<ContextMenu name="ПутьКИнфобазеКонтекстноеМеню" id="60"/>
+							<ExtendedTooltip name="ПутьКИнфобазеРасширеннаяПодсказка" id="61"/>
+						</InputField>
+						<InputField name="КаталогOutputСкриншоты" id="47">
+							<DataPath>Объект.КаталогOutputСкриншоты</DataPath>
+							<ContextMenu name="КаталогOutputСкриншотыКонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="КаталогOutputСкриншотыРасширеннаяПодсказка" id="49"/>
+						</InputField>
+						<InputField name="КомандаСделатьСкриншот" id="44">
+							<DataPath>Объект.КомандаСделатьСкриншот</DataPath>
+							<ContextMenu name="КомандаСделатьСкриншотКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="КомандаСделатьСкриншотРасширеннаяПодсказка" id="46"/>
+						</InputField>
+						<InputField name="ПутьКФайлуДляВыгрузкиСтатусаВыполненияСценариев" id="41">
+							<DataPath>Объект.ПутьКФайлуДляВыгрузкиСтатусаВыполненияСценариев</DataPath>
+							<ContextMenu name="ПутьКФайлуДляВыгрузкиСтатусаВыполненияСценариевКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="ПутьКФайлуДляВыгрузкиСтатусаВыполненияСценариевРасширеннаяПодсказка" id="43"/>
+						</InputField>
+						<InputField name="ИмяФайлаЛогВыполненияСценариев" id="38">
+							<DataPath>Объект.ИмяФайлаЛогВыполненияСценариев</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Имя файла лога выполнения сценариев</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ИмяФайлаЛогВыполненияСценариевКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="ИмяФайлаЛогВыполненияСценариевРасширеннаяПодсказка" id="40"/>
+						</InputField>
+						<InputField name="ИмяКаталогаОшибок" id="53">
+							<DataPath>Объект.ИмяКаталогаОшибок</DataPath>
+							<ContextMenu name="ИмяКаталогаОшибокКонтекстноеМеню" id="54"/>
+							<ExtendedTooltip name="ИмяКаталогаОшибокРасширеннаяПодсказка" id="55"/>
+						</InputField>
+						<InputField name="КаталогиБиблиотек" id="50">
+							<DataPath>Объект.КаталогиБиблиотек</DataPath>
+							<ContextMenu name="КаталогиБиблиотекКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="КаталогиБиблиотекРасширеннаяПодсказка" id="52"/>
+						</InputField>
+						<InputField name="КаталогOutputjUnit" id="35">
+							<DataPath>Объект.КаталогOutputjUnit</DataPath>
+							<ContextMenu name="КаталогOutputjUnitКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="КаталогOutputjUnitРасширеннаяПодсказка" id="37"/>
+						</InputField>
+						<InputField name="КаталогOutputAllureБазовый" id="32">
+							<DataPath>Объект.КаталогOutputAllureБазовый</DataPath>
+							<ContextMenu name="КаталогOutputAllureБазовыйКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="КаталогOutputAllureБазовыйРасширеннаяПодсказка" id="34"/>
+						</InputField>
+						<InputField name="КаталогФреймворкаТестирования" id="23">
+							<DataPath>Объект.КаталогФреймворкаТестирования</DataPath>
+							<ContextMenu name="КаталогФреймворкаТестированияКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="КаталогФреймворкаТестированияРасширеннаяПодсказка" id="25"/>
+						</InputField>
+						<InputField name="КаталогБазыДляЗапуска" id="20">
+							<DataPath>Объект.КаталогБазыДляЗапуска</DataPath>
+							<ContextMenu name="КаталогБазыДляЗапускаКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="КаталогБазыДляЗапускаРасширеннаяПодсказка" id="22"/>
+						</InputField>
+						<CheckBoxField name="БезопасноеВыполнениеШагов" id="143">
+							<DataPath>Объект.БезопасноеВыполнениеШагов</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="БезопасноеВыполнениеШаговКонтекстноеМеню" id="144"/>
+							<ExtendedTooltip name="БезопасноеВыполнениеШаговРасширеннаяПодсказка" id="145"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+				<Page name="РегистрацияОшибок" id="81">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регистрация ошибок</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регистрация ошибок</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="РегистрацияОшибокРасширеннаяПодсказка" id="82"/>
+					<ChildItems>
+						<UsualGroup name="РезультатОшибок" id="244">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Результат ошибок</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Результат ошибок</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="РезультатОшибокРасширеннаяПодсказка" id="245"/>
+							<ChildItems>
+								<InputField name="КаталогФайловОшибок" id="112">
+									<DataPath>Объект.КаталогФайловОшибок</DataPath>
+									<ContextMenu name="КаталогФайловОшибокКонтекстноеМеню" id="113"/>
+									<ExtendedTooltip name="КаталогФайловОшибокРасширеннаяПодсказка" id="114"/>
+								</InputField>
+								<InputField name="JunitФайл" id="241">
+									<DataPath>JunitФайл</DataPath>
+									<ContextMenu name="JunitФайлКонтекстноеМеню" id="242"/>
+									<ExtendedTooltip name="JunitФайлРасширеннаяПодсказка" id="243"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ПараметрыРегистрации" id="233">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры регистрации</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры регистрации</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ПараметрыРегистрацииРасширеннаяПодсказка" id="234"/>
+							<ChildItems>
+								<CheckBoxField name="РезультатВФорматеСППР" id="235">
+									<DataPath>РезультатВФорматеСППР</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="РезультатВФорматеСППРКонтекстноеМеню" id="236"/>
+									<ExtendedTooltip name="РезультатВФорматеСППРРасширеннаяПодсказка" id="237"/>
+								</CheckBoxField>
+								<CheckBoxField name="РезультатВФорматеJunit" id="238">
+									<DataPath>РезультатВФорматеJunit</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="РезультатВФорматеJunitКонтекстноеМеню" id="239"/>
+									<ExtendedTooltip name="РезультатВФорматеJunitРасширеннаяПодсказка" id="240"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ДатаОбнаруженияОшибки" id="86">
+							<DataPath>Объект.ДатаОбнаруженияОшибки</DataPath>
+							<ContextMenu name="ДатаОбнаруженияОшибкиКонтекстноеМеню" id="87"/>
+							<ExtendedTooltip name="ДатаОбнаруженияОшибкиРасширеннаяПодсказка" id="88"/>
+						</InputField>
+						<InputField name="Ответственный" id="230">
+							<DataPath>Ответственный</DataPath>
+							<ContextMenu name="ОтветственныйКонтекстноеМеню" id="231"/>
+							<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="232"/>
+						</InputField>
+						<UsualGroup name="ПарамтерыКонфигурации" id="261">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Парамтеры конфигурации</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Парамтеры конфигурации</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ПарамтерыКонфигурацииРасширеннаяПодсказка" id="262"/>
+							<ChildItems>
+								<InputField name="АдресРепозитория" id="89">
+									<DataPath>Объект.АдресРепозитория</DataPath>
+									<ContextMenu name="АдресРепозиторияКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="АдресРепозиторияРасширеннаяПодсказка" id="91"/>
+								</InputField>
+								<UsualGroup name="Версия" id="263">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Версия</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Версия</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ВерсияРасширеннаяПодсказка" id="264"/>
+									<ChildItems>
+										<InputField name="ИмяКонфигурации" id="92">
+											<DataPath>Объект.ИмяКонфигурации</DataPath>
+											<ContextMenu name="ИмяКонфигурацииКонтекстноеМеню" id="93"/>
+											<ExtendedTooltip name="ИмяКонфигурацииРасширеннаяПодсказка" id="94"/>
+										</InputField>
+										<InputField name="ВерсияКонфигурации" id="95">
+											<DataPath>Объект.ВерсияКонфигурации</DataPath>
+											<ContextMenu name="ВерсияКонфигурацииКонтекстноеМеню" id="96"/>
+											<ExtendedTooltip name="ВерсияКонфигурацииРасширеннаяПодсказка" id="97"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ДополнениеОшибки" id="265">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнение ошибки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнение ошибки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ДополнениеОшибкиРасширеннаяПодсказка" id="266"/>
+							<ChildItems>
+								<InputField name="ДополнениеПорядкаВоспроизведения" id="146">
+									<DataPath>Объект.ДополнениеПорядкаВоспроизведения</DataPath>
+									<ContextMenu name="ДополнениеПорядкаВоспроизведенияКонтекстноеМеню" id="147"/>
+									<ExtendedTooltip name="ДополнениеПорядкаВоспроизведенияРасширеннаяПодсказка" id="148"/>
+								</InputField>
+								<InputField name="ДополнениеТекстаОшибки" id="98">
+									<DataPath>Объект.ДополнениеТекстаОшибки</DataPath>
+									<ContextMenu name="ДополнениеТекстаОшибкиКонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="ДополнениеТекстаОшибкиРасширеннаяПодсказка" id="100"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Заголовок" id="215">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Заголовок</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Заголовок</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ЗаголовокРасширеннаяПодсказка" id="216"/>
+							<ChildItems>
+								<InputField name="ИмяФайлаРезультатовКомпиляции" id="210">
+									<DataPath>Объект.ИмяФайлаРезультатовКомпиляции</DataPath>
+									<ContextMenu name="ИмяФайлаРезультатовКомпиляцииКонтекстноеМеню" id="211"/>
+									<ExtendedTooltip name="ИмяФайлаРезультатовКомпиляцииРасширеннаяПодсказка" id="212"/>
+								</InputField>
+								<Button name="СоздатьФайлРезультатовКомпиляции" id="213">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.СоздатьФайлРезультатовКомпиляции</CommandName>
+									<ExtendedTooltip name="СоздатьФайлРезультатовКомпиляцииРасширеннаяПодсказка" id="214"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="РезультатКомпиляции" id="267">
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.РезультатКомпиляции</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="РезультатКомпиляцииКонтекстноеМеню" id="268"/>
+							<AutoCommandBar name="РезультатКомпиляцииКоманднаяПанель" id="269">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="РезультатКомпиляцииРасширеннаяПодсказка" id="270"/>
+							<SearchStringAddition name="РезультатКомпиляцииСтрокаПоиска" id="271">
+								<AdditionSource>
+									<Item>РезультатКомпиляции</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РезультатКомпиляцииСтрокаПоискаКонтекстноеМеню" id="272"/>
+								<ExtendedTooltip name="РезультатКомпиляцииСтрокаПоискаРасширеннаяПодсказка" id="273"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РезультатКомпиляцииСостояниеПросмотра" id="274">
+								<AdditionSource>
+									<Item>РезультатКомпиляции</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РезультатКомпиляцииСостояниеПросмотраКонтекстноеМеню" id="275"/>
+								<ExtendedTooltip name="РезультатКомпиляцииСостояниеПросмотраРасширеннаяПодсказка" id="276"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РезультатКомпиляцииУправлениеПоиском" id="277">
+								<AdditionSource>
+									<Item>РезультатКомпиляции</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РезультатКомпиляцииУправлениеПоискомКонтекстноеМеню" id="278"/>
+								<ExtendedTooltip name="РезультатКомпиляцииУправлениеПоискомРасширеннаяПодсказка" id="279"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="РезультатКомпиляцииКодНастройкиСценария" id="283">
+									<DataPath>Объект.РезультатКомпиляции.КодНастройкиСценария</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РезультатКомпиляцииКодНастройкиСценарияКонтекстноеМеню" id="284"/>
+									<ExtendedTooltip name="РезультатКомпиляцииКодНастройкиСценарияРасширеннаяПодсказка" id="285"/>
+								</InputField>
+								<InputField name="РезультатКомпиляцииКодСценария" id="286">
+									<DataPath>Объект.РезультатКомпиляции.КодСценария</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РезультатКомпиляцииКодСценарияКонтекстноеМеню" id="287"/>
+									<ExtendedTooltip name="РезультатКомпиляцииКодСценарияРасширеннаяПодсказка" id="288"/>
+								</InputField>
+								<InputField name="РезультатКомпиляцииКодНастройкиПроцесса" id="289">
+									<DataPath>Объект.РезультатКомпиляции.КодНастройкиПроцесса</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РезультатКомпиляцииКодНастройкиПроцессаКонтекстноеМеню" id="290"/>
+									<ExtendedTooltip name="РезультатКомпиляцииКодНастройкиПроцессаРасширеннаяПодсказка" id="291"/>
+								</InputField>
+								<InputField name="РезультатКомпиляцииКодПроцесса" id="292">
+									<DataPath>Объект.РезультатКомпиляции.КодПроцесса</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РезультатКомпиляцииКодПроцессаКонтекстноеМеню" id="293"/>
+									<ExtendedTooltip name="РезультатКомпиляцииКодПроцессаРасширеннаяПодсказка" id="294"/>
+								</InputField>
+								<CheckBoxField name="РезультатКомпиляцииУспешнаяСборка" id="295">
+									<DataPath>Объект.РезультатКомпиляции.УспешнаяСборка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="РезультатКомпиляцииУспешнаяСборкаКонтекстноеМеню" id="296"/>
+									<ExtendedTooltip name="РезультатКомпиляцииУспешнаяСборкаРасширеннаяПодсказка" id="297"/>
+								</CheckBoxField>
+								<InputField name="РезультатКомпиляцииОписаниеОшибки" id="298">
+									<DataPath>Объект.РезультатКомпиляции.ОписаниеОшибки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РезультатКомпиляцииОписаниеОшибкиКонтекстноеМеню" id="299"/>
+									<ExtendedTooltip name="РезультатКомпиляцииОписаниеОшибкиРасширеннаяПодсказка" id="300"/>
+								</InputField>
+								<InputField name="РезультатКомпиляцииПодробноеПредставлениеОшибки" id="301">
+									<DataPath>Объект.РезультатКомпиляции.ПодробноеПредставлениеОшибки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РезультатКомпиляцииПодробноеПредставлениеОшибкиКонтекстноеМеню" id="302"/>
+									<ExtendedTooltip name="РезультатКомпиляцииПодробноеПредставлениеОшибкиРасширеннаяПодсказка" id="303"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<Table name="Ошибки" id="115">
+							<CommandBarLocation>None</CommandBarLocation>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.Ошибки</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ОшибкиКонтекстноеМеню" id="116"/>
+							<AutoCommandBar name="ОшибкиКоманднаяПанель" id="117"/>
+							<ExtendedTooltip name="ОшибкиРасширеннаяПодсказка" id="118"/>
+							<SearchStringAddition name="ОшибкиСтрокаПоиска" id="119">
+								<AdditionSource>
+									<Item>Ошибки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОшибкиСтрокаПоискаКонтекстноеМеню" id="120"/>
+								<ExtendedTooltip name="ОшибкиСтрокаПоискаРасширеннаяПодсказка" id="121"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОшибкиСостояниеПросмотра" id="122">
+								<AdditionSource>
+									<Item>Ошибки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОшибкиСостояниеПросмотраКонтекстноеМеню" id="123"/>
+								<ExtendedTooltip name="ОшибкиСостояниеПросмотраРасширеннаяПодсказка" id="124"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОшибкиУправлениеПоиском" id="125">
+								<AdditionSource>
+									<Item>Ошибки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОшибкиУправлениеПоискомКонтекстноеМеню" id="126"/>
+								<ExtendedTooltip name="ОшибкиУправлениеПоискомРасширеннаяПодсказка" id="127"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ОшибкиОписаниеОшибки" id="137">
+									<DataPath>Объект.Ошибки.ОписаниеОшибки</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Описание</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОшибкиОписаниеОшибкиКонтекстноеМеню" id="138"/>
+									<ExtendedTooltip name="ОшибкиОписаниеОшибкиРасширеннаяПодсказка" id="139"/>
+								</InputField>
+								<InputField name="ОшибкиПодробноеПредставлениеОшибки" id="140">
+									<DataPath>Объект.Ошибки.ПодробноеПредставлениеОшибки</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подробно</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОшибкиПодробноеПредставлениеОшибкиКонтекстноеМеню" id="141"/>
+									<ExtendedTooltip name="ОшибкиПодробноеПредставлениеОшибкиРасширеннаяПодсказка" id="142"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="РезультатыКомпиляции" id="170">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результаты компиляции</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результаты компиляции</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="РезультатыКомпиляцииРасширеннаяПодсказка" id="171"/>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.СборкаТекстовСценариев</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ФайлЛога" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файл лога</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ФайлРезультата" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файл результата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПоНастройкамСценариев" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по настройкам сценариев</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПоСценариям" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по сценариям</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПоНастройкамПроцессов" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по настройкам процессов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПоПроцессам" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по процессам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПереключательПоТипамКомпиляции" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переключатель по типам компиляции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИдБазыСборки" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ид базы сборки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КаталогТестов" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог тестов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СоздаватьJsonФайл" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создавать json файл</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Ответственный" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответственный</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РезультатВФорматеСППР" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат в формате СППР</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РезультатВФорматеJunit" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат в формате junit</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="JunitФайл" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Junit файл</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьКомпоненту1cWinCtrlДляСнятияСкриншотов" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать компоненту 1c win ctrl для снятия скриншотов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьКомпоненту1cWinCtrl" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать компоненту 1c win ctrl</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СобиратьДанныеОПроцессахОС" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Собирать данные о процессах ОС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПоUIDНастроекСценариев" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по настройкам сценариев</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИсключенияПоСценариям" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исключая сценарии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СборкаСценариев" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сборка сценариев</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сборка сценариев</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СборкаСценариев</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СоздатьФайлРезультатовКомпиляции" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать файл результатов компиляции</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать файл результатов компиляции</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьФайлРезультатовКомпиляции</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПереключательПоТипамКомпиляции" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переключатель по типам компиляции</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переключатель по типам компиляции</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Use>
+				<xr:Common>false</xr:Common>
+			</Use>
+			<Action>ПереключательПоТипамКомпиляцииПриИзменении</Action>
+		</Command>
+	</Commands>
+</Form>

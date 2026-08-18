@@ -1,0 +1,142 @@
+﻿{
+"en": {
+"when": [
+"When"
+],
+"scenarioOutline": [
+"Scenario Outline",
+"Scenario Template"
+],
+"else": [
+"Else"
+],
+"given": [
+"Given"
+],
+"scenario": [
+"Example",
+"Scenario"
+],
+"then": [
+"Then"
+],
+"rule": [
+"Rule"
+],
+"native": "English",
+"name": "English",
+"feature": [
+"Feature",
+"Functionality",
+"Business Need",
+"Ability"
+],
+"except": [
+"except"
+],
+"if": [
+"If"
+],
+"variables": [
+"Variables",
+"Hyperlinks",
+"Links"
+],
+"examples": [
+"Examples",
+"Scenarios"
+],
+"but": [
+"But"
+],
+"import": [
+"Import",
+"Using"
+],
+"background": [
+"Background"
+],
+"elseif": [
+"ElseIf"
+],
+"try": [
+"try"
+],
+"and": [
+"And"
+]
+},
+"ru": {
+"when": [
+"Когда"
+],
+"scenarioOutline": [
+"Структура сценария"
+],
+"else": [
+"Иначе"
+],
+"given": [
+"Допустим",
+"Дано",
+"Пусть"
+],
+"scenario": [
+"Пример",
+"Сценарий"
+],
+"then": [
+"То",
+"Затем",
+"Тогда"
+],
+"rule": [
+"Правило"
+],
+"native": "русский",
+"name": "Russian",
+"feature": [
+"Функция",
+"Функциональность",
+"Функционал",
+"Свойство"
+],
+"except": [
+"Исключение"
+],
+"if": [
+"Если"
+],
+"variables": [
+"Переменные",
+"Гиперссылки",
+"Ссылки"
+],
+"examples": [
+"Примеры"
+],
+"but": [
+"Но",
+"А"
+],
+"import": [
+"Импорт",
+"Подключить"
+],
+"background": [
+"Предыстория",
+"Контекст"
+],
+"elseif": [
+"ИначеЕсли"
+],
+"try": [
+"Попытка"
+],
+"and": [
+"И",
+"К тому же",
+"Также"
+]
+}
+}

@@ -1,0 +1,1557 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Планировщик управления тестированием</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаОбновить" id="186">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Обновить</CommandName>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаОбновитьРасширеннаяПодсказка" id="187"/>
+			</Button>
+			<ButtonGroup name="ГруппаКнопкиКоманднойПанели" id="158">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа кнопки командной панели</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа кнопки командной панели</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ГруппаКнопкиКоманднойПанелиРасширеннаяПодсказка" id="159"/>
+				<ChildItems>
+					<Button name="ФормаСохранитьИЗакрыть" id="199">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СохранитьИЗакрыть</CommandName>
+						<BackColor>style:ImportantColor</BackColor>
+						<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+						<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаСохранитьИЗакрытьРасширеннаяПодсказка" id="200"/>
+					</Button>
+					<Button name="ФормаСохранить" id="201">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Сохранить</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаСохранитьРасширеннаяПодсказка" id="202"/>
+					</Button>
+					<Button name="ЗаполнитьРасписание" id="65">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьРасписание</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Заполнить расписание</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ЗаполнитьРасписаниеРасширеннаяПодсказка" id="66"/>
+					</Button>
+					<Button name="ОткрытьСлотыТестирования" id="93">
+						<Type>CommandBarHyperlink</Type>
+						<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+						<CommandName>Form.Command.ОткрытьСлотыТестирования</CommandName>
+						<ExtendedTooltip name="ОткрытьСлотыТестированияРасширеннаяПодсказка" id="94"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНастройки" id="117">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="118"/>
+			<ChildItems>
+				<InputField name="Проект" id="119">
+					<DataPath>Объект.Проект</DataPath>
+					<ChoiceParameters>
+						<app:item name="Отбор.ЗапускатьАвтоматическоеТестирование">
+							<app:value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xs:boolean">true</Value>
+							</app:value>
+						</app:item>
+					</ChoiceParameters>
+					<ContextMenu name="ПроектКонтекстноеМеню" id="120"/>
+					<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="121"/>
+					<Events>
+						<Event name="OnChange">ПроектПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ОтображаемаяДата" id="122">
+					<DataPath>ОтображаемаяДата</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОтображаемаяДатаКонтекстноеМеню" id="123"/>
+					<ExtendedTooltip name="ОтображаемаяДатаРасширеннаяПодсказка" id="124"/>
+					<Events>
+						<Event name="OnChange">ОтображаемаяДатаПриИзменении</Event>
+						<Event name="ChoiceProcessing">ОтображаемаяДатаОбработкаВыбора</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРасписание" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа расписание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРасписаниеРасширеннаяПодсказка" id="4"/>
+			<ChildItems>
+				<Table name="Расписание" id="77">
+					<Representation>List</Representation>
+					<TitleLocation>Auto</TitleLocation>
+					<Width>43</Width>
+					<AutoMaxRowsCount>false</AutoMaxRowsCount>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Расписание</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расписание</v8:content>
+						</v8:item>
+					</Title>
+					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="РасписаниеКонтекстноеМеню" id="78">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<ButtonGroup name="РасписаниеКонтекстноеМенюГруппаСтандартныеКоманды" id="197">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Расписание контекстное меню группа стандартные команды</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Расписание контекстное меню группа стандартные команды</v8:content>
+									</v8:item>
+								</ToolTip>
+								<ExtendedTooltip name="РасписаниеКонтекстноеМенюГруппаСтандартныеКомандыРасширеннаяПодсказка" id="198"/>
+								<ChildItems>
+									<Button name="РасписаниеУдалить" id="191">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.Расписание.StandardCommand.Delete</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="РасписаниеУдалитьРасширеннаяПодсказка" id="192"/>
+									</Button>
+									<Button name="РасписаниеКонтекстноеМенюУпорядочитьРасписание" id="209">
+										<Type>CommandBarButton</Type>
+										<Visible>false</Visible>
+										<CommandName>Form.Command.УпорядочитьРасписание</CommandName>
+										<ExtendedTooltip name="РасписаниеКонтекстноеМенюУпорядочитьРасписаниеРасширеннаяПодсказка" id="210"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+							<Button name="РасписаниеКонтекстноеМенюСтатусЗапуска" id="169">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СтатусЗапуска</CommandName>
+								<ExtendedTooltip name="РасписаниеКонтекстноеМенюСтатусЗапускаРасширеннаяПодсказка" id="170"/>
+							</Button>
+						</ChildItems>
+					</ContextMenu>
+					<AutoCommandBar name="РасписаниеКоманднаяПанель" id="79">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="РасписаниеРасширеннаяПодсказка" id="80"/>
+					<SearchStringAddition name="РасписаниеСтрокаПоиска" id="81">
+						<AdditionSource>
+							<Item>Расписание</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="РасписаниеСтрокаПоискаКонтекстноеМеню" id="82"/>
+						<ExtendedTooltip name="РасписаниеСтрокаПоискаРасширеннаяПодсказка" id="83"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="РасписаниеСостояниеПросмотра" id="84">
+						<AdditionSource>
+							<Item>Расписание</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="РасписаниеСостояниеПросмотраКонтекстноеМеню" id="85"/>
+						<ExtendedTooltip name="РасписаниеСостояниеПросмотраРасширеннаяПодсказка" id="86"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="РасписаниеУправлениеПоиском" id="87">
+						<AdditionSource>
+							<Item>Расписание</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="РасписаниеУправлениеПоискомКонтекстноеМеню" id="88"/>
+						<ExtendedTooltip name="РасписаниеУправлениеПоискомРасширеннаяПодсказка" id="89"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">РасписаниеВыбор</Event>
+						<Event name="BeforeDeleteRow">РасписаниеПередУдалением</Event>
+						<Event name="OnActivateRow">РасписаниеПриАктивизацииСтроки</Event>
+						<Event name="Drag">РасписаниеПеретаскивание</Event>
+						<Event name="DragEnd">РасписаниеОкончаниеПеретаскивания</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="РасписаниеДатаВремяЗапуска" id="125">
+							<DataPath>Расписание.ДатаВремяЗапуска</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Время</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Время запуска тестирования</v8:content>
+								</v8:item>
+							</ToolTip>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>5</Width>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=ЧЧ:мм:сс; ДП=00:00:00</v8:content>
+								</v8:item>
+							</Format>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=ЧЧ:мм:сс; ДП=00:00:00</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="РасписаниеДатаВремяЗапускаКонтекстноеМеню" id="126"/>
+							<ExtendedTooltip name="РасписаниеДатаВремяЗапускаРасширеннаяПодсказка" id="127"/>
+						</InputField>
+						<InputField name="РасписаниеВетка" id="90">
+							<DataPath>Расписание.Ветка</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="РасписаниеВеткаКонтекстноеМеню" id="91"/>
+							<ExtendedTooltip name="РасписаниеВеткаРасширеннаяПодсказка" id="92"/>
+						</InputField>
+						<InputField name="РасписаниеНастройкаЗапуска" id="128">
+							<DataPath>Расписание.НастройкаЗапуска</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceParameterLinks>
+								<xr:Link>
+									<xr:Name>Отбор.Владелец</xr:Name>
+									<xr:DataPath xsi:type="xs:string">Объект.Проект</xr:DataPath>
+									<xr:ValueChange>Clear</xr:ValueChange>
+								</xr:Link>
+							</ChoiceParameterLinks>
+							<ContextMenu name="РасписаниеНастройкаЗапускаКонтекстноеМеню" id="129"/>
+							<ExtendedTooltip name="РасписаниеНастройкаЗапускаРасширеннаяПодсказка" id="130"/>
+							<Events>
+								<Event name="OnChange">РасписаниеНастройкаЗапускаПриИзменении</Event>
+								<Event name="Clearing">РасписаниеНастройкаЗапускаОчистка</Event>
+								<Event name="ChoiceProcessing">РасписаниеНастройкаЗапускаОбработкаВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="РасписаниеЗапускТестирования" id="131">
+							<DataPath>Расписание.ЗапускТестирования</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="РасписаниеЗапускТестированияКонтекстноеМеню" id="132"/>
+							<ExtendedTooltip name="РасписаниеЗапускТестированияРасширеннаяПодсказка" id="133"/>
+						</InputField>
+						<CheckBoxField name="РасписаниеЗапускТестированияПроведен" id="214">
+							<DataPath>Расписание.ЗапускТестирования.Posted</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Запущен</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="РасписаниеЗапускТестированияПроведенКонтекстноеМеню" id="215"/>
+							<ExtendedTooltip name="РасписаниеЗапускТестированияПроведенРасширеннаяПодсказка" id="216"/>
+						</CheckBoxField>
+						<InputField name="РасписаниеЗанимаемаяМощность" id="211">
+							<DataPath>Расписание.ЗанимаемаяМощность</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Занято</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Мощность, занимаемая настройкой</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>4</MaxWidth>
+							<ContextMenu name="РасписаниеЗанимаемаяМощностьКонтекстноеМеню" id="212"/>
+							<ExtendedTooltip name="РасписаниеЗанимаемаяМощностьРасширеннаяПодсказка" id="213"/>
+						</InputField>
+						<InputField name="РасписаниеДоступнаяМощность" id="203">
+							<DataPath>Расписание.ДоступнаяМощность</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Доступно</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Доступная мощность</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>4</MaxWidth>
+							<ContextMenu name="РасписаниеДоступнаяМощностьКонтекстноеМеню" id="204"/>
+							<ExtendedTooltip name="РасписаниеДоступнаяМощностьРасширеннаяПодсказка" id="205"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="ВеткиНаТестировании" id="43">
+					<Representation>List</Representation>
+					<TitleLocation>Top</TitleLocation>
+					<ReadOnly>true</ReadOnly>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>ВеткиНаТестировании</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ветки на тестировании</v8:content>
+						</v8:item>
+					</Title>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ВеткиНаТестированииКонтекстноеМеню" id="44">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="ВеткиНаТестированииКонтекстноеМенюНайти" id="177">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.ВеткиНаТестировании.StandardCommand.Find</CommandName>
+								<ExtendedTooltip name="ВеткиНаТестированииКонтекстноеМенюНайтиРасширеннаяПодсказка" id="178"/>
+							</Button>
+							<Button name="ВеткиНаТестированииКонтекстноеМенюОтменитьПоиск" id="179">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.ВеткиНаТестировании.StandardCommand.CancelSearch</CommandName>
+								<ExtendedTooltip name="ВеткиНаТестированииКонтекстноеМенюОтменитьПоискРасширеннаяПодсказка" id="180"/>
+							</Button>
+							<ButtonGroup name="ВеткиНаТестированииКонтекстноеМенюГруппаДействияСВетками" id="181">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Ветки на тестировании контекстное меню группа действия с ветками</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Ветки на тестировании контекстное меню группа действия с ветками</v8:content>
+									</v8:item>
+								</ToolTip>
+								<ExtendedTooltip name="ВеткиНаТестированииКонтекстноеМенюГруппаДействияСВеткамиРасширеннаяПодсказка" id="182"/>
+								<ChildItems>
+									<Button name="РасписаниеКонтекстноеМенюСтатусТестов" id="105">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СтатусТестов</CommandName>
+										<ExtendedTooltip name="РасписаниеКонтекстноеМенюСтатусТестовРасширеннаяПодсказка" id="106"/>
+									</Button>
+									<Button name="РасписаниеКонтекстноеМенюПоместитьВетку" id="115">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПоместитьВетку</CommandName>
+										<ExtendedTooltip name="РасписаниеКонтекстноеМенюПоместитьВеткуРасширеннаяПодсказка" id="116"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+							<ButtonGroup name="РасписаниеКонтекстноеМенюГруппаТестирование" id="113">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Расписание контекстное меню группа тестирование</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Расписание контекстное меню группа тестирование</v8:content>
+									</v8:item>
+								</ToolTip>
+								<ExtendedTooltip name="РасписаниеКонтекстноеМенюГруппаТестированиеРасширеннаяПодсказка" id="114"/>
+								<ChildItems>
+									<Button name="РасписаниеКонтекстноеМенюЗапуститьТестирование" id="109">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗапуститьТестирование</CommandName>
+										<ExtendedTooltip name="РасписаниеКонтекстноеМенюЗапуститьТестированиеРасширеннаяПодсказка" id="110"/>
+									</Button>
+									<Button name="РасписаниеКонтекстноеМенюЗапуститьТестыВыполненныеСОшибкой" id="107">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗапуститьТестыВыполненныеСОшибкой</CommandName>
+										<ExtendedTooltip name="РасписаниеКонтекстноеМенюЗапуститьТестыВыполненныеСОшибкойРасширеннаяПодсказка" id="108"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+						</ChildItems>
+					</ContextMenu>
+					<AutoCommandBar name="ВеткиНаТестированииКоманднаяПанель" id="45">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ВеткиНаТестированииРасширеннаяПодсказка" id="46"/>
+					<SearchStringAddition name="ВеткиНаТестированииСтрокаПоиска" id="47">
+						<AdditionSource>
+							<Item>ВеткиНаТестировании</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ВеткиНаТестированииСтрокаПоискаКонтекстноеМеню" id="48"/>
+						<ExtendedTooltip name="ВеткиНаТестированииСтрокаПоискаРасширеннаяПодсказка" id="49"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ВеткиНаТестированииСостояниеПросмотра" id="50">
+						<AdditionSource>
+							<Item>ВеткиНаТестировании</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ВеткиНаТестированииСостояниеПросмотраКонтекстноеМеню" id="51"/>
+						<ExtendedTooltip name="ВеткиНаТестированииСостояниеПросмотраРасширеннаяПодсказка" id="52"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ВеткиНаТестированииУправлениеПоиском" id="53">
+						<AdditionSource>
+							<Item>ВеткиНаТестировании</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ВеткиНаТестированииУправлениеПоискомКонтекстноеМеню" id="54"/>
+						<ExtendedTooltip name="ВеткиНаТестированииУправлениеПоискомРасширеннаяПодсказка" id="55"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">ВеткиНаТестированииВыбор</Event>
+						<Event name="Drag">ВеткиНаТестированииПеретаскивание</Event>
+					</Events>
+					<ChildItems>
+						<CheckBoxField name="ВеткиНаТестированииПоставленВРасписание" id="152">
+							<DataPath>ВеткиНаТестировании.ПоставленВРасписание</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>В расписании</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>None</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ветка поставлена в расписание</v8:content>
+								</v8:item>
+							</ToolTip>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderPicture>
+								<xr:Ref>CommonPicture.ОперацияОжидаетВыполнения</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</HeaderPicture>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВеткиНаТестированииПоставленВРасписаниеКонтекстноеМеню" id="153"/>
+							<ExtendedTooltip name="ВеткиНаТестированииПоставленВРасписаниеРасширеннаяПодсказка" id="154"/>
+						</CheckBoxField>
+						<InputField name="ВеткиНаТестированииВетка" id="134">
+							<DataPath>ВеткиНаТестировании.Ветка</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ВеткиНаТестированииВеткаКонтекстноеМеню" id="135"/>
+							<ExtendedTooltip name="ВеткиНаТестированииВеткаРасширеннаяПодсказка" id="136"/>
+						</InputField>
+						<InputField name="ВеткиНаТестированииНастройкаЗапускаТестирования" id="217">
+							<DataPath>ВеткиНаТестировании.НастройкаЗапускаТестирования</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка запуска</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ВеткиНаТестированииНастройкаЗапускаТестированияКонтекстноеМеню" id="218"/>
+							<ExtendedTooltip name="ВеткиНаТестированииНастройкаЗапускаТестированияРасширеннаяПодсказка" id="219"/>
+						</InputField>
+						<CheckBoxField name="ВеткиНаТестированииЕстьИзмененияСПоследнегоЗапуска" id="149">
+							<DataPath>ВеткиНаТестировании.ЕстьИзмененияСПоследнегоЗапуска</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Есть изменения</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>None</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Есть изменения с последнего запуска тестирования</v8:content>
+								</v8:item>
+							</ToolTip>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderPicture>
+								<xr:Ref>StdPicture.Change</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</HeaderPicture>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВеткиНаТестированииЕстьИзмененияСПоследнегоЗапускаКонтекстноеМеню" id="150"/>
+							<ExtendedTooltip name="ВеткиНаТестированииЕстьИзмененияСПоследнегоЗапускаРасширеннаяПодсказка" id="151"/>
+						</CheckBoxField>
+						<InputField name="ВеткиНаТестированииСостояниеТестирования" id="220">
+							<DataPath>ВеткиНаТестировании.СостояниеТестирования</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ВеткиНаТестированииСостояниеТестированияКонтекстноеМеню" id="221"/>
+							<ExtendedTooltip name="ВеткиНаТестированииСостояниеТестированияРасширеннаяПодсказка" id="222"/>
+						</InputField>
+						<InputField name="ВеткиНаТестированииКоличествоНеотработанныхОшибок" id="146">
+							<DataPath>ВеткиНаТестировании.КоличествоНеотработанныхОшибок</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ошибки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Неисправлено ошибок в ветке</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>7</MaxWidth>
+							<ContextMenu name="ВеткиНаТестированииКоличествоНеотработанныхОшибокКонтекстноеМеню" id="147"/>
+							<ExtendedTooltip name="ВеткиНаТестированииКоличествоНеотработанныхОшибокРасширеннаяПодсказка" id="148"/>
+						</InputField>
+						<InputField name="ВеткиНаТестированииПервыйЗапускТестирования" id="163">
+							<DataPath>ВеткиНаТестировании.ПервыйЗапускТестирования</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ВеткиНаТестированииПервыйЗапускТестированияКонтекстноеМеню" id="164"/>
+							<ExtendedTooltip name="ВеткиНаТестированииПервыйЗапускТестированияРасширеннаяПодсказка" id="165"/>
+						</InputField>
+						<InputField name="ВеткиНаТестированииПервыйЗапускТестированияДата" id="183">
+							<DataPath>ВеткиНаТестировании.ПервыйЗапускТестированияДата</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Первый запуск</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата первого запуска тестирования</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>12</MaxWidth>
+							<ContextMenu name="ВеткиНаТестированииПервыйЗапускТестированияДатаКонтекстноеМеню" id="184"/>
+							<ExtendedTooltip name="ВеткиНаТестированииПервыйЗапускТестированияДатаРасширеннаяПодсказка" id="185"/>
+						</InputField>
+						<InputField name="ВеткиНаТестированииПоследнийЗапускТестирования" id="137">
+							<DataPath>ВеткиНаТестировании.ПоследнийЗапускТестирования</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ВеткиНаТестированииПоследнийЗапускТестированияКонтекстноеМеню" id="138"/>
+							<ExtendedTooltip name="ВеткиНаТестированииПоследнийЗапускТестированияРасширеннаяПодсказка" id="139"/>
+						</InputField>
+						<InputField name="ВеткиНаТестированииПоследнийЗапускТестированияДата" id="160">
+							<DataPath>ВеткиНаТестировании.ПоследнийЗапускТестированияДата</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Последний запуск</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дата последнего запуска тестирования</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>12</MaxWidth>
+							<ContextMenu name="ВеткиНаТестированииПоследнийЗапускТестированияДатаКонтекстноеМеню" id="161"/>
+							<ExtendedTooltip name="ВеткиНаТестированииПоследнийЗапускТестированияДатаРасширеннаяПодсказка" id="162"/>
+						</InputField>
+						<InputField name="ВеткиНаТестированииКоличествоЗапусков" id="143">
+							<DataPath>ВеткиНаТестировании.КоличествоЗапусков</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Запуски</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество запусков тестирования</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>5</MaxWidth>
+							<ContextMenu name="ВеткиНаТестированииКоличествоЗапусковКонтекстноеМеню" id="144"/>
+							<ExtendedTooltip name="ВеткиНаТестированииКоличествоЗапусковРасширеннаяПодсказка" id="145"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПланировщикУправленияТестированием</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.Проект</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ВеткиНаТестировании" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ветки на тестировании</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ветка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ветка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Ветки</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПоследнийЗапускТестирования" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Последний запуск тестирования</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗапускТестирования</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоЗапусков" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество запусков</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоНеотработанныхОшибок" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Осталось ошибок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>0</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЕстьИзмененияСПоследнегоЗапуска" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть изменения с последнего запуска</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПоставленВРасписание" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поставлен в расписание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПервыйЗапускТестирования" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Первый запуск тестирования</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗапускТестирования</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПервыйЗапускТестированияДата" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало тестирования</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="НастройкаЗапускаТестирования" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка запуска тестирования</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.НастройкиЗапускаТестирования</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЗанимаемаяМощностьНастройки" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Занимаемая мощность настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПоследнийЗапускТестированияДата" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало тестирования</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВеткаИмя" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ветка имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторПоследнегоЗапуска" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор последнего запуска</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СостояниеТестирования" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние тестирования</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.СостоянияТестированияВетки</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ОтображаемаяДата" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображаемая дата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Расписание" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ветка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ветка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Ветки</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДатаВремяЗапуска" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время запуска</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="НастройкаЗапуска" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка запуска</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.НастройкиЗапускаТестирования</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЗапускТестирования" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запуск тестирования</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗапускТестирования</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДоступноРедактирование" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступно редактирование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДоступнаяМощность" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступная мощность</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЗанимаемаяМощность" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Занимаемая мощность</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Запущен" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запущен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕстьОшибкаПриЗапуске" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть ошибка при запуске</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДатаНачала" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата начала</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаОкончания" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата окончания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЕстьИзменения" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть изменения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДоступноеВремяИМощность" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доступное время и мощность</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ДатаВремяЗапуска" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата время запуска</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДоступнаяМощность" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступная мощность</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СвободнаяМощность" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Свободная мощность</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ЗапланированныеЗапускиТестирования" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запланированные запуски тестирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ЗапускТестирования" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запуск тестирования</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗапускТестирования</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Ветка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ветка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Ветки</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НастройкаЗапуска" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка запуска</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.НастройкиЗапускаТестирования</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДатаВремяЗапуска" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата время запуска</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Запущен" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запущен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ВеткиНаТестированииПоставленВРасписание</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ВеткиНаТестировании.ПоставленВРасписание</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ЦветФонаПредупреждения</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ВеткиНаТестированииНачалоТестирования</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ВеткиНаТестировании.ПервыйЗапускТестированияДата</dcsset:left>
+							<dcsset:comparisonType>LessOrEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="v8:StandardBeginningDate">
+								<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfLastWeek</v8:variant>
+							</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ВеткиНаТестировании.ПервыйЗапускТестированияДата</dcsset:left>
+							<dcsset:comparisonType>Filled</dcsset:comparisonType>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ЦветФонаПредупреждения</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ВеткиНаТестированииКоличествоЗапусков</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ВеткиНаТестировании.КоличествоЗапусков</dcsset:left>
+						<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">10</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ЦветФонаПредупреждения</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>РасписаниеВетка</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РасписаниеДатаВремяЗапуска</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РасписаниеНастройкаЗапуска</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РасписаниеЗапускТестирования</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РасписаниеЗапущен</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Расписание.ДоступноРедактирование</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ФайлЗанятыйДругимПользователем</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>РасписаниеВетка</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РасписаниеДатаВремяЗапуска</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РасписаниеНастройкаЗапуска</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Расписание.ДоступнаяМощность</dcsset:left>
+						<dcsset:comparisonType>Less</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:Field">Расписание.ЗанимаемаяМощность</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ЦветФонаПредупреждения</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>РасписаниеВетка</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РасписаниеДатаВремяЗапуска</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РасписаниеНастройкаЗапуска</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Расписание.ЕстьОшибкаПриЗапуске</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ЦветФонаПредупреждения</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьРасписание" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить расписание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить расписание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗапланироватьЗадачу</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗаполнитьРасписаниеПоДате</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОткрытьСлотыТестирования" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть слоты тестирования</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть слоты тестирования</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСлотыТестирования</Action>
+		</Command>
+		<Command name="СтатусТестов" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус тестов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус тестов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.РазделТестирование</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СтатусТестов</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПоместитьВетку" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поместить ветку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поместить ветку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.GitПоместитьВетку</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПоместитьВетку</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ЗапуститьТестыВыполненныеСОшибкой" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить тесты, выполненные с ошибкой</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить тесты, выполненные с ошибкой</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗапуститьТестыВыполненныеСОшибкой</Action>
+		</Command>
+		<Command name="ЗапуститьТестирование" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить тестирование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить тестирование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.BusinessProcessStart</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗапуститьТестирование</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="СтатусЗапуска" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус запуска</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус запуска</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.РазделТестирование</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СтатусЗапуска</Action>
+		</Command>
+		<Command name="Обновить" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>F5</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Обновить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="УдалитьИзРасписания" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить из расписания</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="СохранитьИЗакрыть" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьИЗакрыть</Action>
+		</Command>
+		<Command name="Сохранить" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+S</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.Write</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Сохранить</Action>
+		</Command>
+		<Command name="УпорядочитьРасписание" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Упорядочить расписание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Упорядочить расписание, удалить пустые строки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataCompositionOrder</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УпорядочитьРасписание</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

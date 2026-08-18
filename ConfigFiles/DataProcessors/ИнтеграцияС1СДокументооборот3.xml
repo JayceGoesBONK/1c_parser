@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<DataProcessor uuid="d37d23ce-1f89-4f94-80ea-adcb6bc4c995">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ИнтеграцияС1СДокументооборот3" category="Object">
+				<xr:TypeId>2b33b3c8-afbc-4adf-a4e0-428d98e69fe5</xr:TypeId>
+				<xr:ValueId>6e5ff4fc-fe02-451e-8b99-acb0755dab81</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ИнтеграцияС1СДокументооборот3" category="Manager">
+				<xr:TypeId>e29e150b-5bad-4ce4-a5ba-1c93df0dd6c1</xr:TypeId>
+				<xr:ValueId>b89a703c-731d-4ce4-970d-73b0fdf93dfa</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ИнтеграцияС1СДокументооборот3</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интеграция с 1С:Документооборот 3</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Интеграция с 1С:Документооборотом редакции 3</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.ИнтеграцияС1СДокументооборот3.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>АдреснаяКнига</Form>
+			<Form>БыстрыйПоиск</Form>
+			<Form>БыстрыйПоискВыборСостояния</Form>
+			<Form>ВводКомментария</Form>
+			<Form>ВыборОбъектаПоиском</Form>
+			<Form>ВыборОбъектаПоискомРасширенный</Form>
+			<Form>ВыборОбъектаПоискомРезультаты</Form>
+			<Form>ВыборРолейДляФайла</Form>
+			<Form>ВыборСотрудникаСПодразделениями</Form>
+			<Form>ВыборТипаОбъектаДокументооборота</Form>
+			<Form>ВыборФактическогоИсполнителяЗадачи</Form>
+			<Form>ДействиеИсполнения</Form>
+			<Form>ДействиеОзнакомления</Form>
+			<Form>ДействиеПодписания</Form>
+			<Form>ДействиеРегистрации</Form>
+			<Form>ДействиеСогласования</Form>
+			<Form>ДействиеУтверждения</Form>
+			<Form>Документооборот</Form>
+			<Form>Задача</Form>
+			<Form>ЗадачиМне</Form>
+			<Form>НастройкаДочернегоИсполнения</Form>
+			<Form>НастройкаОтложенногоНачалаВыполнения</Form>
+			<Form>НастройкиЗадач</Form>
+			<Form>ПрерываниеОбработкиОбъекта</Form>
+			<Form>ПрисоединенныеФайлы</Form>
+			<Form>РедактированиеОсобогоНаименованияИОписанияЗадачи</Form>
+			<Form>Форма</Form>
+			<Template>ПФ_MXL_ПечатнаяФормаДО</Template>
+			<Command uuid="e2764584-a591-4274-b377-1b012875a07b">
+				<Properties>
+					<Name>ОткрытьОбъектДО</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Открыть объект 1С:Документооборот</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>FormNavigationPanelGoTo</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

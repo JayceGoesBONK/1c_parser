@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Ранее выполнявшиеся работы</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Период" id="26">
+			<DataPath>Период</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включать работы за период</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПериодКонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="28"/>
+			<Events>
+				<Event name="OnChange">ПериодПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Table name="Работы" id="36">
+			<ReadOnly>true</ReadOnly>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<DataPath>Работы</DataPath>
+			<CommandSet>
+				<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
+				<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
+			</CommandSet>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="РаботыКонтекстноеМеню" id="37"/>
+			<AutoCommandBar name="РаботыКоманднаяПанель" id="38">
+				<ChildItems>
+					<Button name="РаботыИзменитьФорму" id="64">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+						<RepresentationInContextMenu>OnlyInContextMenu</RepresentationInContextMenu>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="РаботыИзменитьФормуРасширеннаяПодсказка" id="65"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="РаботыРасширеннаяПодсказка" id="39"/>
+			<SearchStringAddition name="РаботыСтрокаПоиска" id="40">
+				<AdditionSource>
+					<Item>Работы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РаботыСтрокаПоискаКонтекстноеМеню" id="41"/>
+				<ExtendedTooltip name="РаботыСтрокаПоискаРасширеннаяПодсказка" id="42"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="РаботыСостояниеПросмотра" id="43">
+				<AdditionSource>
+					<Item>Работы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<AutoMaxWidth>false</AutoMaxWidth>
+				<ContextMenu name="РаботыСостояниеПросмотраКонтекстноеМеню" id="44"/>
+				<ExtendedTooltip name="РаботыСостояниеПросмотраРасширеннаяПодсказка" id="45"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="РаботыУправлениеПоиском" id="46">
+				<AdditionSource>
+					<Item>Работы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="РаботыУправлениеПоискомКонтекстноеМеню" id="47"/>
+				<ExtendedTooltip name="РаботыУправлениеПоискомРасширеннаяПодсказка" id="48"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="ValueChoice">РаботыВыборЗначения</Event>
+				<Event name="Selection">РаботыВыбор</Event>
+			</Events>
+			<ChildItems>
+				<PictureField name="ВедениеХронометража" id="66">
+					<DataPath>Работы.ИндексКартинкиХронометража</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ведение хронометража</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.ПереключитьХронометражСППР</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.ПереключитьХронометражСППР</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</ValuesPicture>
+					<ContextMenu name="ВедениеХронометражаКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="ВедениеХронометражаРасширеннаяПодсказка" id="68"/>
+				</PictureField>
+				<LabelField name="РаботыОписаниеРаботы" id="55">
+					<DataPath>Работы.ОписаниеРаботы</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="РаботыОписаниеРаботыКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="РаботыОписаниеРаботыРасширеннаяПодсказка" id="57"/>
+				</LabelField>
+				<LabelField name="РаботыРабота" id="61">
+					<DataPath>Работы.Работа</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="РаботыРаботаКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="РаботыРаботаРасширеннаяПодсказка" id="63"/>
+				</LabelField>
+				<LabelField name="РаботыПроект" id="58">
+					<DataPath>Работы.Проект</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="РаботыПроектКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="РаботыПроектРасширеннаяПодсказка" id="60"/>
+				</LabelField>
+				<LabelField name="РаботыВидДеятельности" id="49">
+					<DataPath>Работы.ВидДеятельности</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="РаботыВидДеятельностиКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="РаботыВидДеятельностиРасширеннаяПодсказка" id="51"/>
+				</LabelField>
+				<LabelField name="РаботыДата" id="52">
+					<DataPath>Работы.Дата</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата последнего использования</v8:content>
+						</v8:item>
+					</ToolTip>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yyyy</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="РаботыДатаКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="РаботыДатаРасширеннаяПодсказка" id="54"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Период" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+			<Save>
+				<Field>Период</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТекущийПользователь" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий пользователь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Работы" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Работы.ВидДеятельности</Field>
+				<Field>Работы.Дата</Field>
+				<Field>Работы.ОписаниеРаботы</Field>
+				<Field>Работы.Проект</Field>
+				<Field>Работы.Работа</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	УчетВремениОбороты.ВидДеятельности КАК ВидДеятельности,
+	УчетВремениОбороты.Проект КАК Проект,
+	ВЫБОР
+		КОГДА УчетВремениОбороты.Задача &lt;&gt; ЗНАЧЕНИЕ(Справочник.ЗадачиПроцесса.ПустаяСсылка)
+			ТОГДА УчетВремениОбороты.Задача
+		КОГДА УчетВремениОбороты.Ошибка &lt;&gt; ЗНАЧЕНИЕ(Справочник.Ошибки.ПустаяСсылка)
+			ТОГДА УчетВремениОбороты.Ошибка
+		ИНАЧЕ УчетВремениОбороты.ТехническийПроект
+	КОНЕЦ КАК Работа,
+	ВЫБОР
+		КОГДА УчетВремениОбороты.Задача &lt;&gt; ЗНАЧЕНИЕ(Справочник.ЗадачиПроцесса.ПустаяСсылка)
+			ТОГДА УчетВремениОбороты.Задача
+		КОГДА УчетВремениОбороты.Ошибка &lt;&gt; ЗНАЧЕНИЕ(Справочник.Ошибки.ПустаяСсылка)
+			ТОГДА УчетВремениОбороты.Ошибка
+		КОГДА УчетВремениОбороты.ТехническийПроект &lt;&gt; ЗНАЧЕНИЕ(Справочник.ТехническиеПроекты.ПустаяСсылка)
+			ТОГДА УчетВремениОбороты.ТехническийПроект
+		КОГДА УчетВремениОбороты.ВидДеятельности &lt;&gt; ЗНАЧЕНИЕ(Справочник.ВидыДеятельности.ПустаяСсылка)
+			ТОГДА УчетВремениОбороты.ВидДеятельности
+		ИНАЧЕ НЕОПРЕДЕЛЕНО
+	КОНЕЦ КАК РаботаДляХронометража,
+	УчетВремениОбороты.ОписаниеРаботы КАК ОписаниеРаботы,
+	УчетВремениОбороты.Период КАК Дата
+ПОМЕСТИТЬ ВТДанные
+ИЗ
+	РегистрНакопления.УчетВремени.Обороты(&amp;НачалоПериода, &amp;КонецПериода, ДЕНЬ, Пользователь = &amp;Пользователь) КАК УчетВремениОбороты
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТДанные.ВидДеятельности КАК ВидДеятельности,
+	ВТДанные.Проект КАК Проект,
+	ВТДанные.Работа КАК Работа,
+	ВТДанные.ОписаниеРаботы КАК ОписаниеРаботы,
+	ВЫБОР
+		КОГДА ХронометражРабочегоВремени.Начало ЕСТЬ NULL
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ИндексКартинкиХронометража,
+	МАКСИМУМ(ВТДанные.Дата) КАК Дата
+ИЗ
+	ВТДанные КАК ВТДанные
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ХронометражРабочегоВремени КАК ХронометражРабочегоВремени
+		ПО (ХронометражРабочегоВремени.Пользователь = &amp;Пользователь)
+			И ВТДанные.РаботаДляХронометража = ХронометражРабочегоВремени.Работа
+			И ВТДанные.ОписаниеРаботы = ХронометражРабочегоВремени.ОписаниеРаботы
+ГДЕ
+	ВТДанные.Дата &gt;= &amp;НачалоПериода
+	И (ВТДанные.Дата &lt;= &amp;КонецПериода
+			ИЛИ &amp;КонецПериода = ДАТАВРЕМЯ(1, 1, 1))
+
+СГРУППИРОВАТЬ ПО
+	ВТДанные.ВидДеятельности,
+	ВТДанные.Проект,
+	ВТДанные.Работа,
+	ВТДанные.ОписаниеРаботы,
+	ВЫБОР
+		КОГДА ХронометражРабочегоВремени.Начало ЕСТЬ NULL
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ</QueryText>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Проект</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

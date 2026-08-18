@@ -1,0 +1,1309 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Страницы" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыExtendedTooltip" id="74"/>
+			<ChildItems>
+				<Page name="Справка" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СправкаExtendedTooltip" id="75"/>
+					<ChildItems>
+						<UsualGroup name="ВидСправкиИСтиль" id="220">
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ВидСправкиИСтильРасширеннаяПодсказка" id="221"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаЛево" id="280">
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЛевоРасширеннаяПодсказка" id="281"/>
+									<ChildItems>
+										<CheckBoxField name="ВключатьВСправку" id="111">
+											<DataPath>Объект.ВключатьВСправку</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ВключатьВСправкуКонтекстноеМеню" id="112"/>
+											<ExtendedTooltip name="ВключатьВСправкуРасширеннаяПодсказка" id="113"/>
+										</CheckBoxField>
+										<UsualGroup name="ГруппаСтильКартинка" id="282">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа стиль картинка</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа стиль картинка</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСтильКартинкаРасширеннаяПодсказка" id="283"/>
+											<ChildItems>
+												<InputField name="СтильФорматированияСправки" id="11">
+													<DataPath>Объект.СтильФорматированияСправки</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>25</MaxWidth>
+													<DropListButton>true</DropListButton>
+													<ChoiceButton>true</ChoiceButton>
+													<ChoiceForm>Catalog.СтилиФорматирования.Form.СписокСтилей</ChoiceForm>
+													<ContextMenu name="СтильФорматированияСправкиКонтекстноеМеню" id="12"/>
+													<ExtendedTooltip name="СтильФорматированияСправкиExtendedTooltip" id="84"/>
+												</InputField>
+												<CheckBoxField name="Картинка" id="217">
+													<DataPath>Объект.Картинка</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<CheckBoxType>Tumbler</CheckBoxType>
+													<EditFormat>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>БЛ=Текст; БИ=Картинка</v8:content>
+														</v8:item>
+													</EditFormat>
+													<ContextMenu name="КартинкаКонтекстноеМеню" id="218"/>
+													<ExtendedTooltip name="КартинкаРасширеннаяПодсказка" id="219"/>
+													<Events>
+														<Event name="OnChange">КартинкаПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПроектыВключающиеСправку" id="284">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Справка ведется для:</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа проекты включающие справку</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаПроектыВключающиеСправкуРасширеннаяПодсказка" id="285"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаПроектыКолонка_0" id="286">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа проекты колонка 0</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа проекты колонка 0</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПроектыКолонка_0РасширеннаяПодсказка" id="287"/>
+										</UsualGroup>
+										<UsualGroup name="ГруппаПроектыКолонка_1" id="288">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа проекты колонка 1</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа проекты колонка 1</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПроектыКолонка_1РасширеннаяПодсказка" id="289"/>
+										</UsualGroup>
+										<UsualGroup name="ГруппаПроектыКолонка_2" id="290">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа проекты колонка 2</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа проекты колонка 2</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПроектыКолонка_2РасширеннаяПодсказка" id="291"/>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<Pages name="ВидСправкиСтраницы" id="222">
+							<EnableContentChange>true</EnableContentChange>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="ВидСправкиСтраницыРасширеннаяПодсказка" id="223"/>
+							<ChildItems>
+								<Page name="СправкаТекст" id="224">
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СправкаТекстРасширеннаяПодсказка" id="225"/>
+									<ChildItems>
+										<UsualGroup name="ГоризонтальнаяГруппа" id="23">
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГоризонтальнаяГруппаРасширеннаяПодсказка" id="76"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаТекстСправки" id="24">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа текст справки</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа текст справки</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаТекстСправкиExtendedTooltip" id="77"/>
+													<ChildItems>
+														<CommandBar name="КомандыСправкаТекст" id="13">
+															<EnableContentChange>true</EnableContentChange>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Команды справка текст</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Команды справка текст</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Height>1</Height>
+															<ExtendedTooltip name="КомандыСправкаТекстРасширеннаяПодсказка" id="79"/>
+															<ChildItems>
+																<ButtonGroup name="КомандыРедактированияТекста" id="202">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Команды редактирования текста</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Команды редактирования текста</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Width>9</Width>
+																	<ExtendedTooltip name="КомандыРедактированияТекстаРасширеннаяПодсказка" id="203"/>
+																	<ChildItems>
+																		<Button name="ФормаКурсив" id="15">
+																			<Type>CommandBarButton</Type>
+																			<CommandName>Form.Command.Ссылка</CommandName>
+																			<ExtendedTooltip name="ФормаКурсивExtendedTooltip" id="81"/>
+																		</Button>
+																		<Button name="ФормаПолужирный" id="14">
+																			<Type>CommandBarButton</Type>
+																			<CommandName>Form.Command.Полужирный</CommandName>
+																			<ExtendedTooltip name="ФормаПолужирныйExtendedTooltip" id="80"/>
+																		</Button>
+																		<Button name="ФормаСсылка" id="16">
+																			<Type>CommandBarButton</Type>
+																			<CommandName>Form.Command.Курсив</CommandName>
+																			<ExtendedTooltip name="ФормаСсылкаExtendedTooltip" id="82"/>
+																		</Button>
+																	</ChildItems>
+																</ButtonGroup>
+																<ButtonGroup name="КомандыРедактированияКартинки" id="192">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Команды редактирования текста</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Команды редактирования текста</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ExtendedTooltip name="КомандыРедактированияКартинкиРасширеннаяПодсказка" id="193"/>
+																	<ChildItems>
+																		<Button name="ВставитьКартинку" id="148">
+																			<Type>CommandBarButton</Type>
+																			<CommandName>Form.Command.ВставитьКартинку</CommandName>
+																			<ExtendedTooltip name="ВставитьКартинкуРасширеннаяПодсказка" id="149"/>
+																		</Button>
+																		<Button name="ВставитьКартинкуИзБуфера" id="152">
+																			<Type>CommandBarButton</Type>
+																			<CommandName>Form.Command.ВставитьКартинкуИзБуфера</CommandName>
+																			<ExtendedTooltip name="ВставитьКартинкуИзБуфераРасширеннаяПодсказка" id="153"/>
+																		</Button>
+																		<Button name="ПодобратьКартинку" id="150">
+																			<Type>CommandBarButton</Type>
+																			<CommandName>Form.Command.ПодобратьКартинку</CommandName>
+																			<ExtendedTooltip name="ПодобратьКартинкуРасширеннаяПодсказка" id="151"/>
+																		</Button>
+																	</ChildItems>
+																</ButtonGroup>
+															</ChildItems>
+														</CommandBar>
+														<InputField name="ПолеВвода" id="9">
+															<DataPath>Объект.ТекстСправки</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<EditMode>EnterOnInput</EditMode>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MultiLine>true</MultiLine>
+															<ExtendedEdit>true</ExtendedEdit>
+															<ContextMenu name="ПолеВводаКонтекстноеМеню" id="10">
+																<ChildItems>
+																	<Button name="ПолеВводаКонтекстноеМенюКурсив" id="40">
+																		<Type>CommandBarButton</Type>
+																		<CommandName>Form.Command.Курсив</CommandName>
+																		<ExtendedTooltip name="ПолеВводаКонтекстноеМенюКурсивExtendedTooltip" id="85"/>
+																	</Button>
+																	<Button name="ПолеВводаКонтекстноеМенюПолужирный" id="41">
+																		<Type>CommandBarButton</Type>
+																		<CommandName>Form.Command.Полужирный</CommandName>
+																		<ExtendedTooltip name="ПолеВводаКонтекстноеМенюПолужирныйExtendedTooltip" id="86"/>
+																	</Button>
+																	<Button name="ПолеВводаКонтекстноеМенюСсылка" id="42">
+																		<Type>CommandBarButton</Type>
+																		<CommandName>Form.Command.Ссылка</CommandName>
+																		<ExtendedTooltip name="ПолеВводаКонтекстноеМенюСсылкаExtendedTooltip" id="87"/>
+																	</Button>
+																	<ButtonGroup name="ПолеВводаКонтекстноеМенюГруппаКартинки" id="276">
+																		<ExtendedTooltip name="ПолеВводаКонтекстноеМенюГруппаКартинкиРасширеннаяПодсказка" id="277"/>
+																		<ChildItems>
+																			<Button name="ПолеВводаКонтекстноеМенюПодобратьКартинку" id="274">
+																				<Type>CommandBarButton</Type>
+																				<CommandName>Form.Command.ПодобратьКартинку</CommandName>
+																				<ExtendedTooltip name="ПолеВводаКонтекстноеМенюПодобратьКартинкуРасширеннаяПодсказка" id="275"/>
+																			</Button>
+																			<Button name="ПолеВводаКонтекстноеМенюВставитьКартинкуИзБуфера" id="272">
+																				<Type>CommandBarButton</Type>
+																				<CommandName>Form.Command.ВставитьКартинкуИзБуфера</CommandName>
+																				<ExtendedTooltip name="ПолеВводаКонтекстноеМенюВставитьКартинкуИзБуфераРасширеннаяПодсказка" id="273"/>
+																			</Button>
+																			<Button name="ПолеВводаКонтекстноеМенюВставитьКартинку" id="270">
+																				<Type>CommandBarButton</Type>
+																				<CommandName>Form.Command.ВставитьКартинку</CommandName>
+																				<ExtendedTooltip name="ПолеВводаКонтекстноеМенюВставитьКартинкуРасширеннаяПодсказка" id="271"/>
+																			</Button>
+																		</ChildItems>
+																	</ButtonGroup>
+																</ChildItems>
+															</ContextMenu>
+															<ExtendedTooltip name="ПолеВводаExtendedTooltip" id="88"/>
+															<Events>
+																<Event name="OnChange">ПолеВводаПриИзменении</Event>
+															</Events>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаГиперссылки" id="25">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Гиперссылки</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа гиперссылки</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаГиперссылкиExtendedTooltip" id="89"/>
+													<ChildItems>
+														<Table name="ГиперссылкиДляСправки" id="26">
+															<TitleLocation>Top</TitleLocation>
+															<CommandBarLocation>Top</CommandBarLocation>
+															<ChangeRowSet>false</ChangeRowSet>
+															<ChangeRowOrder>false</ChangeRowOrder>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<AutoInsertNewRow>true</AutoInsertNewRow>
+															<EnableStartDrag>true</EnableStartDrag>
+															<EnableDrag>true</EnableDrag>
+															<FileDragMode>AsFile</FileDragMode>
+															<DataPath>Объект.ГиперссылкиДляСправки</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Гиперссылки</v8:content>
+																</v8:item>
+															</Title>
+															<SearchStringLocation>None</SearchStringLocation>
+															<ViewStatusLocation>None</ViewStatusLocation>
+															<SearchControlLocation>None</SearchControlLocation>
+															<RowFilter xsi:nil="true"/>
+															<ContextMenu name="ГиперссылкиДляСправкиКонтекстноеМеню" id="27"/>
+															<AutoCommandBar name="ГиперссылкиДляСправкиКоманднаяПанель" id="28">
+																<Autofill>false</Autofill>
+															</AutoCommandBar>
+															<ExtendedTooltip name="ГиперссылкиДляСправкиExtendedTooltip" id="90"/>
+															<SearchStringAddition name="ГиперссылкиДляСправкиСтрокаПоиска" id="117">
+																<AdditionSource>
+																	<Item>ГиперссылкиДляСправки</Item>
+																	<Type>SearchStringRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="ГиперссылкиДляСправкиСтрокаПоискаКонтекстноеМеню" id="118"/>
+																<ExtendedTooltip name="ГиперссылкиДляСправкиСтрокаПоискаРасширеннаяПодсказка" id="119"/>
+															</SearchStringAddition>
+															<ViewStatusAddition name="ГиперссылкиДляСправкиСостояниеПросмотра" id="120">
+																<AdditionSource>
+																	<Item>ГиперссылкиДляСправки</Item>
+																	<Type>ViewStatusRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="ГиперссылкиДляСправкиСостояниеПросмотраКонтекстноеМеню" id="121"/>
+																<ExtendedTooltip name="ГиперссылкиДляСправкиСостояниеПросмотраРасширеннаяПодсказка" id="122"/>
+															</ViewStatusAddition>
+															<SearchControlAddition name="ГиперссылкиДляСправкиУправлениеПоиском" id="123">
+																<AdditionSource>
+																	<Item>ГиперссылкиДляСправки</Item>
+																	<Type>SearchControl</Type>
+																</AdditionSource>
+																<ContextMenu name="ГиперссылкиДляСправкиУправлениеПоискомКонтекстноеМеню" id="124"/>
+																<ExtendedTooltip name="ГиперссылкиДляСправкиУправлениеПоискомРасширеннаяПодсказка" id="125"/>
+															</SearchControlAddition>
+															<Events>
+																<Event name="OnStartEdit">ГиперссылкиДляСправкиПриНачалеРедактирования</Event>
+																<Event name="OnChange">ГиперссылкиДляСправкиПриИзменении</Event>
+															</Events>
+															<ChildItems>
+																<LabelField name="ГиперссылкиДляСправкиНомерСтроки" id="29">
+																	<DataPath>Объект.ГиперссылкиДляСправки.LineNumber</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<Width>1</Width>
+																	<ContextMenu name="ГиперссылкиДляСправкиНомерСтрокиКонтекстноеМеню" id="30"/>
+																	<ExtendedTooltip name="ГиперссылкиДляСправкиНомерСтрокиExtendedTooltip" id="91"/>
+																</LabelField>
+																<InputField name="ГиперссылкиДляСправкиТекстГиперссылки" id="31">
+																	<DataPath>Объект.ГиперссылкиДляСправки.ТекстГиперссылки</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<Width>15</Width>
+																	<ContextMenu name="ГиперссылкиДляСправкиТекстГиперссылкиКонтекстноеМеню" id="32"/>
+																	<ExtendedTooltip name="ГиперссылкиДляСправкиТекстГиперссылкиExtendedTooltip" id="92"/>
+																	<Events>
+																		<Event name="OnChange">ГиперссылкиДляСправкиТекстГиперссылкиПриИзменении</Event>
+																	</Events>
+																</InputField>
+																<CheckBoxField name="ГиперссылкиДляСправкиТекстоваяГиперссылка" id="114">
+																	<DataPath>Объект.ГиперссылкиДляСправки.ТекстоваяГиперссылка</DataPath>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Текстовая гиперссылка</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<EditMode>EnterOnInput</EditMode>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="ГиперссылкиДляСправкиТекстоваяГиперссылкаКонтекстноеМеню" id="115"/>
+																	<ExtendedTooltip name="ГиперссылкиДляСправкиТекстоваяГиперссылкаРасширеннаяПодсказка" id="116"/>
+																	<Events>
+																		<Event name="OnChange">ГиперссылкиДляСправкиТекстоваяГиперссылкаПриИзменении</Event>
+																	</Events>
+																</CheckBoxField>
+																<InputField name="ГиперссылкиДляСправкиГиперссылка" id="33">
+																	<DataPath>Объект.ГиперссылкиДляСправки.Гиперссылка</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ContextMenu name="ГиперссылкиДляСправкиГиперссылкаКонтекстноеМеню" id="34"/>
+																	<ExtendedTooltip name="ГиперссылкиДляСправкиГиперссылкаExtendedTooltip" id="93"/>
+																	<Events>
+																		<Event name="AutoComplete">ГиперссылкиДляСправкиГиперссылкаАвтоПодбор</Event>
+																		<Event name="StartChoice">ГиперссылкиДляСправкиГиперссылкаНачалоВыбора</Event>
+																		<Event name="Clearing">ГиперссылкиДляСправкиГиперссылкаОчистка</Event>
+																	</Events>
+																</InputField>
+															</ChildItems>
+														</Table>
+														<Table name="КартинкиДляСправки" id="126">
+															<TitleLocation>Top</TitleLocation>
+															<ChangeRowSet>false</ChangeRowSet>
+															<ChangeRowOrder>false</ChangeRowOrder>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<AutoInsertNewRow>true</AutoInsertNewRow>
+															<EnableStartDrag>true</EnableStartDrag>
+															<EnableDrag>true</EnableDrag>
+															<FileDragMode>AsFile</FileDragMode>
+															<DataPath>Объект.КартинкиДляСправки</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Картинки</v8:content>
+																</v8:item>
+															</Title>
+															<RowFilter xsi:nil="true"/>
+															<ContextMenu name="КартинкиДляСправкиКонтекстноеМеню" id="127"/>
+															<AutoCommandBar name="КартинкиДляСправкиКоманднаяПанель" id="128">
+																<Autofill>false</Autofill>
+																<ChildItems>
+																	<Button name="КартинкиДляСправкиПросмотрКартинки" id="156">
+																		<Type>CommandBarButton</Type>
+																		<Representation>Picture</Representation>
+																		<CommandName>Form.Command.ПросмотрКартинки</CommandName>
+																		<ExtendedTooltip name="КартинкиДляСправкиПросмотрКартинкиРасширеннаяПодсказка" id="157"/>
+																	</Button>
+																	<Button name="КартинкиДляСправкиСохранитьКартинку" id="160">
+																		<Type>CommandBarButton</Type>
+																		<Representation>Picture</Representation>
+																		<CommandName>Form.Command.СохранитьКартинку</CommandName>
+																		<ExtendedTooltip name="КартинкиДляСправкиСохранитьКартинкуРасширеннаяПодсказка" id="161"/>
+																	</Button>
+																	<ButtonGroup name="КомандыВставкиКартинкиТЧ" id="278">
+																		<ExtendedTooltip name="КомандыВставкиКартинкиТЧРасширеннаяПодсказка" id="279"/>
+																		<ChildItems>
+																			<Button name="КартинкиДляСправкиВставитьКартинку" id="158">
+																				<Type>CommandBarButton</Type>
+																				<Representation>Picture</Representation>
+																				<CommandName>Form.Command.ВставитьКартинкуТЧ</CommandName>
+																				<ExtendedTooltip name="КартинкиДляСправкиВставитьКартинкуРасширеннаяПодсказка" id="159"/>
+																			</Button>
+																			<Button name="КартинкиДляСправкиВставитьКартинкуИзБуфераТЧ" id="213">
+																				<Type>CommandBarButton</Type>
+																				<Representation>Picture</Representation>
+																				<CommandName>Form.Command.ВставитьКартинкуИзБуфераТЧ</CommandName>
+																				<ExtendedTooltip name="КартинкиДляСправкиВставитьКартинкуИзБуфераТЧРасширеннаяПодсказка" id="214"/>
+																			</Button>
+																			<Button name="КартинкиДляСправкиПодобратьКартинкуТЧ" id="215">
+																				<Type>CommandBarButton</Type>
+																				<Representation>Picture</Representation>
+																				<CommandName>Form.Command.ПодобратьКартинкуТЧ</CommandName>
+																				<ExtendedTooltip name="КартинкиДляСправкиПодобратьКартинкуТЧРасширеннаяПодсказка" id="216"/>
+																			</Button>
+																		</ChildItems>
+																	</ButtonGroup>
+																</ChildItems>
+															</AutoCommandBar>
+															<ExtendedTooltip name="КартинкиДляСправкиРасширеннаяПодсказка" id="129"/>
+															<SearchStringAddition name="КартинкиДляСправкиСтрокаПоиска" id="130">
+																<AdditionSource>
+																	<Item>КартинкиДляСправки</Item>
+																	<Type>SearchStringRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="КартинкиДляСправкиСтрокаПоискаКонтекстноеМеню" id="131"/>
+																<ExtendedTooltip name="КартинкиДляСправкиСтрокаПоискаРасширеннаяПодсказка" id="132"/>
+															</SearchStringAddition>
+															<ViewStatusAddition name="КартинкиДляСправкиСостояниеПросмотра" id="133">
+																<AdditionSource>
+																	<Item>КартинкиДляСправки</Item>
+																	<Type>ViewStatusRepresentation</Type>
+																</AdditionSource>
+																<ContextMenu name="КартинкиДляСправкиСостояниеПросмотраКонтекстноеМеню" id="134"/>
+																<ExtendedTooltip name="КартинкиДляСправкиСостояниеПросмотраРасширеннаяПодсказка" id="135"/>
+															</ViewStatusAddition>
+															<SearchControlAddition name="КартинкиДляСправкиУправлениеПоиском" id="136">
+																<AdditionSource>
+																	<Item>КартинкиДляСправки</Item>
+																	<Type>SearchControl</Type>
+																</AdditionSource>
+																<ContextMenu name="КартинкиДляСправкиУправлениеПоискомКонтекстноеМеню" id="137"/>
+																<ExtendedTooltip name="КартинкиДляСправкиУправлениеПоискомРасширеннаяПодсказка" id="138"/>
+															</SearchControlAddition>
+															<Events>
+																<Event name="Selection">КартинкиДляСправкиВыбор</Event>
+																<Event name="ChoiceProcessing">КартинкиДляСправкиОбработкаВыбора</Event>
+																<Event name="OnStartEdit">КартинкиДляСправкиПриНачалеРедактирования</Event>
+																<Event name="OnChange">КартинкиДляСправкиПриИзменении</Event>
+															</Events>
+															<ChildItems>
+																<LabelField name="КартинкиДляСправкиНомерСтроки" id="139">
+																	<DataPath>Объект.КартинкиДляСправки.LineNumber</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<Width>1</Width>
+																	<ContextMenu name="КартинкиДляСправкиНомерСтрокиКонтекстноеМеню" id="140"/>
+																	<ExtendedTooltip name="КартинкиДляСправкиНомерСтрокиРасширеннаяПодсказка" id="141"/>
+																</LabelField>
+																<InputField name="КартинкиДляСправкиНазваниеКартинки" id="142">
+																	<DataPath>Объект.КартинкиДляСправки.НазваниеКартинки</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<Width>28</Width>
+																	<ContextMenu name="КартинкиДляСправкиНазваниеКартинкиКонтекстноеМеню" id="143"/>
+																	<ExtendedTooltip name="КартинкиДляСправкиНазваниеКартинкиРасширеннаяПодсказка" id="144"/>
+																	<Events>
+																		<Event name="OnChange">КартинкиДляСправкиНазваниеКартинкиПриИзменении</Event>
+																	</Events>
+																</InputField>
+																<LabelField name="КартинкиДляСправкиКартинка" id="145">
+																	<DataPath>Объект.КартинкиДляСправки.Картинка</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<Width>20</Width>
+																	<ContextMenu name="КартинкиДляСправкиКартинкаКонтекстноеМеню" id="146"/>
+																	<ExtendedTooltip name="КартинкиДляСправкиКартинкаРасширеннаяПодсказка" id="147"/>
+																</LabelField>
+															</ChildItems>
+														</Table>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаГиперссылкиНаДругойЭлемент" id="39">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа гиперссылки на другой элемент</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа гиперссылки на другой элемент</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаГиперссылкиНаДругойЭлементExtendedTooltip" id="94"/>
+											<ChildItems>
+												<LabelDecoration name="ПояснениеКГиперссылке" id="37">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<TextColor>style:ПоясняющийТекст</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Вместо справки текущего элемента может быть использована справка другого элемента, вместе с его подчиненными элементами:</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПояснениеКГиперссылкеКонтекстноеМеню" id="38"/>
+													<ExtendedTooltip name="ПояснениеКГиперссылкеExtendedTooltip" id="95"/>
+												</LabelDecoration>
+												<InputField name="ПодменяющийЭлементСправки" id="35">
+													<DataPath>Объект.ПодменяющийЭлементСправки</DataPath>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<ClearButton>true</ClearButton>
+													<ContextMenu name="ПодменяющийЭлементСправкиКонтекстноеМеню" id="36"/>
+													<ExtendedTooltip name="ПодменяющийЭлементСправкиExtendedTooltip" id="96"/>
+													<Events>
+														<Event name="OnChange">ПодменяющийЭлементСправкиПриИзменении</Event>
+														<Event name="StartChoice">ПодменяющийЭлементСправкиНачалоВыбора</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</Page>
+								<Page name="СправкаКартинка" id="226">
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СправкаКартинкаРасширеннаяПодсказка" id="227"/>
+									<ChildItems>
+										<CommandBar name="КомандыСправкаКартинка" id="234">
+											<EnableContentChange>true</EnableContentChange>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Команды справки</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Команды справки</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Width>9</Width>
+											<ExtendedTooltip name="КомандыСправкаКартинкаРасширеннаяПодсказка" id="235"/>
+											<ChildItems>
+												<ButtonGroup name="КомандыВставкиКартинки" id="244">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Команды редактирования текста</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Команды редактирования текста</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="КомандыВставкиКартинкиРасширеннаяПодсказка" id="245"/>
+													<ChildItems>
+														<Button name="ВставитьКартинку1" id="246">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ВставитьКартинку</CommandName>
+															<ExtendedTooltip name="ВставитьКартинку1РасширеннаяПодсказка" id="247"/>
+														</Button>
+														<Button name="ВставитьКартинкуИзБуфера1" id="248">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ВставитьКартинкуИзБуфера</CommandName>
+															<ExtendedTooltip name="ВставитьКартинкуИзБуфера1РасширеннаяПодсказка" id="249"/>
+														</Button>
+														<Button name="ПодобратьКартинку1" id="250">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ПодобратьКартинку</CommandName>
+															<ExtendedTooltip name="ПодобратьКартинку1РасширеннаяПодсказка" id="251"/>
+														</Button>
+													</ChildItems>
+												</ButtonGroup>
+												<ButtonGroup name="КомандыРедактированияКартинкиСправки" id="252">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Команды редактирования картинки стиля</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Команды редактирования картинки справки</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="КомандыРедактированияКартинкиСправкиРасширеннаяПодсказка" id="253"/>
+													<ChildItems>
+														<Button name="РедактироватьКартинку" id="254">
+															<Type>CommandBarButton</Type>
+															<Representation>Picture</Representation>
+															<CommandName>Form.Command.РедактироватьКартинку</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Изменить картинку</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="РедактироватьКартинкуРасширеннаяПодсказка" id="255"/>
+														</Button>
+														<Button name="СохранитьКартинку" id="256">
+															<Type>CommandBarButton</Type>
+															<Representation>Picture</Representation>
+															<CommandName>Form.Command.СохранитьКартинку</CommandName>
+															<ExtendedTooltip name="СохранитьКартинкуРасширеннаяПодсказка" id="257"/>
+														</Button>
+													</ChildItems>
+												</ButtonGroup>
+											</ChildItems>
+										</CommandBar>
+										<PictureField name="ПолеКартинки" id="267">
+											<DataPath>АдресКартинки</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>64</Width>
+											<Height>12</Height>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ПолеКартинкиКонтекстноеМеню" id="268"/>
+											<ExtendedTooltip name="ПолеКартинкиРасширеннаяПодсказка" id="269"/>
+											<Events>
+												<Event name="OnChange">ПолеВводаПриИзменении</Event>
+											</Events>
+										</PictureField>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+				<Page name="СлужебнаяИнформация" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Служебная информация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Служебная информация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СлужебнаяИнформацияExtendedTooltip" id="97"/>
+					<ChildItems>
+						<InputField name="Код" id="1">
+							<DataPath>Объект.Code</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="КодExtendedTooltip" id="98"/>
+						</InputField>
+						<InputField name="ПолныйКод" id="21">
+							<DataPath>Объект.ПолныйКод</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ContextMenu name="ПолныйКодКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="ПолныйКодExtendedTooltip" id="99"/>
+						</InputField>
+						<InputField name="Наименование" id="3">
+							<DataPath>Объект.Description</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMarkIncomplete>false</AutoMarkIncomplete>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="НаименованиеExtendedTooltip" id="100"/>
+						</InputField>
+						<InputField name="Владелец" id="5">
+							<DataPath>Объект.Owner</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ВладелецКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="ВладелецExtendedTooltip" id="101"/>
+							<Events>
+								<Event name="OnChange">ВладелецПриИзменении</Event>
+								<Event name="AutoComplete">ВладелецАвтоПодбор</Event>
+								<Event name="StartChoice">ВладелецНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="Родитель" id="7">
+							<DataPath>Объект.Parent</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="РодительКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="РодительExtendedTooltip" id="102"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ЭлементыСправки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<Columns>
+				<AdditionalColumns table="Объект.ГиперссылкиДляСправки">
+					<Column name="ТекстоваяГиперссылка" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Т</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ТипГиперссылки" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Тип гиперссылки</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>10</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Any</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="ОтсутствуетВСправке" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отсутствует в справке</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="Объект.КартинкиДляСправки">
+					<Column name="ОтсутствуетВСправке" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отсутствует в справке</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="Проект" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресКартинки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес картинки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстБуфер" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст буфер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтмеченныеПроекты" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмеченные проекты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Проект" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СвязьПроектовИРеквизитов" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связь проектов и реквизитов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Проект" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИмяРеквизита" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя реквизита</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ВариантИспользования</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.УдалитьВариантИспользования</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Общий</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ГиперссылкиДляСправки</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ГиперссылкиДляСправки.ОтсутствуетВСправке</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>КартинкиДляСправки</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.КартинкиДляСправки.ОтсутствуетВСправке</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Полужирный" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полужирный</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полужирный</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+B</Shortcut>
+			<Picture>
+				<xr:Ref>CommonPicture.ФорматПолужирный</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>Полужирный</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Ссылка" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить ссылку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+H</Shortcut>
+			<Picture>
+				<xr:Ref>CommonPicture.Гиперссылка</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:TransparentPixel x="12" y="2"/>
+			</Picture>
+			<Action>Ссылка</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Курсив" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Курсив</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Курсив</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+I</Shortcut>
+			<Picture>
+				<xr:Ref>CommonPicture.ФорматНаклонный</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>Курсив</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьКартинку" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить картинку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить картинку из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ВставитьКартинкуИзФайла</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВставитьКартинку</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПодобратьКартинку" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать картинку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать картинку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ПодобратьКартинку</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПодобратьКартинку</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьКартинкуИзБуфера" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить картинку из буфера</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить картинку из буфера</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ВставитьКартинкуИзБуфера</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВставитьКартинкуИзБуфера</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьКартинкуТЧ" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить из файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить картинку из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ВставитьКартинкуИзФайла</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВставитьКартинкуТЧ</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СохранитьКартинку" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить в файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить картинку в файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SaveFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СохранитьКартинку</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПросмотрКартинки" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотр</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотр картинки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ПросмотрКартинки</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПросмотрКартинки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="РедактироватьКартинку" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать картинку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать картинку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Change</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>РедактироватьКартинку</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВставитьКартинкуИзБуфераТЧ" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить из буфера</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить картинку из буфера</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ВставитьКартинкуИзБуфера</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВставитьКартинкуИзБуфераТЧ</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПодобратьКартинкуТЧ" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать картинку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ПодобратьКартинку</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПодобратьКартинкуТЧ</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<DataProcessor uuid="8c1ab0c6-7c22-46ed-bdef-f32fa7f1a01f">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ИнтеграцияС1СДокументооборотБазоваяФункциональность" category="Object">
+				<xr:TypeId>f137cc18-3fce-4ab8-b82b-1f0094068666</xr:TypeId>
+				<xr:ValueId>c077f264-c6d1-450f-9d96-0566ee0fd56e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ИнтеграцияС1СДокументооборотБазоваяФункциональность" category="Manager">
+				<xr:TypeId>ea8e92fa-f9f1-44ea-8f70-841c7b19c7f0</xr:TypeId>
+				<xr:ValueId>4b45213c-2193-422c-9cd6-a11cc49498b3</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ИнтеграцияС1СДокументооборотБазоваяФункциональность</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интеграция с 1С:Документооборот</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Интеграция с 1С:Документооборотом. Базовая функциональность</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.ИнтеграцияС1СДокументооборотБазоваяФункциональность.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>АвторизацияВ1СДокументооборот</Form>
+			<Form>ВводРеквизитаПоискаДата</Form>
+			<Form>ВводРеквизитаПоискаСтрока</Form>
+			<Form>ВводРеквизитаПоискаЧисло</Form>
+			<Form>ВерсииФайла</Form>
+			<Form>ВыборДействийПриОбнаруженииОтличийФайла</Form>
+			<Form>ВыборИзСписка</Form>
+			<Form>ВыборОбъектаМетаданных</Form>
+			<Form>ВыборОдногоТипаИзСоставногоТипа</Form>
+			<Form>ВыборПравила</Form>
+			<Form>ВыборРеквизитаДокументооборота</Form>
+			<Form>ВыборРолиИсполнителя</Form>
+			<Form>ВыборФайла</Form>
+			<Form>ДобавлениеПечатнойФормы</Form>
+			<Form>НастройкаАвтообновления</Form>
+			<Form>ОписаниеВебСервисов</Form>
+			<Form>ПеренаправлениеЗадачи</Form>
+			<Form>ПоискВСписке</Form>
+			<Form>СозданиеНовогоФайла</Form>
+			<Form>Файл</Form>
+			<Form>Форма</Form>
+			<Form>ФормаВозвратаФайла</Form>
+			<Command uuid="dfa17390-05b3-4cf8-b45a-bf0962ca5b31">
+				<Properties>
+					<Name>АвторизацияВ1СДокументооборот</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Авторизация в 1С:Документообороте</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>ActionsPanelTools</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+			<Command uuid="a2198c1b-0ba5-4333-8a78-26cef07b376f">
+				<Properties>
+					<Name>ВерсииФайла</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версии</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>FormNavigationPanelGoTo</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Запрос</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектМетаданных</dataPath>
+			<field>ОбъектМетаданных</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект метаданных</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поставщик</dataPath>
+			<field>Поставщик</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОписаниеПроблемы</dataPath>
+			<field>ОписаниеПроблемы</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание проблемы</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	ПроектыВключаемыеПроекты.Ссылка КАК Проект,
+	ПроектыВключаемыеПроекты.Проект КАК ПроектБиблиотека
+ПОМЕСТИТЬ СвязиПроектовБиблиотек
+ИЗ
+	Справочник.Проекты.ВключаемыеПроекты КАК ПроектыВключаемыеПроекты
+ГДЕ
+	ПроектыВключаемыеПроекты.СправкаВедетсяВБиблиотеке
+	И ПроектыВключаемыеПроекты.Ссылка = &amp;Проект
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	ПроектыВключаемыеПроекты.Ссылка КАК Проект,
+	ПроектыВключаемыеПроекты.Проект КАК ПроектБиблиотека
+ПОМЕСТИТЬ СвязиПроектовБиблиотекНеВедущиеСправку
+ИЗ
+	Справочник.Проекты.ВключаемыеПроекты КАК ПроектыВключаемыеПроекты
+ГДЕ
+	НЕ ПроектыВключаемыеПроекты.СправкаВедетсяВБиблиотеке
+	И ПроектыВключаемыеПроекты.Ссылка = &amp;Проект
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ОбъектыМетаданных.Ссылка,
+	ОбъектыМетаданных.Владелец,
+	ОбъектыМетаданных.Поставщик
+ПОМЕСТИТЬ ОбъектыНеВедущиеСправку
+ИЗ
+	Справочник.ОбъектыМетаданных КАК ОбъектыМетаданных
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ СвязиПроектовБиблиотекНеВедущиеСправку КАК СвязиПроектовБиблиотекНеВедущиеСправку
+		ПО ОбъектыМетаданных.Владелец = СвязиПроектовБиблиотекНеВедущиеСправку.Проект
+			И ОбъектыМетаданных.Поставщик = СвязиПроектовБиблиотекНеВедущиеСправку.ПроектБиблиотека
+ГДЕ
+	ОбъектыМетаданных.Владелец = &amp;Проект
+	И ОбъектыМетаданных.ПравилоПоддержки = ЗНАЧЕНИЕ(Перечисление.ПравилаПоддержки.НеРедактируется)
+	И НЕ ОбъектыМетаданных.ПометкаУдаления
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ОбъектыМетаданных.Ссылка,
+	ОбъектыМетаданных.Владелец,
+	ОбъектыМетаданных.Поставщик,
+	ОбъектыМетаданныхПоставщика.Ссылка КАК ОбъектПоставщика
+ПОМЕСТИТЬ Объекты
+ИЗ
+	Справочник.ОбъектыМетаданных КАК ОбъектыМетаданных
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ СвязиПроектовБиблиотек КАК СвязиПроектовБиблиотек
+		ПО ОбъектыМетаданных.Владелец = СвязиПроектовБиблиотек.Проект
+			И ОбъектыМетаданных.Поставщик = СвязиПроектовБиблиотек.ПроектБиблиотека
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ОбъектыМетаданных КАК ОбъектыМетаданныхПоставщика
+		ПО ОбъектыМетаданных.Поставщик = ОбъектыМетаданныхПоставщика.Владелец
+			И ОбъектыМетаданных.uuid = ОбъектыМетаданныхПоставщика.uuid
+			И (НЕ ОбъектыМетаданныхПоставщика.uuid = "")
+			И (НЕ ОбъектыМетаданныхПоставщика.ПометкаУдаления)
+ГДЕ
+	ОбъектыМетаданных.Владелец = &amp;Проект
+	И ОбъектыМетаданных.ПравилоПоддержки = ЗНАЧЕНИЕ(Перечисление.ПравилаПоддержки.НеРедактируется)
+	И НЕ ОбъектыМетаданных.ПометкаУдаления
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Подсистемы.Ссылка КАК Ссылка,
+	Подсистемы.Владелец,
+	Подсистемы.Поставщик,
+	ПодсистемыПоставщика.Ссылка КАК ОбъектПоставщика
+ПОМЕСТИТЬ Подсистемы
+ИЗ
+	Справочник.Подсистемы КАК Подсистемы
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ СвязиПроектовБиблиотек КАК СвязиПроектовБиблиотек
+		ПО Подсистемы.Владелец = СвязиПроектовБиблиотек.Проект
+			И Подсистемы.Поставщик = СвязиПроектовБиблиотек.ПроектБиблиотека
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Подсистемы КАК ПодсистемыПоставщика
+		ПО Подсистемы.Поставщик = ПодсистемыПоставщика.Владелец
+			И Подсистемы.uuid = ПодсистемыПоставщика.uuid
+			И (НЕ ПодсистемыПоставщика.uuid = "")
+			И (НЕ ПодсистемыПоставщика.ПометкаУдаления)
+ГДЕ
+	Подсистемы.Владелец = &amp;Проект
+	И Подсистемы.ПравилоПоддержки = ЗНАЧЕНИЕ(Перечисление.ПравилаПоддержки.НеРедактируется)
+	И НЕ Подсистемы.ПометкаУдаления
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ФормыОбъектовМетаданных.Ссылка КАК Ссылка,
+	Объекты.Владелец КАК Владелец,
+	Объекты.Поставщик КАК Поставщик,
+	ФормыОбъектовМетаданныхПоставщика.Ссылка КАК ОбъектПоставщика
+ПОМЕСТИТЬ ВсеОбъекты
+ИЗ
+	Справочник.ФормыОбъектовМетаданных КАК ФормыОбъектовМетаданных
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Объекты КАК Объекты
+		ПО ФормыОбъектовМетаданных.Владелец = Объекты.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ФормыОбъектовМетаданных КАК ФормыОбъектовМетаданныхПоставщика
+		ПО (Объекты.ОбъектПоставщика = ФормыОбъектовМетаданныхПоставщика.Владелец)
+			И ФормыОбъектовМетаданных.uuid = ФормыОбъектовМетаданныхПоставщика.uuid
+			И (НЕ ФормыОбъектовМетаданныхПоставщика.uuid = "")
+			И (НЕ ФормыОбъектовМетаданныхПоставщика.ПометкаУдаления)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Объекты.Ссылка,
+	Объекты.Владелец,
+	Объекты.Поставщик,
+	Объекты.ОбъектПоставщика
+ИЗ
+	Объекты КАК Объекты
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Подсистемы.Ссылка,
+	Подсистемы.Владелец,
+	Подсистемы.Поставщик,
+	Подсистемы.ОбъектПоставщика
+ИЗ
+	Подсистемы КАК Подсистемы
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ОбъектыСПроблемойВБиблиотеке.Поставщик КАК Поставщик,
+	ОбъектыСПроблемойВБиблиотеке.ОбъектМетаданных КАК ОбъектМетаданных,
+	"ПроблемаВБиблиотеке" КАК ОписаниеПроблемы
+ИЗ
+	(ВЫБРАТЬ
+		ВсеОбъекты.Поставщик КАК Поставщик,
+		ВсеОбъекты.Ссылка КАК ОбъектМетаданных
+	ИЗ
+		Справочник.ЭлементыСправки.ПроектыВключающиеСправку КАК ПроектыВключающиеСправку
+			ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВсеОбъекты КАК ВсеОбъекты
+			ПО ПроектыВключающиеСправку.Ссылка.Владелец = ВсеОбъекты.ОбъектПоставщика
+	ГДЕ
+		(ПроектыВключающиеСправку.Проект = ВсеОбъекты.Владелец
+				ИЛИ ПроектыВключающиеСправку.Проект = ВсеОбъекты.Поставщик)
+		И НЕ ПроектыВключающиеСправку.Ссылка.ПометкаУдаления
+	
+	СГРУППИРОВАТЬ ПО
+		ПроектыВключающиеСправку.Ссылка,
+		ВсеОбъекты.Поставщик,
+		ВсеОбъекты.Ссылка
+	
+	ИМЕЮЩИЕ
+		КОЛИЧЕСТВО(ПроектыВключающиеСправку.Ссылка) = 1) КАК ОбъектыСПроблемойВБиблиотеке
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ОбъектыНеВедущиеСправку.Поставщик,
+	ОбъектыНеВедущиеСправку.Ссылка,
+	"ПроблемаВПроекте"
+ИЗ
+	Справочник.ЭлементыСправки КАК ЭлементыСправки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ОбъектыНеВедущиеСправку КАК ОбъектыНеВедущиеСправку
+		ПО ЭлементыСправки.Владелец = ОбъектыНеВедущиеСправку.Ссылка
+ГДЕ
+	НЕ ЭлементыСправки.ПроектыВключающиеСправку.Ссылка.ПометкаУдаления</query>
+	</dataSet>
+	<parameter>
+		<name>Проект</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Проект</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Проекты</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ПроверкаВыгрузкиСправки</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>ПроверкаВыгрузкиСправки</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОбъектМетаданных</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЭлементСправки</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Проект</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>1b8608e9-ad30-47ab-b3e4-0cd1223df371</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ОбъектМетаданных</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Поставщик</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ОписаниеПроблемы</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>ОписаниеПроблемы</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ОписаниеПроблемы</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">ПроблемаВБиблиотеке</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Текст</dcscor:parameter>
+								<dcscor:value xsi:type="v8:LocalStringType">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Справка по данным объектам не может быть выгружена, так как они находятся на полной поддержке библиотеки. Справка по ним ведется в библиотеке и есть отличия в версии справки библиотеки и версией справки проекта.</v8:content>
+									</v8:item>
+								</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>ОписаниеПроблемы</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ОписаниеПроблемы</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">ПроблемаВПроекте</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Текст</dcscor:parameter>
+								<dcscor:value xsi:type="v8:LocalStringType">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Справка по данным объектам не может быть выгружена, так как они находятся на полной поддержке библиотеки. Справка по ним ведется в проекте.</v8:content>
+									</v8:item>
+								</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+				</dcsset:conditionalAppearance>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+	<settingsVariant>
+		<dcsset:name>ПроверкаВыгрузкиСправкиКонтекстная</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Проверка выгрузки справки</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Поставщик</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОбъектМетаданных</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОписаниеПроблемы</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Поставщик</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ОбъектМетаданных</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType"/>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Поставщик</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ОписаниеПроблемы</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>ОписаниеПроблемы</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ОписаниеПроблемы</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">ПроблемаВБиблиотеке</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Текст</dcscor:parameter>
+								<dcscor:value xsi:type="v8:LocalStringType">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Справка по данным объектам не может быть выгружена, так как они находятся на полной поддержке библиотеки. Справка по ним ведется в библиотеке и есть отличия в версии справки библиотеки и версией справки проекта.</v8:content>
+									</v8:item>
+								</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>ОписаниеПроблемы</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">ОписаниеПроблемы</dcsset:left>
+								<dcsset:comparisonType>Equal</dcsset:comparisonType>
+								<dcsset:right xsi:type="xs:string">ПроблемаВПроекте</dcsset:right>
+							</dcsset:item>
+						</dcsset:filter>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Текст</dcscor:parameter>
+								<dcscor:value xsi:type="v8:LocalStringType">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Справка по данным объектам не может быть выгружена, так как они находятся на полной поддержке библиотеки. Справка по ним ведется в проекте.</v8:content>
+									</v8:item>
+								</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+				</dcsset:conditionalAppearance>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

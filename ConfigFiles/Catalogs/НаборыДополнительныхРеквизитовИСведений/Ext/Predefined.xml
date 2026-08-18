@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.20">
+	<Item id="00a41a0f-5c82-470e-a51d-4ac2bf65511f">
+		<Name>Справочник_СборкиВерсии</Name>
+		<Code/>
+		<Description>Доп. свойства справочника  "Сборки версии"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="48deca45-c567-4b09-b2d7-3396cd429a43">
+				<Name>Справочник_СборкиВерсии_Общие</Name>
+				<Code/>
+				<Description>Общие доп. свойства справочника "Сборки версии"</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="13ead170-dfa9-4a74-b3b2-38fcff1afddb">
+		<Name>Справочник_ЗадачиПроцесса</Name>
+		<Code/>
+		<Description>Доп. свойства справочника "Задачи процессов"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="2fbbb4ba-7b7e-4319-9586-11feb604610e">
+				<Name>Справочник_ЗадачиПроцесса_Общие</Name>
+				<Code/>
+				<Description>Общие доп. свойства справочника "Задачи процессов"</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="f3d66954-327c-440e-b141-0de36bee4cca">
+		<Name>Справочник_Идеи</Name>
+		<Code/>
+		<Description>Доп. свойства справочника "Идеи"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="d0c22b52-b564-47e6-bc11-00546492aa20">
+				<Name>Справочник_Идеи_Общие</Name>
+				<Code/>
+				<Description>Общие доп. свойства справочника "Идеи"</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="f148facd-3581-455f-afdd-1eef8e6f9c31">
+		<Name>Справочник_КомандыОбъектовМетаданных</Name>
+		<Code/>
+		<Description>Доп. свойства справочника "Команды объектов метаданных"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="6eca7ae7-c556-430b-8bd6-27e0592836a7">
+				<Name>Справочник_КомандыОбъектовМетаданных_Общие</Name>
+				<Code/>
+				<Description>Общие доп. свойства справочника "Команды объектов метаданных"</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="057403b0-ddea-49ea-9bbb-870e0a45cfde">
+		<Name>Справочник_МакетыОбъектовМетаданных</Name>
+		<Code/>
+		<Description>Доп. свойства справочника "Макеты объектов метаданных"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="e183b5ca-dd0e-4209-acac-f5f2e363bc3c">
+				<Name>Справочник_МакетыОбъектовМетаданных_Общие</Name>
+				<Code/>
+				<Description>Общие доп. свойства справочника "Макеты объектов метаданных"</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="0f82cf40-0914-478d-b4ec-e273e3fa8367">
+		<Name>Справочник_ОбъектыМетаданных</Name>
+		<Code/>
+		<Description>Доп. свойства справочника "Объекты метаданных"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="9de1c089-d36a-4cab-a5ef-d8fcaa29f8a7">
+				<Name>Справочник_ОбъектыМетаданных_Общие</Name>
+				<Code/>
+				<Description>Общие доп. свойства справочника "Объекты метаданных"</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="055dd5d8-f1c5-40d9-8bf3-83a8a75e6e34">
+		<Name>Справочник_Ошибки</Name>
+		<Code/>
+		<Description>Доп. свойства справочника "Ошибки"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="10640e60-2cac-4ff0-b81d-559ad451f685">
+				<Name>Справочник_Ошибки_Общие</Name>
+				<Code/>
+				<Description>Общие доп. свойства справочника "Ошибки"</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="39c73c09-8445-4cd6-b38d-460f778b300e">
+		<Name>Справочник_Подсистемы</Name>
+		<Code/>
+		<Description>Доп. свойства справочника "Подсистемы"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="d5b59658-539d-4d61-a075-f88f92a732df">
+				<Name>Справочник_Подсистемы_Общие</Name>
+				<Code/>
+				<Description>Общие доп. свойства справочника "Подсистемы"</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="77bca0a0-21c2-45c5-966c-d9ba4402d353">
+		<Name>Справочник_РазделыПроекта</Name>
+		<Code/>
+		<Description>Доп. свойства справочника "Разделы проекта"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="0c881b98-175c-4669-9a96-49312dd474dd">
+				<Name>Справочник_РазделыПроекта_Общие</Name>
+				<Code/>
+				<Description>Общие доп. свойства справочника "Разделы проекта"</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="8702c6fa-da7f-4180-958f-1f46f7b063cd">
+		<Name>Справочник_ТехническиеПроекты</Name>
+		<Code/>
+		<Description>Доп. свойства справочника "Технические проекты"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="44194aff-59dc-4665-970e-85b46af9f943">
+				<Name>Справочник_ТехническиеПроекты_Общие</Name>
+				<Code/>
+				<Description>Общие доп. свойства справочника "Технические проекты"</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="f7de4911-cffc-4f5a-96ba-28369b41693f">
+		<Name>Справочник_ФормыОбъектовМетаданных</Name>
+		<Code/>
+		<Description>Доп. свойства справочника "Формы объектов метаданных"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="d8c3e106-59dd-42e1-9b41-461c72ea69c4">
+				<Name>Справочник_ФормыОбъектовМетаданных_Общие</Name>
+				<Code/>
+				<Description>Общие доп. свойства справочника "Формы объектов метаданных"</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="b7c1fa87-3888-41d5-8f73-c3610d505f73">
+		<Name>Справочник_ЦелевыеЗадачи</Name>
+		<Code/>
+		<Description>Доп. свойства справочника "Целевые задачи"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="131eaeea-5ff5-488c-9242-81b77f63afe1">
+				<Name>Справочник_ЦелевыеЗадачи_Общие</Name>
+				<Code/>
+				<Description>Общие доп. свойства справочника "Целевые задачи"</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="51926ce3-afce-4b52-870a-0c160ae145d3">
+		<Name>Справочник_ВерсииПроекта</Name>
+		<Code/>
+		<Description>Доп. свойства справочника"Версии проекта"</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="c1b48f1e-43fe-443e-96f1-7dfa121e3b97">
+				<Name>Справочник_ВерсииПроекта_Общие</Name>
+				<Code/>
+				<Description>Общие доп. свойства справочника "Версии проекта"</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="b45938c9-9750-4258-bc5b-eb0b52b8d30b">
+		<Name>Справочник_ОбщиеЗадачи</Name>
+		<Code/>
+		<Description>Доп. свойства справочника "Общие задачи"</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e6dbe0a3-e292-4da2-b620-7604cc4e6d50">
+		<Name>Справочник_Проекты</Name>
+		<Code/>
+		<Description>Доп. свойства справочника "Проекты"</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="187db5e2-1814-43ab-a1d9-3c22702adf20">
+		<Name>Справочник_РазделыОбщихЗадач</Name>
+		<Code/>
+		<Description>Доп. свойства справочника "Разделы общих задач"</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4b1f6bdf-16e9-480e-8012-6474f53e56ac">
+		<Name>УдалитьСправочник_ПапкиФайлов</Name>
+		<Code/>
+		<Description>Папка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="09343521-4f35-4e03-97e0-96ee8bf911c6">
+		<Name>УдалитьСправочник_Пользователи</Name>
+		<Code/>
+		<Description>Пользователи</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d1ebab06-17c2-4483-a476-1e2e90c32449">
+		<Name>Справочник_СтандартыРазработки</Name>
+		<Code/>
+		<Description>СтандартыРазработки</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="00e33f58-9a02-471c-968b-22cb087ac0f8">
+		<Name>УдалитьСправочник_Файлы</Name>
+		<Code/>
+		<Description>Файл</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="83ae976a-a0bf-469f-93e3-b25e6660fbcb">
+		<Name>Справочник_ФункцииМеханизмов</Name>
+		<Code/>
+		<Description>Функции механизмов</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

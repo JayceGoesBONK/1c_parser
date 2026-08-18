@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Настройка аутентификации через JWT-токены</v8:content>
+		</v8:item>
+	</Title>
+	<Width>81</Width>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ПрименитьВнесенныеНастройки" id="18">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ПрименитьВнесенныеНастройки</CommandName>
+				<ExtendedTooltip name="ПрименитьВнесенныеНастройкиРасширеннаяПодсказка" id="19"/>
+			</Button>
+			<Button name="ФормаОтмена" id="20">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Cancel</CommandName>
+				<ExtendedTooltip name="ФормаОтменаРасширеннаяПодсказка" id="21"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="Пояснение1" id="6">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<TextColor>style:ПоясняющийТекст</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>1. Требуется использовать платформу 1С:Предприятие 8.3.21 и выше.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Пояснение1КонтекстноеМеню" id="7"/>
+			<ExtendedTooltip name="Пояснение1РасширеннаяПодсказка" id="8"/>
+		</LabelDecoration>
+		<LabelDecoration name="Пояснение2" id="25">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<TextColor>style:ПоясняющийТекст</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>2. В базе 1С:Документооборот нужно установить флаг "Аутентификация токеном доступа" в настройках тех пользователей, кто будет использовать аутентификацию через JWT-токены.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Пояснение2КонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="Пояснение2РасширеннаяПодсказка" id="27"/>
+		</LabelDecoration>
+		<LabelDecoration name="Пояснение3" id="22">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<TextColor>style:ПоясняющийТекст</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>3. Выберите по какому полю будет выполняться сопоставление пользователей интегрированной системы с пользователями 1С:Документооборот (данное поле должно быть заполнено в свойствах пользователя, и должно совпадать как на стороне 1С:Документооборот, так и на стороне интегрированной системы).</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Пояснение3КонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="Пояснение3РасширеннаяПодсказка" id="24"/>
+		</LabelDecoration>
+		<RadioButtonField name="КлючСопоставленияПользователей1СДокументооборот" id="9">
+			<DataPath>КлючСопоставленияПользователей1СДокументооборот</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<RadioButtonType>Tumbler</RadioButtonType>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Имя пользователя ИБ</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xr:DesignTimeRef">Enum.КлючиСопоставленияПользователей1СДокументооборот.EnumValue.ИмяПользователяИБ</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Пользователь ОС</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xr:DesignTimeRef">Enum.КлючиСопоставленияПользователей1СДокументооборот.EnumValue.ПользовательОС</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="КлючСопоставленияПользователей1СДокументооборотКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="КлючСопоставленияПользователей1СДокументооборотРасширеннаяПодсказка" id="11"/>
+			<Events>
+				<Event name="OnChange">КлючСопоставленияПользователей1СДокументооборотПриИзменении</Event>
+			</Events>
+		</RadioButtonField>
+		<LabelDecoration name="Пояснение4" id="31">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<TextColor>style:ПоясняющийТекст</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>4. Укажите ключ, который будет использоваться для подписи JWT-токенов.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Пояснение4КонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="Пояснение4РасширеннаяПодсказка" id="33"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаКлюч" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа ключ</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКлючРасширеннаяПодсказка" id="38"/>
+			<ChildItems>
+				<CheckBoxField name="СгенерироватьНовыйКлючАвтоматически" id="34">
+					<DataPath>СгенерироватьНовыйКлючАвтоматически</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СгенерироватьНовыйКлючАвтоматическиКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="СгенерироватьНовыйКлючАвтоматическиРасширеннаяПодсказка" id="36"/>
+					<Events>
+						<Event name="OnChange">СгенерироватьНовыйКлючАвтоматическиПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="КлючПодписиТокенаДоступа1СДокументооборот" id="28">
+					<DataPath>КлючПодписиТокенаДоступа1СДокументооборот</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="КлючПодписиТокенаДоступа1СДокументооборотКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="КлючПодписиТокенаДоступа1СДокументооборотРасширеннаяПодсказка" id="30"/>
+					<Events>
+						<Event name="OnChange">КлючПодписиТокенаДоступа1СДокументооборотПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Пояснение5" id="12">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<TextColor>style:ПоясняющийТекст</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>5. Сгенерируйте описание веб-сервиса 1С:Документооборот.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Пояснение5КонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="Пояснение5РасширеннаяПодсказка" id="14"/>
+		</LabelDecoration>
+		<Button name="СгенерироватьОписание" id="1">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.СгенерироватьОписание</CommandName>
+			<ExtendedTooltip name="СгенерироватьОписаниеРасширеннаяПодсказка" id="2"/>
+		</Button>
+		<TextDocumentField name="ОписаниеПубликации" id="3">
+			<DataPath>ОписаниеПубликации</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<TitleLocation>None</TitleLocation>
+			<Height>12</Height>
+			<ContextMenu name="ОписаниеПубликацииКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="ОписаниеПубликацииРасширеннаяПодсказка" id="5"/>
+		</TextDocumentField>
+		<LabelDecoration name="Пояснение6" id="15">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<TextColor>style:ПоясняющийТекст</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>6. Перенесите данное описание в файл публикации базы 1С:Документооборот "default.vrd" и перезагрузите веб-сервер.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Пояснение6КонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="Пояснение6РасширеннаяПодсказка" id="17"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ИнтеграцияС1СДокументооборотБазоваяФункциональность</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ОписаниеПубликации" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание публикации веб-сервиса 1С:Документооборот</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КлючСопоставленияПользователей1СДокументооборот" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключевой реквизит для сопоставления пользователей при авторизации в 1С:Документооборот</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.КлючиСопоставленияПользователей1СДокументооборот</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КлючПодписиТокенаДоступа1СДокументооборот" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ подписи токена доступа к веб-сервису 1С:Документооборот</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СгенерироватьНовыйКлючАвтоматически" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать новый ключ автоматически</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СгенерироватьОписание" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать описание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать описание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СгенерироватьОписание</Action>
+		</Command>
+		<Command name="ПрименитьВнесенныеНастройки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить внесенные настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрименитьВнесенныеНастройки</Action>
+		</Command>
+	</Commands>
+</Form>

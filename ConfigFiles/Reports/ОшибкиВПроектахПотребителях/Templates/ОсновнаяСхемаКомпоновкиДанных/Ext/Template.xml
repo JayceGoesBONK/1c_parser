@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Запрос</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ошибка</dataPath>
+			<field>Ошибка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Код</dataPath>
+			<field>Код</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Автор</dataPath>
+			<field>Автор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВерсияИсправления</dataPath>
+			<field>ВерсияИсправления</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаСоздания</dataPath>
+			<field>ДатаСоздания</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СрочностьИсправления</dataPath>
+			<field>СрочностьИсправления</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Статус</dataPath>
+			<field>Статус</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОшибкаЗарегистрированаПоИнформацииОтВнешнихИсточников</dataPath>
+			<field>ОшибкаЗарегистрированаПоИнформацииОтВнешнихИсточников</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проект</dataPath>
+			<field>Проект</field>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СборкаИсправления</dataPath>
+			<field>СборкаИсправления</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СборкаИсправленияВПроектеПотребителе</dataPath>
+			<field>СборкаИсправленияВПроектеПотребителе</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СборкаПроектаПотребителя</dataPath>
+			<field>СборкаПроектаПотребителя</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	СборкиВключаемыхПроектов.Ссылка КАК СборкаПроектаПотребителя,
+	СборкиВключаемыхПроектов.Ссылка.Владелец КАК ПроектПотребитель
+ПОМЕСТИТЬ ВТСборкиПроектовПотребителей
+ИЗ
+	Справочник.СборкиВерсии.СборкиВключаемыхПроектов КАК СборкиВключаемыхПроектов
+ГДЕ
+	СборкиВключаемыхПроектов.Сборка = &amp;Сборка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ПроектыИспользуемыеРазделыВключаемыхПроектов.РазделПроекта КАК Раздел,
+	ПроектыИспользуемыеРазделыВключаемыхПроектов.Ссылка КАК ПроектПотребитель
+ПОМЕСТИТЬ ВТИспользуемыеРазделы
+ИЗ
+	Справочник.Проекты.ИспользуемыеРазделыВключаемыхПроектов КАК ПроектыИспользуемыеРазделыВключаемыхПроектов
+ГДЕ
+	ПроектыИспользуемыеРазделыВключаемыхПроектов.РазделПроекта.Владелец = &amp;Проект
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	КОЛИЧЕСТВО(ИспользуемыеРазделы.Раздел) КАК КоличествоРазделов,
+	ИспользуемыеРазделы.ПроектПотребитель КАК ПроектПотребитель
+ПОМЕСТИТЬ ВТИспользованиеРазделов
+ИЗ
+	ВТИспользуемыеРазделы КАК ИспользуемыеРазделы
+
+СГРУППИРОВАТЬ ПО
+	ИспользуемыеРазделы.ПроектПотребитель
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВключаемыеПроекты.Ссылка КАК ПроектПотребитель,
+	ЕСТЬNULL(ИспользованиеРазделов.КоличествоРазделов, 0) КАК КоличествоРазделов
+ПОМЕСТИТЬ ВТКоличествоРазделовПроектов
+ИЗ
+	Справочник.Проекты.ВключаемыеПроекты КАК ВключаемыеПроекты
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТИспользованиеРазделов КАК ИспользованиеРазделов
+		ПО ВключаемыеПроекты.Ссылка = ИспользованиеРазделов.ПроектПотребитель
+ГДЕ
+	ВключаемыеПроекты.Проект = &amp;Проект
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Ошибки.Ссылка КАК Ошибка,
+	СборкиПроектовПотребителей.ПроектПотребитель КАК Проект,
+	СборкиПроектовПотребителей.СборкаПроектаПотребителя КАК СборкаПроектаПотребителя,
+	Ошибки.Код КАК Код,
+	Ошибки.ДатаСоздания КАК ДатаСоздания,
+	Ошибки.Автор КАК Автор,
+	Ошибки.Статус КАК Статус,
+	Ошибки.СрочностьИсправления КАК СрочностьИсправления,
+	Ошибки.ОшибкаЗарегистрированаПоИнформацииОтВнешнихИсточников КАК ОшибкаЗарегистрированаПоИнформацииОтВнешнихИсточников,
+	Ошибки.ВерсияИсправления КАК ВерсияИсправления,
+	Ошибки.ДатаИсправления КАК ДатаИсправления
+ПОМЕСТИТЬ ВТОшибки
+ИЗ
+	Справочник.Ошибки КАК Ошибки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.СборкиВерсии КАК СборкиВерсии
+		ПО (СборкиВерсии.Ссылка = &amp;Сборка)
+			И (СборкиВерсии.ДатаСборки &gt;= Ошибки.СборкаОбнаружения.ДатаСборки)
+			И ((СборкиВерсии.ДатаСборки &lt; Ошибки.ДатаИсправления ИЛИ СборкиВерсии.Владелец.ПорядковыйНомер &lt; Ошибки.ВерсияИсправления.ПорядковыйНомер)
+				ИЛИ Ошибки.ДатаИсправления = ДАТАВРЕМЯ(1, 1, 1)
+				ИЛИ Ошибки.ВерсияИсправления = ЗНАЧЕНИЕ(Справочник.ВерсииПроекта.ПустаяСсылка))
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТСборкиПроектовПотребителей КАК СборкиПроектовПотребителей
+		ПО (ИСТИНА)
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТИспользуемыеРазделы КАК ИспользуемыеРазделы
+		ПО Ошибки.РазделПроекта = ИспользуемыеРазделы.Раздел
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТКоличествоРазделовПроектов КАК КоличествоРазделовПроектов
+		ПО (КоличествоРазделовПроектов.КоличествоРазделов &gt; 0)
+ГДЕ
+	Ошибки.Владелец = &amp;Проект
+	И НЕ Ошибки.ПометкаУдаления
+
+ОБЪЕДИНИТЬ
+
+ВЫБРАТЬ
+	Ошибки.Ссылка,
+	СборкиПроектовПотребителей.ПроектПотребитель,
+	СборкиПроектовПотребителей.СборкаПроектаПотребителя,
+	Ошибки.Код,
+	Ошибки.ДатаСоздания,
+	Ошибки.Автор,
+	Ошибки.Статус,
+	Ошибки.СрочностьИсправления,
+	Ошибки.ОшибкаЗарегистрированаПоИнформацииОтВнешнихИсточников,
+	Ошибки.ВерсияИсправления,
+	Ошибки.ДатаИсправления
+ИЗ
+	Справочник.Ошибки КАК Ошибки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.СборкиВерсии КАК СборкиВерсии
+		ПО (СборкиВерсии.Ссылка = &amp;Сборка)
+			И (СборкиВерсии.ДатаСборки &gt;= Ошибки.СборкаОбнаружения.ДатаСборки)
+			И ((СборкиВерсии.ДатаСборки &lt; Ошибки.ДатаИсправления ИЛИ СборкиВерсии.Владелец.ПорядковыйНомер &lt; Ошибки.ВерсияИсправления.ПорядковыйНомер)
+				ИЛИ Ошибки.ДатаИсправления = ДАТАВРЕМЯ(1, 1, 1)
+				ИЛИ Ошибки.ВерсияИсправления = ЗНАЧЕНИЕ(Справочник.ВерсииПроекта.ПустаяСсылка))
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТСборкиПроектовПотребителей КАК СборкиПроектовПотребителей
+		ПО (ИСТИНА)
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТКоличествоРазделовПроектов КАК КоличествоРазделовПроектов
+		ПО (КоличествоРазделовПроектов.КоличествоРазделов = 0)
+ГДЕ
+	Ошибки.Владелец = &amp;Проект
+	И НЕ Ошибки.ПометкаУдаления
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ЗапросПоДатамСборок.Ошибка КАК Ошибка,
+	МИНИМУМ(СборкиВерсии.Ссылка) КАК Сборка
+ПОМЕСТИТЬ ВТОшибкиИСборки
+ИЗ
+	(ВЫБРАТЬ
+		Ошибки.Ошибка КАК Ошибка,
+		СборкиВключаемыхПроектов.Сборка.Владелец КАК Версия,
+		МИНИМУМ(СборкиВключаемыхПроектов.Сборка.ДатаСборки) КАК ДатаСборки
+	ИЗ
+		ВТОшибки КАК Ошибки
+			ЛЕВОЕ СОЕДИНЕНИЕ Справочник.СборкиВерсии.СборкиВключаемыхПроектов КАК СборкиВключаемыхПроектов
+			ПО Ошибки.ВерсияИсправления = СборкиВключаемыхПроектов.Сборка.Владелец
+				И Ошибки.ДатаИсправления &lt; СборкиВключаемыхПроектов.Сборка.ДатаСборки
+				И Ошибки.ДатаИсправления &lt; СборкиВключаемыхПроектов.Ссылка.ДатаСборки
+	ГДЕ
+		Ошибки.ДатаИсправления &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+	
+	СГРУППИРОВАТЬ ПО
+		Ошибки.Ошибка,
+		СборкиВключаемыхПроектов.Сборка.Владелец) КАК ЗапросПоДатамСборок
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.СборкиВерсии КАК СборкиВерсии
+		ПО ЗапросПоДатамСборок.Версия = СборкиВерсии.Владелец
+			И ЗапросПоДатамСборок.ДатаСборки = СборкиВерсии.ДатаСборки
+
+СГРУППИРОВАТЬ ПО
+	ЗапросПоДатамСборок.Ошибка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ЗапросПоДатамСборок.Ошибка КАК Ошибка,
+	МИНИМУМ(СборкиВерсии.Ссылка) КАК Сборка
+ПОМЕСТИТЬ ВТОшибкиИСборкиПотребителя
+ИЗ
+	(ВЫБРАТЬ
+		Ошибки.Ошибка КАК Ошибка,
+		СборкиВключаемойВерсии.Ссылка.Владелец КАК Версия,
+		МИНИМУМ(СборкиВключаемойВерсии.Ссылка.ДатаСборки) КАК ДатаСборки
+	ИЗ
+		ВТОшибки КАК Ошибки
+			ЛЕВОЕ СОЕДИНЕНИЕ Справочник.СборкиВерсии.СборкиВключаемыхПроектов КАК СборкиВключаемойВерсии
+			ПО Ошибки.ВерсияИсправления = СборкиВключаемойВерсии.Сборка.Владелец
+				И Ошибки.ДатаИсправления &lt; СборкиВключаемойВерсии.Сборка.ДатаСборки
+				И Ошибки.ДатаИсправления &lt; СборкиВключаемойВерсии.Ссылка.ДатаСборки
+	ГДЕ
+		Ошибки.ДатаИсправления &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+	
+	СГРУППИРОВАТЬ ПО
+		Ошибки.Ошибка,
+		СборкиВключаемойВерсии.Ссылка.Владелец) КАК ЗапросПоДатамСборок
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.СборкиВерсии КАК СборкиВерсии
+		ПО ЗапросПоДатамСборок.Версия = СборкиВерсии.Владелец
+			И ЗапросПоДатамСборок.ДатаСборки = СборкиВерсии.ДатаСборки
+
+СГРУППИРОВАТЬ ПО
+	ЗапросПоДатамСборок.Ошибка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Ошибки.Ошибка КАК Ошибка,
+	Ошибки.Проект КАК Проект,
+	Ошибки.СборкаПроектаПотребителя КАК СборкаПроектаПотребителя,
+	Ошибки.Код КАК Код,
+	Ошибки.ДатаСоздания КАК ДатаСоздания,
+	Ошибки.Автор КАК Автор,
+	Ошибки.Статус КАК Статус,
+	Ошибки.СрочностьИсправления КАК СрочностьИсправления,
+	Ошибки.ОшибкаЗарегистрированаПоИнформацииОтВнешнихИсточников КАК ОшибкаЗарегистрированаПоИнформацииОтВнешнихИсточников,
+	Ошибки.ВерсияИсправления КАК ВерсияИсправления,
+	ОшибкиИСборки.Сборка КАК СборкаИсправления,
+	ОшибкиИСборкиПотребителя.Сборка КАК СборкаИсправленияВПроектеПотребителе
+ИЗ
+	ВТОшибки КАК Ошибки
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТОшибкиИСборки КАК ОшибкиИСборки
+		ПО Ошибки.Ошибка = ОшибкиИСборки.Ошибка
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТОшибкиИСборкиПотребителя КАК ОшибкиИСборкиПотребителя
+		ПО Ошибки.Ошибка = ОшибкиИСборкиПотребителя.Ошибка</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ПроектПотребитель</dataPath>
+		<expression>Проект</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Проект-потребитель</v8:content>
+			</v8:item>
+		</title>
+		<presentationExpression>Представление(Проект) + "исправлено: " + Представление(СборкаИсправленияВПроектеПотребителе)</presentationExpression>
+	</calculatedField>
+	<parameter>
+		<name>Проект</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Проект-библиотека</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Проекты</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>Сборка</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сборка</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.СборкиВерсии</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<inputParameters>
+			<dcscor:item>
+				<dcscor:parameter>СвязиПараметровВыбора</dcscor:parameter>
+				<dcscor:value xsi:type="dcscor:ChoiceParameterLinks">
+					<dcscor:item>
+						<dcscor:choiceParameter>Отбор.Владелец</dcscor:choiceParameter>
+						<dcscor:value>ПараметрыДанных.Версия</dcscor:value>
+						<dcscor:mode xmlns:d7p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d7p1:LinkedValueChangeMode">Clear</dcscor:mode>
+					</dcscor:item>
+				</dcscor:value>
+			</dcscor:item>
+		</inputParameters>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ПроектыПотребителиВключающиеОшибкиБиблиотекГруппировкаПоПроектам</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Проекты-потребители, включающие ошибки библиотеки (группировка по проектам)</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Ошибка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Код</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Статус</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВерсияИсправления</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СборкаИсправления</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СрочностьИсправления</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаСоздания</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Автор</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+					<dcsset:comparisonType>NotInList</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыОшибок.НеЗарегистрирована</dcsset:right>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыОшибок.Отозвана</dcsset:right>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>c2d3e8be-d79d-43fb-af9d-ca97b9c4ed0c</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СрочностьИсправления</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>0b4f75d8-257c-4001-b618-2d0b3716ce1c</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ОшибкаЗарегистрированаПоИнформацииОтВнешнихИсточников</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>5bc7bc7a-f10e-4bbf-872a-3e9dbc1c904e</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Проект</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>728806a2-ebad-43c5-9a0d-0ad12faa0637</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Сборка</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>28764ad8-4647-4a39-81fb-1ce91bba4a9f</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Ошибка.Код</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ПроектПотребитель</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+	<settingsVariant>
+		<dcsset:name>ПроектыПотребителиВключающиеОшибкиБиблиотекГруппировкаПоОшибкам</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Проекты-потребители включающие ошибки библиотеки (группировка по ошибкам)</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Ошибка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Код</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Статус</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВерсияИсправления</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СборкаИсправления</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СрочностьИсправления</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаСоздания</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Автор</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+					<dcsset:comparisonType>NotInList</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыОшибок.НеЗарегистрирована</dcsset:right>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыОшибок.Отозвана</dcsset:right>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>c2d3e8be-d79d-43fb-af9d-ca97b9c4ed0c</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СрочностьИсправления</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>0b4f75d8-257c-4001-b618-2d0b3716ce1c</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ОшибкаЗарегистрированаПоИнформацииОтВнешнихИсточников</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>5bc7bc7a-f10e-4bbf-872a-3e9dbc1c904e</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Проект</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>728806a2-ebad-43c5-9a0d-0ad12faa0637</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Сборка</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>de6bb9a3-c3eb-4889-b1ea-b4bc924539f5</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Ошибка.Код</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ПроектПотребитель</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.3/config/merge/settings" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" platformVersion="8.3.8">
+	<Parameters>
+		<ConfigurationsRelation>ConfigurationsNotRelated</ConfigurationsRelation>
+		<AllowMainConfigurationObjectDeletion>false</AllowMainConfigurationObjectDeletion>
+		<CopyObjectsMode>false</CopyObjectsMode>
+	</Parameters>
+	<Objects>
+		<Configuration>
+			<Properties>
+				<Property name="Имя">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Синоним">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Комментарий">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ОсновнойРежимЗапуска">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="НазначенияИспользования">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ВариантВстроенногоЯзыка">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="МодульВнешнегоСоединения">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ДополнительныеСловариПолнотекстовогоПоиска">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ТребуемыеРазрешенияМобильногоПриложения">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ОсновныеРоли">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Поставщик">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="АдресКаталогаОбновлений">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="МодульУправляемогоПриложения">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="МодульСеанса">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="МодульОбычногоПриложения">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ИспользоватьУправляемыеФормыВОбычномПриложении">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ИспользоватьОбычныеФормыВУправляемомПриложении">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ХранилищеОбщихНастроек">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ХранилищеПользовательскихНастроекОтчетов">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ХранилищеВариантовОтчетов">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ХранилищеНастроекДанныхФорм">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ХранилищеПользовательскихНастроекДинамическихСписков">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ОсновнаяФормаОтчета">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ОсновнаяФормаВариантаОтчета">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ОсновнаяФормаНастроекОтчета">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ОсновнаяФормаНастроекДинамическогоСписка">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ОсновнаяФормаПоиска">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="КомандныйИнтерфейс">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="РабочаяОбластьНачальнойСтраницы">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="КомандныйИнтерфейсОсновногоРаздела">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="КартинкаОсновногоРаздела">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ОсновнойСтиль">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ОсновнойЯзык">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="КраткаяИнформация">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ПодробнаяИнформация">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Логотип">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Заставка">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="АвторскиеПрава">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="АдресИнформацииОПоставщике">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="АдресИнформацииОКонфигурации">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ИнтерфейсКлиентскогоПриложения">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="ВключатьСправкуВСодержание">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="Справка">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="РежимУправленияБлокировкойДанных">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="РежимИспользованияСинхронныхВызововРасширенийПлатформыИВнешнихКомпонент">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="РежимАвтонумерацииОбъектов">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="РежимИспользованияМодальности">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="РежимСовместимостиИнтерфейса">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+				<Property name="РежимСовместимости">
+					<MergeRule>DoNotMerge</MergeRule>
+				</Property>
+			</Properties>
+		</Configuration>
+	</Objects>
+</Settings>

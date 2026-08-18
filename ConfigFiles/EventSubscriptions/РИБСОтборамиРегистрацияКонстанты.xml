@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<EventSubscription uuid="7ba3f53d-2548-4abc-912f-7e2f30818cd5">
+		<Properties>
+			<Name>РИБСОтборамиРегистрацияКонстанты</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>РИБСОтборами регистрация константы</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Source>
+				<v8:Type>cfg:ConstantValueManager.ВидДеятельностиДляРаботыСОшибкамиАвтотестирования</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.МаксимальныйРазмерФайла</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ПользовательСтандартногоИнтерфейсаOData</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.СписокЗапрещенныхРасширений</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьГруппыВнешнихПользователей</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ТипПодписиКриптографииПоУмолчанию</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ОсновнойЯзык</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ВидДеятельностиДляРаботыСОшибками</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.АдресаСерверовМетокВремени</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ДобавлятьМеткиВремениАвтоматически</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ОграничиватьДоступНаУровнеЗаписей</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ОграничиватьДоступНаУровнеЗаписейУниверсально</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьШифрование</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьПланирование</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьЭлектронныеПодписи</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.СписокРасширенийФайловOpenDocumentОбластиДанных</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьВнешнихПользователей</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.МаксимальныйРазмерФайлаОбластиДанных</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьДополнительныеОтчетыИОбработки</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьДополнительныеРеквизитыИСведения</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ОсновнойКалендарь</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ОтложенноеОбновлениеВГлавномУзлеЗавершеноУспешно</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ВидДеятельностиДляРаботыСОшибкамиАудита</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.НаименованиеКорневойПапкиФайлов1СДокументооборот</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.СписокРасширенийФайловOpenDocument</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьГруппыПользователей</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьУчетВремени</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьСогласованиеРесурсов</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.СписокРасширенийТекстовыхФайлов</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ПризнакиПолученияИнформацииОбОшибкахИзВнешнихИсточников</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.УсовершенствоватьПодписиСДаты</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.СписокЗапрещенныхРасширенийОбластиДанных</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ЗапрещатьЗагрузкуФайловПоРасширению</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ШрифтФорматированногоТекста</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.МаксимальныйРазмерФайлаДляПередачиВ1СДокументооборот</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ОсновнойВидДеятельности</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.РазрешенныеНеаккредитованныеУЦ</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.НастройкиКолонтитулов</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.УсовершенствоватьПодписиАвтоматически</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьУдалениеПомеченныхОбъектов</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.УчетнаяЗаписьДляВосстановленияПароля</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьНесколькоПроизводственныхКалендарей</v8:Type>
+			</Source>
+			<Event>BeforeWrite</Event>
+			<Handler>CommonModule.ОбменДаннымиСобытияСППР.ОбменДаннымиРИБСОтборамиПередЗаписьюКонстанты</Handler>
+		</Properties>
+	</EventSubscription>
+</MetaDataObject>

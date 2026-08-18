@@ -1,0 +1,12 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="__STYLE__"></link><meta name="GENERATOR" content="MSHTML 11.00.10570.1001"></meta></head><body><pre><font color="#008000">// ВНИМАНИЕ!
+// Длительные ключевые операции следует встраивать (подробнее в справке):
+// - от самого начала до самого конца замеряемых процедур и функций;
+// - содержащий Возврат или длинный замеряемый код следует выносить в отдельные функции.
+
+// Пример для конфигураций, использующих Библиотеку стандартных подсистем.</font>
+<font color="#0000ff">ИмяКлючевойОперации</font><font color="#ff0000"> = </font><font color="#0000ff">СтрШаблон</font><font color="#ff0000">(</font>
+	"%ИмяКлючевойОперации%"<font color="#ff0000">,</font> <font color="#0000ff">...</font><font color="#ff0000">);</font>
+<font color="#0000ff">Замер</font> <font color="#ff0000">=</font> <font color="#0000ff">ОценкаПроизводительности</font><font color="#ff0000">.</font><font color="#0000ff">НачатьЗамерДлительнойОперации</font><font color="#ff0000">(</font><font color="#0000ff">ИмяКлючевойОперации</font><font color="#ff0000">);</font>
+<font color="#008000">// &lt;-- Здесь - замеряемый фрагмент кода.</font>
+<font color="#0000ff">ОценкаПроизводительности</font><font color="#ff0000">.</font><font color="#0000ff">ЗакончитьЗамерДлительнойОперации</font><font color="#ff0000">(</font><font color="#0000ff">Замер</font><font color="#ff0000">, </font><font color="#ff0000"><font color="#0000ff">КоличествоОбработанныхДанных</font>);</font>
+</pre></body></html>

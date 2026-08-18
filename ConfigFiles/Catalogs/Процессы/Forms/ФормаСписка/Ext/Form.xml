@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаБыстрыеОтборы" id="89">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа быстрые отборы</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаБыстрыеОтборыРасширеннаяПодсказка" id="90"/>
+			<ChildItems>
+				<InputField name="ОтборРазделПроекта" id="91">
+					<DataPath>РазделПроекта</DataPath>
+					<Width>28</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<ContextMenu name="ОтборРазделПроектаКонтекстноеМеню" id="92"/>
+					<ExtendedTooltip name="ОтборРазделПроектаРасширеннаяПодсказка" id="93"/>
+					<Events>
+						<Event name="OnChange">ОтборРазделПроектаПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Список" id="1">
+			<Representation>Tree</Representation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2">
+				<ChildItems>
+					<Button name="СписокКонтекстноеМенюИзменитьВыделенные" id="37">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ИзменитьВыделенные</CommandName>
+						<ExtendedTooltip name="СписокКонтекстноеМенюИзменитьВыделенныеExtendedTooltip" id="40"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<ChildItems>
+					<ButtonGroup name="ГруппаКомандыФормы" id="8">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа команды формы</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа команды формы</v8:content>
+							</v8:item>
+						</ToolTip>
+						<CommandSource>FormCommandPanelGlobalCommands</CommandSource>
+						<ExtendedTooltip name="ГруппаКомандыФормыExtendedTooltip" id="41"/>
+					</ButtonGroup>
+					<Button name="СписокОбщаяКомандаПеренумероватьЭлементыТекущегоУровня" id="24">
+						<Type>CommandBarButton</Type>
+						<CommandName>CommonCommand.ПеренумероватьЭлементыТекущегоУровня</CommandName>
+						<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="СписокОбщаяКомандаПеренумероватьЭлементыТекущегоУровняExtendedTooltip" id="42"/>
+					</Button>
+					<Button name="СписокОбщаяКомандаПеренумероватьЭлементыТекущегоУровняРекурсивно" id="105">
+						<Type>CommandBarButton</Type>
+						<CommandName>CommonCommand.ПеренумероватьЭлементыТекущегоУровняРекурсивно</CommandName>
+						<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="СписокОбщаяКомандаПеренумероватьЭлементыТекущегоУровняРекурсивноРасширеннаяПодсказка" id="106"/>
+					</Button>
+					<Button name="СписокОбщаяКомандаПеренумероватьДочерниеОбъекты" id="25">
+						<Type>CommandBarButton</Type>
+						<CommandName>CommonCommand.ПеренумероватьДочерниеОбъекты</CommandName>
+						<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="СписокОбщаяКомандаПеренумероватьДочерниеОбъектыExtendedTooltip" id="43"/>
+					</Button>
+					<Button name="СписокОбщаяКомандаПеренумероватьДочерниеОбъектыРекурсивно" id="103">
+						<Type>CommandBarButton</Type>
+						<CommandName>CommonCommand.ПеренумероватьДочерниеОбъектыРекурсивно</CommandName>
+						<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="СписокОбщаяКомандаПеренумероватьДочерниеОбъектыРекурсивноРасширеннаяПодсказка" id="104"/>
+					</Button>
+					<Button name="СписокСправка" id="26">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.StandardCommand.Help</CommandName>
+						<ExtendedTooltip name="СписокСправкаExtendedTooltip" id="44"/>
+					</Button>
+					<Button name="СписокИзменитьФорму" id="27">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="СписокИзменитьФормуExtendedTooltip" id="46"/>
+					</Button>
+					<Button name="СписокОтчетПроцессыОтчетПоПроцессу" id="32">
+						<Type>CommandBarButton</Type>
+						<CommandName>Report.Процессы.Command.ОтчетПоПроцессу</CommandName>
+						<DataPath>~Items.Список.CurrentData.Ref</DataPath>
+						<ExtendedTooltip name="СписокОтчетПроцессыОтчетПоПроцессуExtendedTooltip" id="47"/>
+					</Button>
+					<Button name="ФормаИзменитьВыделенные" id="36">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ИзменитьВыделенные</CommandName>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаИзменитьВыделенныеExtendedTooltip" id="48"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="49"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="94">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="95"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="96"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="97">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="98"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="99"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="100">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="101"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="102"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Наименование" id="4">
+					<DataPath>Список.Наименование</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="52"/>
+				</LabelField>
+				<LabelField name="СостояниеКонтроля" id="30">
+					<DataPath>Список.СостояниеКонтроля</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние контроля</v8:content>
+						</v8:item>
+					</Title>
+					<Width>8</Width>
+					<ContextMenu name="СостояниеКонтроляКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="СостояниеКонтроляРасширеннаяПодсказка" id="53"/>
+				</LabelField>
+				<LabelField name="Код" id="6">
+					<DataPath>Список.Код</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="КодКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="КодExtendedTooltip" id="54"/>
+				</LabelField>
+				<InputField name="ПолныйКод" id="13">
+					<DataPath>Список.ПолныйКод</DataPath>
+					<Width>8</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ПолныйКодКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ПолныйКодExtendedTooltip" id="55"/>
+				</InputField>
+				<LabelField name="Описание" id="15">
+					<DataPath>Список.Описание</DataPath>
+					<AutoCellHeight>true</AutoCellHeight>
+					<Height>3</Height>
+					<ContextMenu name="ОписаниеКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="ОписаниеExtendedTooltip" id="56"/>
+				</LabelField>
+				<LabelField name="Ответственный" id="28">
+					<DataPath>Список.Ответственный</DataPath>
+					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="57"/>
+				</LabelField>
+				<LabelField name="КогдаСтартует" id="17">
+					<DataPath>Список.КогдаСтартует</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="КогдаСтартуетКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="КогдаСтартуетExtendedTooltip" id="58"/>
+				</LabelField>
+				<LabelField name="ЧемЗавершается" id="19">
+					<DataPath>Список.ЧемЗавершается</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="ЧемЗавершаетсяКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ЧемЗавершаетсяExtendedTooltip" id="59"/>
+				</LabelField>
+				<LabelField name="Заметки" id="21">
+					<DataPath>Список.Заметки</DataPath>
+					<AutoCellHeight>true</AutoCellHeight>
+					<Height>3</Height>
+					<ContextMenu name="ЗаметкиКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ЗаметкиExtendedTooltip" id="60"/>
+				</LabelField>
+				<LabelField name="Владелец" id="38">
+					<DataPath>~Список.Owner</DataPath>
+					<ContextMenu name="ВладелецКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ВладелецExtendedTooltip" id="61"/>
+				</LabelField>
+				<LabelField name="РазделПроекта" id="86">
+					<DataPath>Список.РазделПроекта</DataPath>
+					<ContextMenu name="РазделПроектаКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="РазделПроектаРасширеннаяПодсказка" id="88"/>
+				</LabelField>
+				<LabelField name="Ссылка" id="107">
+					<DataPath>Список.Ссылка</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="СсылкаКонтекстноеМеню" id="108"/>
+					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="109"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>~Список.DeletionMark</Field>
+				<Field>~Список.Owner</Field>
+				<Field>~Список.Ref</Field>
+				<Field>Список.ЕстьИзменения</Field>
+				<Field>Список.Ответственный</Field>
+				<Field>Список.ПолныйКод</Field>
+				<Field>Список.Ссылка</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗЛИЧНЫЕ
+	СправочникПроцессы.Ссылка КАК Ссылка,
+	СправочникПроцессы.ВерсияДанных КАК ВерсияДанных,
+	СправочникПроцессы.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникПроцессы.Предопределенный КАК Предопределенный,
+	СправочникПроцессы.Родитель КАК Родитель,
+	СправочникПроцессы.ЭтоГруппа КАК ЭтоГруппа,
+	СправочникПроцессы.Код КАК Код,
+	СправочникПроцессы.Наименование КАК Наименование,
+	ВЫРАЗИТЬ(СправочникПроцессы.Описание КАК СТРОКА(1000)) КАК Описание,
+	ВЫРАЗИТЬ(СправочникПроцессы.Заметки КАК СТРОКА(1000)) КАК Заметки,
+	СправочникПроцессы.ПолныйКод КАК ПолныйКод,
+	ВЫРАЗИТЬ(СправочникПроцессы.КогдаСтартует КАК СТРОКА(1000)) КАК КогдаСтартует,
+	ВЫРАЗИТЬ(СправочникПроцессы.ЧемЗавершается КАК СТРОКА(1000)) КАК ЧемЗавершается,
+	СправочникПроцессы.Ответственный КАК Ответственный,
+	СправочникПроцессы.Владелец КАК Владелец,
+	СправочникПроцессы.РазделПроекта КАК РазделПроекта,
+	КонтрольИзменений.СтатусКонтроля КАК СостояниеКонтроля,
+	ЕСТЬNULL(КонтрольИзменений.ДатаКонтроля &lt; ДатыИзмененияОбъектов.ДатаИзменения, ЛОЖЬ) КАК ЕстьИзменения
+ИЗ
+	Справочник.Процессы КАК СправочникПроцессы
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.КонтрольИзменений КАК КонтрольИзменений
+		ПО (КонтрольИзменений.КонтролируемыйОбъект = СправочникПроцессы.Ссылка)
+			И (КонтрольИзменений.Пользователь = &amp;ТекущийПользователь)
+			И (КонтрольИзменений.ВидОбъекта = &amp;ВидОбъекта)
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДатыИзмененияОбъектов КАК ДатыИзмененияОбъектов
+		ПО (КонтрольИзменений.КонтролируемыйОбъект = ДатыИзмененияОбъектов.КонтролируемыйОбъект)
+			И (КонтрольИзменений.ВидОбъекта = ДатыИзмененияОбъектов.ВидОбъекта)
+ГДЕ
+	(&amp;Раздел = ЗНАЧЕНИЕ(Справочник.РазделыПроекта.ПустаяСсылка)
+			ИЛИ СправочникПроцессы.РазделПроекта = &amp;Раздел
+			ИЛИ СправочникПроцессы.РазделыПроекта.Раздел = &amp;Раздел)</QueryText>
+				<MainTable>Catalog.Процессы</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ПометкаУдаления</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ПолныйКод</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТекущийПользователь" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий пользователь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РазделПроекта" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Раздел проекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.РазделыПроекта</v8:Type>
+			</Type>
+			<Save>
+				<Field>РазделПроекта</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ИзменитьВыделенные" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить выделенные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить выделенные объекты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменитьВыделенные</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="РазделПроекта">
+			<Type>
+				<v8:Type>cfg:CatalogRef.РазделыПроекта</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

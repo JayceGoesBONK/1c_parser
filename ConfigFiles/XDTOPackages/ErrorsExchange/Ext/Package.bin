@@ -1,0 +1,23 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.1c.ru/Modeling/ErrorsExchange">
+	<import namespace="http://v8.1c.ru/8.1/data/core"/>
+	<objectType name="ListOfMetadataObjects">
+		<property xmlns:d3p1="http://www.1c.ru/Modeling/ErrorsExchange" name="MetadataObject" type="d3p1:MetadataObject" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="MetadataObject">
+		<property name="Name" type="xs:string"/>
+		<property name="DependantObject" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="LocationClarification" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Comment" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="ErrorStatus">
+		<property name="Status" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Date" type="xs:dateTime" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="FileInfo">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="UUID" type="d3p1:UUID"/>
+		<property name="Name" type="xs:string"/>
+		<property name="Extension" type="xs:string"/>
+		<property name="Description" type="xs:string"/>
+		<property name="Size" type="xs:long"/>
+	</objectType>
+</package>

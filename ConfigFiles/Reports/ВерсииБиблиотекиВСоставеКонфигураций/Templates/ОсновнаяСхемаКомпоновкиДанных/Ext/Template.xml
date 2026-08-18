@@ -1,0 +1,650 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Запрос</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроектБиблиотеки</dataPath>
+			<field>ПроектБиблиотеки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект библиотеки</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПорядковыйНомерВерсииБиблиотеки</dataPath>
+			<field>ПорядковыйНомерВерсииБиблиотеки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порядковый номер версии библиотеки</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<order>true</order>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВерсияБиблиотеки</dataPath>
+			<field>ВерсияБиблиотеки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия библиотеки</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроектКонфигурации</dataPath>
+			<field>ПроектКонфигурации</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект конфигурации</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПорядковыйНомерВерсииКонфигурации</dataPath>
+			<field>ПорядковыйНомерВерсииКонфигурации</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порядковый номер версии конфигурации</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<order>true</order>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВерсияКонфигурации</dataPath>
+			<field>ВерсияКонфигурации</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия конфигурации</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаВключенияБиблиотек</dataPath>
+			<field>ДатаВключенияБиблиотек</field>
+			<useRestriction>
+				<order>true</order>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВерсияБиблиотекиВключенаВВерсиюКонфигурации</dataPath>
+			<field>ВерсияБиблиотекиВключенаВВерсиюКонфигурации</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия библиотеки включена в версию конфигурации</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<order>true</order>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВерсияПлатформыДляВерсииКонфигурации</dataPath>
+			<field>ВерсияПлатформыДляВерсииКонфигурации</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия платформы для версии конфигурации</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<order>true</order>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВерсияПлатформыДляВерсииБиблиотеки</dataPath>
+			<field>ВерсияПлатформыДляВерсииБиблиотеки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия платформы для версии библиотеки</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<order>true</order>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПрекращенияПоддержкиВерсииКонфигурации</dataPath>
+			<field>ДатаПрекращенияПоддержкиВерсииКонфигурации</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата прекращения поддержки версии конфигурации</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<order>true</order>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПлановаяДатаВыпускаВерсииКонфигурации</dataPath>
+			<field>ПлановаяДатаВыпускаВерсииКонфигурации</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Плановая дата выпуска версии конфигурации</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<order>true</order>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПлановаяДатаВыпускаВерсииБиблиотеки</dataPath>
+			<field>ПлановаяДатаВыпускаВерсииБиблиотеки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Плановая дата выпуска версии библиотеки</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<order>true</order>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПлановаяДатаВыпускаПоследнейВерсииБиблиотеки</dataPath>
+			<field>ПлановаяДатаВыпускаПоследнейВерсииБиблиотеки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Плановая дата выпуска последней версии библиотеки</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<order>true</order>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПрекращенияПоддержкиВерсииБиблиотеки</dataPath>
+			<field>ДатаПрекращенияПоддержкиВерсииБиблиотеки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата прекращения поддержки версии библиотеки</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<order>true</order>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПоследняяВерсияБиблиотеки</dataPath>
+			<field>ПоследняяВерсияБиблиотеки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последняя версия библиотеки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерПоследнейВерсииБиблиотеки</dataPath>
+			<field>НомерПоследнейВерсииБиблиотеки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер последней версии библиотеки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПубликуемыйНомерПоследнейВерсииБиблиотеки</dataPath>
+			<field>ПубликуемыйНомерПоследнейВерсииБиблиотеки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Публикуемый номер последней версии библиотеки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерВерсииКонфигурации</dataPath>
+			<field>НомерВерсииКонфигурации</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер версии конфигурации</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПубликуемыйНомерВерсииКонфигурации</dataPath>
+			<field>ПубликуемыйНомерВерсииКонфигурации</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Публикуемый номер версии конфигурации</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПубликуемыйНомерВерсииБиблиотеки</dataPath>
+			<field>ПубликуемыйНомерВерсииБиблиотеки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Публикуемый номер версии библиотеки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерВерсииБиблиотеки</dataPath>
+			<field>НомерВерсииБиблиотеки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер версии библиотеки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ответственный</dataPath>
+			<field>Ответственный</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Библиотека</dataPath>
+			<field>Библиотека</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Библиотека</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаименованиеКонфигурации</dataPath>
+			<field>НаименованиеКонфигурации</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование конфигурации</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	ПроектыВключаемыеПроекты.Ссылка КАК ПроектКонфигурации,
+	ПроектыВключаемыеПроекты.Ссылка.Ответственный КАК Ответственный,
+	ВерсииПроекта.Ссылка КАК ВерсияКонфигурации,
+	ВерсииПроекта.ПорядковыйНомер КАК ПорядковыйНомерВерсииКонфигурации,
+	ВерсииПроекта.ПлановаяДатаВыпуска КАК ПлановаяДатаВыпускаВерсииКонфигурации,
+	ВерсииПроекта.Код КАК НомерВерсииКонфигурации,
+	ВерсииПроекта.ПубликуемыйНомерВерсии КАК ПубликуемыйНомерВерсииКонфигурации,
+	ВерсииПроекта.ДатаВключенияБиблиотек КАК ДатаВключенияБиблиотек,
+	ВерсииПроекта.ДатаПрекращенияПоддержки КАК ДатаПрекращенияПоддержкиВерсииКонфигурации,
+	ВерсииПроекта.ВерсияПлатформы КАК ВерсияПлатформыДляВерсииКонфигурации,
+	ВерсииПроектаВерсииВключаемыхПроектов.Версия КАК ВключаемаяВерсияБиблиотеки
+ПОМЕСТИТЬ ВТКонфигурации
+ИЗ
+	Справочник.Проекты.ВключаемыеПроекты КАК ПроектыВключаемыеПроекты
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.ВерсииПроекта КАК ВерсииПроекта
+		ПО ПроектыВключаемыеПроекты.Ссылка = ВерсииПроекта.Владелец
+			И (НЕ ВерсииПроекта.ПометкаУдаления)
+			И (ВерсииПроекта.ДатаВключенияБиблиотек &lt;&gt; ДАТАВРЕМЯ(1, 1, 1))
+			И (ВерсииПроекта.ДатаВключенияБиблиотек &gt;= &amp;НачалоПериода)
+			И (ВерсииПроекта.ДатаВключенияБиблиотек &lt;= &amp;КонецПериода
+				ИЛИ &amp;КонецПериода = ДАТАВРЕМЯ(1, 1, 1))
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ВерсииПроекта.ВерсииВключаемыхПроектов КАК ВерсииПроектаВерсииВключаемыхПроектов
+		ПО (ВерсииПроекта.Ссылка = ВерсииПроектаВерсииВключаемыхПроектов.Ссылка)
+			И (ВерсииПроектаВерсииВключаемыхПроектов.Версия.Владелец = &amp;Библиотека)
+ГДЕ
+	НЕ ПроектыВключаемыеПроекты.Ссылка.ПометкаУдаления
+	И ПроектыВключаемыеПроекты.Проект = &amp;Библиотека
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВерсииПроекта.Ссылка КАК ВерсияБиблиотеки,
+	ВерсииПроекта.Владелец КАК ПроектБиблиотеки,
+	ВерсииПроекта.ПлановаяДатаВыпуска КАК ПлановаяДатаВыпускаВерсииБиблиотеки,
+	ВерсииПроекта.ПорядковыйНомер КАК ПорядковыйНомерВерсииБиблиотеки,
+	ВерсииПроекта.Код КАК НомерВерсииБиблиотеки,
+	ВерсииПроекта.ПубликуемыйНомерВерсии КАК ПубликуемыйНомерВерсииБиблиотеки,
+	ВерсииПроекта.ВерсияПлатформы КАК ВерсияПлатформыДляВерсииБиблиотеки,
+	ВерсииПроекта.ДатаПрекращенияПоддержки КАК ДатаПрекращенияПоддержкиВерсииБиблиотеки
+ПОМЕСТИТЬ ВТВерсииБиблиотеки
+ИЗ
+	Справочник.ВерсииПроекта КАК ВерсииПроекта
+ГДЕ
+	ВерсииПроекта.Владелец = &amp;Библиотека
+	И НЕ ВерсииПроекта.ПометкаУдаления
+	И ВерсииПроекта.ПлановаяДатаВыпуска &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+	И ВерсииПроекта.ПлановаяДатаВыпуска &gt;= &amp;НачалоПериода
+	И (ВерсииПроекта.ПлановаяДатаВыпуска &lt;= &amp;КонецПериода
+			ИЛИ &amp;КонецПериода = ДАТАВРЕМЯ(1, 1, 1))
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Конфигурации.ВерсияКонфигурации КАК ВерсияКонфигурации,
+	МАКСИМУМ(ВерсииБиблиотеки.ПлановаяДатаВыпускаВерсииБиблиотеки) КАК ПлановаяДатаВыпускаВерсииБиблиотеки
+ПОМЕСТИТЬ ВТДатыПоследнихВерсийБиблиотеки
+ИЗ
+	ВТВерсииБиблиотеки КАК ВерсииБиблиотеки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТКонфигурации КАК Конфигурации
+		ПО (ВерсииБиблиотеки.ПлановаяДатаВыпускаВерсииБиблиотеки &lt;= Конфигурации.ДатаВключенияБиблиотек
+				ИЛИ Конфигурации.ДатаВключенияБиблиотек = ДАТАВРЕМЯ(1, 1, 1))
+				
+СГРУППИРОВАТЬ ПО
+	Конфигурации.ВерсияКонфигурации
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ДатыПоследнихВерсийБиблиотеки.ВерсияКонфигурации КАК ВерсияКонфигурации,
+	ДатыПоследнихВерсийБиблиотеки.ПлановаяДатаВыпускаВерсииБиблиотеки КАК ПлановаяДатаВыпускаВерсииБиблиотеки,
+	МАКСИМУМ(ВерсииБиблиотеки.ВерсияБиблиотеки) КАК ПоследняяВерсияБиблиотеки
+ПОМЕСТИТЬ ВТПоследниеВерсииБиблиотеки
+ИЗ
+	ВТДатыПоследнихВерсийБиблиотеки КАК ДатыПоследнихВерсийБиблиотеки
+	ЛЕВОЕ СОЕДИНЕНИЕ ВТВерсииБиблиотеки КАК ВерсииБиблиотеки
+	ПО ДатыПоследнихВерсийБиблиотеки.ПлановаяДатаВыпускаВерсииБиблиотеки = ВерсииБиблиотеки.ПлановаяДатаВыпускаВерсииБиблиотеки
+	
+СГРУППИРОВАТЬ ПО
+	ДатыПоследнихВерсийБиблиотеки.ВерсияКонфигурации,
+	ДатыПоследнихВерсийБиблиотеки.ПлановаяДатаВыпускаВерсииБиблиотеки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Конфигурации.ПроектКонфигурации КАК ПроектКонфигурации,
+    Конфигурации.ПроектКонфигурации.Наименование КАК НаименованиеКонфигурации,
+    Конфигурации.ПроектКонфигурации.Библиотека КАК Библиотека,
+	Конфигурации.Ответственный КАК Ответственный,
+	Конфигурации.ВерсияКонфигурации КАК ВерсияКонфигурации,
+	Конфигурации.ПорядковыйНомерВерсииКонфигурации КАК ПорядковыйНомерВерсииКонфигурации,
+	Конфигурации.НомерВерсииКонфигурации КАК НомерВерсииКонфигурации,
+	Конфигурации.ПубликуемыйНомерВерсииКонфигурации КАК ПубликуемыйНомерВерсииКонфигурации,
+	Конфигурации.ПлановаяДатаВыпускаВерсииКонфигурации КАК ПлановаяДатаВыпускаВерсииКонфигурации,
+	Конфигурации.ДатаВключенияБиблиотек КАК ДатаВключенияБиблиотек,
+	Конфигурации.ДатаПрекращенияПоддержкиВерсииКонфигурации КАК ДатаПрекращенияПоддержкиВерсииКонфигурации,
+	Конфигурации.ВерсияПлатформыДляВерсииКонфигурации КАК ВерсияПлатформыДляВерсииКонфигурации,
+	ВерсииБиблиотеки.ВерсияБиблиотеки КАК ВерсияБиблиотеки,
+	ВерсииБиблиотеки.ПроектБиблиотеки КАК ПроектБиблиотеки,
+	ВерсииБиблиотеки.ПлановаяДатаВыпускаВерсииБиблиотеки КАК ПлановаяДатаВыпускаВерсииБиблиотеки,
+	ВерсииБиблиотеки.ПорядковыйНомерВерсииБиблиотеки КАК ПорядковыйНомерВерсииБиблиотеки,
+	ВерсииБиблиотеки.НомерВерсииБиблиотеки КАК НомерВерсииБиблиотеки,
+	ВерсииБиблиотеки.ПубликуемыйНомерВерсииБиблиотеки КАК ПубликуемыйНомерВерсииБиблиотеки,
+	ВерсииБиблиотеки.ВерсияПлатформыДляВерсииБиблиотеки КАК ВерсияПлатформыДляВерсииБиблиотеки,
+	ВерсииБиблиотеки.ДатаПрекращенияПоддержкиВерсииБиблиотеки КАК ДатаПрекращенияПоддержкиВерсииБиблиотеки,
+	ПоследниеВерсииБиблиотеки.ПлановаяДатаВыпускаВерсииБиблиотеки КАК ПлановаяДатаВыпускаПоследнейВерсииБиблиотеки,
+	ПоследниеВерсииБиблиотеки.ПоследняяВерсияБиблиотеки КАК ПоследняяВерсияБиблиотеки,
+	ПоследниеВерсииБиблиотеки.ПоследняяВерсияБиблиотеки.Код КАК НомерПоследнейВерсииБиблиотеки,
+	ПоследниеВерсииБиблиотеки.ПоследняяВерсияБиблиотеки.ПубликуемыйНомерВерсии КАК ПубликуемыйНомерПоследнейВерсииБиблиотеки,
+	ВЫБОР
+		КОГДА Конфигурации.ВключаемаяВерсияБиблиотеки = ВерсииБиблиотеки.ВерсияБиблиотеки
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК ВерсияБиблиотекиВключенаВВерсиюКонфигурации
+ИЗ
+	ВТКонфигурации КАК Конфигурации
+		ПОЛНОЕ СОЕДИНЕНИЕ ВТВерсииБиблиотеки КАК ВерсииБиблиотеки
+		ПО (ИСТИНА)
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТПоследниеВерсииБиблиотеки КАК ПоследниеВерсииБиблиотеки
+		ПО Конфигурации.ВерсияКонфигурации = ПоследниеВерсииБиблиотеки.ВерсияКонфигурации
+
+УПОРЯДОЧИТЬ ПО
+	Конфигурации.ПроектКонфигурации.Библиотека,
+	Конфигурации.ПроектКонфигурации.Наименование,
+	ПорядковыйНомерВерсииКонфигурации,
+	ПорядковыйНомерВерсииБиблиотеки</query>
+	</dataSet>
+	<parameter>
+		<name>Библиотека</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Библиотека</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Проекты</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<inputParameters>
+			<dcscor:item>
+				<dcscor:parameter>ПараметрыВыбора</dcscor:parameter>
+				<dcscor:value xsi:type="dcscor:ChoiceParameters">
+					<dcscor:item>
+						<dcscor:choiceParameter>Отбор.Библиотека</dcscor:choiceParameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+					<dcscor:item>
+						<dcscor:choiceParameter>Отбор.ПометкаУдаления</dcscor:choiceParameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcscor:value>
+			</dcscor:item>
+		</inputParameters>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ВерсииБиблиотекиВСоставеКонфигураций</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Версии библиотеки в составе конфигураций</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПроектКонфигурации</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВерсияКонфигурации</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПлановаяДатаВыпускаВерсииКонфигурации</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаПрекращенияПоддержкиВерсииКонфигурации</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаВключенияБиблиотек</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВерсияПлатформыДляВерсииКонфигурации</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВерсияБиблиотеки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПлановаяДатаВыпускаВерсииБиблиотеки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВерсияБиблиотекиВключенаВВерсиюКонфигурации</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВерсияПлатформыДляВерсииБиблиотеки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПлановаяДатаВыпускаПоследнейВерсииБиблиотеки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПоследняяВерсияБиблиотеки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаПрекращенияПоддержкиВерсииБиблиотеки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерПоследнейВерсииБиблиотеки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПубликуемыйНомерПоследнейВерсииБиблиотеки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерВерсииБиблиотеки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПубликуемыйНомерВерсииБиблиотеки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерВерсииКонфигурации</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПубликуемыйНомерВерсииКонфигурации</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Ответственный</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПорядковыйНомерВерсииБиблиотеки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Библиотека</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НаименованиеКонфигурации</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПорядковыйНомерВерсииКонфигурации</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Библиотека</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>5cba88c0-398f-45e3-b5ca-980f6271bba1</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+					<dcsset:userSettingID>9e76bd89-fa22-49da-b004-0895b1d40944</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>КонецПериода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>НачалоПериода</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+						<v8:date>0001-01-01T00:00:00</v8:date>
+					</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>4cb33050-2c0e-46ac-807c-c239d0523948</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

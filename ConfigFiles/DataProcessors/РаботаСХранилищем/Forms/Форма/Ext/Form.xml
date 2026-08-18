@@ -1,0 +1,4716 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnSaveDataInSettingsAtServer">ПриСохраненииДанныхВНастройкахНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="СтраницыШаги" id="81">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы шаги</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы шаги</v8:content>
+				</v8:item>
+			</ToolTip>
+			<VerticalStretch>true</VerticalStretch>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыШагиРасширеннаяПодсказка" id="82"/>
+			<ChildItems>
+				<Page name="СтраницаШаг1" id="83">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шаг 1. Актуализация хранилища технического проекта</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница шаг1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаШаг1РасширеннаяПодсказка" id="84"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПорядокДействий" id="310">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Порядок действий</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа порядок действий</v8:content>
+								</v8:item>
+							</ToolTip>
+							<VerticalStretch>true</VerticalStretch>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаПорядокДействийРасширеннаяПодсказка" id="311"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация11" id="578">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В хранилище версии:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация11КонтекстноеМеню" id="579"/>
+									<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="580"/>
+								</LabelDecoration>
+								<UsualGroup name="Группа2" id="529">
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="530"/>
+									<ChildItems>
+										<PictureDecoration name="ИндикаторОбновитьКонфигурациюИзОсновногоХранилища" id="572">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Индикатор захватить объекты в основном хранилище</v8:content>
+												</v8:item>
+											</Title>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ИндикаторОбновитьКонфигурациюИзОсновногоХранилищаКонтекстноеМеню" id="573"/>
+											<ExtendedTooltip name="ИндикаторОбновитьКонфигурациюИзОсновногоХранилищаРасширеннаяПодсказка" id="574"/>
+										</PictureDecoration>
+										<CheckBoxField name="ОбновитьКонфигурациюИзОсновногоХранилища" id="537">
+											<DataPath>ОбновитьКонфигурациюИзОсновногоХранилища</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ОбновитьКонфигурациюИзОсновногоХранилищаКонтекстноеМеню" id="538"/>
+											<ExtendedTooltip name="ОбновитьКонфигурациюИзОсновногоХранилищаРасширеннаяПодсказка" id="539"/>
+										</CheckBoxField>
+										<LabelField name="СведенияОбновитьКонфигурациюИзОсновногоХранилища" id="575">
+											<DataPath>СведенияОбновитьКонфигурациюИзОсновногоХранилища</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СведенияОбновитьКонфигурациюИзОсновногоХранилищаКонтекстноеМеню" id="576"/>
+											<ExtendedTooltip name="СведенияОбновитьКонфигурациюИзОсновногоХранилищаРасширеннаяПодсказка" id="577"/>
+											<Events>
+												<Event name="URLProcessing">СведенияЗахватитьОбъектыВХранилищеВерсииОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаЗахватитьОбъектыВХранилищеВерсии" id="189">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа захватить объекты в хранилище версии</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа захватить объекты в хранилище версии</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЗахватитьОбъектыВХранилищеВерсииРасширеннаяПодсказка" id="190"/>
+									<ChildItems>
+										<PictureDecoration name="ИндикаторЗахватитьОбъектыВОсновномХранилище" id="343">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Индикатор захватить объекты в основном хранилище</v8:content>
+												</v8:item>
+											</Title>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ИндикаторЗахватитьОбъектыВОсновномХранилищеКонтекстноеМеню" id="344"/>
+											<ExtendedTooltip name="ИндикаторЗахватитьОбъектыВОсновномХранилищеРасширеннаяПодсказка" id="345"/>
+										</PictureDecoration>
+										<CheckBoxField name="ЗахватитьОбъектыВОсновномХранилище" id="129">
+											<DataPath>ЗахватитьОбъектыВОсновномХранилище</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗахватитьОбъектыВОсновномХранилищеКонтекстноеМеню" id="130"/>
+											<ExtendedTooltip name="ЗахватитьОбъектыВОсновномХранилищеРасширеннаяПодсказка" id="131"/>
+										</CheckBoxField>
+										<LabelField name="СведенияЗахватитьОбъектыВОсновномХранилище" id="340">
+											<DataPath>СведенияЗахватитьОбъектыВОсновномХранилище</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СведенияЗахватитьОбъектыВОсновномХранилищеКонтекстноеМеню" id="341"/>
+											<ExtendedTooltip name="СведенияЗахватитьОбъектыВОсновномХранилищеРасширеннаяПодсказка" id="342"/>
+											<Events>
+												<Event name="URLProcessing">СведенияЗахватитьОбъектыВХранилищеВерсииОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаСоздатьФайлПоставкиВОсновномХранилище" id="214">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа создать файл поставки в основном хранилище</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа создать файл поставки в основном хранилище</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСоздатьФайлПоставкиВОсновномХранилищеРасширеннаяПодсказка" id="215"/>
+									<ChildItems>
+										<PictureDecoration name="ИндикаторСоздатьФайлПоставкиВОсновномХранилище" id="346">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Индикатор создать файл поставки в основном хранилище</v8:content>
+												</v8:item>
+											</Title>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ИндикаторСоздатьФайлПоставкиВОсновномХранилищеКонтекстноеМеню" id="347"/>
+											<ExtendedTooltip name="ИндикаторСоздатьФайлПоставкиВОсновномХранилищеРасширеннаяПодсказка" id="348"/>
+										</PictureDecoration>
+										<CheckBoxField name="СоздатьФайлПоставкиВОсновномХранилище" id="132">
+											<DataPath>СоздатьФайлПоставкиВОсновномХранилище</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СоздатьФайлПоставкиВОсновномХранилищеКонтекстноеМеню" id="133"/>
+											<ExtendedTooltip name="СоздатьФайлПоставкиВОсновномХранилищеРасширеннаяПодсказка" id="134"/>
+										</CheckBoxField>
+										<LabelField name="СведенияСоздатьФайлПоставкиВОсновномХранилище" id="355">
+											<DataPath>СведенияСоздатьФайлПоставкиВОсновномХранилище</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СведенияСоздатьФайлПоставкиВОсновномХранилищеКонтекстноеМеню" id="356"/>
+											<ExtendedTooltip name="СведенияСоздатьФайлПоставкиВОсновномХранилищеРасширеннаяПодсказка" id="357"/>
+											<Events>
+												<Event name="URLProcessing">СведенияСоздатьФайлПоставкиВОсновномХранилищеОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<LabelDecoration name="Декорация18" id="581">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В хранилище технического проекта:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация18КонтекстноеМеню" id="582"/>
+									<ExtendedTooltip name="Декорация18РасширеннаяПодсказка" id="583"/>
+								</LabelDecoration>
+								<UsualGroup name="ГруппаЗахватьВсеОбъектыВХранилищеТехпроекта" id="219">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа захвать все объекты в хранилище техпроекта</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа захвать все объекты в хранилище техпроекта</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЗахватьВсеОбъектыВХранилищеТехпроектаРасширеннаяПодсказка" id="220"/>
+									<ChildItems>
+										<PictureDecoration name="ИндикаторЗахватьВсеОбъектыВХранилищеТехпроекта" id="349">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Индикатор захвать все объекты в хранилище техпроекта</v8:content>
+												</v8:item>
+											</Title>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ИндикаторЗахватьВсеОбъектыВХранилищеТехпроектаКонтекстноеМеню" id="350"/>
+											<ExtendedTooltip name="ИндикаторЗахватьВсеОбъектыВХранилищеТехпроектаРасширеннаяПодсказка" id="351"/>
+										</PictureDecoration>
+										<CheckBoxField name="ЗахватьВсеОбъектыВХранилищеТехпроекта" id="139">
+											<DataPath>ЗахватьВсеОбъектыВХранилищеТехпроекта</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗахватьВсеОбъектыВХранилищеТехпроектаКонтекстноеМеню" id="140"/>
+											<ExtendedTooltip name="ЗахватьВсеОбъектыВХранилищеТехпроектаРасширеннаяПодсказка" id="141"/>
+										</CheckBoxField>
+										<LabelField name="СведенияЗахватьВсеОбъектыВХранилищеТехпроекта" id="358">
+											<DataPath>СведенияЗахватьВсеОбъектыВХранилищеТехпроекта</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СведенияЗахватьВсеОбъектыВХранилищеТехпроектаКонтекстноеМеню" id="359"/>
+											<ExtendedTooltip name="СведенияЗахватьВсеОбъектыВХранилищеТехпроектаРасширеннаяПодсказка" id="360"/>
+											<Events>
+												<Event name="URLProcessing">СведенияЗахватьВсеОбъектыВХранилищеТехпроектаОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаОткрытьБазуРазработкиТехпроекта" id="247">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа открыть базу разработки техпроекта</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа открыть базу разработки техпроекта</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОткрытьБазуРазработкиТехпроектаРасширеннаяПодсказка" id="248"/>
+									<ChildItems>
+										<PictureDecoration name="ИндикаторОткрытьБазуРазработкиТехпроекта" id="352">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Индикатор открыть базу разработки техпроекта</v8:content>
+												</v8:item>
+											</Title>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ИндикаторОткрытьБазуРазработкиТехпроектаКонтекстноеМеню" id="353"/>
+											<ExtendedTooltip name="ИндикаторОткрытьБазуРазработкиТехпроектаРасширеннаяПодсказка" id="354"/>
+										</PictureDecoration>
+										<CheckBoxField name="ОткрытьБазуРазработкиТехпроекта" id="252">
+											<DataPath>ОткрытьБазуРазработкиТехпроекта</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<TitleHeight>1</TitleHeight>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ОткрытьБазуРазработкиТехпроектаКонтекстноеМеню" id="253"/>
+											<ExtendedTooltip name="ОткрытьБазуРазработкиТехпроектаРасширеннаяПодсказка" id="254"/>
+										</CheckBoxField>
+										<LabelField name="СведенияОткрытьБазуРазработкиТехпроекта" id="361">
+											<DataPath>СведенияОткрытьБазуРазработкиТехпроекта</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СведенияОткрытьБазуРазработкиТехпроектаКонтекстноеМеню" id="362"/>
+											<ExtendedTooltip name="СведенияОткрытьБазуРазработкиТехпроектаРасширеннаяПодсказка" id="363"/>
+											<Events>
+												<Event name="URLProcessing">СведенияОткрытьБазуРазработкиТехпроектаОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<LabelDecoration name="Декорация1" id="318">
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="319"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="320"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаИнформация3" id="599">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа информация2</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа информация2</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<VerticalAlign>Center</VerticalAlign>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИнформация3РасширеннаяПодсказка" id="600"/>
+							<ChildItems>
+								<PictureDecoration name="ИнформацияШаг1Картинка" id="601">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Информация шаг1 картинка</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>StdPicture.Information</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="ИнформацияШаг1КартинкаКонтекстноеМеню" id="602"/>
+									<ExtendedTooltip name="ИнформацияШаг1КартинкаРасширеннаяПодсказка" id="603"/>
+								</PictureDecoration>
+								<LabelDecoration name="ИнформацияШаг1" id="604">
+									<Width>64</Width>
+									<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>На этом шаге необходимо обеспечить чтобы конфигурация технического проекта отличалась от конфигурации версии только на изменения, внесенные техническим проектом.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ИнформацияШаг1КонтекстноеМеню" id="605"/>
+									<ExtendedTooltip name="ИнформацияШаг1РасширеннаяПодсказка" id="606"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаКомандыПодвалШаг1" id="648">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа команды подвал шаг1</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа команды подвал шаг1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<VerticalAlign>Bottom</VerticalAlign>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКомандыПодвалШаг1РасширеннаяПодсказка" id="649"/>
+							<ChildItems>
+								<Pages name="СтраницыКомандыШаг1" id="373">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы команды шаг1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы команды шаг1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="СтраницыКомандыШаг1РасширеннаяПодсказка" id="374"/>
+									<ChildItems>
+										<Page name="СтраницаКомандыШаг1_Начало" id="375">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Начало</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница команды шаг1 начало</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<VerticalAlign>Bottom</VerticalAlign>
+											<ExtendedTooltip name="СтраницаКомандыШаг1_НачалоРасширеннаяПодсказка" id="376"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация4" id="654">
+													<Height>4</Height>
+													<ContextMenu name="Декорация4КонтекстноеМеню" id="655"/>
+													<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="656"/>
+												</LabelDecoration>
+												<Button name="ВыполнитьШаг1" id="135">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ВыполнитьШаг1</CommandName>
+													<ExtendedTooltip name="ВыполнитьШаг1РасширеннаяПодсказка" id="136"/>
+												</Button>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаКомандыШаг1_ДействияВыполняются" id="377">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выполняется</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница команды шаг1 действия выполняются</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Height>2</Height>
+											<Group>Horizontal</Group>
+											<VerticalAlign>Center</VerticalAlign>
+											<ExtendedTooltip name="СтраницаКомандыШаг1_ДействияВыполняютсяРасширеннаяПодсказка" id="378"/>
+											<ChildItems>
+												<PictureDecoration name="Декорация2" id="383">
+													<Width>5</Width>
+													<Height>3</Height>
+													<Picture>
+														<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="Декорация2КонтекстноеМеню" id="384"/>
+													<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="385"/>
+												</PictureDecoration>
+												<LabelDecoration name="Декорация3" id="390">
+													<Height>1</Height>
+													<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Подождите, идет выполнение выбранных действий...</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация3КонтекстноеМеню" id="391"/>
+													<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="392"/>
+												</LabelDecoration>
+												<Button name="ОтменитьШаг1" id="449">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.ОтменитьШаг1</CommandName>
+													<ExtendedTooltip name="ОтменитьШаг1РасширеннаяПодсказка" id="450"/>
+												</Button>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаКомандыШаг1_УспешноЗавершено" id="405">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Успешно завершено</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница команды ход выполнения шаг1</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<VerticalAlign>Center</VerticalAlign>
+											<ExtendedTooltip name="СтраницаКомандыШаг1_УспешноЗавершеноРасширеннаяПодсказка" id="406"/>
+											<ChildItems>
+												<PictureDecoration name="Декорация6" id="409">
+													<Width>5</Width>
+													<Height>3</Height>
+													<Picture>
+														<xr:Ref>CommonPicture.Успешно32</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="Декорация6КонтекстноеМеню" id="410"/>
+													<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="411"/>
+												</PictureDecoration>
+												<LabelDecoration name="Декорация7" id="412">
+													<Height>1</Height>
+													<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Действия выполнены успешно</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация7КонтекстноеМеню" id="413"/>
+													<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="414"/>
+												</LabelDecoration>
+												<Button name="НачатьЗаново2Шаг1" id="415">
+													<Type>Hyperlink</Type>
+													<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+													<CommandName>Form.Command.НачатьЗановоШаг1</CommandName>
+													<ExtendedTooltip name="НачатьЗаново2Шаг1РасширеннаяПодсказка" id="416"/>
+												</Button>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаКомандыШаг1_ЗавершеноСОшибками" id="426">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Завершено с ошибками</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница команды ход выполнения шаг1</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<VerticalAlign>Center</VerticalAlign>
+											<ExtendedTooltip name="СтраницаКомандыШаг1_ЗавершеноСОшибкамиРасширеннаяПодсказка" id="427"/>
+											<ChildItems>
+												<PictureDecoration name="Декорация9" id="430">
+													<Width>5</Width>
+													<Height>3</Height>
+													<Picture>
+														<xr:Ref>CommonPicture.Ошибка32</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="Декорация9КонтекстноеМеню" id="431"/>
+													<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="432"/>
+												</PictureDecoration>
+												<LabelDecoration name="Декорация10" id="433">
+													<Height>1</Height>
+													<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Действия выполнены с ошибками</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация10КонтекстноеМеню" id="434"/>
+													<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="435"/>
+												</LabelDecoration>
+												<Button name="ПродолжитьШаг1" id="436">
+													<Type>Hyperlink</Type>
+													<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+													<CommandName>Form.Command.ПродолжитьШаг1</CommandName>
+													<ExtendedTooltip name="ПродолжитьШаг1РасширеннаяПодсказка" id="437"/>
+												</Button>
+												<Button name="НачатьЗаново1Шаг1" id="447">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.НачатьЗановоШаг1</CommandName>
+													<ExtendedTooltip name="НачатьЗаново1Шаг1РасширеннаяПодсказка" id="448"/>
+												</Button>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+								<CommandBar name="Группа28" id="650">
+									<ExtendedTooltip name="Группа28РасширеннаяПодсказка" id="651"/>
+									<ChildItems>
+										<Button name="Справка10" id="652">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.StandardCommand.Help</CommandName>
+											<ExtendedTooltip name="Справка10РасширеннаяПодсказка" id="653"/>
+										</Button>
+									</ChildItems>
+								</CommandBar>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаШаг2" id="85">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шаг 2. Перенос изменений в хранилище версии</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница шаг2</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаШаг2РасширеннаяПодсказка" id="86"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="316">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Порядок действий</v8:content>
+								</v8:item>
+							</Title>
+							<VerticalStretch>true</VerticalStretch>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="317"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация21" id="584">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В хранилище версии:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация21КонтекстноеМеню" id="585"/>
+									<ExtendedTooltip name="Декорация21РасширеннаяПодсказка" id="586"/>
+								</LabelDecoration>
+								<UsualGroup name="Группа12" id="224">
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="225"/>
+									<ChildItems>
+										<PictureDecoration name="ИндикаторЗахватитьИзмененныеОбъекты" id="451">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Индикатор захватить объекты в основном хранилище</v8:content>
+												</v8:item>
+											</Title>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ИндикаторЗахватитьИзмененныеОбъектыКонтекстноеМеню" id="452"/>
+											<ExtendedTooltip name="ИндикаторЗахватитьИзмененныеОбъектыРасширеннаяПодсказка" id="453"/>
+										</PictureDecoration>
+										<CheckBoxField name="ЗахватитьИзмененныеОбъекты" id="146">
+											<DataPath>ЗахватитьИзмененныеОбъекты</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗахватитьИзмененныеОбъектыКонтекстноеМеню" id="147"/>
+											<ExtendedTooltip name="ЗахватитьИзмененныеОбъектыРасширеннаяПодсказка" id="148"/>
+											<Events>
+												<Event name="OnChange">ЗахватитьИзмененныеОбъектыПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<LabelField name="СведенияЗахватитьИзмененныеОбъекты" id="364">
+											<DataPath>СведенияЗахватитьИзмененныеОбъекты</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СведенияЗахватитьИзмененныеОбъектыКонтекстноеМеню" id="365"/>
+											<ExtendedTooltip name="СведенияЗахватитьИзмененныеОбъектыРасширеннаяПодсказка" id="366"/>
+											<Events>
+												<Event name="URLProcessing">СведенияЗахватитьИзмененныеОбъектыОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа20" id="281">
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа20РасширеннаяПодсказка" id="282"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация16" id="283">
+											<Width>4</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="Декорация16КонтекстноеМеню" id="284"/>
+											<ExtendedTooltip name="Декорация16РасширеннаяПодсказка" id="285"/>
+										</LabelDecoration>
+										<CheckBoxField name="ЗахватитьКореньКонфигурации_Шаг2" id="286">
+											<DataPath>ЗахватитьКореньКонфигурации_Шаг2</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗахватитьКореньКонфигурации_Шаг2КонтекстноеМеню" id="287"/>
+											<ExtendedTooltip name="ЗахватитьКореньКонфигурации_Шаг2РасширеннаяПодсказка" id="288"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа18" id="263">
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа18РасширеннаяПодсказка" id="264"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация14" id="265">
+											<Width>4</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="Декорация14КонтекстноеМеню" id="266"/>
+											<ExtendedTooltip name="Декорация14РасширеннаяПодсказка" id="267"/>
+										</LabelDecoration>
+										<CheckBoxField name="ЗахватитьВсеРоли_Шаг2" id="268">
+											<DataPath>ЗахватитьВсеРоли_Шаг2</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗахватитьВсеРоли_Шаг2КонтекстноеМеню" id="269"/>
+											<ExtendedTooltip name="ЗахватитьВсеРоли_Шаг2РасширеннаяПодсказка" id="270"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<LabelDecoration name="Декорация26" id="587">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В хранилище технического проекта:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация26КонтекстноеМеню" id="588"/>
+									<ExtendedTooltip name="Декорация26РасширеннаяПодсказка" id="589"/>
+								</LabelDecoration>
+								<UsualGroup name="Группа13" id="229">
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа13РасширеннаяПодсказка" id="230"/>
+									<ChildItems>
+										<PictureDecoration name="ИндикаторСохранитьКонфигурациюТехпроекта" id="454">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Индикатор захватить объекты в основном хранилище</v8:content>
+												</v8:item>
+											</Title>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ИндикаторСохранитьКонфигурациюТехпроектаКонтекстноеМеню" id="455"/>
+											<ExtendedTooltip name="ИндикаторСохранитьКонфигурациюТехпроектаРасширеннаяПодсказка" id="456"/>
+										</PictureDecoration>
+										<CheckBoxField name="СохранитьКонфигурациюТехпроекта" id="149">
+											<DataPath>СохранитьКонфигурациюТехпроекта</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СохранитьКонфигурациюТехпроектаКонтекстноеМеню" id="150"/>
+											<ExtendedTooltip name="СохранитьКонфигурациюТехпроектаРасширеннаяПодсказка" id="151"/>
+										</CheckBoxField>
+										<LabelField name="СведенияСохранитьКонфигурациюТехпроекта" id="367">
+											<DataPath>СведенияСохранитьКонфигурациюТехпроекта</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СведенияСохранитьКонфигурациюТехпроектаКонтекстноеМеню" id="368"/>
+											<ExtendedTooltip name="СведенияСохранитьКонфигурациюТехпроектаРасширеннаяПодсказка" id="369"/>
+											<Events>
+												<Event name="URLProcessing">СведенияСохранитьКонфигурациюТехпроектаОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<LabelDecoration name="Декорация27" id="590">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В хранилище версии:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация27КонтекстноеМеню" id="591"/>
+									<ExtendedTooltip name="Декорация27РасширеннаяПодсказка" id="592"/>
+								</LabelDecoration>
+								<UsualGroup name="Группа6" id="155">
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="156"/>
+									<ChildItems>
+										<PictureDecoration name="ИндикаторПеренестиИзменения" id="457">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Индикатор захватить объекты в основном хранилище</v8:content>
+												</v8:item>
+											</Title>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ИндикаторПеренестиИзмененияКонтекстноеМеню" id="458"/>
+											<ExtendedTooltip name="ИндикаторПеренестиИзмененияРасширеннаяПодсказка" id="459"/>
+										</PictureDecoration>
+										<CheckBoxField name="ПеренестиИзменения" id="152">
+											<DataPath>ПеренестиИзменения</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПеренестиИзмененияКонтекстноеМеню" id="153"/>
+											<ExtendedTooltip name="ПеренестиИзмененияРасширеннаяПодсказка" id="154"/>
+											<Events>
+												<Event name="OnChange">ПеренестиИзмененияПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<LabelField name="СведенияПеренестиИзменения" id="370">
+											<DataPath>СведенияПеренестиИзменения</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СведенияПеренестиИзмененияКонтекстноеМеню" id="371"/>
+											<ExtendedTooltip name="СведенияПеренестиИзмененияРасширеннаяПодсказка" id="372"/>
+											<Events>
+												<Event name="URLProcessing">СведенияПеренестиИзмененияОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа14" id="237">
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа14РасширеннаяПодсказка" id="238"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация17" id="302">
+											<Width>4</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="Декорация17КонтекстноеМеню" id="303"/>
+											<ExtendedTooltip name="Декорация17РасширеннаяПодсказка" id="304"/>
+										</LabelDecoration>
+										<UsualGroup name="Группа17" id="298">
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа17РасширеннаяПодсказка" id="299"/>
+											<ChildItems>
+												<RadioButtonField name="ПеренестиИзмененияВРучную" id="295">
+													<DataPath>РежимПереносаИзменений</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<RadioButtonType>Auto</RadioButtonType>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Открыть Конфигуратор и перенести изменения вручную</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xs:decimal">0</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="ПеренестиИзмененияВРучнуюКонтекстноеМеню" id="296"/>
+													<ExtendedTooltip name="ПеренестиИзмененияВРучнуюРасширеннаяПодсказка" id="297"/>
+													<Events>
+														<Event name="OnChange">ПеренестиИзмененияВРучнуюПриИзменении</Event>
+													</Events>
+												</RadioButtonField>
+												<UsualGroup name="Группа19" id="300">
+													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа19РасширеннаяПодсказка" id="301"/>
+													<ChildItems>
+														<RadioButtonField name="ПеренестиИзмененияАвтоматически" id="157">
+															<DataPath>РежимПереносаИзменений</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<RadioButtonType>Auto</RadioButtonType>
+															<ChoiceList>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation>
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Автоматически</v8:content>
+																			</v8:item>
+																		</Presentation>
+																		<Value xsi:type="xs:decimal">1</Value>
+																	</xr:Value>
+																</xr:Item>
+															</ChoiceList>
+															<ContextMenu name="ПеренестиИзмененияАвтоматическиКонтекстноеМеню" id="158"/>
+															<ExtendedTooltip name="ПеренестиИзмененияАвтоматическиРасширеннаяПодсказка" id="159"/>
+															<Events>
+																<Event name="OnChange">ПеренестиИзмененияАвтоматическиПриИзменении</Event>
+															</Events>
+														</RadioButtonField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="Группа15" id="305">
+													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа15РасширеннаяПодсказка" id="306"/>
+													<ChildItems>
+														<LabelDecoration name="Отступ1" id="307">
+															<Width>2</Width>
+															<ContextMenu name="Отступ1КонтекстноеМеню" id="308"/>
+															<ExtendedTooltip name="Отступ1РасширеннаяПодсказка" id="309"/>
+														</LabelDecoration>
+														<CheckBoxField name="ПоместитьИзмененияВХранилище" id="160">
+															<DataPath>ПоместитьИзмененияВХранилище</DataPath>
+															<TitleLocation>Right</TitleLocation>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ПоместитьИзмененияВХранилищеКонтекстноеМеню" id="161"/>
+															<ExtendedTooltip name="ПоместитьИзмененияВХранилищеРасширеннаяПодсказка" id="162"/>
+														</CheckBoxField>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаИнформация2" id="551">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа информация2</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа информация2</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<VerticalAlign>Center</VerticalAlign>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИнформация2РасширеннаяПодсказка" id="552"/>
+							<ChildItems>
+								<PictureDecoration name="ИнформацияШаг2Картинка" id="553">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Информация шаг2 картинка</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>StdPicture.Information</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="ИнформацияШаг2КартинкаКонтекстноеМеню" id="554"/>
+									<ExtendedTooltip name="ИнформацияШаг2КартинкаРасширеннаяПодсказка" id="555"/>
+								</PictureDecoration>
+								<LabelDecoration name="ИнформацияШаг2" id="556">
+									<Width>64</Width>
+									<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перед выполнением этого шага обязательно требуется выполнить актуализацию конфигурации хранилища технического проекта (см. шаг 1), чтобы избежать замены актуальных данных на устаревшие</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ИнформацияШаг2КонтекстноеМеню" id="557"/>
+									<ExtendedTooltip name="ИнформацияШаг2РасширеннаяПодсказка" id="558"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаКомандыПодвалШаг2" id="657">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа команды подвал шаг2</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа команды подвал шаг2</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<VerticalAlign>Bottom</VerticalAlign>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКомандыПодвалШаг2РасширеннаяПодсказка" id="658"/>
+							<ChildItems>
+								<Pages name="СтраницыКомандыШаг2" id="460">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы команды шаг1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы команды шаг1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="СтраницыКомандыШаг2РасширеннаяПодсказка" id="461"/>
+									<ChildItems>
+										<Page name="СтраницаКомандыШаг2_Начало" id="462">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Начало</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница команды шаг1 начало</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="СтраницаКомандыШаг2_НачалоРасширеннаяПодсказка" id="463"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация5" id="663">
+													<Height>4</Height>
+													<ContextMenu name="Декорация5КонтекстноеМеню" id="664"/>
+													<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="665"/>
+												</LabelDecoration>
+												<Button name="ВыполнитьШаг2" id="469">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ВыполнитьШаг2</CommandName>
+													<ExtendedTooltip name="ВыполнитьШаг2РасширеннаяПодсказка" id="470"/>
+												</Button>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаКомандыШаг2_ДействияВыполняются" id="473">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выполняется</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница команды шаг1 действия выполняются</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<VerticalAlign>Center</VerticalAlign>
+											<ExtendedTooltip name="СтраницаКомандыШаг2_ДействияВыполняютсяРасширеннаяПодсказка" id="474"/>
+											<ChildItems>
+												<PictureDecoration name="Декорация13" id="477">
+													<Width>5</Width>
+													<Height>3</Height>
+													<Picture>
+														<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="Декорация13КонтекстноеМеню" id="478"/>
+													<ExtendedTooltip name="Декорация13РасширеннаяПодсказка" id="479"/>
+												</PictureDecoration>
+												<LabelDecoration name="Декорация15" id="480">
+													<Height>1</Height>
+													<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Подождите, идет выполнение выбранных действий...</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация15КонтекстноеМеню" id="481"/>
+													<ExtendedTooltip name="Декорация15РасширеннаяПодсказка" id="482"/>
+												</LabelDecoration>
+												<Button name="НачатьЗановоШаг2" id="483">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.ОтменитьШаг2</CommandName>
+													<ExtendedTooltip name="НачатьЗановоШаг2РасширеннаяПодсказка" id="484"/>
+												</Button>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаКомандыШаг2_УспешноЗавершено" id="494">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Успешно завершено</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница команды ход выполнения шаг1</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<VerticalAlign>Center</VerticalAlign>
+											<ExtendedTooltip name="СтраницаКомандыШаг2_УспешноЗавершеноРасширеннаяПодсказка" id="495"/>
+											<ChildItems>
+												<PictureDecoration name="Декорация19" id="498">
+													<Width>5</Width>
+													<Height>3</Height>
+													<Picture>
+														<xr:Ref>CommonPicture.Успешно32</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="Декорация19КонтекстноеМеню" id="499"/>
+													<ExtendedTooltip name="Декорация19РасширеннаяПодсказка" id="500"/>
+												</PictureDecoration>
+												<LabelDecoration name="Декорация20" id="501">
+													<Height>1</Height>
+													<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Действия выполнены успешно</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация20КонтекстноеМеню" id="502"/>
+													<ExtendedTooltip name="Декорация20РасширеннаяПодсказка" id="503"/>
+												</LabelDecoration>
+												<Button name="НачатьЗаново2Шаг2" id="597">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.НачатьЗановоШаг2</CommandName>
+													<ExtendedTooltip name="НачатьЗаново2Шаг2РасширеннаяПодсказка" id="598"/>
+												</Button>
+												<Button name="ЗакрытьОбработку" id="504">
+													<Type>Hyperlink</Type>
+													<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+													<CommandName>Form.Command.ЗакрытьОбработку</CommandName>
+													<ExtendedTooltip name="ЗакрытьОбработкуРасширеннаяПодсказка" id="505"/>
+												</Button>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаКомандыШаг2_ЗавершеноСОшибками" id="515">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Завершено с ошибками</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница команды ход выполнения шаг1</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<VerticalAlign>Center</VerticalAlign>
+											<ExtendedTooltip name="СтраницаКомандыШаг2_ЗавершеноСОшибкамиРасширеннаяПодсказка" id="516"/>
+											<ChildItems>
+												<PictureDecoration name="Декорация22" id="519">
+													<Width>5</Width>
+													<Height>3</Height>
+													<Picture>
+														<xr:Ref>CommonPicture.Ошибка32</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="Декорация22КонтекстноеМеню" id="520"/>
+													<ExtendedTooltip name="Декорация22РасширеннаяПодсказка" id="521"/>
+												</PictureDecoration>
+												<LabelDecoration name="Декорация23" id="522">
+													<Height>1</Height>
+													<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Действия выполнены с ошибками</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация23КонтекстноеМеню" id="523"/>
+													<ExtendedTooltip name="Декорация23РасширеннаяПодсказка" id="524"/>
+												</LabelDecoration>
+												<Button name="ПродолжитьШаг2" id="525">
+													<Type>Hyperlink</Type>
+													<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+													<CommandName>Form.Command.ПродолжитьШаг2</CommandName>
+													<ExtendedTooltip name="ПродолжитьШаг2РасширеннаяПодсказка" id="526"/>
+												</Button>
+												<Button name="НачатьЗаново1Шаг2" id="527">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.НачатьЗановоШаг2</CommandName>
+													<ExtendedTooltip name="НачатьЗаново1Шаг2РасширеннаяПодсказка" id="528"/>
+												</Button>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаКомандыШаг2_Недоступно" id="559">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница команды шаг2 недоступно</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница команды шаг2 недоступно</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<VerticalAlign>Center</VerticalAlign>
+											<ExtendedTooltip name="СтраницаКомандыШаг2_НедоступноРасширеннаяПодсказка" id="560"/>
+											<ChildItems>
+												<PictureDecoration name="Декорация24" id="566">
+													<Width>5</Width>
+													<Height>3</Height>
+													<Picture>
+														<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="Декорация24КонтекстноеМеню" id="567"/>
+													<ExtendedTooltip name="Декорация24РасширеннаяПодсказка" id="568"/>
+												</PictureDecoration>
+												<LabelDecoration name="Декорация25" id="569">
+													<Height>1</Height>
+													<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Подождите, идет выполнение действий шага 1...</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация25КонтекстноеМеню" id="570"/>
+													<ExtendedTooltip name="Декорация25РасширеннаяПодсказка" id="571"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+								<CommandBar name="Группа30" id="659">
+									<ExtendedTooltip name="Группа30РасширеннаяПодсказка" id="660"/>
+									<ChildItems>
+										<Button name="Справка11" id="661">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.StandardCommand.Help</CommandName>
+											<ExtendedTooltip name="Справка11РасширеннаяПодсказка" id="662"/>
+										</Button>
+									</ChildItems>
+								</CommandBar>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаШаг3" id="666">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Шаг 3. Актуализация модулей обновления ИБ</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница шаг3</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаШаг3РасширеннаяПодсказка" id="667"/>
+					<ChildItems>
+						<UsualGroup name="СтраницаШаг3Действия" id="884">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подробная информация о выполняемых действиях</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница шаг3 действия</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Collapsible</Behavior>
+							<Collapsed>true</Collapsed>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<ExtendedTooltip name="СтраницаШаг3ДействияРасширеннаяПодсказка" id="885"/>
+							<ChildItems>
+								<UsualGroup name="СтраницаШаг3Группа2" id="737">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа2</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа2</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СтраницаШаг3Группа2РасширеннаяПодсказка" id="738"/>
+									<ChildItems>
+										<PictureDecoration name="ИндикаторСоздатьПромежуточнуюБазу" id="866">
+											<Width>2</Width>
+											<Height>1</Height>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ИндикаторСоздатьПромежуточнуюБазуКонтекстноеМеню" id="867"/>
+											<ExtendedTooltip name="ИндикаторСоздатьПромежуточнуюБазуРасширеннаяПодсказка" id="868"/>
+										</PictureDecoration>
+										<CheckBoxField name="СоздатьПромежуточнуюБазу" id="692">
+											<DataPath>СоздатьПромежуточнуюБазу</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СоздатьПромежуточнуюБазуКонтекстноеМеню" id="693"/>
+											<ExtendedTooltip name="СоздатьПромежуточнуюБазуРасширеннаяПодсказка" id="694"/>
+										</CheckBoxField>
+										<LabelField name="СведенияСоздатьПромежуточнуюБазу" id="773">
+											<DataPath>СведенияСоздатьПромежуточнуюБазу</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СведенияСоздатьПромежуточнуюБазуКонтекстноеМеню" id="774"/>
+											<ExtendedTooltip name="СведенияСоздатьПромежуточнуюБазуРасширеннаяПодсказка" id="775"/>
+											<Events>
+												<Event name="URLProcessing">СведенияСоздатьПромежуточнуюБазуОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="СтраницаШаг3Группа3" id="721">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа3</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа3</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СтраницаШаг3Группа3РасширеннаяПодсказка" id="722"/>
+									<ChildItems>
+										<PictureDecoration name="ИндикаторОбновитьКонфигурациюИзОсновногоХранилища_Шаг3" id="842">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Индикатор обновить конфигурацию из основного хранилища шаг3</v8:content>
+												</v8:item>
+											</Title>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ИндикаторОбновитьКонфигурациюИзОсновногоХранилища_Шаг3КонтекстноеМеню" id="843"/>
+											<ExtendedTooltip name="ИндикаторОбновитьКонфигурациюИзОсновногоХранилища_Шаг3РасширеннаяПодсказка" id="844"/>
+										</PictureDecoration>
+										<CheckBoxField name="ОбновитьКонфигурациюИзОсновногоХранилища_Шаг3" id="712">
+											<DataPath>ОбновитьКонфигурациюИзОсновногоХранилища_Шаг3</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ОбновитьКонфигурациюИзОсновногоХранилища_Шаг3КонтекстноеМеню" id="713"/>
+											<ExtendedTooltip name="ОбновитьКонфигурациюИзОсновногоХранилища_Шаг3РасширеннаяПодсказка" id="714"/>
+										</CheckBoxField>
+										<LabelField name="СведенияОбновитьКонфигурациюИзОсновногоХранилища_Шаг3" id="749">
+											<DataPath>СведенияОбновитьКонфигурациюИзОсновногоХранилища_Шаг3</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СведенияОбновитьКонфигурациюИзОсновногоХранилища_Шаг3КонтекстноеМеню" id="750"/>
+											<ExtendedTooltip name="СведенияОбновитьКонфигурациюИзОсновногоХранилища_Шаг3РасширеннаяПодсказка" id="751"/>
+											<Events>
+												<Event name="URLProcessing">СведенияОбновитьКонфигурациюИзОсновногоХранилища_Шаг3ОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="СтраницаШаг3Группа4" id="723">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СтраницаШаг3Группа4РасширеннаяПодсказка" id="724"/>
+									<ChildItems>
+										<PictureDecoration name="ИндикаторЗахватитьМодулиОписанияОбработчиковИКорень" id="845">
+											<Width>2</Width>
+											<Height>1</Height>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ИндикаторЗахватитьМодулиОписанияОбработчиковИКореньКонтекстноеМеню" id="846"/>
+											<ExtendedTooltip name="ИндикаторЗахватитьМодулиОписанияОбработчиковИКореньРасширеннаяПодсказка" id="847"/>
+										</PictureDecoration>
+										<CheckBoxField name="ЗахватитьМодулиОписанияОбработчиковИКорень" id="671">
+											<DataPath>ЗахватитьМодулиОписанияОбработчиковИКорень</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗахватитьМодулиОписанияОбработчиковИКореньКонтекстноеМеню" id="672"/>
+											<ExtendedTooltip name="ЗахватитьМодулиОписанияОбработчиковИКореньРасширеннаяПодсказка" id="673"/>
+										</CheckBoxField>
+										<LabelField name="СведенияЗахватитьМодулиОписанияОбработчиковИКорень" id="752">
+											<DataPath>СведенияЗахватитьМодулиОписанияОбработчиковИКорень</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СведенияЗахватитьМодулиОписанияОбработчиковИКореньКонтекстноеМеню" id="753"/>
+											<ExtendedTooltip name="СведенияЗахватитьМодулиОписанияОбработчиковИКореньРасширеннаяПодсказка" id="754"/>
+											<Events>
+												<Event name="URLProcessing">СведенияЗахватитьМодулиОписанияОбработчиковИКореньОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="СтраницаШаг3Группа5" id="731">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СтраницаШаг3Группа5РасширеннаяПодсказка" id="732"/>
+									<ChildItems>
+										<PictureDecoration name="ИндикаторПрименитьИзмененияКПодключеннойБазе" id="857">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Индикатор применить изменения к подключенной базе</v8:content>
+												</v8:item>
+											</Title>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ИндикаторПрименитьИзмененияКПодключеннойБазеКонтекстноеМеню" id="858"/>
+											<ExtendedTooltip name="ИндикаторПрименитьИзмененияКПодключеннойБазеРасширеннаяПодсказка" id="859"/>
+										</PictureDecoration>
+										<CheckBoxField name="ПрименитьИзмененияКПодключеннойБазе" id="680">
+											<DataPath>ПрименитьИзмененияКПодключеннойБазе</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПрименитьИзмененияКПодключеннойБазеКонтекстноеМеню" id="681"/>
+											<ExtendedTooltip name="ПрименитьИзмененияКПодключеннойБазеРасширеннаяПодсказка" id="682"/>
+										</CheckBoxField>
+										<LabelField name="СведенияПрименитьИзмененияКПодключеннойБазе" id="764">
+											<DataPath>СведенияПрименитьИзмененияКПодключеннойБазе</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СведенияПрименитьИзмененияКПодключеннойБазеКонтекстноеМеню" id="765"/>
+											<ExtendedTooltip name="СведенияПрименитьИзмененияКПодключеннойБазеРасширеннаяПодсказка" id="766"/>
+											<Events>
+												<Event name="URLProcessing">СведенияПрименитьИзмененияКПодключеннойБазеОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="СтраницаШаг3Группа6" id="725">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СтраницаШаг3Группа6РасширеннаяПодсказка" id="726"/>
+									<ChildItems>
+										<PictureDecoration name="ИндикаторСформироватьФайлОписанияОбработчиковОбновленияИНомераВерсии" id="848">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Индикатор сформировать файл описания обработчиков обновления и номера версии</v8:content>
+												</v8:item>
+											</Title>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ИндикаторСформироватьФайлОписанияОбработчиковОбновленияИНомераВерсииКонтекстноеМеню" id="849"/>
+											<ExtendedTooltip name="ИндикаторСформироватьФайлОписанияОбработчиковОбновленияИНомераВерсииРасширеннаяПодсказка" id="850"/>
+										</PictureDecoration>
+										<CheckBoxField name="СформироватьФайлОписанияОбработчиковОбновленияИНомераВерсии" id="718">
+											<DataPath>СформироватьФайлОписанияОбработчиковОбновленияИНомераВерсии</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СформироватьФайлОписанияОбработчиковОбновленияИНомераВерсииКонтекстноеМеню" id="719"/>
+											<ExtendedTooltip name="СформироватьФайлОписанияОбработчиковОбновленияИНомераВерсииРасширеннаяПодсказка" id="720"/>
+										</CheckBoxField>
+										<LabelField name="СведенияСформироватьФайлОписанияОбработчиковОбновленияИНомераВерсии" id="755">
+											<DataPath>СведенияСформироватьФайлОписанияОбработчиковОбновленияИНомераВерсии</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СведенияСформироватьФайлОписанияОбработчиковОбновленияИНомераВерсииКонтекстноеМеню" id="756"/>
+											<ExtendedTooltip name="СведенияСформироватьФайлОписанияОбработчиковОбновленияИНомераВерсииРасширеннаяПодсказка" id="757"/>
+											<Events>
+												<Event name="URLProcessing">СведенияСформироватьФайлОписанияОбработчиковОбновленияИНомераВерсииОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="СтраницаШаг3Группа7" id="735">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СтраницаШаг3Группа7РасширеннаяПодсказка" id="736"/>
+									<ChildItems>
+										<PictureDecoration name="ИндикаторВыгрузитьВсеМодулиИзБазыОсновногоХранилища" id="863">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Индикатор выгрузить все модули из базы основного хранилища</v8:content>
+												</v8:item>
+											</Title>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ИндикаторВыгрузитьВсеМодулиИзБазыОсновногоХранилищаКонтекстноеМеню" id="864"/>
+											<ExtendedTooltip name="ИндикаторВыгрузитьВсеМодулиИзБазыОсновногоХранилищаРасширеннаяПодсказка" id="865"/>
+										</PictureDecoration>
+										<CheckBoxField name="ВыгрузитьВсеМодулиИзБазыОсновногоХранилища" id="686">
+											<DataPath>ВыгрузитьВсеМодулиИзБазыОсновногоХранилища</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ВыгрузитьВсеМодулиИзБазыОсновногоХранилищаКонтекстноеМеню" id="687"/>
+											<ExtendedTooltip name="ВыгрузитьВсеМодулиИзБазыОсновногоХранилищаРасширеннаяПодсказка" id="688"/>
+										</CheckBoxField>
+										<LabelField name="СведенияВыгрузитьВсеМодулиИзБазыОсновногоХранилища" id="770">
+											<DataPath>СведенияВыгрузитьВсеМодулиИзБазыОсновногоХранилища</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СведенияВыгрузитьВсеМодулиИзБазыОсновногоХранилищаКонтекстноеМеню" id="771"/>
+											<ExtendedTooltip name="СведенияВыгрузитьВсеМодулиИзБазыОсновногоХранилищаРасширеннаяПодсказка" id="772"/>
+											<Events>
+												<Event name="URLProcessing">СведенияВыгрузитьВсеМодулиИзБазыОсновногоХранилищаОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="СтраницаШаг3Группа8" id="727">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СтраницаШаг3Группа8РасширеннаяПодсказка" id="728"/>
+									<ChildItems>
+										<PictureDecoration name="ИндикаторЗагрузитьОбработчикиОбновления" id="851">
+											<Width>2</Width>
+											<Height>1</Height>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ИндикаторЗагрузитьОбработчикиОбновленияКонтекстноеМеню" id="852"/>
+											<ExtendedTooltip name="ИндикаторЗагрузитьОбработчикиОбновленияРасширеннаяПодсказка" id="853"/>
+										</PictureDecoration>
+										<CheckBoxField name="ЗагрузитьОбработчикиОбновления" id="715">
+											<DataPath>ЗагрузитьОбработчикиОбновления</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗагрузитьОбработчикиОбновленияКонтекстноеМеню" id="716"/>
+											<ExtendedTooltip name="ЗагрузитьОбработчикиОбновленияРасширеннаяПодсказка" id="717"/>
+										</CheckBoxField>
+										<LabelField name="СведенияЗагрузитьОбработчикиОбновления" id="758">
+											<DataPath>СведенияЗагрузитьОбработчикиОбновления</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СведенияЗагрузитьОбработчикиОбновленияКонтекстноеМеню" id="759"/>
+											<ExtendedTooltip name="СведенияЗагрузитьОбработчикиОбновленияРасширеннаяПодсказка" id="760"/>
+											<Events>
+												<Event name="URLProcessing">СведенияЗагрузитьОбработчикиОбновленияОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="СтраницаШаг3Группа9" id="729">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СтраницаШаг3Группа9РасширеннаяПодсказка" id="730"/>
+									<ChildItems>
+										<PictureDecoration name="ИндикаторСгенерироватьТекстыОписанияОбработчиковОбновления" id="854">
+											<Width>2</Width>
+											<Height>1</Height>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ИндикаторСгенерироватьТекстыОписанияОбработчиковОбновленияКонтекстноеМеню" id="855"/>
+											<ExtendedTooltip name="ИндикаторСгенерироватьТекстыОписанияОбработчиковОбновленияРасширеннаяПодсказка" id="856"/>
+										</PictureDecoration>
+										<CheckBoxField name="СгенерироватьТекстыОписанияОбработчиковОбновления" id="677">
+											<DataPath>СгенерироватьТекстыОписанияОбработчиковОбновления</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СгенерироватьТекстыОписанияОбработчиковОбновленияКонтекстноеМеню" id="678"/>
+											<ExtendedTooltip name="СгенерироватьТекстыОписанияОбработчиковОбновленияРасширеннаяПодсказка" id="679"/>
+										</CheckBoxField>
+										<LabelField name="СведенияСгенерироватьТекстыОписанияОбработчиковОбновления" id="761">
+											<DataPath>СведенияСгенерироватьТекстыОписанияОбработчиковОбновления</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СведенияСгенерироватьТекстыОписанияОбработчиковОбновленияКонтекстноеМеню" id="762"/>
+											<ExtendedTooltip name="СведенияСгенерироватьТекстыОписанияОбработчиковОбновленияРасширеннаяПодсказка" id="763"/>
+											<Events>
+												<Event name="URLProcessing">СведенияСгенерироватьТекстыОписанияОбработчиковОбновленияОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="СтраницаШаг3Группа10" id="739">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СтраницаШаг3Группа10РасширеннаяПодсказка" id="740"/>
+									<ChildItems>
+										<PictureDecoration name="ИндикаторСгенерироватьФайлыИЗагрузитьВПромежуточнуюБазу" id="869">
+											<Width>2</Width>
+											<Height>1</Height>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ИндикаторСгенерироватьФайлыИЗагрузитьВПромежуточнуюБазуКонтекстноеМеню" id="870"/>
+											<ExtendedTooltip name="ИндикаторСгенерироватьФайлыИЗагрузитьВПромежуточнуюБазуРасширеннаяПодсказка" id="871"/>
+										</PictureDecoration>
+										<CheckBoxField name="СгенерироватьФайлыИЗагрузитьВПромежуточнуюБазу" id="689">
+											<DataPath>СгенерироватьФайлыИЗагрузитьВПромежуточнуюБазу</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СгенерироватьФайлыИЗагрузитьВПромежуточнуюБазуКонтекстноеМеню" id="690"/>
+											<ExtendedTooltip name="СгенерироватьФайлыИЗагрузитьВПромежуточнуюБазуРасширеннаяПодсказка" id="691"/>
+										</CheckBoxField>
+										<LabelField name="СведенияСгенерироватьФайлыИЗагрузитьВПромежуточнуюБазу" id="776">
+											<DataPath>СведенияСгенерироватьФайлыИЗагрузитьВПромежуточнуюБазу</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СведенияСгенерироватьФайлыИЗагрузитьВПромежуточнуюБазуКонтекстноеМеню" id="777"/>
+											<ExtendedTooltip name="СведенияСгенерироватьФайлыИЗагрузитьВПромежуточнуюБазуРасширеннаяПодсказка" id="778"/>
+											<Events>
+												<Event name="URLProcessing">СведенияСгенерироватьФайлыИЗагрузитьВПромежуточнуюБазуОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="СтраницаШаг3Группа11" id="741">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СтраницаШаг3Группа11РасширеннаяПодсказка" id="742"/>
+									<ChildItems>
+										<PictureDecoration name="ИндикаторСохранитьПромежуточнуюБазуВФайл" id="872">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Индикатор сохранить промежуточную базу в файл</v8:content>
+												</v8:item>
+											</Title>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ИндикаторСохранитьПромежуточнуюБазуВФайлКонтекстноеМеню" id="873"/>
+											<ExtendedTooltip name="ИндикаторСохранитьПромежуточнуюБазуВФайлРасширеннаяПодсказка" id="874"/>
+										</PictureDecoration>
+										<CheckBoxField name="СохранитьПромежуточнуюБазуВФайл" id="695">
+											<DataPath>СохранитьПромежуточнуюБазуВФайл</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СохранитьПромежуточнуюБазуВФайлКонтекстноеМеню" id="696"/>
+											<ExtendedTooltip name="СохранитьПромежуточнуюБазуВФайлРасширеннаяПодсказка" id="697"/>
+										</CheckBoxField>
+										<LabelField name="СведенияСохранитьПромежуточнуюБазуВФайл" id="779">
+											<DataPath>СведенияСохранитьПромежуточнуюБазуВФайл</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СведенияСохранитьПромежуточнуюБазуВФайлКонтекстноеМеню" id="780"/>
+											<ExtendedTooltip name="СведенияСохранитьПромежуточнуюБазуВФайлРасширеннаяПодсказка" id="781"/>
+											<Events>
+												<Event name="URLProcessing">СведенияСохранитьПромежуточнуюБазуВФайлОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="СтраницаШаг3Группа12" id="743">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СтраницаШаг3Группа12РасширеннаяПодсказка" id="744"/>
+									<ChildItems>
+										<PictureDecoration name="ИндикаторОбъединитьБазуВерсииИФайл" id="875">
+											<Width>2</Width>
+											<Height>1</Height>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ИндикаторОбъединитьБазуВерсииИФайлКонтекстноеМеню" id="876"/>
+											<ExtendedTooltip name="ИндикаторОбъединитьБазуВерсииИФайлРасширеннаяПодсказка" id="877"/>
+										</PictureDecoration>
+										<CheckBoxField name="ОбъединитьБазуВерсииИФайл" id="701">
+											<DataPath>ОбъединитьБазуВерсииИФайл</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ОбъединитьБазуВерсииИФайлКонтекстноеМеню" id="702"/>
+											<ExtendedTooltip name="ОбъединитьБазуВерсииИФайлРасширеннаяПодсказка" id="703"/>
+										</CheckBoxField>
+										<LabelField name="СведенияОбъединитьБазуВерсииИФайл" id="782">
+											<DataPath>СведенияОбъединитьБазуВерсииИФайл</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СведенияОбъединитьБазуВерсииИФайлКонтекстноеМеню" id="783"/>
+											<ExtendedTooltip name="СведенияОбъединитьБазуВерсииИФайлРасширеннаяПодсказка" id="784"/>
+											<Events>
+												<Event name="URLProcessing">СведенияОбъединитьБазуВерсииИФайлОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="СтраницаШаг3Группа13" id="745">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СтраницаШаг3Группа13РасширеннаяПодсказка" id="746"/>
+									<ChildItems>
+										<PictureDecoration name="ИндикаторСгенерироватьФайлыМодулейИЗалитьВБазу" id="878">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Индикатор сгенерировать файлы модулей и залить в базу</v8:content>
+												</v8:item>
+											</Title>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ИндикаторСгенерироватьФайлыМодулейИЗалитьВБазуКонтекстноеМеню" id="879"/>
+											<ExtendedTooltip name="ИндикаторСгенерироватьФайлыМодулейИЗалитьВБазуРасширеннаяПодсказка" id="880"/>
+										</PictureDecoration>
+										<CheckBoxField name="СгенерироватьФайлыМодулейИЗалитьВБазу" id="709">
+											<DataPath>СгенерироватьФайлыМодулейИЗалитьВБазу</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СгенерироватьФайлыМодулейИЗалитьВБазуКонтекстноеМеню" id="710"/>
+											<ExtendedTooltip name="СгенерироватьФайлыМодулейИЗалитьВБазуРасширеннаяПодсказка" id="711"/>
+										</CheckBoxField>
+										<LabelField name="СведенияСгенерироватьФайлыМодулейИЗалитьВБазу" id="785">
+											<DataPath>СведенияСгенерироватьФайлыМодулейИЗалитьВБазу</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СведенияСгенерироватьФайлыМодулейИЗалитьВБазуКонтекстноеМеню" id="786"/>
+											<ExtendedTooltip name="СведенияСгенерироватьФайлыМодулейИЗалитьВБазуРасширеннаяПодсказка" id="787"/>
+											<Events>
+												<Event name="URLProcessing">СведенияСгенерироватьФайлыМодулейИЗалитьВБазуОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="СтраницаШаг3Группа1" id="747">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг3 группа1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СтраницаШаг3Группа1РасширеннаяПодсказка" id="748"/>
+									<ChildItems>
+										<PictureDecoration name="ИндикаторЗаложитьИзмененияВХранилищеВерсии" id="881">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Индикатор заложить изменения в хранилище версии</v8:content>
+												</v8:item>
+											</Title>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ИндикаторЗаложитьИзмененияВХранилищеВерсииКонтекстноеМеню" id="882"/>
+											<ExtendedTooltip name="ИндикаторЗаложитьИзмененияВХранилищеВерсииРасширеннаяПодсказка" id="883"/>
+										</PictureDecoration>
+										<CheckBoxField name="ЗаложитьИзмененияВХранилищеВерсии" id="704">
+											<DataPath>ЗаложитьИзмененияВХранилищеВерсии</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЗаложитьИзмененияВХранилищеВерсииКонтекстноеМеню" id="705"/>
+											<ExtendedTooltip name="ЗаложитьИзмененияВХранилищеВерсииРасширеннаяПодсказка" id="706"/>
+										</CheckBoxField>
+										<LabelField name="СведенияЗаложитьИзмененияВХранилищеВерсии" id="788">
+											<DataPath>СведенияЗаложитьИзмененияВХранилищеВерсии</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СведенияЗаложитьИзмененияВХранилищеВерсииКонтекстноеМеню" id="789"/>
+											<ExtendedTooltip name="СведенияЗаложитьИзмененияВХранилищеВерсииРасширеннаяПодсказка" id="790"/>
+											<Events>
+												<Event name="URLProcessing">СведенияЗаложитьИзмененияВХранилищеВерсииОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<Pages name="СтраницыКомандыШаг3" id="791">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы команды шаг1</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы команды шаг1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="СтраницыКомандыШаг3РасширеннаяПодсказка" id="792"/>
+							<ChildItems>
+								<Page name="СтраницаКомандыШаг3_Начало" id="793">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Начало</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница команды шаг1 начало</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="СтраницаКомандыШаг3_НачалоРасширеннаяПодсказка" id="794"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация8" id="795">
+											<Height>4</Height>
+											<ContextMenu name="Декорация8КонтекстноеМеню" id="796"/>
+											<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="797"/>
+										</LabelDecoration>
+										<Button name="ВыполнитьШаг3" id="798">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ВыполнитьШаг3</CommandName>
+											<ExtendedTooltip name="ВыполнитьШаг3РасширеннаяПодсказка" id="799"/>
+										</Button>
+										<Button name="НачатьЗаново4Шаг3" id="886">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.НачатьЗановоШаг3</CommandName>
+											<ExtendedTooltip name="НачатьЗаново4Шаг3РасширеннаяПодсказка" id="887"/>
+										</Button>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаКомандыШаг3_ДействияВыполняются" id="800">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выполняется</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница команды шаг1 действия выполняются</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<VerticalAlign>Center</VerticalAlign>
+									<ExtendedTooltip name="СтраницаКомандыШаг3_ДействияВыполняютсяРасширеннаяПодсказка" id="801"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация28" id="802">
+											<Width>5</Width>
+											<Height>3</Height>
+											<Picture>
+												<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="Декорация28КонтекстноеМеню" id="803"/>
+											<ExtendedTooltip name="Декорация28РасширеннаяПодсказка" id="804"/>
+										</PictureDecoration>
+										<LabelDecoration name="Декорация29" id="805">
+											<Height>1</Height>
+											<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Подождите, идет выполнение выбранных действий...</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация29КонтекстноеМеню" id="806"/>
+											<ExtendedTooltip name="Декорация29РасширеннаяПодсказка" id="807"/>
+										</LabelDecoration>
+										<Button name="НачатьЗаново1Шаг3" id="808">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ОтменитьШаг3</CommandName>
+											<ExtendedTooltip name="НачатьЗаново1Шаг3РасширеннаяПодсказка" id="809"/>
+										</Button>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаКомандыШаг3_УспешноЗавершено" id="810">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Успешно завершено</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница команды ход выполнения шаг1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<VerticalAlign>Center</VerticalAlign>
+									<ExtendedTooltip name="СтраницаКомандыШаг3_УспешноЗавершеноРасширеннаяПодсказка" id="811"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация30" id="812">
+											<Width>5</Width>
+											<Height>3</Height>
+											<Picture>
+												<xr:Ref>CommonPicture.Успешно32</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="Декорация30КонтекстноеМеню" id="813"/>
+											<ExtendedTooltip name="Декорация30РасширеннаяПодсказка" id="814"/>
+										</PictureDecoration>
+										<LabelDecoration name="Декорация31" id="815">
+											<Height>1</Height>
+											<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Действия выполнены успешно</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация31КонтекстноеМеню" id="816"/>
+											<ExtendedTooltip name="Декорация31РасширеннаяПодсказка" id="817"/>
+										</LabelDecoration>
+										<Button name="НачатьЗаново2Шаг3" id="818">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.НачатьЗановоШаг3</CommandName>
+											<ExtendedTooltip name="НачатьЗаново2Шаг3РасширеннаяПодсказка" id="819"/>
+										</Button>
+										<Button name="ЗакрытьОбработку1" id="820">
+											<Type>Hyperlink</Type>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<CommandName>Form.Command.ЗакрытьОбработку</CommandName>
+											<ExtendedTooltip name="ЗакрытьОбработку1РасширеннаяПодсказка" id="821"/>
+										</Button>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаКомандыШаг3_ЗавершеноСОшибками" id="822">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Завершено с ошибками</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница команды ход выполнения шаг1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<VerticalAlign>Center</VerticalAlign>
+									<ExtendedTooltip name="СтраницаКомандыШаг3_ЗавершеноСОшибкамиРасширеннаяПодсказка" id="823"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация32" id="824">
+											<Width>5</Width>
+											<Height>3</Height>
+											<Picture>
+												<xr:Ref>CommonPicture.Ошибка32</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="Декорация32КонтекстноеМеню" id="825"/>
+											<ExtendedTooltip name="Декорация32РасширеннаяПодсказка" id="826"/>
+										</PictureDecoration>
+										<LabelDecoration name="Декорация33" id="827">
+											<Height>1</Height>
+											<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Действия выполнены с ошибками</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация33КонтекстноеМеню" id="828"/>
+											<ExtendedTooltip name="Декорация33РасширеннаяПодсказка" id="829"/>
+										</LabelDecoration>
+										<Button name="ПродолжитьШаг3" id="830">
+											<Type>Hyperlink</Type>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<CommandName>Form.Command.ПродолжитьШаг3</CommandName>
+											<ExtendedTooltip name="ПродолжитьШаг3РасширеннаяПодсказка" id="831"/>
+										</Button>
+										<Button name="НачатьЗаново3Шаг3" id="832">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.НачатьЗановоШаг3</CommandName>
+											<ExtendedTooltip name="НачатьЗаново3Шаг3РасширеннаяПодсказка" id="833"/>
+										</Button>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаКомандыШаг2_Недоступно1" id="834">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница команды шаг2 недоступно</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница команды шаг2 недоступно</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<VerticalAlign>Center</VerticalAlign>
+									<ExtendedTooltip name="СтраницаКомандыШаг2_Недоступно1РасширеннаяПодсказка" id="835"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация34" id="836">
+											<Width>5</Width>
+											<Height>3</Height>
+											<Picture>
+												<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="Декорация34КонтекстноеМеню" id="837"/>
+											<ExtendedTooltip name="Декорация34РасширеннаяПодсказка" id="838"/>
+										</PictureDecoration>
+										<LabelDecoration name="Декорация35" id="839">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>1</Height>
+											<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Подождите, идет выполнение действий по обновлению описания обработчиков обновления в хранилище версии...</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация35КонтекстноеМеню" id="840"/>
+											<ExtendedTooltip name="Декорация35РасширеннаяПодсказка" id="841"/>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаШагЗахватОбъектов" id="888">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Захват объектов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница шаг захват объектов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаШагЗахватОбъектовРасширеннаяПодсказка" id="889"/>
+					<ChildItems>
+						<Table name="ЗахватываемыеОбъекты" id="890">
+							<Representation>List</Representation>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ЗахватываемыеОбъекты</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ЗахватываемыеОбъектыКонтекстноеМеню" id="891"/>
+							<AutoCommandBar name="ЗахватываемыеОбъектыКоманднаяПанель" id="892">
+								<ChildItems>
+									<Button name="ЗахватываемыеОбъектыИзменитьСписок" id="922">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ИзменитьСписок</CommandName>
+										<ExtendedTooltip name="ЗахватываемыеОбъектыИзменитьСписокРасширеннаяПодсказка" id="923"/>
+									</Button>
+									<Button name="ЗахватываемыеОбъектыУдалить" id="924">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ЗахватываемыеОбъекты.StandardCommand.Delete</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ЗахватываемыеОбъектыУдалитьРасширеннаяПодсказка" id="925"/>
+									</Button>
+									<Button name="ЗахватываемыеОбъектыДобавитьЗахватКорня" id="920">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ДобавитьЗахватКорня</CommandName>
+										<ExtendedTooltip name="ЗахватываемыеОбъектыДобавитьЗахватКорняРасширеннаяПодсказка" id="921"/>
+									</Button>
+									<Popup name="ЗахватываемыеОбъектыГруппаЗаполнить" id="918">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Заполнить</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Захватываемые объекты группа заполнить</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ЗахватываемыеОбъектыГруппаЗаполнитьРасширеннаяПодсказка" id="919"/>
+										<ChildItems>
+											<Button name="ЗаполнитьПоРезультатамГлобальногоПоиска" id="914">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ЗаполнитьПоРезультатамГлобальногоПоиска</CommandName>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>по результатам глобального поиска</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="ЗаполнитьПоРезультатамГлобальногоПоискаРасширеннаяПодсказка" id="915"/>
+											</Button>
+											<Button name="ЗаполнитьПоРезультатамПоискаСсылокНаОбъект" id="916">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ЗаполнитьПоРезультатамПоискаСсылокНаОбъект</CommandName>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>по результатам поиска ссылок на объект</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="ЗаполнитьПоРезультатамПоискаСсылокНаОбъектРасширеннаяПодсказка" id="917"/>
+											</Button>
+											<Button name="ЗаполнитьПоСпискуОбъектов" id="1013">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ЗаполнитьПоСпискуОбъектов</CommandName>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>по списку объектов</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="ЗаполнитьПоСпискуОбъектовРасширеннаяПодсказка" id="1014"/>
+											</Button>
+										</ChildItems>
+									</Popup>
+									<Button name="ЗахватываемыеОбъектыВывестиСписок" id="1011">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Item.ЗахватываемыеОбъекты.StandardCommand.OutputList</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ЗахватываемыеОбъектыВывестиСписокРасширеннаяПодсказка" id="1012"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ЗахватываемыеОбъектыРасширеннаяПодсказка" id="893"/>
+							<SearchStringAddition name="ЗахватываемыеОбъектыСтрокаПоиска" id="894">
+								<AdditionSource>
+									<Item>ЗахватываемыеОбъекты</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗахватываемыеОбъектыСтрокаПоискаКонтекстноеМеню" id="895"/>
+								<ExtendedTooltip name="ЗахватываемыеОбъектыСтрокаПоискаРасширеннаяПодсказка" id="896"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЗахватываемыеОбъектыСостояниеПросмотра" id="897">
+								<AdditionSource>
+									<Item>ЗахватываемыеОбъекты</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗахватываемыеОбъектыСостояниеПросмотраКонтекстноеМеню" id="898"/>
+								<ExtendedTooltip name="ЗахватываемыеОбъектыСостояниеПросмотраРасширеннаяПодсказка" id="899"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЗахватываемыеОбъектыУправлениеПоиском" id="900">
+								<AdditionSource>
+									<Item>ЗахватываемыеОбъекты</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗахватываемыеОбъектыУправлениеПоискомКонтекстноеМеню" id="901"/>
+								<ExtendedTooltip name="ЗахватываемыеОбъектыУправлениеПоискомРасширеннаяПодсказка" id="902"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeAddRow">ЗахватываемыеОбъектыПередНачаломДобавления</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ЗахватываемыеОбъектыПолноеИмя" id="903">
+									<DataPath>ЗахватываемыеОбъекты.ПолноеИмя</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Объект</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЗахватываемыеОбъектыПолноеИмяКонтекстноеМеню" id="904"/>
+									<ExtendedTooltip name="ЗахватываемыеОбъектыПолноеИмяРасширеннаяПодсказка" id="905"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+						<UsualGroup name="СтраницаШагЗахватОбъектовПодвал" id="985">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница шаг захват объектов подвал</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница шаг захват объектов подвал</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="СтраницаШагЗахватОбъектовПодвалРасширеннаяПодсказка" id="986"/>
+							<ChildItems>
+								<Pages name="СтраницыКомандыШагЗахватОбъектов" id="928">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы команды шаг1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы команды шаг1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>1</Width>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="СтраницыКомандыШагЗахватОбъектовРасширеннаяПодсказка" id="929"/>
+									<ChildItems>
+										<Page name="СтраницаКомандыШагЗахватОбъектов_Начало" id="930">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Начало</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="СтраницаКомандыШагЗахватОбъектов_НачалоРасширеннаяПодсказка" id="931"/>
+											<ChildItems>
+												<UsualGroup name="Группа3" id="1006">
+													<Width>100</Width>
+													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="1007"/>
+													<ChildItems>
+														<LabelDecoration name="Декорация12" id="1003">
+															<ContextMenu name="Декорация12КонтекстноеМеню" id="1004"/>
+															<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="1005"/>
+														</LabelDecoration>
+														<Button name="ЗахватитьОбъектыПоСписку" id="926">
+															<Type>UsualButton</Type>
+															<Width>11</Width>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<MaxWidth>11</MaxWidth>
+															<HorizontalStretch>true</HorizontalStretch>
+															<CommandName>Form.Command.ЗахватитьОбъектыПоСписку</CommandName>
+															<ExtendedTooltip name="ЗахватитьОбъектыПоСпискуРасширеннаяПодсказка" id="927"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаИнформация4" id="995">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа информация2</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Horizontal</Group>
+													<VerticalAlign>Center</VerticalAlign>
+													<Behavior>Usual</Behavior>
+													<Representation>NormalSeparation</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаИнформация4РасширеннаяПодсказка" id="996"/>
+													<ChildItems>
+														<LabelDecoration name="Декорация44" id="1008">
+															<ContextMenu name="Декорация44КонтекстноеМеню" id="1009"/>
+															<ExtendedTooltip name="Декорация44РасширеннаяПодсказка" id="1010"/>
+														</LabelDecoration>
+														<LabelDecoration name="ИнформацияШагЗахватОбъектов" id="1000">
+															<Width>64</Width>
+															<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Перед началом захвата закройте конфигуратор базы, подключенной к хранилищу</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ИнформацияШагЗахватОбъектовКонтекстноеМеню" id="1001"/>
+															<ExtendedTooltip name="ИнформацияШагЗахватОбъектовРасширеннаяПодсказка" id="1002"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаКомандыШагЗахватОбъектов_ДействияВыполняются" id="939">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выполняется</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница команды шаг1 действия выполняются</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<VerticalAlign>Center</VerticalAlign>
+											<ExtendedTooltip name="СтраницаКомандыШагЗахватОбъектов_ДействияВыполняютсяРасширеннаяПодсказка" id="940"/>
+											<ChildItems>
+												<PictureDecoration name="Декорация36" id="941">
+													<Width>5</Width>
+													<Height>3</Height>
+													<Picture>
+														<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="Декорация36КонтекстноеМеню" id="942"/>
+													<ExtendedTooltip name="Декорация36РасширеннаяПодсказка" id="943"/>
+												</PictureDecoration>
+												<LabelDecoration name="Декорация37" id="944">
+													<Height>1</Height>
+													<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Подождите, идет выполнение выбранных действий...</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация37КонтекстноеМеню" id="945"/>
+													<ExtendedTooltip name="Декорация37РасширеннаяПодсказка" id="946"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаКомандыШагЗахватОбъектов_УспешноЗавершено" id="949">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Успешно завершено</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница команды ход выполнения шаг1</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<VerticalAlign>Center</VerticalAlign>
+											<ExtendedTooltip name="СтраницаКомандыШагЗахватОбъектов_УспешноЗавершеноРасширеннаяПодсказка" id="950"/>
+											<ChildItems>
+												<PictureDecoration name="Декорация38" id="951">
+													<Width>5</Width>
+													<Height>3</Height>
+													<Picture>
+														<xr:Ref>CommonPicture.Успешно32</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="Декорация38КонтекстноеМеню" id="952"/>
+													<ExtendedTooltip name="Декорация38РасширеннаяПодсказка" id="953"/>
+												</PictureDecoration>
+												<LabelDecoration name="Декорация39" id="954">
+													<Height>1</Height>
+													<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Действия выполнены успешно</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация39КонтекстноеМеню" id="955"/>
+													<ExtendedTooltip name="Декорация39РасширеннаяПодсказка" id="956"/>
+												</LabelDecoration>
+												<Button name="ОткрытьКонфигураторОсновногоХранилища1" id="983">
+													<Type>Hyperlink</Type>
+													<Representation>Text</Representation>
+													<CommandName>Form.Command.ОткрытьКонфигураторОсновногоХранилища</CommandName>
+													<ExtendedTooltip name="ОткрытьКонфигураторОсновногоХранилища1РасширеннаяПодсказка" id="984"/>
+												</Button>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаКомандыШагЗахватОбъектов_ЗавершеноСОшибками" id="961">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Завершено с ошибками</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница команды ход выполнения шаг1</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<VerticalAlign>Center</VerticalAlign>
+											<ExtendedTooltip name="СтраницаКомандыШагЗахватОбъектов_ЗавершеноСОшибкамиРасширеннаяПодсказка" id="962"/>
+											<ChildItems>
+												<PictureDecoration name="Декорация40" id="963">
+													<Width>5</Width>
+													<Height>3</Height>
+													<Picture>
+														<xr:Ref>CommonPicture.Ошибка32</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="Декорация40КонтекстноеМеню" id="964"/>
+													<ExtendedTooltip name="Декорация40РасширеннаяПодсказка" id="965"/>
+												</PictureDecoration>
+												<LabelDecoration name="Декорация41" id="966">
+													<Height>1</Height>
+													<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Действия выполнены с ошибками</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация41КонтекстноеМеню" id="967"/>
+													<ExtendedTooltip name="Декорация41РасширеннаяПодсказка" id="968"/>
+												</LabelDecoration>
+												<Button name="ЗахватитьОбъектыПоСписку1" id="981">
+													<Type>Hyperlink</Type>
+													<Representation>Text</Representation>
+													<CommandName>Form.Command.ЗахватитьОбъектыПоСписку</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Повторить попытку</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ЗахватитьОбъектыПоСписку1РасширеннаяПодсказка" id="982"/>
+												</Button>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаКомандыШагЗахватОбъектов_Недоступно" id="973">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница команды шаг2 недоступно</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница команды шаг2 недоступно</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<VerticalAlign>Center</VerticalAlign>
+											<ExtendedTooltip name="СтраницаКомандыШагЗахватОбъектов_НедоступноРасширеннаяПодсказка" id="974"/>
+											<ChildItems>
+												<PictureDecoration name="Декорация42" id="975">
+													<Width>5</Width>
+													<Height>3</Height>
+													<Picture>
+														<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="Декорация42КонтекстноеМеню" id="976"/>
+													<ExtendedTooltip name="Декорация42РасширеннаяПодсказка" id="977"/>
+												</PictureDecoration>
+												<LabelDecoration name="Декорация43" id="978">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<TextColor>style:ТекстИнформационнойНадписи</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Подождите, идет выполнение действий по захвату объектов в хранилище...</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация43КонтекстноеМеню" id="979"/>
+													<ExtendedTooltip name="Декорация43РасширеннаяПодсказка" id="980"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+								<UsualGroup name="СтраницаШагЗахватОбъектовГруппаСведений" id="990">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг захват объектов группа сведений</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница шаг захват объектов группа сведений</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Height>4</Height>
+									<VerticalStretch>true</VerticalStretch>
+									<Group>Horizontal</Group>
+									<VerticalAlign>Center</VerticalAlign>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="СтраницаШагЗахватОбъектовГруппаСведенийРасширеннаяПодсказка" id="991"/>
+									<ChildItems>
+										<PictureDecoration name="ИндикаторЗахватитьОбъектыПоСписку" id="992">
+											<Width>2</Width>
+											<Height>1</Height>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Индикатор захватить объекты по списку</v8:content>
+												</v8:item>
+											</Title>
+											<FileDragMode>AsFile</FileDragMode>
+											<ContextMenu name="ИндикаторЗахватитьОбъектыПоСпискуКонтекстноеМеню" id="993"/>
+											<ExtendedTooltip name="ИндикаторЗахватитьОбъектыПоСпискуРасширеннаяПодсказка" id="994"/>
+										</PictureDecoration>
+										<LabelField name="СведенияЗахватитьОбъектыПоСписку" id="987">
+											<DataPath>СведенияЗахватитьОбъектыПоСписку</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СведенияЗахватитьОбъектыПоСпискуКонтекстноеМеню" id="988"/>
+											<ExtendedTooltip name="СведенияЗахватитьОбъектыПоСпискуРасширеннаяПодсказка" id="989"/>
+											<Events>
+												<Event name="URLProcessing">СведенияЗахватитьОбъектыПоСпискуОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаНастройки" id="87">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаНастройкиРасширеннаяПодсказка" id="88"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНастройкиОсновногоХранилища" id="54">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База, подключенная к хранилищу версии</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки основного хранилища</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаНастройкиОсновногоХранилищаРасширеннаяПодсказка" id="55"/>
+							<ChildItems>
+								<InputField name="ВерсияПроекта" id="639">
+									<DataPath>ВерсияПроекта</DataPath>
+									<Width>16</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<OpenButton>false</OpenButton>
+									<ChoiceParameterLinks>
+										<xr:Link>
+											<xr:Name>Отбор.Владелец</xr:Name>
+											<xr:DataPath xsi:type="xs:string">Проект</xr:DataPath>
+											<xr:ValueChange>Clear</xr:ValueChange>
+										</xr:Link>
+									</ChoiceParameterLinks>
+									<ContextMenu name="ВерсияПроектаКонтекстноеМеню" id="640"/>
+									<ExtendedTooltip name="ВерсияПроектаРасширеннаяПодсказка" id="641"/>
+									<Events>
+										<Event name="OnChange">ВерсияПроектаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<UsualGroup name="ГруппаИБОсновногоХранилища" id="68">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ИБОсновного хранилища</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ИБОсновного хранилища</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаИБОсновногоХранилищаРасширеннаяПодсказка" id="69"/>
+									<ChildItems>
+										<InputField name="РасположениеИБОсновногоХранилища" id="41">
+											<DataPath>РасположениеИБОсновногоХранилища</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Расположение ИБ</v8:content>
+												</v8:item>
+											</Title>
+											<Width>40</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ChoiceButton>true</ChoiceButton>
+											<ContextMenu name="РасположениеИБОсновногоХранилищаКонтекстноеМеню" id="42"/>
+											<ExtendedTooltip name="РасположениеИБОсновногоХранилищаРасширеннаяПодсказка" id="43"/>
+											<Events>
+												<Event name="StartChoice">РасположениеИБОсновногоХранилищаНачалоВыбора</Event>
+											</Events>
+										</InputField>
+										<InputField name="ПользовательИБОсновногоХранилища" id="35">
+											<DataPath>ПользовательИБОсновногоХранилища</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пользователь</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<Width>20</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<InputHint>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Имя пользователя</v8:content>
+												</v8:item>
+											</InputHint>
+											<ContextMenu name="ПользовательИБОсновногоХранилищаКонтекстноеМеню" id="36"/>
+											<ExtendedTooltip name="ПользовательИБОсновногоХранилищаРасширеннаяПодсказка" id="37"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаОсновноеХранилище" id="70">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа основное хранилище</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа основное хранилище</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОсновноеХранилищеРасширеннаяПодсказка" id="71"/>
+									<ChildItems>
+										<InputField name="АдресОсновногоХранилища" id="44">
+											<DataPath>АдресОсновногоХранилища</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Адрес хранилища</v8:content>
+												</v8:item>
+											</Title>
+											<Width>40</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="АдресОсновногоХранилищаКонтекстноеМеню" id="45"/>
+											<ExtendedTooltip name="АдресОсновногоХранилищаРасширеннаяПодсказка" id="46"/>
+										</InputField>
+										<InputField name="ПользовательОсновногоХранилища" id="47">
+											<DataPath>ПользовательОсновногоХранилища</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пользователь</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<Width>20</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<InputHint>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Имя пользователя хранилища</v8:content>
+												</v8:item>
+											</InputHint>
+											<ContextMenu name="ПользовательОсновногоХранилищаКонтекстноеМеню" id="48"/>
+											<ExtendedTooltip name="ПользовательОсновногоХранилищаРасширеннаяПодсказка" id="49"/>
+										</InputField>
+										<InputField name="ПарольОсновногоХранилища" id="56">
+											<DataPath>ПарольОсновногоХранилища</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<PasswordMode>true</PasswordMode>
+											<InputHint>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пароль</v8:content>
+												</v8:item>
+											</InputHint>
+											<ContextMenu name="ПарольОсновногоХранилищаКонтекстноеМеню" id="57"/>
+											<ExtendedTooltip name="ПарольОсновногоХранилищаРасширеннаяПодсказка" id="58"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<Button name="ОткрытьКонфигураторОсновногоХранилища" id="593">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ОткрытьКонфигураторОсновногоХранилища</CommandName>
+									<ExtendedTooltip name="ОткрытьКонфигураторОсновногоХранилищаРасширеннаяПодсказка" id="594"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаНастройкиТехпроекта" id="163">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>База разработки технического проекта</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки техпроекта</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаНастройкиТехпроектаРасширеннаяПодсказка" id="164"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаИБТехпроекта" id="170">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ИБТехпроекта</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ИБТехпроекта</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаИБТехпроектаРасширеннаяПодсказка" id="171"/>
+									<ChildItems>
+										<InputField name="РасположениеИБТехпроекта" id="165">
+											<DataPath>РасположениеИБТехпроекта</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Расположение ИБ</v8:content>
+												</v8:item>
+											</Title>
+											<Width>40</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ChoiceButton>true</ChoiceButton>
+											<ContextMenu name="РасположениеИБТехпроектаКонтекстноеМеню" id="166"/>
+											<ExtendedTooltip name="РасположениеИБТехпроектаРасширеннаяПодсказка" id="167"/>
+											<Events>
+												<Event name="StartChoice">РасположениеИБТехпроектаНачалоВыбора</Event>
+											</Events>
+										</InputField>
+										<InputField name="ПользовательИБТехпроекта" id="172">
+											<DataPath>ПользовательИБТехпроекта</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пользователь</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<Width>20</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<InputHint>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Имя пользователя</v8:content>
+												</v8:item>
+											</InputHint>
+											<ContextMenu name="ПользовательИБТехпроектаКонтекстноеМеню" id="173"/>
+											<ExtendedTooltip name="ПользовательИБТехпроектаРасширеннаяПодсказка" id="174"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаХранилищеТехпроекта" id="175">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа хранилище техпроекта</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа хранилище</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаХранилищеТехпроектаРасширеннаяПодсказка" id="176"/>
+									<ChildItems>
+										<InputField name="АдресХранилищаТехпроекта" id="177">
+											<DataPath>АдресХранилищаТехпроекта</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Адрес хранилища</v8:content>
+												</v8:item>
+											</Title>
+											<Width>40</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="АдресХранилищаТехпроектаКонтекстноеМеню" id="178"/>
+											<ExtendedTooltip name="АдресХранилищаТехпроектаРасширеннаяПодсказка" id="179"/>
+										</InputField>
+										<InputField name="ПользовательХранилищаТехпроекта" id="180">
+											<DataPath>ПользовательХранилищаТехпроекта</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пользователь</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<Width>20</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<InputHint>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Имя пользователя хранилища</v8:content>
+												</v8:item>
+											</InputHint>
+											<ContextMenu name="ПользовательХранилищаТехпроектаКонтекстноеМеню" id="181"/>
+											<ExtendedTooltip name="ПользовательХранилищаТехпроектаРасширеннаяПодсказка" id="182"/>
+										</InputField>
+										<InputField name="ПарольХранилищаТехпроекта" id="183">
+											<DataPath>ПарольХранилищаТехпроекта</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>false</HorizontalStretch>
+											<PasswordMode>true</PasswordMode>
+											<InputHint>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пароль</v8:content>
+												</v8:item>
+											</InputHint>
+											<ContextMenu name="ПарольХранилищаТехпроектаКонтекстноеМеню" id="184"/>
+											<ExtendedTooltip name="ПарольХранилищаТехпроектаРасширеннаяПодсказка" id="185"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<Button name="ОткрытьКонфигураторТехПроекта" id="595">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ОткрытьКонфигураторТехПроекта</CommandName>
+									<ExtendedTooltip name="ОткрытьКонфигураторТехПроектаРасширеннаяПодсказка" id="596"/>
+								</Button>
+								<UsualGroup name="ГруппаПрочее" id="194">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Прочее</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа прочее</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="ГруппаПрочееРасширеннаяПодсказка" id="195"/>
+									<ChildItems>
+										<InputField name="ФайлДляПереносаИзменений" id="196">
+											<DataPath>ФайлДляПереносаИзменений</DataPath>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<ChoiceButton>true</ChoiceButton>
+											<OpenButton>true</OpenButton>
+											<ContextMenu name="ФайлДляПереносаИзмененийКонтекстноеМеню" id="197"/>
+											<ExtendedTooltip name="ФайлДляПереносаИзмененийРасширеннаяПодсказка" id="198">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Файл используется при создании файла поставки и при переносе изменений в хранилище версии</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+											<Events>
+												<Event name="StartChoice">ФайлДляПереносаИзмененийНачалоВыбора</Event>
+												<Event name="Opening">ФайлДляПереносаИзмененийОткрытие</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа25" id="646">
+							<VerticalStretch>true</VerticalStretch>
+							<VerticalAlign>Bottom</VerticalAlign>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа25РасширеннаяПодсказка" id="647"/>
+							<ChildItems>
+								<CommandBar name="Группа22" id="642">
+									<ExtendedTooltip name="Группа22РасширеннаяПодсказка" id="643"/>
+									<ChildItems>
+										<Button name="Справка9" id="644">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.StandardCommand.Help</CommandName>
+											<ExtendedTooltip name="Справка9РасширеннаяПодсказка" id="645"/>
+										</Button>
+									</ChildItems>
+								</CommandBar>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РаботаСХранилищем</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПользовательИБОсновногоХранилища" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя пользователя информационной базы подключенной к хранилищу версии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ПользовательИБОсновногоХранилища</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="РасположениеИБОсновногоХранилища" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расположение информационной базы подключенной к хранилищу версии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>РасположениеИБОсновногоХранилища</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="АдресОсновногоХранилища" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес хранилища версии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ПользовательОсновногоХранилища" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя пользователя хранилища версии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>ПользовательОсновногоХранилища</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПарольОсновногоХранилища" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ПарольОсновногоХранилища</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="РезультатЗахвата" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат захвата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТехническийПроект" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Технический проект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ТехническиеПроекты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбновитьКонфигурациюИзОсновногоХранилища" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>1. Обновить конфигурацию из хранилища</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗахватитьОбъектыВОсновномХранилище" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>2. Захватить измененные объекты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СоздатьФайлПоставкиВОсновномХранилище" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>3. Создать файл поставки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОткрытьБазуРазработкиТехпроекта" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>5. Открыть Конфигуратор и вручную обновить конфигурацию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗахватьВсеОбъектыВХранилищеТехпроекта" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>4. Захватить все объекты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗахватитьИзмененныеОбъекты" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>1. Захватить измененные объекты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СохранитьКонфигурациюТехпроекта" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>2. Сохранить конфигурацию в файл</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПеренестиИзменения" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>3. Перенести изменения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимПереносаИзменений" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим переноса изменений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоместитьИзмененияВХранилище" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поместить изменения в хранилище</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РасположениеИБТехпроекта" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расположение информационной базы технического проекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>РасположениеИБТехпроекта</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="АдресХранилищаТехпроекта" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес хранилища технического проекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ФайлДляПереносаИзменений" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файл для переноса изменений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>ФайлДляПереносаИзменений</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЗахватитьКореньКонфигурации_Шаг2" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Захватить корень конфигурации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗахватитьВсеРоли_Шаг2" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Захватить все роли</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПользовательХранилищаТехпроекта" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя пользователя хранилища технического проекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>ПользовательХранилищаТехпроекта</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПарольХранилищаТехпроекта" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ПарольХранилищаТехпроекта</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПользовательИБТехпроекта" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя пользователя базы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ПользовательИБТехпроекта</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТекстДляЗахватаИзмененныхОбъектов" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст для захвата измененных объектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЦветТекстаВыполняется" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет текста выполняется</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияЗахватитьОбъектыВОсновномХранилище" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения захватить объекты в основном хранилище</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияСоздатьФайлПоставкиВОсновномХранилище" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения создать файл поставки в основном хранилище</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияЗахватьВсеОбъектыВХранилищеТехпроекта" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения захвать все объекты в хранилище техпроекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияОткрытьБазуРазработкиТехпроекта" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения открыть базу разработки техпроекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыполняемыеДействия" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполняемые действия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяДействия" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя действия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СостояниеВыполнения" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние выполнения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Пометка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ФайлРезультатов" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файл результатов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="РезультатДействия" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат действия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТекущаяОперация" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущая операция</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="DumpResult" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DumpResult</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВыполнениеВРежимеПредприятие" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполнение в режиме предприятие</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ШаблонЗапуска1С" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шаблон запуска1 С</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияЗахватитьИзмененныеОбъекты" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения захватить измененные объекты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияСохранитьКонфигурациюТехпроекта" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения сохранить конфигурацию техпроекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияПеренестиИзменения" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения перенести изменения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЦветОсобогоТекста" id="47">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет особого текста</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыполняетсяШаг" id="48">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполняется шаг</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЦветУспешногоВыполнения" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет успешного выполнения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КлючСохраненныхНастроек" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ сохраненных настроек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстДляЗахватаРолей" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст для захвата ролей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВерсияДляНастроек" id="53">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия для настроек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВерсииПроекта</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияОбновитьКонфигурациюИзОсновногоХранилища" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения обновить конфигурацию из основного хранилища</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстДляХранилищаПоТехпроекту" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст для хранилища по техпроекту</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаПомещенияОбъектовВХранилище" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата помещения объектов в хранилище</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВерсияПроекта" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия проекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВерсииПроекта</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="Проект" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверитьВозможностьПерестроенияОчереди" id="59">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить возможность перестроения очереди</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Перестроить" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перестроить</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗахватитьМодулиОписанияОбработчиковИКорень" id="61">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Захватить модули описания обработчиков и корень</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПостроитьОчередьОтложенныхОбработчиков" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Построить очередь отложенных обработчиков</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СгенерироватьТекстыОписанияОбработчиковОбновления" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать тексты описания обработчиков обновления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПрименитьИзмененияКПодключеннойБазе" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить изменения к подключенной базе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыгрузитьВсеМодулиИзБазыОсновногоХранилища" id="66">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить все модули из базы основного хранилища</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СгенерироватьФайлыИЗагрузитьВПромежуточнуюБазу" id="67">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать файлы и загрузить в промежуточную базу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СоздатьПромежуточнуюБазу" id="68">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать промежуточную базу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СохранитьПромежуточнуюБазуВФайл" id="69">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить промежуточную базу в файл</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбъединитьБазуВерсииИФайл" id="71">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объединить базу версии и файл</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаложитьИзмененияВХранилищеВерсии" id="72">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заложить изменения в хранилище версии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстыОписанияОбработчиковОбновления" id="73">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тексты описания обработчиков обновления</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ТекстДляЗахватаМодулей" id="74">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст для захвата модулей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КаталогВыгрузкиФайловКонфигурацииИзОсновногоХранилища" id="76">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог выгрузки файлов конфигурации из основного хранилища</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СгенерироватьФайлыМодулейИЗалитьВБазу" id="77">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать файлы модулей и залить в базу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбновитьКонфигурациюИзОсновногоХранилища_Шаг3" id="78">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить конфигурацию из основного хранилища</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗагрузитьОбработчикиОбновления" id="79">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить обработчики обновления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СформироватьФайлОписанияОбработчиковОбновленияИНомераВерсии" id="80">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать файл описания обработчиков обновления и номера версии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияОбновитьКонфигурациюИзОсновногоХранилища_Шаг3" id="82">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения обновить конфигурацию из основного хранилища</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияЗахватитьМодулиОписанияОбработчиковИКорень" id="83">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения захватить модули описания обработчиков и корень</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияСформироватьФайлОписанияОбработчиковОбновленияИНомераВерсии" id="84">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения сформировать файл описания обработчиков обновления и номера версии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияЗагрузитьОбработчикиОбновления" id="85">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения загрузить обработчики обновления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияСгенерироватьТекстыОписанияОбработчиковОбновления" id="86">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения сгенерировать тексты описания обработчиков обновления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияПрименитьИзмененияКПодключеннойБазе" id="87">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения применить изменения к подключенной базе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияВыгрузитьВсеМодулиИзБазыОсновногоХранилища" id="89">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения выгрузить все модули из базы основного хранилища</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияСоздатьПромежуточнуюБазу" id="90">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения создать промежуточную базу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияСгенерироватьФайлыИЗагрузитьВПромежуточнуюБазу" id="91">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения сгенерировать файлы и загрузить в промежуточную базу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияСохранитьПромежуточнуюБазуВФайл" id="92">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения сохранить промежуточную базу в файл</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияОбъединитьБазуВерсииИФайл" id="93">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения объединить базу версии и файл</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияСгенерироватьФайлыМодулейИЗалитьВБазу" id="94">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения сгенерировать файлы модулей и залить в базу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияЗаложитьИзмененияВХранилищеВерсии" id="95">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения заложить изменения в хранилище версии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимЗапуска" id="96">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим запуска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЕстьОбработчикиОбновления" id="97">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть обработчики обновления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВерсияПлатформыОсновногоХранилища" id="98">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия платформы основного хранилища</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВерсияПлатформыСППР" id="99">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия платформы СППР</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВерсияПлатформыХранилищаТехническихПроектов" id="100">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия платформы хранилища технических проектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ХэшПроектаИВерсии" id="101">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Хэш проекта и версии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьСлешиВТекстеЗакладкиВХранилище" id="102">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать слеши в тексте закладки в хранилище</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗахватываемыеОбъекты" id="104">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Захватываемые объекты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Columns>
+				<Column name="ПолноеИмя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полное имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ИмяКонфигурации" id="105">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя конфигурации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияЗахватитьОбъектыПоСписку" id="106">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения захватить объекты по списку</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВерсияПроектаПредставление" id="107">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия проекта представление</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Ошибка" id="108">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ошибка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Ошибки</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыполнитьШаг1" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить выбранные действия</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыполнитьШаг1</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыполнитьШаг2" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить выбранные действия</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыполнитьШаг2</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НачатьЗановоШаг1" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать заново</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать заново выполнение действий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НачатьЗановоШаг1</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПродолжитьШаг1" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продолжить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продолжить выполнение действий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПродолжитьШаг1</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПродолжитьШаг2" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продолжить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продолжить выполнение действий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПродолжитьШаг2</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НачатьЗановоШаг2" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать заново</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать заново выполнение действий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НачатьЗановоШаг2</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтменитьШаг1" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить выполнение действий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтменитьШаг1</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтменитьШаг2" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить выполнение действий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтменитьШаг2</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗакрытьОбработку" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть форму</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ЗакрытьОбработку</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьКонфигураторОсновногоХранилища" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть конфигуратор</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.Конфигуратор</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьКонфигураторОсновногоХранилища</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьКонфигураторТехПроекта" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть конфигуратор</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.Конфигуратор</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьКонфигураторТехПроекта</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыполнитьШаг3" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить шаг3</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыполнитьШаг3</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НачатьЗановоШаг3" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать заново</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать заново выполнение действий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НачатьЗановоШаг3</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтменитьШаг3" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить выполнение действий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтменитьШаг3</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПродолжитьШаг3" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продолжить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продолжить выполнение действий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПродолжитьШаг3</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаполнитьПоРезультатамГлобальногоПоиска" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по результатам глобального поиска</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по результатам глобального поиска</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПоРезультатамГлобальногоПоиска</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаполнитьПоРезультатамПоискаСсылокНаОбъект" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по результатам поиска ссылок на объект</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по результатам поиска ссылок на объект</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПоРезультатамПоискаСсылокНаОбъект</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДобавитьЗахватКорня" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить захват корня</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить захват корня</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьЗахватКорня</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ИзменитьСписок" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить список</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить список</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменитьСписок</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗахватитьОбъектыПоСписку" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Захватить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Захватить объекты по списку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗахватитьОбъектыПоСписку</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаполнитьПоСпискуОбъектов" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по списку объектов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить по списку объектов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПоСпискуОбъектов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ТехническийПроект">
+			<Type>
+				<v8:Type>cfg:CatalogRef.ТехническиеПроекты</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="Проект">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ВерсияПроекта">
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВерсииПроекта</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="РежимЗапуска">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="Ошибка">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Ошибки</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>
