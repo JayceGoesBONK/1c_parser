@@ -36,9 +36,6 @@
 
 python parse_bsl.py <ПУТЬ_К_ПАПКЕ_КОНФИГУРАЦИИ>
 
-Примеры использования:
-- Для конфигурации СППР: `python parse_bsl.py ./Configs/SPPR`
-- Для конфигурации ERP: `python parse_bsl.py /path/to/1c_erp_dump`
 
 ### Результат работы
 
